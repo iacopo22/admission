@@ -1,0 +1,135 @@
+Initially I try to create the blocks with the prompt of the user
+
+
+    int x;
+    do
+    {
+         x = get_int ("Height: ");
+    }
+    while (x > 8);
+
+
+
+    do
+    {
+         x = get_int ("Height: ");
+    }
+    while (x < 1);
+
+
+I don't know how to insert two conditions in do while
+I need multiple conditions because the user has to print an integer
+greater than 0 and smaller than 9
+
+I understand that I have to use || so I can insert the double condition
+At first I thought about && but there are one problem:
+- the number can't be smaller of 1 and greater of 8
+But moreover, && is not necessary, because in the || if one condition
+fail the program reprompt the task to the user
+
+//From 19 to 28
+
+Then, according to the user's input, the program has to create the
+blocks, I do this with a for loop and I use \n, because I want the
+height not the width
+
+
+But I have to consider also the width (this is the first big problem
+I've met), so I create a for loop inside the bigger for loop.
+Hence the bigger one creates the #s in height and in each level of the
+height there is the internal loop
+This internal loop is built in this way:
+c is the external variable which update every level
+j is internal in the loop so it resets every level
+In this manner we have at the first level 1 block, at the second one
+2 block, at the third one 3 block...ecc.
+Because the c variable adds 1 every time, j variable instead returns
+to 0 --> this is an example:
+         the user prompts 2 --> x = 2
+
+FIRST    the external loop works because y = 0 < x = 2
+LOOP     y updates from 0 to 1
+         c updates from 0 to 1
+         the internal loop works because j = 0 < c = 1
+         j updates from 0 to 1 so the loop stops
+         then the programs prints # and jump in the next line
+
+SECOND   the external loop works because y = 1 < x = 2
+LOOP     y updates from 1 to 2
+         c updates from 1 to 2
+         the internal loop works because j = 0 < c = 2
+         j updates from 0 to 1
+         then the program prints #
+         the internal loop works because j = 1 < c = 2
+         j updates from 1 to 2 so the loop stops
+         then the program prints # and jumps in the next line
+
+This is the result:
+#
+##
+
+Now I have to right-align the pyramid with dots, this step is very
+difficult
+
+Here I try:
+
+
+
+   for (y = 0; y < x; y++)
+   {
+       c--;
+       for (j = -x; j < c; j++)
+       {
+
+        printf (".");
+        }
+
+        z++;
+        for (b = 0; b < z; b++)
+        {
+            printf ("#");
+        }
+
+      printf ("\n");
+    }
+
+
+Now I explain this with an example:
+
+user prints 2 --> x = 2
+
+the first loop works --> y = 0 < x = 2
+y updates from 0 to 1
+c updates from 0 to -1
+
+the second loop works --> j = -2 < c = -1
+j updates from -2 to -1
+program prints . and it stops --> j = -1 = c = -1
+
+z updates from 0 to 1
+the third loop works --> b = 0 < z = 1
+b updates from 0 to 1
+program prints # and it stops
+
+So we arrive at the function of the first loop printf ("\n"), hence
+the program jumps one line
+
+RESTART ( NOW THE SECOND LINE):
+
+the first loop works --> y = 1 < x =2
+y updates from 1 to 2, so the loop will not works anymore --> y = 2 = x = 2
+c updates from -1 to -2
+
+the second loop doesn't work --> c = -2 = j = -2
+
+z updates from 1 to 2
+the third loop works --> b = 0 < z = 2
+b updates from 0 to 1
+program prints #
+the third loop works --> b = 1 < z = 2
+b updates from 1 to 2
+program prints # and stops
+
+So we arrive at the function of the first loop printf ("\n"), hence
+the program jumps one line and it stops
+
