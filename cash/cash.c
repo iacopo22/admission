@@ -19,10 +19,11 @@ int main(void)
 
     // Calculate the number of quarters to give the customer
     int quarters;
+    int i;
 
     do
     {
-     quarter
+     for(i=0;  i++)
     }
 
     quarters = calculate_quarters();
