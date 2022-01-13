@@ -20,6 +20,11 @@ int main(void)
     // Calculate the number of quarters to give the customer
     int quarters;
 
+    do
+    {
+     quarter
+    }
+
     quarters = calculate_quarters();
 
     cents = cents - quarters * 25;
