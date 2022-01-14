@@ -18,12 +18,12 @@ int main(void)
     while (cents < 0);
 
     // Calculate the number of quarters to give the customer
-    int quarters = 25;
+    int quarters;
     int i;
 
     for(i=0; cents>25; i++)
     {
-     cents = cents - quarters;
+     cents = cents - quarters*25;
     }
 
 
