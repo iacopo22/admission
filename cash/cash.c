@@ -25,7 +25,7 @@ int main(void)
     {
      cents = cents - quarters;
     }
-    return 0;
+
     printf("Number of quarters as change: %i\n", numberq);
 
     int dimes = 10;
@@ -35,7 +35,7 @@ int main(void)
     {
         cents = cents - dimes;
     }
-    return 0;
+
     printf("Number of dimes as change: %i\n", numberd);
 
     int nickels = 5;
@@ -45,7 +45,7 @@ int main(void)
     {
         cents = cents - nickels;
     }
-    return 0;
+
     printf("Number of nickels as change: %i\n", numbern);
 
     int pennies = 1;
@@ -55,7 +55,7 @@ int main(void)
     {
         cents = cents - pennies;
     }
-    return 0;
+
     printf("Number of pennies as change: %i\n", numberp);
 
 
