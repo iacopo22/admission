@@ -23,7 +23,8 @@ int main(void)
 
     do
     {
-     for(i=0; cents i++)
+     for(i=0; cents=25; i++)
+     cents = cents - quarters
     }
 
     quarters = calculate_quarters();
