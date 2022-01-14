@@ -30,7 +30,7 @@ int main(void)
     int dimes = 10;
     int numberd;
 
-    for(numberd=0; cents>10; numberd++)
+    for(numberd=0; cents>=10; numberd++)
     {
         cents = cents - dimes;
     }
