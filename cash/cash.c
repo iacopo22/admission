@@ -48,6 +48,16 @@ int main(void)
 
     printf("Number of nickels as change: %i\n", numbern);
 
+    int pennies = 1;
+    int numberp;
+
+    for(numberp=0; cents>=1; numberp++)
+    {
+        cents = cents - pennies;
+    }
+
+    printf("Number of pennies as change: %i\n", numberp);
+
 
 
 
