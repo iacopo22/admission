@@ -46,7 +46,7 @@ int main(void)
         cents = cents - nickels;
     }
 
-    prinf("Number of nickles as change: %i\n", numbern);
+    printf("Number of nickels as change: %i\n", numbern);
 
 
 
