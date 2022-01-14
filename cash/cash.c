@@ -18,14 +18,14 @@ int main(void)
     while (cents < 0);
 
     // Calculate the number of quarters to give the customer
-    int quarters;
-    int i;
+    int quarters = 25;
+    int number of quarters;
 
-    for(i=0; cents>25; i++)
+    for(i=0; cents>=25; i++)
     {
-     cents = cents - quarters*25;
+     cents = cents - quarters;
     }
-
+    printf("Number of quarters as change: %i", number of quarters);
 
 
 
