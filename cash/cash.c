@@ -15,13 +15,13 @@ int main(void)
     {
      cents = get_int("Cents: ");
     }
-    while (x < 0);
+    while (cents < 0);
 
     // Calculate the number of quarters to give the customer
     int quarters = 25;
     int i;
 
-    for(i=0; cents=25; i++)
+    for(i=0; cents>25; i++)
     {
      cents = cents - quarters;
     }
