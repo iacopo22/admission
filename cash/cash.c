@@ -58,7 +58,10 @@ int main(void)
 
     printf("Number of pennies as change: %i\n", numberp);
 
+   int coins;
+   coins = numberq + numberd + numbern + numberp;
 
+   printf("Number of coins as change: %i\n", coins);
 
 
 }
