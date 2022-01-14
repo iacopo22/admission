@@ -27,6 +27,14 @@ int main(void)
     }
     printf("Number of quarters as change: %i", numberq);
 
+    int dimes = 10;
+    int numberd;
+
+    for(numberd=0; cents>10; numberd++)
+    {
+        cents = cents - dimes;
+    }
+    printf("Number of dimes in change: %i", numberd);
 
 
 
