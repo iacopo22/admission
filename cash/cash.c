@@ -85,23 +85,23 @@ int calculate_pennies(int cents);
     //Recall my function int calculate_quarters
      quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
-    printf("%i\n", quarters);
 
     //Recall my function int calculate_dimes
     dimes = calculate_dimes(cents);
     cents = cents - dimes * 10;
-    printf("%i\n", dimes);
 
     //Recall my function int calculate_nickels
     nickels = calculate_nickels(cents);
     cents = cents - nickels * 5;
-    printf("%i\n", nickels);
 
     //Recall my function int calculate_pennies
     pennies = calculate_pennies(cents);
     cents = cents - pennies * 1;
-    printf("%i\n", pennies);
 
+    // Sum coins
+    int coins = quarters + dimes + nickels + pennies;
 
+    // Print total number of coins to give the customer
+    printf("%i\n", coins);
 
 }
