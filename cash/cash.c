@@ -12,6 +12,8 @@ int main(void)
     int cents;
     // Ask how many cents the customer is owed
     int get_cents(void);
+    return 0;
+}
     do
     {
       cents = get_cents("Cents: ");
