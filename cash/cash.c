@@ -22,6 +22,9 @@ int calculate_pennies(int cents);
        return cents;
     }
 
+    //Define my function
+    
+
 
     int main(void)
 {
