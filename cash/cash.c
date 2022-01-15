@@ -8,19 +8,19 @@ int calculate_dimes(int cents);
 int calculate_nickels(int cents);
 int calculate_pennies(int cents);
 
-         // Ask how many cents the customer is owed
+// Ask how many cents the customer is owed
 
-    //Define my function int get_cents
-    int get_cents(void)
-    {
-      int cents;
-       do
-       {
-         cents = get_int("Cents owed: ");
-       }
-       while (cents < 0);
-       return cents;
-    }
+//Define my function int get_cents
+int get_cents(void)
+{
+  int cents;
+   do
+   {
+     cents = get_int("Cents owed: ");
+  }
+   while (cents < 0);
+    return cents;
+}
 
 
     // Calculate the number of quarters to give the customer
