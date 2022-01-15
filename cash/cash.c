@@ -1,22 +1,13 @@
-#include<stdio.h>
+#include <cs50.h>
+#include <stdio.h>
 
-void greatNum();       // function declaration
+int get_cents(void);
+int calculate_quarters(int cents);
+int calculate_dimes(int cents);
+int calculate_nickels(int cents);
+int calculate_pennies(int cents);
 
-int main()
+int main(void)
 {
-    greatNum();        // function call
-    return 0;
-}
-
-void greatNum()        // function definition
-{
-    int i, j;
-    printf("Enter 2 numbers that you want to compare...");
-    scanf("%d%d", &i, &j);
-    if(i > j) {
-        printf("The greater number is: %d", i);
-    }
-    else {
-        printf("The greater number is: %d", j);
-    }
-}
+    // Ask how many cents the customer is owed
+    int cents = get_cents();
