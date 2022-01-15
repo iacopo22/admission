@@ -16,10 +16,10 @@ int main(void)
 }
 
     int get_cents(void);
-    {
+
     do
     {
       cents = get_cents("Cents: ");
     }
     while ( cents < 0);
-    }
+
