@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+//Initialize my functions
 int get_cents(void);
 int calculate_quarters(int cents);
 int calculate_dimes(int cents);
@@ -9,18 +10,25 @@ int calculate_pennies(int cents);
 
     // Ask how many cents the customer is owed
     int cents;
-int get_cents(void)
-{
-    do
+
+    //Define my function int get_cents
+    int get_cents(void)
     {
-       cents = get_int("Cents owed: ");
+       do
+       {
+         cents = get_int("Cents owed: ");
+       }
+       while (cents < 0);
+       return cents;
     }
-    while (cents < 0);
-    return 1;
-}
 
 
-int main(void)
+    int main(void)
 {
+    //Recall my function
      cents = get_cents();
+
+
+
+
 }
