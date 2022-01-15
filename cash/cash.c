@@ -12,8 +12,8 @@ int main(void)
     // Ask how many cents the customer is owed
     do
     {
-     int cents = get_cents("Cents: ");
+     int cents = get_cents();
     }
-    while (int cents >= 0)
+    while (int cents < 0)
     return 0;
 }
