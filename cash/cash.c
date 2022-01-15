@@ -30,7 +30,7 @@ int calculate_pennies(int cents);
     int calculate_quarters(quarters)
     {
       for(numberq=0; cents>=25; numberq++)
-      return int quarters;
+      return quarters;
     }
 
 
@@ -42,7 +42,7 @@ int calculate_pennies(int cents);
     //Recall my function int calculate_quarters
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
-    printf("%i" numberq);
+    printf("%i", numberq);
 
 
 
