@@ -25,8 +25,8 @@ int calculate_pennies(int cents);
 
     // Calculate the number of quarters to give the customer
     int
-    //Define my function
 
+    //Define my function int calculate_quarters
     int calculate_quarters(int cents)
     {
       for()
@@ -35,10 +35,10 @@ int calculate_pennies(int cents);
 
     int main(void)
 {
-    //Recall my function
+    //Recall my function int get_cents
      cents = get_cents();
 
-    // Calculate the number of quarters to give the customer
+    //Recall my function int calculate_quarters
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
 
