@@ -28,7 +28,7 @@ int calculate_pennies(int cents);
 
     //Define my function int calculate_quarters
      int numberq;
-    int calculate_quarters(int cents);
+    int calculate_quarters(int cents)
     {
       for(numberq=0; cents>=25; numberq++)
       {
