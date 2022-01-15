@@ -2,9 +2,8 @@
 
 
 
-    // Calculate the number of nickels to give the customer
-    int nickels = calculate_nickels(cents);
-    cents = cents - nickels * 5;
+
+
 
     // Calculate the number of pennies to give the customer
     int pennies = calculate_pennies(cents);

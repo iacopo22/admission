@@ -43,8 +43,15 @@ int calculate_pennies(int cents);
     int dimes;
     int calculate_dimes(int cents)
     {
-      
+      for(dimes=0; cents>=10; dimes++)
+      {
+        cents = cents - 10;
+      }
+      return dimes;
     }
+
+
+    // Calculate the number of nickels to give the customer
 
 
 
@@ -60,8 +67,13 @@ int calculate_pennies(int cents);
     printf("%i\n", quarters);
 
     //Recall my function int calculate_dimes
-    int dimes = calculate_dimes(cents);
+    dimes = calculate_dimes(cents);
     cents = cents - dimes * 10;
+    printf("%i\n", dimes);
+
+    //Recall my function int calculate_nickels
+    nickels = calculate_nickels(cents);
+    cents = cents - nickels * 5;
 
 
 
