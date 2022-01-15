@@ -9,11 +9,12 @@ int calculate_nickels(int cents);
 int calculate_pennies(int cents);
 
     // Ask how many cents the customer is owed
-    int cents;
+
 
     //Define my function int get_cents
     int get_cents(void)
     {
+          int cents;
        do
        {
          cents = get_int("Cents owed: ");
@@ -28,6 +29,8 @@ int calculate_pennies(int cents);
     //Define my function int calculate_quarters
     int calculate_quarters(int cents)
     {
+      int quarters;
+      
       for(numberq=0; cents>=25; numberq++)
       return quarters;
     }
