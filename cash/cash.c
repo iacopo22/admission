@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_cents(void);
+int get_cents();
 int calculate_quarters(int cents);
 int calculate_dimes(int cents);
 int calculate_nickels(int cents);
