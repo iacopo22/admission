@@ -23,7 +23,10 @@ int calculate_pennies(int cents);
     }
 
     //Define my function
-    
+    int calculate_quarters(int cents)
+    {
+      
+    }
 
 
     int main(void)
