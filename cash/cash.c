@@ -32,7 +32,9 @@ int calculate_pennies(int cents);
       int numberq;
 
       for(numberq=0; cents>=25; numberq++)
+      {
       cents = cents - 25;
+      }
       return numberq;
     }
 
