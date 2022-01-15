@@ -84,7 +84,7 @@ int calculate_pennies(int cents);
 
     //Recall my function int calculate_quarters
      quarters = calculate_quarters(cents);
-
+    cents = cents - quarters * 25;
 
     //Recall my function int calculate_dimes
     dimes = calculate_dimes(cents);
