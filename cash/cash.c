@@ -14,7 +14,7 @@ int calculate_pennies(int cents);
     //Define my function int get_cents
     int get_cents(void)
     {
-          int cents;
+      int cents;
        do
        {
          cents = get_int("Cents owed: ");
@@ -27,10 +27,9 @@ int calculate_pennies(int cents);
     // Calculate the number of quarters to give the customer
 
     //Define my function int calculate_quarters
-    int calculate_quarters(int cents)
+     int numberq;
+    int calculate_quarters(int cents);
     {
-      int numberq;
-
       for(numberq=0; cents>=25; numberq++)
       {
       cents = cents - 25;
@@ -46,7 +45,6 @@ int calculate_pennies(int cents);
      cents = get_cents();
 
     //Recall my function int calculate_quarters
-    int numberq;
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
     printf("%i", numberq);
