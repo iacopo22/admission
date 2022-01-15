@@ -36,7 +36,7 @@ int calculate_pennies(int cents);
       return quarters;
     }
 
-    
+
 
 
     int main(void)
@@ -49,6 +49,8 @@ int calculate_pennies(int cents);
      quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
     printf("%i\n", quarters);
+
+    //Recall my function int calculate_dimes
 
 
 
