@@ -64,6 +64,17 @@ int calculate_pennies(int cents);
       return nickels;
     }
 
+    // Calculate the number of pennies to give the customer
+    int pennies;
+    int calculate_pennies(int cents)
+    {
+      for(pennies=0; cents>=1; pennies++)
+      {
+        cents = cents - 1;
+      }
+      return pennies;
+    }
+
 
     int main(void)
 {
@@ -85,6 +96,11 @@ int calculate_pennies(int cents);
     nickels = calculate_nickels(cents);
     cents = cents - nickels * 5;
     printf("%i\n", nickels);
+
+    //Recall my function int calculate_pennies
+    int pennies = calculate_pennies(cents);
+    cents = cents - pennies * 1;
+    printf("%i\n", pennies);
 
 
 

@@ -5,9 +5,6 @@
 
 
 
-    // Calculate the number of pennies to give the customer
-    int pennies = calculate_pennies(cents);
-    cents = cents - pennies * 1;
 
     // Sum coins
     int coins = quarters + dimes + nickels + pennies;
