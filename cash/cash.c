@@ -37,8 +37,14 @@ int calculate_pennies(int cents);
     }
 
 
-    //Define my function int calculate_dimes
+    // Calculate the number of dimes to give the customer
 
+    //Define my function int calculate_dimes
+    int dimes;
+    int calculate_dimes(int cents)
+    {
+      
+    }
 
 
 
@@ -54,6 +60,8 @@ int calculate_pennies(int cents);
     printf("%i\n", quarters);
 
     //Recall my function int calculate_dimes
+    int dimes = calculate_dimes(cents);
+    cents = cents - dimes * 10;
 
 
 
