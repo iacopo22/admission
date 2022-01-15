@@ -24,7 +24,7 @@ int calculate_pennies(int cents);
 
 
     // Calculate the number of quarters to give the customer
-    int
+    int quarters
 
     //Define my function int calculate_quarters
     int calculate_quarters(int cents)
