@@ -98,7 +98,7 @@ int calculate_pennies(int cents);
     printf("%i\n", nickels);
 
     //Recall my function int calculate_pennies
-    int pennies = calculate_pennies(cents);
+    pennies = calculate_pennies(cents);
     cents = cents - pennies * 1;
     printf("%i\n", pennies);
 
