@@ -10,7 +10,6 @@ int calculate_pennies(int cents);
 
     // Ask how many cents the customer is owed
 
-
     //Define my function int get_cents
     int get_cents(void)
     {
@@ -36,6 +35,8 @@ int calculate_pennies(int cents);
       }
       return quarters;
     }
+
+    
 
 
     int main(void)
