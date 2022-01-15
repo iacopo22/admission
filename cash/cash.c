@@ -27,14 +27,14 @@ int calculate_pennies(int cents);
     // Calculate the number of quarters to give the customer
 
     //Define my function int calculate_quarters
-     int numberq;
+     int quarters;
     int calculate_quarters(int cents)
     {
-      for(numberq=0; cents>=25; numberq++)
+      for(quarters=0; cents>=25; quarters++)
       {
       cents = cents - 25;
       }
-      return numberq;
+      return quarters;
     }
 
 
@@ -47,7 +47,7 @@ int calculate_pennies(int cents);
     //Recall my function int calculate_quarters
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
-    printf("%i", numberq);
+    printf("%i\n", numberq);
 
 
 
