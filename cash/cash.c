@@ -22,10 +22,14 @@ int calculate_pennies(int cents);
        return cents;
     }
 
+
+    // Calculate the number of quarters to give the customer
+    int
     //Define my function
+
     int calculate_quarters(int cents)
     {
-      
+      for()
     }
 
 
