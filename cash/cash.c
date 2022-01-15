@@ -45,9 +45,9 @@ int calculate_pennies(int cents);
      cents = get_cents();
 
     //Recall my function int calculate_quarters
-    int quarters = calculate_quarters(cents);
+     quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
-    printf("%i\n", numberq);
+    printf("%i\n", quarters);
 
 
 
