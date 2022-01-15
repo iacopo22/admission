@@ -15,7 +15,7 @@ int main(void)
     {
     do
     {
-      cents = get_cents("Cents: ");
+      cents = get_cents(int);
     }
     while (cents < 0);
     return cents;
