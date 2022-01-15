@@ -36,7 +36,8 @@ int calculate_pennies(int cents);
       return quarters;
     }
 
-    
+
+    //Define my function int calculate_dimes
 
 
 
