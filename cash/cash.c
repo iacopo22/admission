@@ -8,7 +8,7 @@ int calculate_dimes(int cents);
 int calculate_nickels(int cents);
 int calculate_pennies(int cents);
 
-    // Ask how many cents the customer is owed
+         // Ask how many cents the customer is owed
 
     //Define my function int get_cents
     int get_cents(void)
@@ -78,7 +78,7 @@ int calculate_pennies(int cents);
 
     int main(void)
 {
-  
+
     //Recall my function int get_cents
     int cents;
      cents = get_cents();
