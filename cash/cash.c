@@ -53,6 +53,8 @@ int calculate_pennies(int cents);
 
     // Calculate the number of nickels to give the customer
 
+    //Define my function int calculate_ nickels
+
 
 
     int main(void)
