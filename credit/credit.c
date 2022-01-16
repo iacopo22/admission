@@ -9,7 +9,8 @@ int alternative_digits(int digits);
 int main(void)
 {
 	long int n = get_long("Numbers: ");
-	int z
+
+	int z = (n % 10) + 
 
 }
 
