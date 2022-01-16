@@ -1,12 +1,24 @@
-// Libraries (e.g., rounding with 4.20)
+// Conditionals, Boolean expressions, relational operators
 
 #include <cs50.h>
-#include <math.h>
 #include <stdio.h>
 
 int main(void)
 {
-    float amount = get_float("Dollar Amount: ");
-    int pennies = round(amount * 100);
-    printf("Pennies: %i\n", pennies);
+    // Prompt user for points
+    int points = get_int("How many points did you lose? ");
+
+    // Compare points against mine
+    if (points < 2)
+    {
+        printf("You lost fewer points than me.\n");
+    }
+    else if (points > 2)
+    {
+        printf("You lost more points than me.\n");
+    }
+    else if (points == 2)
+    {
+        printf("You lost the same number of points as me.\n");
+    }
 }
