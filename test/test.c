@@ -1,19 +1,20 @@
-// Abstraction with parameterization
+// Calculates a remainder
 
+#include <cs50.h>
 #include <stdio.h>
-
-void meow(int n);
 
 int main(void)
 {
-    meow(3);
-}
+    // Prompt user for integer
+    int n = get_int("n: ");
 
-// Meow some number of times
-void meow(int n)
-{
-    for (int i = 0; i < n; i++)
+    // Check parity of integer
+    if (n % 2 == 0)
     {
-        printf("meow\n");
+        printf("even\n");
+    }
+    else
+    {
+        printf("odd\n");
     }
 }
