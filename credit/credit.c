@@ -8,7 +8,7 @@ int main(void)
 
 
 	// Verify the checksum of Luhn's algorithm
-	int y = (n % 10) + (n % );
+	int y = (n % 10) + (n % 100);
 	printf("%i\n", y);
 
 
