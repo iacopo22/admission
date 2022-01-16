@@ -7,7 +7,7 @@
 int main(void)
 {
     int i = 0;
-    while (true)
+    while (i < 3)
     {
         printf("\r%i", i);
         i++;
