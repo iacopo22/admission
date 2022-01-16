@@ -1,15 +1,20 @@
-// Counting
+// Logical operators
 
-#include <stdbool.h>
+#include <cs50.h>
 #include <stdio.h>
-#include <unistd.h>
 
 int main(void)
 {
-    int i = 0;
-    while (i < 3)
+    // Prompt user to agree
+    char c = get_char("Do you agree? ");
+
+    // Check whether agreed
+    if (c == 'Y' || c == 'y')
     {
-        printf("\r%i", i);
-        i++;
+        printf("Agreed.\n");
+    }
+    else if (c == 'N' || c == 'n')
+    {
+        printf("Not agreed.\n");
     }
 }
