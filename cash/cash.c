@@ -105,4 +105,5 @@ int main(void)
     // Print total number of coins to give the customer
     printf("%i\n", coins);
 
+
 }
