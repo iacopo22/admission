@@ -7,6 +7,6 @@
 int main(void)
 {
     float amount = get_float("Dollar Amount: ");
-    int pennies = round(amount * 100);
+    int pennies = (amount * 100);
     printf("Pennies: %i\n", pennies);
 }
