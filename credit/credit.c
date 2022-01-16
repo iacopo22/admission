@@ -24,6 +24,6 @@ int alternative_digits(long int n)
 	{
 		int j = (n % 10^(y)/10^(y - 1)) - (n % 10^(y - 1))/(10^(y - 1));
 	}
-	return 0;
+	return 1;
 }
 
