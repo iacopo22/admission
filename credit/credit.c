@@ -3,7 +3,7 @@
 #include <math.h>
 
 // Initialize my functions
-;int sum_alternative_digits(long int n);
+int sum_alternative_digits(long int n);
 
 
 
@@ -20,7 +20,7 @@ int main(void)
 
 int sum_alternative_digits(long int n)
 {
-	 int y;
+	long int y;
 	for(y = 3; (n/pow(10, y))>=(0.1); y = y + 2)
 	{
 		int j = ((n % pow(10,y))/pow(10,(y - 1))) - ((n % pow(10,(y - 1)))/(pow(10,(y - 1)));
