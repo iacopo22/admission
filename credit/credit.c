@@ -6,6 +6,7 @@ int main(void)
 	// Program receive numbers of the card from the user
 	long int numbers = get_long("Numbers: ");
 
+
 	// Verify the checksum of Luhn's algorithm
 	
 
