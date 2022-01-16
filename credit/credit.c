@@ -12,6 +12,8 @@ int main(void)
 
 	int z = (n % 10) + alternative_digits(n);
 
+	printf("%i", z);
+
 }
 
 
@@ -20,7 +22,8 @@ int alternative_digits(long int n)
 	int y;
 	for(y = 2; (n/10^y)>=1; y++)
 	{
-		(n % 10^(y)) - (n % 10^(y))/(10^(y));
+		int j = (n % 10^(y)) - (n % 10^(y))/(10^(y));
 	}
+	return 0;
 }
 
