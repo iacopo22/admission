@@ -7,7 +7,7 @@ int main(void)
 	long int numbers = get_long("Numbers: ");
 
 	// Verify the checksum of Luhn's algorithm
-	(n % )
+	(n % 10)
 
 
 }
