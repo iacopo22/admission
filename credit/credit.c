@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	long int numbers = get_
+	long int numbers = get_longint("Numbers: ")
 // Program receive numbers of the card from the user
 
 
