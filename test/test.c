@@ -1,14 +1,17 @@
-// Animation
 
+// Addition with long
+
+#include <cs50.h>
 #include <stdio.h>
-#include <unistd.h>
 
 int main(void)
 {
-    printf("ðŸŽˆ");
-    for (int i = 0; i < 50; i++)
-    {
-        printf("\n");
-        sleep(1);
-    }
+    // Prompt user for x
+    long x = get_long("x: ");
+
+    // Prompt user for y
+    long y = get_long("y: ");
+
+    // Perform addition
+    printf("%ld\n", x + y);
 }
