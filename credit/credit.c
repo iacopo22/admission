@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Initialize my functions
-int alternative_digits(long int n);
+int sum_alternative_digits(long int n);
 
 
 
