@@ -1,6 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
+// Initialize my functions
+int alternative_digits(int digits)
+
+
+
 int main(void)
 {
 	// Program receive numbers of the card from the user
