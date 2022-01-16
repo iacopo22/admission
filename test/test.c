@@ -1,19 +1,19 @@
-// Abstraction
+// Abstraction with parameterization
 
 #include <stdio.h>
 
-void meow(void);
+void meow(int n);
 
 int main(void)
 {
-    for (int i = 0; i < 3; i++)
-    {
-        meow();
-    }
+    meow(3);
 }
 
-// Meow once
-void meow(void)
+// Meow some number of times
+void meow(int n)
 {
-    printf("meow\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("meow\n");
+    }
 }
