@@ -7,9 +7,16 @@ int main(void)
 	long int n = get_long("Numbers: ");
 
 
+	int z = (n % 10)
+
+}
+
+int
 	// Verify the checksum of Luhn's algorithm
-	int y = (n % 10) + ((n % 100 - n % 10)/10);
+	for(y = 2; y++)
+	{
+		((n % 10^y - n % 10^y)/10^y);
+	}
 	printf("%i\n", y);
 
 
-}
