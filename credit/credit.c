@@ -22,7 +22,7 @@ int alternative_digits(long int n)
 	int y;
 	for(y = 2; (n/10^y)>=1; y++)
 	{
-		int j = (n % 10^(y)) - (n % 10^(y))/(10^(y - 1));
+		int j = (n % 10^(y)/10^(y - 1)) - (n % 10^(y))/(10^(y - 1));
 	}
 	return 0;
 }
