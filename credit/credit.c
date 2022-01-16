@@ -3,13 +3,13 @@
 #include <math.h>
 
 // Initialize my functions
-int sum_alternative_digits(double int n);
+;int sum_alternative_digits(long int n);
 
 
 
 int main(void)
 {
-	double int n = get_long("Numbers: ");
+	long int n = get_long("Numbers: ");
 
 	int z = (n % 10) + sum_alternative_digits(n);
 
@@ -18,9 +18,9 @@ int main(void)
 }
 
 
-int sum_alternative_digits(double int n)
+int sum_alternative_digits(long int n)
 {
-	double int y;
+	 int y;
 	for(y = 3; (n/pow(10, y))>=(0.1); y = y + 2)
 	{
 		int j = ((n % pow(10,y))/pow(10,(y - 1))) - ((n % pow(10,(y - 1)))/(pow(10,(y - 1)));
