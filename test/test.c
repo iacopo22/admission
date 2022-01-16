@@ -13,5 +13,5 @@ int main(void)
 
     // Divide x by y
     float z = x / y;
-    printf("%f\n", z);
+    printf("%.50f\n", z);
 }
