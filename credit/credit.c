@@ -9,7 +9,7 @@ int main(void)
 
 	// Verify the checksum of Luhn's algorithm
 	int y = (n % 10);
-	printf("%i", y);
+	printf("%i\n", y);
 
 
 }
