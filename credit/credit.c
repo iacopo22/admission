@@ -20,7 +20,7 @@ int main(void)
 	// Verify the sum of alternative digits
 	for(y = 2; (n/10^y)>=1; y++)
 	{
-		((n % 10^y - n % 10^y)/10^y);
+		(n % 10) - ((n % 10^y - n % 10^y)/10^y);
 	}
 	printf("%i\n", y);
 
