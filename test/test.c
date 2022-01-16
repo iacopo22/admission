@@ -1,4 +1,4 @@
-// Conditionals, Boolean expressions, relational operators
+// Design
 
 #include <cs50.h>
 #include <stdio.h>
@@ -17,7 +17,7 @@ int main(void)
     {
         printf("You lost more points than me.\n");
     }
-    else if (points == 2)
+    else
     {
         printf("You lost the same number of points as me.\n");
     }
