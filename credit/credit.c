@@ -4,11 +4,12 @@
 int main(void)
 {
 	// Program receive numbers of the card from the user
-	long int numbers = get_long("Numbers: ");
+	long int n = get_long("Numbers: ");
 
 
 	// Verify the checksum of Luhn's algorithm
-	(n % 10)*2 + (n)
+	int y = (n % 10);
+	printf("%i", y);
 
 
 }
