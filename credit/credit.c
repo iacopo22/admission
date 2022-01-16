@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	
+	long int numbers = get_
 // Program receive numbers of the card from the user
 
 
