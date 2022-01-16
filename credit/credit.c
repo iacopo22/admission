@@ -9,7 +9,7 @@ int alternative_digits(int digits);
 int main(void)
 {
 	// Program receive numbers of the card from the user
-	long int n = get_long("Numbers: ");
+	
 
 
 	int z = alternative_digits(n);
@@ -19,6 +19,7 @@ int main(void)
 
 	// Verify the sum of alternative digits
 	int y;
+	long int n = get_long("Numbers: ");
 	int alternative_digits(int digits)
 	{
 		for(y = 2; (n/10^y)>=1; y++)
