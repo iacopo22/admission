@@ -13,7 +13,7 @@ int main(void)
 
 
 	int z = (n % 10)
-	printf("%i", z);
+	printf("%i", digits);
 
 }
 
