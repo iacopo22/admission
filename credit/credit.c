@@ -8,7 +8,7 @@ int main(void)
 
 
 	// Verify the checksum of Luhn's algorithm
-	
+	(n % 10)
 
 
 }
