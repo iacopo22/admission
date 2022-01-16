@@ -1,19 +1,16 @@
-// Truncation
+// Counting
 
-#include <cs50.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main(void)
 {
-    // Prompt user for x
-    long x = get_long("x: ");
-
-    // Prompt user for y
-    long y = get_long("y: ");
-
-    // Divide x by y
-    float z = x / y;
-
-    // Perform division
-    printf("%f\n", z);
+    int i = 0;
+    while (true)
+    {
+        printf("%i\n", i);
+        i--;
+		sleep(1);
+    }
 }
