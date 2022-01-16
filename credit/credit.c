@@ -2,28 +2,28 @@
 #include <stdio.h>
 
 // Initialize my functions
-int alternative_digits(float n);
+int alternative_digits(long int n);
 
 
 
 int main(void)
 {
-	float n = get_long("Numbers: ");
+	long int n = get_long("Numbers: ");
 
-	float z = (n % 10) + alternative_digits(n);
+	int z = (n % 10) + alternative_digits(n);
 
-	printf("%f", z);
+	printf("%i", z);
 
 }
 
 
-int alternative_digits(float n)
+int alternative_digits(long int n)
 {
-	float y;
+	int y;
 	for(y = 3; (n/10^y)>=0.1; y = y + 2)
 	{
-		float j = (n % 10^(y)/10^(y - 1)) - (n % 10^(y - 1))/(10^(y - 1));
+		int j = (n % 10^(y)/10^(y - 1)) - (n % 10^(y - 1))/(10^(y - 1));
 	}
-	return n;
+	return 0;
 }
 
