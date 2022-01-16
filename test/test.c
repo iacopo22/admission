@@ -6,7 +6,7 @@ void meow(int n);
 
 int main(void)
 {
-    void meow(int n);
+    void meow();
 }
 
 // Meow some number of times
