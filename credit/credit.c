@@ -119,7 +119,7 @@ int main(void)
 	}
 
 
-	int sum_not_multiplied = first;
+	long sum_not_multiplied = first;
 	printf("Sum of non-multiplied: %i", sum_not_multiplied)
 
 
@@ -134,6 +134,7 @@ int main(void)
 		long first = z;
 		printf("First: %li\n", first);
 		break;
+	return first;
 	}
 
 
