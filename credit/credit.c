@@ -27,20 +27,20 @@ int main(void)
 			long secondtolast = z;
 			printf("Second to last: %li\n", secondtolast);
 		}
-		else(y==3)
+		else(y==3);
 		{
 			long thirdtolast = z;
 			printf("Third to last: %li\n", thirdtolast);
 		}
-		else(y==5)
+		else(y==5);
 		{
 			long fourthtolast = z;
 			printf("Fourth to last: %li\n", fourthtolast);
 		}
-		else(y==7)
+		else(y==7);
 		{
-			long fourthtolast = z;
-			printf("Fourth to last: %li\n", fourthtolast)
+			long fifthtolast = z;
+			printf("Fourth to last: %li\n", fifthtolast);
 		}
 
 	}
