@@ -3,17 +3,15 @@
 #include <math.h>
 
 // Initialize my function
-long int single_digits(long last)
+long int single_digits(long last);
 
 
 int main(void)
 {
 	// Get the number of the card from the user
 	long int ncard = get_long("Number of the card: ");
+	printf("%li\n", ncard);
 
-	//Last digit
-	long int last_digit = (ncard / 10) % 10;
-	printf("%li\n", last_digit);
 
 
 }
@@ -24,8 +22,11 @@ long int single_digits(long last)
 {
 	do
 	{
-
+		last = (last / 10) % 10;
+		printf("%li\n", last);
 	}
-	while(last )
+	while(last >= 0.1);
+	return last;
 }
+
 
