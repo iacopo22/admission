@@ -3,7 +3,7 @@
 #include <math.h>
 
 
-
+int alternative_digits(long int n);
 
 int main(void)
 {
@@ -18,5 +18,14 @@ int main(void)
 	printf("%li\n", secondlast_digit);
 
 
+
+}
+
+
+int alternative_digits(long int n)
+{
+	for(y=2; )
+	long int secondlast_digit = ((ncard % 100) / 10) - ((ncard % 10) / 10);
+	printf("%li\n", alternative_digits);
 
 }
