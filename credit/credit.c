@@ -3,7 +3,7 @@
 #include <math.h>
 
 
-int alternative_digits(double n);
+int alternative_digits(double x);
 
 int main(void)
 {
@@ -11,20 +11,22 @@ int main(void)
 	double ncard = get_long("Number of the card: ");
 
 	//Last digit
-	long int last_digit = ncard % pow(10,1);
+	long int last_digit = ncard % 10;
 	printf("%li\n", last_digit);
+
+	//Sum of the
 
 
 }
 
 
-int alternative_digits(double ncard)
+int alternative_digits(double x)
 {
 	double y;
-	for(y=2; (ncard/10)>=0.1; y++)
+	for(y=2; (x/10)>=0.1; y++)
 	{
-	double sum = ((ncard % pow(10, y)) / pow(10, y-1)) - ((ncard % pow(10, y+1)) / pow(10, y-1));
-	}
+	double sum = ((x % pow(10, y)) / pow(10, y-1)) - ((x % pow(10, y+1)) / pow(10, y-1));
 	printf("%li\n", alternative_digits);
-
+	}
+	return sum;
 }
