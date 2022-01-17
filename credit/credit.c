@@ -24,8 +24,11 @@ int main(void)
 
 int alternative_digits(long int n)
 {
-	for(y=2; )
-	long int secondlast_digit = ((ncard % 100) / 10) - ((ncard % 10) / 10);
+	long int y;
+	for(y=2; (n/10)>=0.1; y++)
+	{
+	long int sum = ((ncard % pow(10, y)) / pow(10, y-1)) - ((ncard % pow(10, y+1)) / pow(10, y-1));
+	}
 	printf("%li\n", alternative_digits);
 
 }
