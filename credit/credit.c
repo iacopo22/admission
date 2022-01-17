@@ -118,7 +118,7 @@ int main(void)
 		}
 	}
 
-	int sum_not_multiplied = second + fourth
+	int sum_not_multiplied == second + fourth
 	printf("Sum of non-multiplied: %i", sum_not_multiplied)
 
 
