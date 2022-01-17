@@ -17,7 +17,8 @@ int main(void)
 		printf("%li\n", ncard);
 	}
 
-
+	long int digits = ncard % 10;
+	printf("Digits: %li", digits);
 
 
 
