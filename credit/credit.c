@@ -12,10 +12,11 @@ int main(void)
 	long int last_digit = (ncard / 1) % 10;
 
 	int y;
+	float x;
 	for(y=1; y<=16; y++)
 	{
-		ncard = (ncard / pow(10, y));
-		printf("%ld\n", ncard);
+		x = (x / pow(10, y));
+		printf("%f\n", x);
 	}
 
 
