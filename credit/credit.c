@@ -15,9 +15,9 @@ int main(void)
 	do
 	{
 		last_digit = (last_digit / 10) % 10;
-		printf("%f\n", last_digit);
+		printf("%ld\n", last_digit);
 	}
-	while(ncard > 10);
+	while(last_digit > 10);
 
 
 
