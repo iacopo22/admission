@@ -12,7 +12,9 @@ int main(void)
 
 	//Last digit
 	long int last_digit = ncard % 10;
-	printf("%li\n", ncard);
+	printf("%li\n", last_digit);
+
+	long int secondlast_digit = (ncard % 100)
 
 
 
