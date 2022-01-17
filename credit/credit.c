@@ -12,12 +12,7 @@ int main(void)
 	long int last_digit = (ncard / 1) % 10;
 
 
-	while(ncard>=10)
-	{
-		ncard = ncard / 10;
-		printf("%li\n", ncard);
-	}
-
+	for(y=2; ; y++)
 
 }
 
