@@ -57,70 +57,70 @@ int main(void)
 			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
-		case 5: (y = 6);
+		case 6: (y = 6);
 
 			long seventhtolast = z;
 			printf("Seventh to last: %li\n", seventhtolast);
 			break;
 
-		case 5: (y = 7);
+		case 7: (y = 7);
 
 			long eighthtolast = z;
 			printf("Eighth to last: %li\n", eighthtolast);
 			break;
 
-		case 5: (y = 8);
+		case 8: (y = 8);
 
 			long ninthtolast = z;
 			printf("Ninth to last: %li\n", ninthtolast);
 			break;
 
-		case 5: (y = 9);
+		case 9: (y = 9);
 
 			long tenthtolast = z;
 			printf("Tenth to last: %li\n", tenthtolast);
 			break;
 
-		case 5: (y = 10);
+		case 10: (y = 10);
 
 			long eleventhtolast = z;
 			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
-		case 5: (y = 11);
+		case 11: (y = 11);
 
-			long sixthtolast = z;
+			long sixth = z;
 			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
-		case 5: (y = 12);
+		case 12: (y = 12);
 
-			long sixthtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long fifth = z;
+			printf("Fifth to last: %li\n", fifth);
 			break;
 
-		case 5: (y = 13);
+		case 13: (y = 13);
 
-			long sixthtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long fourth = z;
+			printf("Fourth to last: %li\n", fourth);
 			break;
 
-		case 5: (y = 14);
+		case 14: (y = 14);
 
-			long sixthtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long third = z;
+			printf("Third to last: %li\n", third);
 			break;
 
-		case 5: (y = 15);
+		case 15: (y = 15);
 
-			long sixthtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long second = z;
+			printf("Second to last: %li\n", second);
 			break;
 
-		case 5: (y = 16);
+		case 16: (y = 16);
 
-			long sixthtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long first = z;
+			printf("First to last: %li\n", first);
 			break;
 
 
