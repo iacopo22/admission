@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
-
+int first(int z);
 
 int main(void)
 {
@@ -111,19 +111,16 @@ int main(void)
 			break;
 
 		case 15: (y = 15);
-			int first(int z)
-			{
-			long first = z;
-			printf("First: %li\n", first);
-			break;
-			}
+
+			int first(int z);
+
 		}
 
 	}
 
-	int sum_not_multiplied = int first
-	printf("Sum of non-multiplied: %i", sum_not_multiplied)
 
+	int sum_not_multiplied =  first;
+	printf("Sum of non-multiplied: %i", sum_not_multiplied)
 
 
 
@@ -132,6 +129,11 @@ int main(void)
 
 
 
-
+	int first(int z)
+	{
+		long first = z;
+		printf("First: %li\n", first);
+		break;
+	}
 
 
