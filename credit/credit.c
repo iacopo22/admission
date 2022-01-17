@@ -20,11 +20,9 @@ int main(void)
 		c = (ncard / pow(10, y));
 		z = c % 10;
 
-
-
 		switch(y)
 		{
-		case 0: (y = 0);
+		case 1: (y = 0);
 			long last = z;
 			printf("Last: %li\n", last);
 			break;
@@ -84,43 +82,43 @@ int main(void)
 		case 10: (y = 10);
 
 			long eleventhtolast = z;
-			printf("Sixth: %li\n", sixthtolast);
+			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
 		case 11: (y = 11);
 
 			long sixth = z;
-			printf("Sixth: %li\n", sixthtolast);
+			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
 		case 12: (y = 12);
 
 			long fifth = z;
-			printf("Fifth: %li\n", fifth);
+			printf("Fifth to last: %li\n", fifth);
 			break;
 
 		case 13: (y = 13);
 
 			long fourth = z;
-			printf("Fourth: %li\n", fourth);
+			printf("Fourth to last: %li\n", fourth);
 			break;
 
 		case 14: (y = 14);
 
 			long third = z;
-			printf("Third: %li\n", third);
+			printf("Third to last: %li\n", third);
 			break;
 
 		case 15: (y = 15);
 
 			long second = z;
-			printf("Second: %li\n", second);
+			printf("Second to last: %li\n", second);
 			break;
 
 		case 16: (y = 16);
 
 			long first = z;
-			printf("First: %li\n", first);
+			printf("First to last: %li\n", first);
 			break;
 
 
