@@ -11,14 +11,15 @@ int main(void)
 	long int ncard = get_long("Number of the card: ");
 	long int last_digit = (ncard / 1) % 10;
 
-	int y;
+	int y= 0;
 	int x = ncard;
 	int z;
-	for(y=0; y<=16; y++)
+	while(y=<16)
 	{
 		x = (x / pow(10, y));
 		z = x % 10;
 		printf("%i\n", z);
+		y++;
 	}
 
 
