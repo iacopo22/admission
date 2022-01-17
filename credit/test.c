@@ -4,6 +4,6 @@
 
 int main(void)
 {
-	int x = 3.4 % 10;
+	int x = 34 % 10;
 	printf("%i");
 }
