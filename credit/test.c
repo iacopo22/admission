@@ -5,5 +5,5 @@
 int main(void)
 {
 	int x = 34 % 10;
-	printf("%i");
+	printf("%i", x);
 }
