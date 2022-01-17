@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <math.h>
 
+// Initialize my function
+long int single_digits(long last)
+
 
 int main(void)
 {
@@ -9,14 +12,20 @@ int main(void)
 	long int ncard = get_long("Number of the card: ");
 
 	//Last digit
-	long int last_digit = ncard % 10;
+	long int last_digit = (ncard / 10) % 10;
 	printf("%li\n", last_digit);
-
-	//Second to last digit
-	long int secondlast_digit = (ncard / 100) % 10;
-	printf("%li\n", secondlast_digit);
 
 
 }
 
+
+// Function to find single digits
+long int single_digits(long last)
+{
+	do
+	{
+		
+	}
+	while()
+}
 
