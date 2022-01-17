@@ -43,8 +43,8 @@ int main(void)
 
 		case 4: (y = 7);
 
-			long eighttolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long eighthtolast = z;
+			printf("Eightth to last: %li\n", eighthtolast);
 			break;
 		}
 
