@@ -3,8 +3,6 @@
 #include <math.h>
 
 
-int alternative_digits(long x);
-
 int main(void)
 {
 	// Get the number of the card from the user
@@ -14,19 +12,11 @@ int main(void)
 	long int last_digit = ncard % 10;
 	printf("%li\n", last_digit);
 
-	//Sum of the
+	//Second to last digit
+	long int secondlast_digit = (ncard % 100 - last_digit)/10;
+	printf("%li\n", secondlast_digit);
 
 
 }
 
 
-int alternative_digits(long x)
-{
-	double y;
-	for(y=2; (x % 10)>=1; y++)
-	{
-	double sum = ((x % pow(10, y)) / pow(10, y-1)) - ((x % pow(10, y+1)) / pow(10, y-1));
-	printf("%li\n", alternative_digits);
-	}
-	return sum;
-}
