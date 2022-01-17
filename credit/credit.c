@@ -23,8 +23,8 @@ int main(void)
 		printf("%li\n", z);
 		if(y==1 || y==3 || y==5 || y==7 || y==9 || y==11 || y==13 || y==15)
 		{
-			int sum_secondtolast = 
-			printf("Second to last: %li\n", a);
+			long sum_secondtolast = z;
+			printf("Second to last: %li\n", sum_secondtolast);
 		}
 
 	}
