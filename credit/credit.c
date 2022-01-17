@@ -11,7 +11,16 @@ int main(void)
 	long int ncard = get_long("Number of the card: ");
 	long int last_digit = (ncard / 1) % 10;
 
-	
+
+	do
+	{
+		ncard = (ncard / 10);
+		printf("%ld\n", ncard);
+	}
+	while(ncard > 10);
+
+
+
 
 }
 
