@@ -14,7 +14,8 @@ int main(void)
 	long int last_digit = ncard % 10;
 	printf("%li\n", last_digit);
 
-	long int secondlast_digit = (ncard % 100)
+	long int secondlast_digit = ((ncard % 100) / 10) - ((ncard % 10) / 10);
+	printf("%li\n", secondlast_digit);
 
 
 
