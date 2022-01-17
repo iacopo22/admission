@@ -8,7 +8,12 @@
 int main(void)
 {
 	// Get the number of the card from the user
-	long int n = get_long("Numbers: ");
+	long int ncard = get_long("Numbers: ");
+
+	//Last digit
+	long int last_digit = ncard % 10;
+	printf("%li\n", ncard);
+
 
 
 }
