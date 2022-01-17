@@ -20,28 +20,32 @@ int main(void)
 	{
 		c = (x / pow(10, y));
 		z = c % 10;
-		
+
 
 		switch(y)
 		{
 		case 1: (y = 1);
 			long secondtolast = z;
 			printf("Second to last: %li\n", secondtolast);
+			break;
 
 		case 2: (y = 3);
 
 			long thirdtolast = z;
 			printf("Third to last: %li\n", thirdtolast);
+			break;
 
 		case 3: (y = 5);
 
 			long fourthtolast = z;
 			printf("Fourth to last: %li\n", fourthtolast);
+			break;
 
 		case 4: (y = 7);
 
 			long fifthtolast = z;
 			printf("Fifth to last: %li\n", fifthtolast);
+			break;
 		}
 
 	}
