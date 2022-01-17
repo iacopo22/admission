@@ -15,14 +15,13 @@ int main(void)
 	long z;
 	long c;
 
+{
 	for(y=0; y<=16; y++)
 	{
 		c = (x / pow(10, y));
 		z = c % 10;
 		printf("%li\n", z);
 	}
-
-
 
 
 
