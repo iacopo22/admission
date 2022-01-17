@@ -8,7 +8,7 @@ int alternative_digits(double x);
 int main(void)
 {
 	// Get the number of the card from the user
-	double ncard = get_long("Number of the card: ");
+	long int ncard = get_long("Number of the card: ");
 
 	//Last digit
 	long int last_digit = ncard % 10;
