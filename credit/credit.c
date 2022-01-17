@@ -11,7 +11,7 @@ int main(void)
 	long ncard = get_long("Number of the card: ");
 
 
-	int y = 1;
+	int y = 0;
 	long x = ncard;
 	long z;
 
@@ -20,8 +20,7 @@ int main(void)
 		x = (x / pow(10, y));
 		z = x % 10;
 		printf("%li\n", z);
-		
-
+		y++;
 	}
 
 
