@@ -3,7 +3,7 @@
 #include <math.h>
 
 
-int alternative_digits(double x);
+int alternative_digits(long x);
 
 int main(void)
 {
@@ -20,10 +20,10 @@ int main(void)
 }
 
 
-int alternative_digits(double x)
+int alternative_digits(long x)
 {
 	double y;
-	for(y=2; (x/10)>=1; y++)
+	for(y=2; (x % 10)>=1; y++)
 	{
 	double sum = ((x % pow(10, y)) / pow(10, y-1)) - ((x % pow(10, y+1)) / pow(10, y-1));
 	printf("%li\n", alternative_digits);
