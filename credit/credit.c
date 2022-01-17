@@ -114,9 +114,6 @@ int main(void)
 			long first = z;
 			printf("First to last: %li\n", first);
 			break;
-
-
-
 		}
 
 
