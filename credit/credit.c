@@ -27,7 +27,7 @@ int main(void)
 			long secondtolast = z;
 			printf("Second to last: %li\n", secondtolast);
 		}
-		else(y==3);
+		else(y=3);
 		{
 			long thirdtolast = z;
 			printf("Third to last: %li\n", thirdtolast);
