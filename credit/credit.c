@@ -44,7 +44,7 @@ int main(void)
 		case 4: (y = 8);
 
 			long eighthtolast = z;
-			printf("Eightth to last: %li\n", eighthtolast);
+			printf("Eighth to last: %li\n", eighthtolast);
 			break;
 		}
 
