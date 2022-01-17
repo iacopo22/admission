@@ -111,15 +111,17 @@ int main(void)
 			break;
 
 		case 15: (y = 15);
-
+			int first(int z)
+			{
 			long first = z;
 			printf("First: %li\n", first);
 			break;
+			}
 		}
-		
+
 	}
 
-	int sum_not_multiplied = second + fourth
+	int sum_not_multiplied = int first
 	printf("Sum of non-multiplied: %i", sum_not_multiplied)
 
 
