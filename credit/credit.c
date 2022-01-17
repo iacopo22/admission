@@ -22,7 +22,7 @@ int main(void)
 		z = c % 10;
 		printf("%li\n", z);
 
-		if(y==1)
+		switch(y)
 		{
 			long secondtolast = z;
 			printf("Second to last: %li\n", secondtolast);
