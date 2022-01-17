@@ -14,8 +14,8 @@ int main(void)
 
 	do
 	{
-		ncard = (last_digit / 10) % 10;
-		printf("%li\n", ncard);
+		float x = (last_digit / 10) % 10;
+		printf("%f\n", x);
 	}
 	while(ncard >= 0.1);
 
