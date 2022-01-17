@@ -11,16 +11,13 @@ int main(void)
 	long int ncard = get_long("Number of the card: ");
 	long int last_digit = (ncard / 1) % 10;
 
-    long int secondlat_digit;
-	do
+
+	if
 	{
 		last_digit = (ncard / 10) % 10;
-		secondlat_digit = (last_digit / 10) % 10;
 		printf("%ld\n", secondlat_digit);
 	}
-	while(secondlat_digit > 10);
-
-
+	else
 
 
 }
