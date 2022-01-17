@@ -13,14 +13,13 @@ int main(void)
 	int y;
 	long x = ncard;
 	long z;
+	long c;
 
-	while(y<=16)
+	for(y=0; y<=16; y++)
 	{
-		y=0;
-		x = (x / pow(10, y));
-		z = x % 10;
+		c = (x / pow(10, y));
+		z = c % 10;
 		printf("%li\n", z);
-		y++;
 	}
 
 
