@@ -37,13 +37,13 @@ int main(void)
 
 		case 3: (y = 5);
 
-			long fourthtolast = z;
-			printf("Fifth to last: %li\n", fourthtolast);
+			long sixthtolast = z;
+			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
 		case 4: (y = 7);
 
-			long sixthtolast = z;
+			long eighttolast = z;
 			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 		}
