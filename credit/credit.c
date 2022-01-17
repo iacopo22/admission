@@ -8,19 +8,19 @@
 int main(void)
 {
 	// Get the number of the card from the user
-	long int ncard = get_long("Number of the card: ");
+	long ncard = get_long("Number of the card: ");
 
 
-	int y= 0;
-	int x = ncard;
-	int z;
+	int y = 0;
+	long x = ncard;
+	long z;
 
 	while(y<=16)
 	{
 		x = (x / pow(10, y));
 		z = x % 10;
-		printf("%i\n", z);
-		
+		printf("%li\n", z);
+
 	}
 
 
