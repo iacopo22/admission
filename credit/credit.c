@@ -24,8 +24,8 @@ long int single_digits(long last)
 {
 	do
 	{
-		
+
 	}
-	while()
+	while(last )
 }
 
