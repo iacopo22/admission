@@ -84,43 +84,43 @@ int main(void)
 		case 10: (y = 10);
 
 			long eleventhtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			printf("Sixth: %li\n", sixthtolast);
 			break;
 
 		case 11: (y = 11);
 
 			long sixth = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			printf("Sixth: %li\n", sixthtolast);
 			break;
 
 		case 12: (y = 12);
 
 			long fifth = z;
-			printf("Fifth to last: %li\n", fifth);
+			printf("Fifth: %li\n", fifth);
 			break;
 
 		case 13: (y = 13);
 
 			long fourth = z;
-			printf("Fourth to last: %li\n", fourth);
+			printf("Fourth: %li\n", fourth);
 			break;
 
 		case 14: (y = 14);
 
 			long third = z;
-			printf("Third to last: %li\n", third);
+			printf("Third: %li\n", third);
 			break;
 
 		case 15: (y = 15);
 
 			long second = z;
-			printf("Second to last: %li\n", second);
+			printf("Second: %li\n", second);
 			break;
 
 		case 16: (y = 16);
 
 			long first = z;
-			printf("First to last: %li\n", first);
+			printf("First: %li\n", first);
 			break;
 
 
