@@ -31,22 +31,25 @@ int main(void)
 
 		case 2: (y = 3);
 
-			long thirdtolast = z;
-			printf("Third to last: %li\n", thirdtolast);
+			long fourthtolast = z;
+			printf("Fourth to last: %li\n", fourthtolast);
 			break;
 
 		case 3: (y = 5);
 
 			long fourthtolast = z;
-			printf("Fourth to last: %li\n", fourthtolast);
+			printf("Fifth to last: %li\n", fourthtolast);
 			break;
 
 		case 4: (y = 7);
 
-			long fifthtolast = z;
-			printf("Fifth to last: %li\n", fifthtolast);
+			long sixthtolast = z;
+			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 		}
+
+
+
 
 	}
 
