@@ -14,7 +14,8 @@ int main(void)
 	long int x;
 	while(ncard>=10)
 	{
-		x = ncard / 10;
+		ncard = ncard / 10;
+		ncard = ncard % 10;
 		printf("%li\n", ncard);
 	}
 
