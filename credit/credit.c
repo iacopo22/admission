@@ -21,15 +21,26 @@ int main(void)
 		c = (x / pow(10, y));
 		z = c % 10;
 		printf("%li\n", z);
-		
+
 		if(y==1)
 		{
 			long secondtolast = z;
-			printf("Second to last: %li\n", sum_secondtolast);
+			printf("Second to last: %li\n", secondtolast);
 		}
 		else(y==3)
 		{
-
+			long thirdtolast = z;
+			printf("Third to last: %li\n", thirdtolast);
+		}
+		else(y==5)
+		{
+			long fourthtolast = z;
+			printf("Fourth to last: %li\n", fourthtolast);
+		}
+		else(y==7)
+		{
+			long fourthtolast = z;
+			printf("Fourth to last: %li\n", fourthtolast)
 		}
 
 	}
