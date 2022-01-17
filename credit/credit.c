@@ -11,8 +11,7 @@ int main(void)
 	long int ncard = get_long("Number of the card: ");
 	long int last_digit = (ncard / 1) % 10;
 
-
-	for(y=2; ; y++)
+	
 
 }
 
