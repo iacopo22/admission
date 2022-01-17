@@ -22,7 +22,7 @@ int main(void)
 
 		switch(y)
 		{
-		case 1: (y = 0);
+		case 0: (y = 0);
 			long last = z;
 			printf("Last: %li\n", last);
 			break;
@@ -81,41 +81,35 @@ int main(void)
 
 		case 10: (y = 10);
 
-			long eleventhtolast = z;
-			printf("Sixth to last: %li\n", sixthtolast);
+			long sixth = z;
+			printf("Sixth to last: %li\n", sixth);
 			break;
 
 		case 11: (y = 11);
-
-			long sixth = z;
-			printf("Sixth to last: %li\n", sixthtolast);
-			break;
-
-		case 12: (y = 12);
 
 			long fifth = z;
 			printf("Fifth to last: %li\n", fifth);
 			break;
 
-		case 13: (y = 13);
+		case 12: (y = 12);
 
 			long fourth = z;
 			printf("Fourth to last: %li\n", fourth);
 			break;
 
-		case 14: (y = 14);
+		case 13: (y = 13);
 
 			long third = z;
 			printf("Third to last: %li\n", third);
 			break;
 
-		case 15: (y = 15);
+		case 14: (y = 14);
 
 			long second = z;
 			printf("Second to last: %li\n", second);
 			break;
 
-		case 16: (y = 16);
+		case 15: (y = 15);
 
 			long first = z;
 			printf("First to last: %li\n", first);
