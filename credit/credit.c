@@ -21,6 +21,11 @@ int main(void)
 		c = (x / pow(10, y));
 		z = c % 10;
 		printf("%li\n", z);
+		if(y==1)
+		{
+			printf("Vale: %li\n", z);
+		}
+
 	}
 
 
