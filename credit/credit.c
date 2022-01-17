@@ -41,7 +41,7 @@ int main(void)
 		case 4: (y = 7);
 
 			long fifthtolast = z;
-			printf("Fourth to last: %li\n", fifthtolast);
+			printf("Fifth to last: %li\n", fifthtolast);
 		}
 
 	}
