@@ -3,31 +3,27 @@
 #include <math.h>
 
 
-int alternative_digits(long int n);
+int alternative_digits(double n);
 
 int main(void)
 {
 	// Get the number of the card from the user
-	long int ncard = get_long("Number of the card: ");
+	double ncard = get_long("Number of the card: ");
 
 	//Last digit
-	long int last_digit = ncard % 10;
+	long int last_digit = ncard % pow(10,1);
 	printf("%li\n", last_digit);
-
-	long int secondlast_digit = ((ncard % 100) / 10) - ((ncard % 10) / 10);
-	printf("%li\n", secondlast_digit);
-
 
 
 }
 
 
-int alternative_digits(long int n)
+int alternative_digits(double ncard)
 {
-	long int y;
-	for(y=2; (n/10)>=0.1; y++)
+	double y;
+	for(y=2; (ncard/10)>=0.1; y++)
 	{
-	long int sum = ((ncard % pow(10, y)) / pow(10, y-1)) - ((ncard % pow(10, y+1)) / pow(10, y-1));
+	double sum = ((ncard % pow(10, y)) / pow(10, y-1)) - ((ncard % pow(10, y+1)) / pow(10, y-1));
 	}
 	printf("%li\n", alternative_digits);
 
