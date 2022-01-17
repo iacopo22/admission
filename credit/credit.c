@@ -13,7 +13,6 @@ int main(void)
 	printf("%li\n", last_digit);
 
 	//Second to last digit
-	for(y)
 	long int secondlast_digit = (ncard % 100 - last_digit)/10;
 	printf("%li\n", secondlast_digit);
 
