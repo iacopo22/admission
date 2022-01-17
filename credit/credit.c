@@ -9,14 +9,14 @@ int main(void)
 {
 	// Get the number of the card from the user
 	long int ncard = get_long("Number of the card: ");
-	
+
 
 	do
 	{
 		ncard = (ncard / 10) % 10;
 		printf("%li\n", ncard);
 	}
-	while(last >= 0.1);
+	while(ncard >= 0.1);
 
 
 
