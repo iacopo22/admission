@@ -108,7 +108,6 @@ int main(void)
 
 			long second = z;
 			printf("Second: %li\n", second);
-			return second;
 			break;
 
 		case 15: (y = 15);
