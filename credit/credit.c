@@ -15,6 +15,7 @@ int main(void)
 	long c;
 	long last;
 	long first;
+	long _first, __first;
 	long secondtolast;
 	long thirdtolast;
 	long fourthtolast;
@@ -129,7 +130,16 @@ int main(void)
 		case 15:
 
 			first = z;
+			if(first>=10)
+			{
+				_first = (first) % 10;
+				__first= (first/10)%10;
+			}
 			printf("First: %li\n", first);
+			printf("First: %li\n", _first);
+			printf("First: %li\n", __first);
+
+
 			break;
 		}
 	}
