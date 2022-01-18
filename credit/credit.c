@@ -254,7 +254,7 @@ printf("Is a zero? %i\n", last_sum);
 
 
 
-if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) && (third == 4 || third == 7) )
+if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) && (third == 0 || third == 0) )
 {
     printf("American express\n");
 }
