@@ -254,10 +254,12 @@ printf("Is a zero? %i\n", last_sum);
 
 if ((last_sum) == 0)
 {
+	printf("Valid");
 	true;
 }
 else
 {
+	printf("Invalid");
 	false;
 }
 
