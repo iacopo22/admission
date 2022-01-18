@@ -32,7 +32,7 @@ int main(void)
 
 
 
-	for(y=0; y<=16; y++)
+	for(y=-1; y<=16; y++)
 	{
 		c = (ncard / pow(10, y));
 		z = c % 10;
