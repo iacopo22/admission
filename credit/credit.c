@@ -149,13 +149,11 @@ int main(void)
 	case 11:
 
 		fifth = z;
-		if((fifth*2) >= 10)
+		if((fifth * 2) >= 10)
 		{
-			_fifth = (fifth*2) % 10;
-			__fifth = ((fifth*2)/10)%10;
+			_fifth = (fifth * 2) % 10;
+			__fifth = ((fifth * 2) / 10) % 10;
 			fifth = 0;
-				printf("_Fifth: %li\n", _fifth);
-				printf("__Fifth: %li\n", __fifth);
 		}
 		else
 		{
@@ -165,19 +163,19 @@ int main(void)
 		}
 		break;
 
-    case 12:
+    	case 12:
 
-		fourth = z;
+			fourth = z;
 		printf("Fourth: %li\n", fourth);
 		break;
 
     case 13:
 
 		third = z;
-		if((third*2) >= 10)
+		if((third * 2) >= 10)
 		{
-			_third = (third*2) % 10;
-			__third = ((third*2)/10)%10;
+			_third = (third * 2) % 10;
+			__third = ((third * 2) / 10) % 10;
 			third = 0;
 		}
 		else
@@ -198,8 +196,8 @@ int main(void)
     first = z;
 	if((first*2) >= 10)
 	{
-		_first = (first*2) % 10;
-			__first = ((first*2)/10)%10;
+		_first = (first * 2) % 10;
+			__first = ((first * 2) / 10) % 10;
 			first = 0;
 		}
 		else
@@ -212,7 +210,6 @@ int main(void)
     }
 
     int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
-    printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
     int sum_from_secondtolast = first * 2 + _first + __first + third * 2 + _third + __third + fifth * 2 + _fifth + __fifth + tenthtolast * 2
 	                           + _tenthtolast + __tenthtolast + eighthtolast * 2 + _eighthtolast + __eighthtolast + sixthtolast * 2 + _sixthtolast
