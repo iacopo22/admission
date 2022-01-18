@@ -263,7 +263,7 @@ else
 	false;
 }
 
-if( pow(10, 15))
+if( pow(10, 14))
 
 
 
