@@ -218,7 +218,7 @@ int main(void)
 int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
 printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
-int sum_from_secondtolast = secondtolast + fourthtolast*2 + sixthtolast*2 + eighthtolast + tenthtolast + fifth + third + first;
+int sum_from_secondtolast = first + _first + __first;
 printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
 
