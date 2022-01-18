@@ -254,7 +254,7 @@ printf("Is a zero? %i\n", last_sum);
 
 
 
-if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0)
+if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (first == 3) )
 {
     printf("Visa\n");
 }
