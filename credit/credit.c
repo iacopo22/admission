@@ -222,19 +222,19 @@ int last_sum = sum % 10;
 
 if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) && ((_third == 4 && __third == 1) || third == 4) )
 {
-	printf("American express\n");
+	printf("AMERICAN EXPRESS\n");
 }
 if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4 || second == 5) && ( _first == 0 && __first == 1) )
 {
-	printf("Mastercard\n");
+	printf("MASTERCARD\n");
 }
 if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4))
 {
-	printf("Visa\n");
+	printf("VISA\n");
 }
 else
 {
-	printf("Invalid\n");
+	printf("INVALID\n");
 }
 
 
