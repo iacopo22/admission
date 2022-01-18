@@ -134,12 +134,13 @@ int main(void)
 			{
 				_first = (first) % 10;
 				__first= (first/10)%10;
+				printf("First: %li\n", _first);
+				printf("First: %li\n", __first);
 			}
-			printf("First: %li\n", first);
-			printf("First: %li\n", _first);
-			printf("First: %li\n", __first);
-
-
+			else
+			{
+				printf("First: %li\n", first);
+			}
 			break;
 		}
 	}
