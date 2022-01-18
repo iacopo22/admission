@@ -217,7 +217,7 @@ int main(void)
 			}
 			else
 			{
-				printf("First: %li\n", first);
+				printf("First: %li\n", first*2);
 			}
 			break;
 		}
