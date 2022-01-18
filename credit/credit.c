@@ -217,8 +217,8 @@ int main(void)
 			}
 			else
 			{
-				printf("First: %li\n", first);
-				printf("_First: %li\n", _first);
+				_first = 0;
+				__first = 0;
 				printf("__First: %li\n", __first);
 			}
 			break;
