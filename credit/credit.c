@@ -119,7 +119,8 @@ int main(void)
 		}
 	}
 
-
+int sum = last;
+printf("%li", last);
 
 
 
