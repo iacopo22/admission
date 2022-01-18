@@ -258,7 +258,7 @@ if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) 
 {
 	printf("American express\n");
 }
-if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 2 || second == 3 || second == 4 || second == 5) && ((_third == 4 && __third == 1) || third == 4) && (_second == 0 && __second == 1) )
+if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4 || second == 5) && ( _first == 0 && __first == 1) )
 {
 	printf("Mastercard\n");
 }
