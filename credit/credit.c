@@ -132,10 +132,10 @@ int main(void)
 			first = z;
 			if((first*2)>=10)
 			{
-				_first = (first) % 10;
-				__first= (first/10)%10;
-				printf("First: %li\n", _first);
-				printf("First: %li\n", __first);
+				_first = (first*2) % 10;
+				__first= ((first*2)/10)%10;
+				printf("_First: %li\n", _first);
+				printf("-First: %li\n", __first);
 			}
 			else
 			{
