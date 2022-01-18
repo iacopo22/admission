@@ -118,7 +118,7 @@ int main(void)
 		}
 	}
 
-int sum = last;
+int sum = last + thirdtolast + fifthtolast + ;
 printf("%li", last);
 
 
