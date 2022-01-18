@@ -6,146 +6,144 @@
 
 int main(void)
 {
-// Get the number of the card from the user
-long ncard = get_long("Number of the card: ");
+    // Get the number of the card from the user
+    long ncard = get_long("Number of the card: ");
+
+    int y;
+    long z;
+    long c;
+    long last;
+    long secondtolast, _secondtolast, __secondtolast;
+    long thirdtolast;
+    long fourthtolast, _fourthtolast, __fourthtolast;
+    long fifthtolast;
+    long sixthtolast, _sixthtolast, __sixthtolast;
+    long seventhtolast;
+    long eighthtolast, _eighthtolast, __eighthtolast;
+    long ninthtolast;
+    long tenthtolast, _tenthtolast, __tenthtolast;
+    long sixth;
+    long fifth, _fifth, __fifth;
+    long fourth;
+    long third, _third, __third;
+    long second;
+    long first, _first, __first;
 
 
-int y;
-long z;
-long c;
-long last;
-long secondtolast, _secondtolast, __secondtolast;
-long thirdtolast;
-long fourthtolast, _fourthtolast, __fourthtolast;
-long fifthtolast;
-long sixthtolast, _sixthtolast, __sixthtolast;
-long seventhtolast;
-long eighthtolast, _eighthtolast, __eighthtolast;
-long ninthtolast;
-long tenthtolast, _tenthtolast, __tenthtolast;
-long sixth;
-long fifth, _fifth, __fifth;
-long fourth;
-long third, _third, __third;
-long second;
-long first, _first, __first;
 
-
-
-for(y=-1; y<=16; y++)
-{
-	c = (ncard / pow(10, y));
-	z = c % 10;
-
-	switch(y)
+    for (y = -1; y <= 16; y++)
 	{
-	case 0: (y = 0);
-		last = z;
+		c = (ncard / pow(10, y));
+		z = c % 10;
+
+	switch (y)
+	{
+		case 0:
+			last = z;
 		break;
 
-	case 1:
-		secondtolast = z;
-		if((secondtolast*2) >= 10)
-		{
-			_secondtolast = (secondtolast*2) % 10;
-			__secondtolast = ((secondtolast*2)/10)%10;
-			secondtolast = 0;
-		}
-		else
-		{
-			_secondtolast = 0;
-			__secondtolast = 0;
-		}
+		case 1:
+			secondtolast = z;
+			if((secondtolast * 2) >= 10)
+			{
+				_secondtolast = (secondtolast * 2) % 10;
+				__secondtolast = ((secondtolast * 2) / 10) % 10;
+				secondtolast = 0;
+			}
+			else
+			{
+				_secondtolast = 0;
+				__secondtolast = 0;
+			}
 		break;
 
-	case 2:
-		thirdtolast = z;
-			break;
-
-	case 3:
-
-		fourthtolast = z;
-		if((fourthtolast*2) >= 10)
-		{
-			_fourthtolast = (fourthtolast*2) % 10;
-			__fourthtolast = ((fourthtolast*2)/10) % 10;
-			fourthtolast = 0;
-		}
-		else
-		{
-			_fourthtolast = 0;
-			__fourthtolast = 0;
-		}
+		case 2:
+			thirdtolast = z;
 		break;
 
-	case 4:
+		case 3:
 
-		fifthtolast = z;
+			fourthtolast = z;
+			if ((fourthtolast * 2) >= 10)
+			{
+				_fourthtolast = (fourthtolast * 2) % 10;
+				__fourthtolast = ((fourthtolast * 2) / 10) % 10;
+				fourthtolast = 0;
+			}
+			else
+			{
+				_fourthtolast = 0;
+				__fourthtolast = 0;
+			}
 		break;
 
-	case 5:
+		case 4:
 
-		sixthtolast = z;
-		if((sixthtolast*2) >= 10)
-		{
-			_sixthtolast = (sixthtolast*2) % 10;
-			__sixthtolast = ((sixthtolast*2)/10)%10;
-			sixthtolast = 0;
-		}
-		else
-		{
-			_sixthtolast = 0;
-			__sixthtolast = 0;
-		}
+			fifthtolast = z;
 		break;
 
-	case 6:
+		case 5:
 
-		seventhtolast = z;
+			sixthtolast = z;
+			if((sixthtolast * 2) >= 10)
+			{
+				_sixthtolast = (sixthtolast * 2) % 10;
+				__sixthtolast = ((sixthtolast * 2) / 10) % 10;
+				sixthtolast = 0;
+			}
+			else
+			{
+				_sixthtolast = 0;
+				__sixthtolast = 0;
+			}
 		break;
 
-	case 7:
+		case 6:
 
-		eighthtolast = z;
-		if((eighthtolast*2) >= 10)
-		{
-			_eighthtolast = (eighthtolast*2) % 10;
-			__eighthtolast = ((eighthtolast*2)/10)%10;
-			eighthtolast = 0;
-		}
-		else
-		{
-			_eighthtolast = 0;
-			__eighthtolast = 0;
-		}
+			seventhtolast = z;
 		break;
 
-    case 8:
+		case 7:
 
-		ninthtolast = z;
+			eighthtolast = z;
+			if((eighthtolast * 2) >= 10)
+			{
+				_eighthtolast = (eighthtolast * 2 ) % 10;
+				__eighthtolast = ((eighthtolast * 2) / 10) % 10;
+				eighthtolast = 0;
+			}
+			else
+			{
+				_eighthtolast = 0;
+				__eighthtolast = 0;
+			}
 		break;
 
-	case 9:
+    	case 8:
 
-		tenthtolast = z;
-		if((tenthtolast*2)>=10)
-		{
-			_tenthtolast = (tenthtolast*2) % 10;
-			__tenthtolast= ((tenthtolast*2)/10)%10;
-			tenthtolast = 0;
-		}
-		else
-		{
-			_tenthtolast = 0;
-			__tenthtolast = 0;
-		}
+			ninthtolast = z;
+		break;
+
+		case 9:
+
+			tenthtolast = z;
+			if((tenthtolast*2)>=10)
+			{
+				_tenthtolast = (tenthtolast * 2) % 10;
+				__tenthtolast= ((tenthtolast * 2)/ 10) % 10;
+				tenthtolast = 0;
+			}
+			else
+			{
+				_tenthtolast = 0;
+				__tenthtolast = 0;
+			}
 		break;
 
 
-	case 10:
+		case 10:
 
-		 sixth = z;
-		printf("Sixth: %li\n", sixth);
+		 	sixth = z;
 		break;
 
 	case 11:
