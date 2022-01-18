@@ -209,6 +209,7 @@ int main(void)
     int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
 
     int sum_from_secondtolast = first * 2 + _first + __first + third * 2 + _third + __third + fifth * 2 + _fifth + __fifth + tenthtolast * 2
+	
 	                           + _tenthtolast + __tenthtolast + eighthtolast * 2 + _eighthtolast + __eighthtolast + sixthtolast * 2 + _sixthtolast
                                + __sixthtolast + fourthtolast * 2 + _fourthtolast + __fourthtolast + secondtolast * 2 + _secondtolast + __secondtolast;
 
