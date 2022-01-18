@@ -242,7 +242,7 @@ int main(void)
 int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
 printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
-int sum_from_secondtolast = first*2 + _first + __first + third + _third + __third + fifth + _fifth + __fifth + tenthtolast + _tenthtolast + __tenthtolast + eighthtolast + _eighthtolast + __eighthtolast + sixthtolast + _sixthtolast + __sixthtolast + fourthtolast + _fourthtolast + __fourthtolast + secondtolast + _secondtolast + __secondtolast;
+int sum_from_secondtolast = first*2 + _first + __first + third*2 + _third + __third + fifth*2 + _fifth + __fifth + tenthtolast*2 + _tenthtolast + __tenthtolast + eighthtolast*2 + _eighthtolast + __eighthtolast + sixthtolast*2 + _sixthtolast + __sixthtolast + fourthtolast*2 + _fourthtolast + __fourthtolast + secondtolast*2 + _secondtolast + __secondtolast;
 
 printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
