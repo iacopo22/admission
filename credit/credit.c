@@ -249,8 +249,17 @@ printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast)
 int sum = sum_from_secondtolast + sum_from_the_last;
 printf("Sum: %i\n", sum);
 
-for(x=1; true; x++)
+int last_sum = sum % 10;
+printf("Is a zero? %i\n", last_sum);
 
+if ((last_sum) == 0)
+{
+	true;
+}
+else
+{
+	false;
+}
 
 }
 
