@@ -252,18 +252,12 @@ printf("Sum: %i\n", sum);
 int last_sum = sum % 10;
 printf("Is a zero? %i\n", last_sum);
 
-if ((last_sum) == 0)
-{
-	printf("Valid\n");
-	true;
-}
-else
-{
-	printf("Invalid\n");
-	false;
-}
 
-if( pow(10, 14) =< ncard =< 5*(pow(10, 14)) && )
+
+if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && last_sum == 0)
+{
+    printf("ok");
+}
 
 
 
