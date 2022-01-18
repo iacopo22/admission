@@ -13,6 +13,7 @@ int main(void)
 	int y;
 	long z;
 	long c;
+	long last;
 
 
 	for(y=0; y<=16; y++)
@@ -23,7 +24,7 @@ int main(void)
 		switch(y)
 		{
 		case 0: (y = 0);
-			long last = z;
+			last = z;
 			printf("Last: %li\n", last);
 			break;
 
