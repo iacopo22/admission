@@ -56,6 +56,8 @@ int main(void)
 			}
 			else
 			{
+				_secondtolast = 0;
+				__secondtolast = 0;
 				printf("Secondtolast: %li\n", secondtolast);
 			}
 			break;
@@ -78,6 +80,8 @@ int main(void)
 			}
 			else
 			{
+				_fourthtolast = 0;
+				__fourthtolast = 0;
 				printf("Fourthtolast: %li\n", fourthtolast);
 			}
 			break;
@@ -101,6 +105,8 @@ int main(void)
 			}
 			else
 			{
+				_sixthtolast = 0;
+				__sixthtolast = 0;
 				printf("Sixthtolast: %li\n", sixthtolast);
 			}
 			break;
@@ -124,6 +130,8 @@ int main(void)
 			}
 			else
 			{
+				_eighthtolast = 0;
+				__eighthtolast = 0;
 				printf("Eighthtolast: %li\n", eighthtolast);
 			}
 			break;
@@ -147,6 +155,8 @@ int main(void)
 			}
 			else
 			{
+				_tenthtolast = 0;
+				__tenthtolast = 0;
 				printf("Tenthtolast: %li\n", tenthtolast);
 			}
 			break;
@@ -171,6 +181,8 @@ int main(void)
 			}
 			else
 			{
+				_fifth = 0;
+				__fifth = 0;
 				printf("Fifth: %li\n", fifth);
 			}
 			break;
@@ -194,6 +206,8 @@ int main(void)
 			}
 			else
 			{
+				_third = 0;
+				__third = 0;
 				printf("Third: %li\n", third);
 			}
 			break;
@@ -228,7 +242,8 @@ int main(void)
 int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
 printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
-int sum_from_secondtolast = first*2 + _first + __first;
+int sum_from_secondtolast = first*2 + _first + __first + third + _third + __third + fifth + _fifth + __fifth + tenthtolast + _tenthtolast + __tenthtolast + eighthtolast + _eighthtolast + __eighthtolast + sixthtolast + _sixthtolast + __sixthtolast + fourthtolast + _fourthtolast + __fourthtolast + secondtolast + _secondtolast + __secondtolast;
+
 printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
 
