@@ -208,7 +208,7 @@ int main(void)
 			{
 				_third = 0;
 				__third = 0;
-				printf("Third: %li\n", omunco);
+				printf("Third: %li\n", third);
 			}
 			break;
 
