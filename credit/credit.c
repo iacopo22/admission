@@ -14,22 +14,21 @@ int main(void)
 	long z;
 	long c;
 	long last;
-	long first;
-	long _first, __first;
-	long secondtolast;
+	long secondtolast, _secondtolast, -secondtolast;
 	long thirdtolast;
-	long fourthtolast;
+	long fourthtolast, _fourthtolast, -fourthtolast;
 	long fifthtolast;
-	long sixthtolast;
+	long sixthtolast, _sixthtolast, -sixthtolast;
 	long seventhtolast;
-	long eighthtolast;
+	long eighthtolast, -eighthtolast, _eighthtolast;
 	long ninthtolast;
-	long tenthtolast;
+	long tenthtolast, -tenthtolast, _tenthtolast;
 	long sixth;
-	long fifth;
+	long fifth, -fifth, _fifth;
 	long fourth;
-	long third;
+	long third, _third, -third;
 	long second;
+	long first, _first, -first;
 
 
 
@@ -72,12 +71,12 @@ int main(void)
 			{
 				_fourthtolast = (fourthtolast*2) % 10;
 				-fourthtolast = ((fourthtolast*2)/10)%10;
-				printf("_Eighthtolast: %li\n", _fourthtolast);
-				printf("-Eighthtolast: %li\n", -fourthtolast);
+				printf("_Fourthtolast: %li\n", _fourthtolast);
+				printf("-Fourthtolast: %li\n", -fourthtolast);
 			}
 			else
 			{
-				printf("Eighthtolast: %li\n", fourthtolast);
+				printf("Fourthtolast: %li\n", fourthtolast);
 			}
 			break;
 
@@ -92,17 +91,15 @@ int main(void)
 			sixthtolast = z;
 			if((sixthtolast*2) >= 10)
 			{
-				_eighthtolast = (sixthtolast*2) % 10;
-				__eighthtolast = ((sixthtolast*2)/10)%10;
-				printf("_Eighthtolast: %li\n", _sixthtolast);
-				printf("-Eighthtolast: %li\n", -sixthtolast);
+				_sixthtolast = (sixthtolast*2) % 10;
+				-sixthtolast = ((sixthtolast*2)/10)%10;
+				printf("_Sixthtolast: %li\n", _sixthtolast);
+				printf("-Sixthtolast: %li\n", -sixthtolast);
 			}
 			else
 			{
-				printf("Eighthtolast: %li\n", eighthtolast);
+				printf("Sixthtolast: %li\n", sixthtolast);
 			}
-
-			printf("Sixth to last: %li\n", sixthtolast);
 			break;
 
 		case 6:
@@ -116,8 +113,8 @@ int main(void)
 			eighthtolast = z;
 			if((eighthtolast*2) >= 10)
 			{
-				_eighthtolast = (tenthtolast*2) % 10;
-				-eighthtolast = ((tenthtolast*2)/10)%10;
+				_eighthtolast = (eighthtolast*2) % 10;
+				-eighthtolast = ((eighthtolast*2)/10)%10;
 				printf("_Eighthtolast: %li\n", _eighthtolast);
 				printf("-Eighthtolast: %li\n", -eighthtolast);
 			}
@@ -168,7 +165,7 @@ int main(void)
 			}
 			else
 			{
-				printf("First: %li\n", fifth);
+				printf("Fifth: %li\n", fifth);
 			}
 			break;
 
@@ -183,8 +180,8 @@ int main(void)
 			third = z;
 			if((third*2) >= 10)
 			{
-				_third = (first*2) % 10;
-				-third = ((first*2)/10)%10;
+				_third = (third*2) % 10;
+				-third = ((third*2)/10)%10;
 				printf("_Third: %li\n", _third);
 				printf("-Third: %li\n", -third);
 			}
