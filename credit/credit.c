@@ -50,6 +50,7 @@ int main(void)
 			{
 				_secondtolast = (secondtolast*2) % 10;
 				__secondtolast = ((secondtolast*2)/10)%10;
+				secondtolast = 0;
 				printf("_Secondtolast: %li\n", _secondtolast);
 				printf("__Secondtolast: %li\n", __secondtolast);
 			}
@@ -70,7 +71,8 @@ int main(void)
 			if((fourthtolast*2) >= 10)
 			{
 				_fourthtolast = (fourthtolast*2) % 10;
-				__fourthtolast = ((fourthtolast*2)/10)%10;
+				__fourthtolast = ((fourthtolast*2)/10) % 10;
+				fourthtolast = 0;
 				printf("_Fourthtolast: %li\n", _fourthtolast);
 				printf("__Fourthtolast: %li\n", __fourthtolast);
 			}
@@ -93,6 +95,7 @@ int main(void)
 			{
 				_sixthtolast = (sixthtolast*2) % 10;
 				__sixthtolast = ((sixthtolast*2)/10)%10;
+				sixthtolast = 0;
 				printf("_Sixthtolast: %li\n", _sixthtolast);
 				printf("__Sixthtolast: %li\n", __sixthtolast);
 			}
@@ -115,6 +118,7 @@ int main(void)
 			{
 				_eighthtolast = (eighthtolast*2) % 10;
 				__eighthtolast = ((eighthtolast*2)/10)%10;
+				eighthtolast = 0;
 				printf("_Eighthtolast: %li\n", _eighthtolast);
 				printf("__Eighthtolast: %li\n", __eighthtolast);
 			}
@@ -137,6 +141,7 @@ int main(void)
 			{
 				_tenthtolast = (tenthtolast*2) % 10;
 				__tenthtolast= ((tenthtolast*2)/10)%10;
+				tenthtolast = 0;
 				printf("_Tenthtolast: %li\n", _tenthtolast);
 				printf("__Tenthtolast: %li\n", __tenthtolast);
 			}
@@ -160,6 +165,7 @@ int main(void)
 			{
 				_fifth = (fifth*2) % 10;
 				__fifth = ((fifth*2)/10)%10;
+				fifth = 0;
 				printf("_Fifth: %li\n", _fifth);
 				printf("__Fifth: %li\n", __fifth);
 			}
@@ -182,6 +188,7 @@ int main(void)
 			{
 				_third = (third*2) % 10;
 				__third = ((third*2)/10)%10;
+				third = 0;
 				printf("_Third: %li\n", _third);
 				printf("__Third: %li\n", __third);
 			}
@@ -219,7 +226,7 @@ int main(void)
 int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
 printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
-int sum_from_secondtolast = first + _first + __first;
+int sum_from_secondtolast = first + _first + __first + third + _third + __third + fifth + _fifth + __fifth + tenthtolast + __tenthtolast + _tenthtolast + eighthtolast + _eighthtolast + __eighthtolast + sixthtolast + _sixthtolast + __sixthtolast + fourthtolast + _fourthtolast + __fourthtolast + secondtolast + _secondtolast + __secondtolast;
 printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
 
