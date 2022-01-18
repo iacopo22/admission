@@ -135,8 +135,10 @@ int main(void)
 	}
 
 int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
-printf("Sum of the alternative digits from the last one: %i\n", sum_from_the_last);
+printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
+int sum_from_secondtolast = secondtolast*2 + fourthtolast*2 + sixthtolast*2 + eighthtolast*2 + tenthtolast*2 + fifth*2 + third*2 + first*2;
+printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
 
 
