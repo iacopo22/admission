@@ -204,6 +204,7 @@ int main(void)
 			{
 				_first = (first*2) % 10;
 				__first = ((first*2)/10)%10;
+				first = 0;
 				printf("_First: %li\n", _first);
 				printf("__First: %li\n", __first);
 			}
