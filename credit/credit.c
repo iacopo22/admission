@@ -29,7 +29,7 @@ int main(void)
 	long fourth;
 	long third;
 	long second;
-	long first;
+
 
 
 	for(y=0; y<=16; y++)
@@ -134,8 +134,8 @@ int main(void)
 		}
 	}
 
-int sum = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
-printf("%li", sum);
+int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
+printf("Sum of the alternative digits from the last one: %i\n", sum_from_the_last);
 
 
 
