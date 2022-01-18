@@ -219,7 +219,7 @@ int main(void)
 			{
 				_first = 0;
 				__first = 0;
-				printf("__First: %li\n", __first);
+				printf("__First: %li\n", first);
 			}
 			break;
 		}
