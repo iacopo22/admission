@@ -239,14 +239,14 @@ else if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second =
 {
 	printf("MASTERCARD\n");
 }
-else if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
+else if( pow(10, 12) <= ncard <= 5 * (pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
 {
-	printf("VISA\n");
+    printf("VISA\n");
 }
-else
-{
-	printf("INVALID\n");
-}
+  else
+  {
+    printf("INVALID\n");
+  }
 
 
 
