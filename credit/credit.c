@@ -167,13 +167,13 @@ for(y=-1; y<=16; y++)
 		}
 		break;
 
-	case 12:
+    case 12:
 
 		fourth = z;
 		printf("Fourth: %li\n", fourth);
 		break;
 
-	case 13:
+    case 13:
 
 		third = z;
 		if((third*2) >= 10)
@@ -189,41 +189,38 @@ for(y=-1; y<=16; y++)
 		}
 		break;
 
-	case 14:
+    case 14:
 
 		second = z;
 		printf("Second: %li\n", second);
 		break;
 
-	case 15:
+    case 15:
 
-		first = z;
-		if((first*2) >= 10)
-		{
-			_first = (first*2) % 10;
-				__first = ((first*2)/10)%10;
-				first = 0;
-				printf("_First: %li\n", _first);
-				printf("__First: %li\n", __first);
-			}
-			else
-			{
-				_first = 0;
-				__first = 0;
-				printf("First: %li\n", first);
-			}
-			break;
+    first = z;
+	if((first*2) >= 10)
+	{
+		_first = (first*2) % 10;
+			__first = ((first*2)/10)%10;
+			first = 0;
 		}
-	}
+		else
+		{
+       _first = 0;
+       __first = 0;
+     }
+             break;
+        }
+    }
 
     int sum_from_the_last = last + thirdtolast + fifthtolast + seventhtolast + ninthtolast + sixth + fourth + second;
     printf("Sum of alternative digits from last one: %i\n", sum_from_the_last);
 
     int sum_from_secondtolast = first * 2 + _first + __first + third * 2 + _third + __third + fifth * 2 + _fifth + __fifth + tenthtolast * 2
 	                           + _tenthtolast + __tenthtolast + eighthtolast * 2 + _eighthtolast + __eighthtolast + sixthtolast * 2 + _sixthtolast
-							   + __sixthtolast + fourthtolast * 2 + _fourthtolast + __fourthtolast + secondtolast * 2 + _secondtolast + __secondtolast;
+                               + __sixthtolast + fourthtolast * 2 + _fourthtolast + __fourthtolast + secondtolast * 2 + _secondtolast + __secondtolast;
 
-printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
+    printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
     int sum = sum_from_secondtolast + sum_from_the_last;
     printf("Sum: %i\n", sum);
@@ -233,23 +230,23 @@ printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast)
 
 
 
-if( pow(10, 14) <= ncard <= 5 * (pow(10, 14)) && (last_sum == 0) && (second == 3) && ((_third == 4 && __third == 1) || third == 4))
-{
-	printf("AMEX\n");
-}
-else if( pow(10, 15) <= ncard <= 6 * (pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4
+    if( pow(10, 14) <= ncard <= 5 * (pow(10, 14)) && (last_sum == 0) && (second == 3) && ((_third == 4 && __third == 1) || third == 4))
+    {
+        printf("AMEX\n");
+    }
+    else if( pow(10, 15) <= ncard <= 6 * (pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4
                || second == 5) && (_first == 0 && __first == 1))
-{
+    {
         printf("MASTERCARD\n");
-}
-else if( pow(10, 12) <= ncard <= 5 * (pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
-{
+    }
+   else if( pow(10, 12) <= ncard <= 5 * (pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
+   {
        printf("VISA\n");
-}
-  else
-  {
-       printf("INVALID\n");
-  }
+   }
+     else
+     {
+        printf("INVALID\n");
+     }
 
 
 
