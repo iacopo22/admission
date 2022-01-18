@@ -258,11 +258,11 @@ if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) 
 {
 	printf("AMEX\n");
 }
-if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4 || second == 5) && ( _first == 0 && __first == 1) )
+else if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 1 || second == 2 || second == 3 || second == 4 || second == 5) && ( _first == 0 && __first == 1) )
 {
 	printf("MASTERCARD\n");
 }
-if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
+else if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
 {
 	printf("VISA\n");
 }
