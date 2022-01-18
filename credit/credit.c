@@ -260,7 +260,11 @@ if( pow(10, 14) <= ncard <= 5*(pow(10, 14)) && (last_sum == 0) && (second == 3) 
 }
 if
 {
-	printf("Invalid\n");
+	printf("Mastercard\n");
+}
+else
+{
+	printf("Invalid");
 }
 
 
