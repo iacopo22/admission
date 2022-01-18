@@ -262,7 +262,7 @@ if( pow(10, 15) <= ncard <= 6*(pow(10, 15)) && (last_sum == 0) && (second == 1 |
 {
 	printf("Mastercard\n");
 }
-if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 ))
+if( pow(10, 12) <= ncard <= 5*(pow(10, 15)) && (last_sum == 0) && (first == 4 || second == 4 || third == 4 || fourth == 4))
 {
 	printf("Visa\n");
 }
