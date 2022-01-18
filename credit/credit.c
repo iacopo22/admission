@@ -263,7 +263,7 @@ else
 	false;
 }
 
-if( pow(10, 14))
+if( pow(10, 14) =< ncard =< 5*(pow(10, 14)) && )
 
 
 
