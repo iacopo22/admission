@@ -120,7 +120,7 @@ for(y=-1; y<=16; y++)
 		}
 		break;
 
-	case 8:
+    case 8:
 
 		ninthtolast = z;
 		break;
