@@ -39,7 +39,7 @@ int main(void)
 
 		switch(y)
 		{
-		case 0:
+		case 0: (y = 0);
 			last = z;
 			printf("Last: %li\n", last);
 			break;
