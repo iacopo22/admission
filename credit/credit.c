@@ -246,7 +246,8 @@ int sum_from_secondtolast = first*2 + _first + __first + third*2 + _third + __th
 
 printf("Sum of alternative digits from second one: %i\n", sum_from_secondtolast);
 
-
+int sum = sum_from_secondtolast + sum_from_the_last;
+printf("Sum: %i\n", sum);
 
 }
 
