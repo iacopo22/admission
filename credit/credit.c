@@ -130,7 +130,7 @@ int main(void)
 		case 15:
 
 			first = z;
-			if(first>=10)
+			if((first*2)>=10)
 			{
 				_first = (first) % 10;
 				__first= (first/10)%10;
