@@ -118,7 +118,17 @@ int main(void)
 		case 13:
 
 			third = z;
-			printf("Third: %li\n", third);
+			if((third*2)>=10)
+			{
+				_first = (first*2) % 10;
+				__first= ((first*2)/10)%10;
+				printf("_Third: %li\n", _third);
+				printf("-Third: %li\n", __third);
+			}
+			else
+			{
+				printf("Third: %li\n", third);
+			}
 			break;
 
 		case 14:
