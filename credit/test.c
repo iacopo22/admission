@@ -21,7 +21,7 @@ bool triangle(float a, float b, float c)
 		return false;
 	}
 
-	if(a < 0 || b < 0 || c < 0)
+	if(a <= 0 || b <= 0 || c <= 0)
 	{
 		return false;
 	}
