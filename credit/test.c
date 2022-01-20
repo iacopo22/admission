@@ -11,11 +11,15 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
-	bool f;
-
-	 f = triangle(float x, float y, float z);
-
-	printf("%d\n", f);
+	bool triangle(float x, float y, float z);
+	if (& triangle x, y, z)
+	{
+		printf("Valid");
+	}
+	else
+	{
+		printf("Invalid");
+	}
 
 }
 
