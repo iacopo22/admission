@@ -11,19 +11,20 @@ int main(void)
 
 	bool triangle(float x, float y, float z);
 
-
-
 }
 
 
 bool triangle(float a, float b, float c)
 {
-	if((a + b > c || a + c > b || c + b > a) && (a  c >= 0 b, c >= 0))
-	{
-		return true;
-	}
-	else
+	if(a + b <= c || a + c <= b || c + b <= a)
 	{
 		return false;
 	}
+
+	if(a < 0 || b < 0 || c < 0)
+	{
+		return false;
+	}
+
+	return true;
 }
