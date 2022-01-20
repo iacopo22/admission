@@ -22,7 +22,6 @@ int main(void)
 
 bool triangle(float a, float b, float c)
 {
-	bool n;
 	if(a + b <= c || a + c <= b || c + b <= a)
 	{
 		return false;
@@ -30,8 +29,8 @@ bool triangle(float a, float b, float c)
 
 	if(a <= 0 || b <= 0 || c <= 0)
 	{
-		return n = false;
+		return false;
 	}
 
-	return n = true;
+	return true;
 }
