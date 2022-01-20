@@ -1,8 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdbool.h>
 
-
-//Declare function
+// Initialize function
 bool triangle(float a, float b, float c);
 
 int main(void)
@@ -28,15 +28,16 @@ int main(void)
 // Define function
 bool triangle(float a, float b, float c)
 {
+	bool n;
 	if(a + b <= c || a + c <= b || c + b <= a)
 	{
-		return false;
+		return n = false;
 	}
 
 	if(a <= 0 || b <= 0 || c <= 0)
 	{
-		return false;
+		return n = false;
 	}
 
-	return true;
+	return n = true;
 }
