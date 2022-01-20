@@ -10,8 +10,8 @@ int main(void)
 	float z = get_float("One of the side: ");
 
 	bool triangle(float x, float y, float z);
-	bool n = true;
-	printf("%B\n", n)
+	bool n;
+	printf("%d\n", bool n);
 
 }
 
