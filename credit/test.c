@@ -9,11 +9,11 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
-	bool n;
+	bool f;
 
-	 n = _Bool triangle(float x, float y, float z);
+	 f = bool triangle(float x, float y, float z);
 
-	printf("%d\n", n);
+	printf("%d\n", f);
 
 }
 
@@ -23,12 +23,12 @@ bool triangle(float a, float b, float c)
 	bool n;
 	if(a + b <= c || a + c <= b || c + b <= a)
 	{
-		return n=false;
+		return n = false;
 	}
 
 	if(a <= 0 || b <= 0 || c <= 0)
 	{
-		return n=false;
+		return n = false;
 	}
 
 	return n=true;
