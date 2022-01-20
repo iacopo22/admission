@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-
+//Declare function
 bool triangle(float a, float b, float c);
 
 int main(void)
@@ -11,6 +11,7 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
+	// Recall function
 	bool triangle(float x, float y, float z);
 
 	if (triangle (x, y, z))
@@ -24,7 +25,7 @@ int main(void)
 
 }
 
-
+// Define function
 bool triangle(float a, float b, float c)
 {
 	if(a + b <= c || a + c <= b || c + b <= a)
