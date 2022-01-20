@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
-
+#include <stdbool.h>
+#define bool _Bool
 
 bool triangle(float a, float b, float c);
 
