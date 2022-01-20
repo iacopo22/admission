@@ -11,17 +11,12 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
+	bool j;
+
 	// Recall function
 	bool triangle(float x, float y, float z);
 
-	if (triangle (x, y, z))
-	{
-		printf("Valid\n");
-	}
-	else
-	{
-		printf("Invalid\n");
-	}
+	printf(j ? "true" : "false");
 
 }
 
