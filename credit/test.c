@@ -1,29 +1,29 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int triangle(int a, int b, int c);
+void triangle(float a, float b, float c);
 
 int main(void)
 {
-	float x = get_int("One of the side: ");
-	float y = get_int("One of the side: ");
-	float z = get_int("One of the side: ");
+	float x = get_float("One of the side: ");
+	float y = get_float("One of the side: ");
+	float z = get_float("One of the side: ");
 
-	int triangle(int x, int y, int z);
+	bool triangle(float x, float y, float z);
 
 
 
 }
 
 
-int triangle(int a, int b, int c)
+bool triangle(float a, float b, float c)
 {
 	if(a + b > c || a + c > b || c + b > a)
 	{
-		return 1;
+		return true;
 	}
 	else
 	{
-		return 0;
+		return false;
 	}
 }
