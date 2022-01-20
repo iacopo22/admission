@@ -25,7 +25,7 @@ bool triangle(float a, float b, float c)
 	bool n;
 	if(a + b <= c || a + c <= b || c + b <= a)
 	{
-		return n = false;
+		return false;
 	}
 
 	if(a <= 0 || b <= 0 || c <= 0)
@@ -33,5 +33,5 @@ bool triangle(float a, float b, float c)
 		return n = false;
 	}
 
-	return n=true;
+	return n = true;
 }
