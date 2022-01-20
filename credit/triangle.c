@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <stdbool.h>
-#define bool _Bool
+
+
 
 bool triangle(float a, float b, float c);
 
@@ -12,13 +12,14 @@ int main(void)
 	float z = get_float("One of the side: ");
 
 	bool triangle(float x, float y, float z);
-	if (& triangle x, y, z)
+
+	if (triangle (x, y, z))
 	{
-		printf("Valid");
+		printf("Valid\n");
 	}
 	else
 	{
-		printf("Invalid");
+		printf("Invalid\n");
 	}
 
 }
