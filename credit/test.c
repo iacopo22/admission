@@ -9,9 +9,11 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
-	bool triangle(float x, float y, float z);
 	bool n;
-	printf("%d\n", bool n);
+
+	 n = _Bool triangle(float x, float y, float z);
+
+	printf("%d\n", n);
 
 }
 
