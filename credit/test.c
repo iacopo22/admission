@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void triangle(float a, float b, float c);
+bool triangle(float a, float b, float c);
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
 
 bool triangle(float a, float b, float c)
 {
-	if(a + b > c || a + c > b || c + b > a)
+	if((a + b > c || a + c > b || c + b > a) && (a  c >= 0 b, c >= 0))
 	{
 		return true;
 	}
