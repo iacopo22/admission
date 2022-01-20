@@ -13,7 +13,7 @@ int main(void)
 
 	bool f;
 
-	 f = bool triangle(float x, float y, float z);
+	 f = triangle(float x, float y, float z);
 
 	printf("%d\n", f);
 
