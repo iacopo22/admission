@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int loop_elements(int);
+int loop_elements(int i);
 
 int main(void)
 
