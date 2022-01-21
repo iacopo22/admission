@@ -11,10 +11,13 @@ int main(void)
 	int test[z];
 }
 
-int loop_elements(int)
+int loop_elements(int i)
 {
-	for(i = 0; i < 100; i++)
+	i = 0;
+	do
 	{
-		return i;
+		i++;
 	}
+	while (i < 100)
+	return i;
 }
