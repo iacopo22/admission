@@ -1,26 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int loop_elements(int i);
 
 int main(void)
-
 {
-	int z = 0;
-	z = loop_elements(z);
-	printf("%i\n", z);
-	int test [loop_elements(z)];
-	printf("%i\n", loop_elements(43));
-}
-
-int loop_elements(int i)
-{
-	i = 0;
-	do
+	for ( int i = 0; i < 100; i++)
 	{
-		printf("%i\n", i);
-		i++;
+		int array[i] = i;
+		printf("%i", array[i]);
 	}
-	while (i < 100);
-	return i;
 }
