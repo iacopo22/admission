@@ -7,8 +7,7 @@ int main(void)
 	for ( int i = 0; i < 100; i++)
 	{
 		int array[i];
+		printf("%i\n", array[i]);
 	}
-	
-	int array [i];
-	printf("%i", array[5]);
+
 }
