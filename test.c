@@ -8,8 +8,8 @@ int main(void)
 {
 	int z = 0;
 	z = loop_elements(z);
-	int test[z];
-	printf ("%i\n", test[z]);
+	int test[loop_elements(z)];
+	printf ("%i\n", test[loop_elements(z)]);
 }
 
 int loop_elements(int i)
