@@ -10,7 +10,7 @@ int main(void)
 	z = loop_elements(z);
 	printf("%i\n", z);
 	int test [loop_elements(z)];
-	printf("%i\n", loop_elements(z));
+	printf("%i\n", loop_elements(43));
 }
 
 int loop_elements(int i)
