@@ -6,9 +6,10 @@ int loop_elements(int i);
 int main(void)
 
 {
-	int z;
-	z = loop_elements;
+	int z = 0;
+	z = loop_elements(z);
 	int test[z];
+	printf ("%i\n", test[z]);
 }
 
 int loop_elements(int i)
@@ -18,6 +19,6 @@ int loop_elements(int i)
 	{
 		i++;
 	}
-	while (i < 100)
+	while (i < 100);
 	return i;
 }
