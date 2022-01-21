@@ -1,12 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int loop_elements(void);
+int loop_elements(int);
 
 int main(void)
 
 {
-	int z = loop_elements;
+	int z;
+	z = loop_elements;
 	int test[z];
 }
 
