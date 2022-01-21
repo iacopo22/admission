@@ -6,7 +6,8 @@ int main(void)
 {
 	for ( int i = 0; i < 100; i++)
 	{
-		int array[i] = i;
-		printf("%i", array[i]);
+		int array[i];
+
 	}
+	printf("%i", int array[5]);
 }
