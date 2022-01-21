@@ -19,6 +19,7 @@ int loop_elements(int i)
 	do
 	{
 		i++;
+		printf("%i\n", i);
 	}
 	while (i < 100);
 	return i;
