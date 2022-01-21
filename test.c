@@ -9,6 +9,8 @@ int main(void)
 	int z = 0;
 	z = loop_elements(z);
 	printf("%i\n", z);
+	int test [loop_elements(z)];
+	printf("%i\n", loop_elements(z));
 }
 
 int loop_elements(int i)
@@ -17,6 +19,7 @@ int loop_elements(int i)
 	do
 	{
 		printf("%i\n", i);
+		i++;
 	}
 	while (i < 100);
 	return i;
