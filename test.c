@@ -6,11 +6,11 @@ int loop_elements(void);
 int main(void)
 
 {
-	
-	int test[loop_elements];
+	int z = loop_elements;
+	int test[z];
 }
 
-int loop_elements(void)
+int loop_elements(int)
 {
 	for(i = 0; i < 100; i++)
 	{
