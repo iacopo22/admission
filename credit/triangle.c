@@ -11,28 +11,32 @@ int main(void)
 	float y = get_float("One of the side: ");
 	float z = get_float("One of the side: ");
 
-	bool j;
 
 	// Recall function
-	bool triangle(float x, float y, float z);
+	if (triangle (x, y, z))
+	{
+		printf("Valid triangle\n");
+	}
+	else
+	{
+		printf("Invalid triangle\n");
+	}
 
-	printf(j ? "true" : "false");
 
 }
 
 // Define function
 bool triangle(float a, float b, float c)
 {
-	bool n;
 	if(a + b <= c || a + c <= b || c + b <= a)
 	{
-		return n = false;
+		return false;
 	}
 
 	if(a <= 0 || b <= 0 || c <= 0)
 	{
-		return n = false;
+		return false;
 	}
 
-	return n = true;
+	return true;
 }
