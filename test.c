@@ -1,10 +1,14 @@
+#include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    float score1 = 72;
-    float score2 = 73;
-    float score3 = 33;
-
-    printf("Average: %f\n", (score1 + score2 + score3) / 3);
+    string s = get_string("Input:  ");
+    printf("Output: ");
+    for (int i = 0; i < strlen(s); i++)
+    {
+        printf("%c", s[i]);
+    }
+    printf("\n");
 }
