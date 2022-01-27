@@ -1,16 +1,15 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
 int main(void)
 {
-    string s = get_string("Input:  ");
-    printf("Output: ");
-	int n = strlen(s);
-    for (int i = 0; i < n; i++)
+    string s = get_string("Before: ");
+    printf("After:  ");
+    for (int i = 0, n = strlen(s); i < n; i++)
     {
-        printf("%c", s[i]);
+        printf("%c", toupper(s[i]));
     }
-	printf("\n");
-	printf("%i\n", n);
+    printf("\n");
 }
