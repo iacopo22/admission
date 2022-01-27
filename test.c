@@ -6,9 +6,11 @@ int main(void)
 {
     string s = get_string("Input:  ");
     printf("Output: ");
-    for (int i = 0; i < strlen(s); i++)
+	int n = strlen(s);
+    for (int i = 0; i < n; i++)
     {
         printf("%c", s[i]);
     }
-    printf("\n");
+	printf("\n");
+	printf("%i\n", n);
 }
