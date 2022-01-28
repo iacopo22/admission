@@ -23,7 +23,7 @@ int main(void)
 
 int compute_score(string word)
 {
-	int POINTS[0] = 
+	int POINTS[0] = a
     printf("int point [1]");
 	return POINTS[1];
 }
