@@ -24,4 +24,5 @@ int main(void)
 int compute_score(string word)
 {
     printf("int point [1]");
+	return POINTS[1];
 }
