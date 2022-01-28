@@ -25,6 +25,6 @@ int compute_score(string word)
 {
 	char a;
 	POINTS[0] == a;
-    printf("int point [1]");
-	return POINTS[1];
+    printf("int point [0]");
+	return POINTS[0];
 }
