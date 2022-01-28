@@ -23,8 +23,5 @@ int main(void)
 
 int compute_score(string word)
 {
-	char a;
-	a = POINTS[0];
-    printf("%i\n", a);
-	return a;
+	
 }
