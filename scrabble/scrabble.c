@@ -23,5 +23,5 @@ int main(void)
 
 int compute_score(string word)
 {
-    
+    printf("int point [1]");
 }
