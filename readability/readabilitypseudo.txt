@@ -1,2 +1,3 @@
 I should use the array and the ASCII.
 
+Now I start promping the user for a string (the text to analyse)
