@@ -1,0 +1,2 @@
+I should use the array and the ASCII.
+
