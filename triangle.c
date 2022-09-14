@@ -8,9 +8,12 @@ int main(void)
 	bool valid_triangle;
 }
 
-bool valid_triangle(int x, int y, int z)
+bool valid_triangle(int l1, int l2, int l3)
 {
-	int l1, int l2, int l3 > 0;
+	 l1 > 0;
+	 l2 > 0;
+	 l3 > 0;
+
 	if (l1+l2>l3, l2+l3>l1, l1+l3>l2)
 	{
 		return 0;
