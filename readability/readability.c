@@ -7,6 +7,6 @@ int main(void)
 	printf("Text: %s\n", text);
 
 	int count_letters(string text);
-	printf("Number of letters: %i", int count_letters);
+	printf("Number of letters: %i\n", count_letters);
 
 }
