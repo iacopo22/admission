@@ -12,3 +12,9 @@ int main(void)
 	printf("Number of letters: %i\n", count_letters);
 
 }
+
+
+int count_letters(string text)
+{
+	
+}
