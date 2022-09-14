@@ -22,7 +22,6 @@ bool valid_triangle(int l1, int l2, int l3)
 	else
 	{
 		return false;
-		printf("Fuck off");
 	}
 
 }
