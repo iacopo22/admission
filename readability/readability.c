@@ -7,11 +7,8 @@ int count_letters(string text);
 int main(void)
 {
 	//I want the user to prompt a string, not numbers or symbols
-	do
-	{
-		string text = get_string("Text: ");
-	}
-	while(text == %i);
+	string text = get_string("Text: ");
+
 
 	//Here the program prints the text
 	printf("Text: %s\n", text);
