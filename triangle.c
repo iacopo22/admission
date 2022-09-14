@@ -9,7 +9,7 @@ int main(void)
 	int l2 = get_int("Length of one side: ");
 	int l3 = get_int("Length of one side: ");
 
-	bool valid_triangle;
+	valid_triangle(l1, l2, l3);
 }
 
 bool valid_triangle(int l1, int l2, int l3)
