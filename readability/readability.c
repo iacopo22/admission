@@ -4,6 +4,6 @@
 int main(void)
 {
 	string text = get_string("Text: ");
-	printf("Text: ", text);
-	if (text )
+	printf("Text: %s", text);
+	
 }
