@@ -4,6 +4,6 @@ Now I start promping the user for a string (the text to analyse)
 First problem: the user has to prompt a string, not random symboles and numbers and I have to count only characters.
 
 Probably I should use the conditions with ASCII code?
-String is like an array of character.
 
-I have a text so I cannot find the single letters, I have to divide at first the words, but how? With a loop? For loop?
+String is like an array of character.
+A text is an array of words.
