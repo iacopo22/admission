@@ -27,6 +27,9 @@ int main(void)
 	int sentences = count_sentences(text);
 	printf("Number of sentences: %i\n", sentences);
 
+	float X = float(length/words);
+	printf("X: %f\n", X);
+
 
 	float L = (length/words) * 100.0;
 	float S = (sentences/words) * 100.0;
