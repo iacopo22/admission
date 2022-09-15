@@ -23,10 +23,12 @@ int main(void)
 int count_letters(string text)
 {
 	int i = 0;
-	while (text[i] != "\0")
+	for (int j = 0; j < text [i]; j++)
+	;
 	{
-		int length = strlen(text[i]);
-		i++;
+		int sum = text [i];
+		printf("Sum: %i", sum);
 	}
-	return length;
+	return sum;
+
 }
