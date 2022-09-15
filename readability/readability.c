@@ -23,7 +23,8 @@ int main(void)
 int count_letters(string text)
 {
 	int i = 0;
-	while (text[i] != 32)
+	int j = 0;
+	while (text[i][j] != 32)
 	{
 		int length = strlen(text[i]);
 		i++;
