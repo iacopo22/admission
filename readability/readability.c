@@ -28,8 +28,8 @@ int main(void)
 	printf("Number of sentences: %i\n", sentences);
 
 
-	float L = float(length/words) * 100.0;
-	float S = float(sentences/words) * 100.0;
+	float L = (length/words) * 100.0;
+	float S = (sentences/words) * 100.0;
 
 
 	float index = L * 0.0588 - 0.296 * S - 15.8;
