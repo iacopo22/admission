@@ -20,7 +20,7 @@ int main(void)
 	printf("Length: %i\n", length);
 
 	int words = count_words(text);
-	printf("Number of words: %i\n", words)
+	printf("Number of words: %i\n", words);
 
 
 }
@@ -46,9 +46,12 @@ int count_words(string text)
 	int words = 0;
 	for (int j = 0, n = strlen(text); i < n; i++)
 	{
-		if (isalpha(text[0]) && )
+		if (isalpha(text[0]))
 		{
-
+			if (text[i] == 32)
+			{
+				words++;
+			}
 		}
 		else (text[0] == 32)
 		{
