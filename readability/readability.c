@@ -20,6 +20,7 @@ int main(void)
 	//I recall the function count_words
 	int words = count_words(text);
 
+
 	//I recall the function count_sentences
 	int sentences = count_sentences(text);
 
