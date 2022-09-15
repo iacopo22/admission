@@ -3,8 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 
-//I declare the function
+//I declare the functions
 int count_letters(string text);
+int count_words(string text);
 
 int main(void)
 {
@@ -35,5 +36,8 @@ int count_letters(string text)
 		}
     }
 	return length;
+
+
+//
 
 }
