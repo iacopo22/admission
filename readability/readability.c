@@ -27,7 +27,7 @@ int main(void)
 	printf("Number of sentences: %i\n", sentences);
 
 
-	float index = ((length/words) * 100.0);
+	float index = ((length/words) * 100.0)*0.0588 - 0.296 * sentences/;
 	printf("Index: %f\n", index);
 
 
