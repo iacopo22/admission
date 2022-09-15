@@ -30,7 +30,7 @@ int count_letters(string text)
 		//If the char is equal to 32 (=space) doesn't add one on the length because it's not a letter
 		if (text[i] == 32)
 		{
-			length == length;
+			break;
 		}
         else
 		{
