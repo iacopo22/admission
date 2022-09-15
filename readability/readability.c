@@ -22,9 +22,9 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
-    for (int i = 0, n = strlen(s); i < n; i++)
+    for (int i = 0, n = strlen(text); i < n; i++)
     {
-        printf("%c", s[i]);
+        printf("%c", text[i]);
     }
-    printf("\n");
+	return text[i];
 }
