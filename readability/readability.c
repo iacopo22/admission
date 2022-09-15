@@ -29,7 +29,7 @@ int main(void)
 
 
 	float index = (((length/words) * 100.0)*0.0588 - 0.296 * ((sentences/words) * 100.0) - 15.8);
-	printf("Index: %f\n", round (index));
+	printf("Grade: %f\n", round (index));
 
 
 
