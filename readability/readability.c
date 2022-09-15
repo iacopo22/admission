@@ -25,7 +25,8 @@ int count_letters(string text)
 	{
 		for (int j = 0, n = strlen(arg [i]); j < n; j++)
 		{
-			printf("Characters: %c", string argv[i])
+			printf("Characters: %c", string argv[i][j])
 		}
+		prinf("\n");
 	}
 }
