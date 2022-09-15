@@ -28,7 +28,7 @@ int count_letters(string text)
     for (int i = 0, n = strlen(text); i < n; i++)
     {
 		//If the char is equal to 32 (=space) doesn't add one on the length because it's not a letter
-		if (text[i] == 32)
+		if (0 < text[i] < 64)
 		{
 			break;
 		}
