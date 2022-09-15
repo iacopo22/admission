@@ -19,7 +19,7 @@ int main(void)
 
 	//I recall the function count_letters
     int length = count_letters(text);
-	printf("Length: %i\n", length);
+	printf("Number of letters: %i\n", length);
 
 	int words = count_words(text);
 	printf("Number of words: %i\n", words);
