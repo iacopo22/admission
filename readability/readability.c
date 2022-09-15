@@ -24,12 +24,12 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
-	int z = 0;
+	int length = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        z++;
+        length++;
     }
-	return z;
+	return length;
 
 
 
