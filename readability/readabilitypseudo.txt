@@ -6,7 +6,4 @@ First problem: the user has to prompt a string, not random symboles and numbers 
 Probably I should use the conditions with ASCII code?
 String is like an array of character.
 
-If I use a for loop I can count the number of characters, but I have to use a double loop:
-with one loop I count the numnber of characters until \0 and with the other loop I skip the \0 selecting
-each word.
-
+I have a text so I cannot find the single letters, I have to divide at first the words, but how? With a loop? For loop?
