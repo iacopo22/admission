@@ -26,7 +26,7 @@ int count_letters(int n_words, string text[])
 	{
 		for (int j = 0; j < text[]; j++)
 		{
-			
+			printf("%i", )
 		}
 	}
 }
