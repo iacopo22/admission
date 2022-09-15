@@ -11,39 +11,39 @@ int count_sentences(string text);
 
 int main(void)
 {
-	//I want the user to prompt a string
+//I want the user to prompt a string
 	string text = get_string("Text: ");
 
-	//I recall the function count_letters
-    int length = count_letters(text);
+//I recall the function count_letters
+int length = count_letters(text);
 
-	//I recall the function count_words
-	int words = count_words(text);
+//I recall the function count_words
+int words = count_words(text);
 
 
-	//I recall the function count_sentences
-	int sentences = count_sentences(text);
+//I recall the function count_sentences
+int sentences = count_sentences(text);
 
-	//Elements of Coleman-Liau index
-	float L = ((float) length / (float) words) * 100;
-	float S = ((float) sentences / (float) words) * 100;
+//Elements of Coleman-Liau index
+float L = ((float) length / (float) words) * 100;
+float S = ((float) sentences / (float) words) * 100;
 
-	//Coleman-Liau index
-	double index = L * 0.0588 - 0.296 * S - 15.8;
+//Coleman-Liau index
+double index = L * 0.0588 - 0.296 * S - 15.8;
 
-	//Conditions of grade greater or equal than 16 or smaller than 1
-	if (index >= 16)
-	{
-		printf("Grade 16+\n");
-	}
-	else if (index < 1)
-	{
-		printf("Before Grade 1\n");
-	}
-	else if (1 <= index && index < 16)
-	{
-		printf("Grade %d\n", (int) round(index));
-	}
+//Conditions of grade greater or equal than 16 or smaller than 1
+if (index >= 16)
+{
+	printf("Grade 16+\n");
+}
+else if (index < 1)
+{
+	printf("Before Grade 1\n");
+}
+else if (1 <= index && index < 16)
+{
+	printf("Grade %d\n", (int) round(index));
+}
 
 
 
