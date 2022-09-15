@@ -11,7 +11,7 @@ int main(int arg c, string argv[])
 	{
 		string text = get_string("Text: ");
 	}
-	while(0 < text < 0);
+	while(0 < argv[] < 64);
 
 	//Here the program prints the text
 	printf("Text: %s\n", text);
