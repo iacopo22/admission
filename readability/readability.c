@@ -8,7 +8,7 @@ int count_letters(string text);
 
 int main(void)
 {
-	//I want the user to prompt a string, not numbers or symbols
+	//I want the user to prompt a string
 	string text = get_string("Text: ");
 
 	//Here the program prints the text
@@ -24,6 +24,7 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
+	//Whole length
 	int length = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
     {
