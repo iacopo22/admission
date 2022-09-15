@@ -27,6 +27,9 @@ int main(void)
 	printf("Number of sentences: %i\n", sentences);
 
 
+	
+
+
 
 }
 
