@@ -22,7 +22,7 @@ int main(void)
 int count_letters(string text)
 {
 	int n = 0;
-	for (int i = 0, n = strlen(text); i < n; i++)
+	for (int i = 0, x = strlen(text); i < n; i++)
 	{
 		n++;
 	}
