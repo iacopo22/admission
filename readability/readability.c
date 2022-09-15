@@ -23,7 +23,7 @@ int main(void)
 int count_letters(string text)
 {
 	int i = 0;
-	while (strlen(text[i]) != "\0")
+	while (strlen(text[i]) != 0)
 	{
 		int length = strlen(text[i]);
 		printf("Length: %i", length);
