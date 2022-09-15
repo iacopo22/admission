@@ -27,7 +27,8 @@ int count_letters(string text)
     {
         printf("%c", text[i]);
     }
-	return n;
+	n - (i / 2) = int z;
+	return z;
 	printf("\n");
 
 
