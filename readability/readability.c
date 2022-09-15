@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 //I declare the function
-int count_letters(string text);
+
 
 int main(void)
 {
@@ -15,21 +15,11 @@ int main(void)
 	printf("Text: %s\n", text);
 
 	//I recall the function count_letters
-	int length = count_letters(text);
+    int length = strlen(text);
+	printf("Length: %i\n", length);
 
 
 }
 
-//I define the function
-int count_letters(string text)
-{
-	int n;
-    for (int i = 0, n = strlen(text); i < n; i++)
-    {
-		n++;
-    }
-	return n;
-	printf("\n");
 
 
-}
