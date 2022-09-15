@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 //I declare the function
 int count_letters(string text);
@@ -14,16 +15,16 @@ int main(void)
 
 	//I recall the function count_letters
 	count_letters(text);
-	printf("Number of letters: %i\n", i);
 
 }
 
 //I define the function
 int count_letters(string text)
 {
-	for (i = 0, n = strlen(text); i < n; i++)
+	for (int i = 0, n = strlen(text); i < n; i++)
 	{
-		printf("Number of characters: ", n)
+		printf("Number of characters: %i", n);
+		printf("%c", text(i));
+		return n;
 	}
-	printf("Number of characters: ", n)
 }
