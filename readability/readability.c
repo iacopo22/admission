@@ -40,9 +40,12 @@ int main(void)
 	{
 		printf("Before Grade 1\n");
 	}
+	else if (1 <= index && index < 16)
+	{
+		printf("Grade: %f\n", (int) round(index));
+	}
 
-	//Print grade when it's not greater or equal to 16 or smaller than 1
-	printf("Grade: %f\n", (float) round(index));
+
 
 }
 
