@@ -22,10 +22,10 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
-	for (int i = 0; i++);
+	for (int i = 0; i < text i++);
 	{
 		int length = strlen(text[i]);
-		
+
 	}
 
 }
