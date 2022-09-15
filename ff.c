@@ -2,14 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, string argv[])
+int main(void)
 {
-    for (int i = 0; i < argc; i++)
-    {
-        for (int j = 0, n = strlen(argv[i]); j < n; j++)
-        {
-            printf("%c\n", argv[i][j]);
-        }
-        printf("\n");
-    }
+    char c = '#';
+
+    printf("%c\n", c);
 }
