@@ -14,13 +14,17 @@ int main(void)
 	printf("Text: %s\n", text);
 
 	//I recall the function count_letters
-	int length = count_letters(text);
+	int n = count_letters(text);
 
 }
 
 //I define the function
 int count_letters(string text)
 {
-	for(int i = 0; )
+	int n = 0;
+	while (n < text(i))
+	{
+		n++;
+	}
+	return n;
 }
-return n;
