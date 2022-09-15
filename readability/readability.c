@@ -19,6 +19,9 @@ int main(void)
     int length = count_letters(text);
 	printf("Length: %i\n", length);
 
+	int words = count_words(text);
+	printf("Number of words: %i\n", words)
+
 
 }
 
@@ -38,6 +41,14 @@ int count_letters(string text)
 	return length;
 
 
-//
+int count_words(string text)
+{
+	
+
+
+}
+
+
+
 
 }
