@@ -84,7 +84,7 @@ int count_sentences(string text)
 	int sentences = 0;
 	for (int k = 0, n = strlen(text); k < n; k++)
 	{
-		if (text[k] == 46 || text[k] == 63 || text[k] == 33 || text[k] == 34)
+		if (text[k] == 46 || text[k] == 63 || text[k] == 33 || text[k] == 34 || text[k] == 58)
 		{
 			sentences++;
 		}
