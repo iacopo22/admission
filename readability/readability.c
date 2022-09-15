@@ -14,7 +14,7 @@ int main(void)
 	printf("Text: %s\n", text);
 
 	//I recall the function count_letters
-	int length = count_letters(text[words]);
+	int length = count_letters(text);
 	printf("Number of characters: %i\n", length);
 
 }
