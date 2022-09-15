@@ -29,11 +29,7 @@ int count_letters(string text)
     for (int i = 0, n = strlen(text); i < n; i++)
     {
 		//Conditions to avod numbers, symbols and spaces
-		if (((int)text[i] > 123) || (0 < (int)text[i] && (int)text[i] < 64))
-		{
-
-		}
-        else
+		if (isalpha(text[i]))
 		{
 			length ++;
 		}
