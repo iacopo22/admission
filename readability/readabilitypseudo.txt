@@ -4,3 +4,4 @@ Now I start promping the user for a string (the text to analyse)
 First problem: the user has to prompt a string, not random symboles and numbers
 I think I have to use a do while loop but Idk how to define the condition (text != numbers)
 Probably I should use the conditions with ASCII code?
+String is like an array of characte
