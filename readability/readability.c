@@ -29,7 +29,7 @@ int main(void)
 	float S = ((float) sentences / (float) words) * 100;
 
 	//Coleman-Liau index
-	float index = L * 0.0588 - 0.296 * S - 15.8;
+	double index = L * 0.0588 - 0.296 * S - 15.8;
 
 	//Conditions of grade greater or equal than 16 or smaller than 1
 	if (index >= 16)
@@ -42,7 +42,7 @@ int main(void)
 	}
 	else if (1 <= index && index < 16)
 	{
-		printf("Grade: %f\n", (int) round(index));
+		printf("Grade: %d\n", (int) round(index));
 	}
 
 
