@@ -60,6 +60,7 @@ int count_words(string text)
 			break;
 		}
 	}
+	return words;
 
 
 }
