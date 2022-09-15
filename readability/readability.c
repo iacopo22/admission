@@ -50,7 +50,7 @@ int count_words(string text)
 		{
 
 		}
-		else (isalpha(text[0]))
+		else (text[0] == 32)
 		{
 
 		}
