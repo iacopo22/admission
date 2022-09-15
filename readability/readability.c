@@ -22,6 +22,11 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
-
+	int i = 0;
+	while (text[i] != 32)
+	{
+		int length = strlen(text[i]);
+		i++;
+	}
 
 }
