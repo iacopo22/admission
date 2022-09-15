@@ -22,13 +22,6 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
-	int i = 0;
-	for (int j = 0; j < text [i]; j++)
-	;
-	{
-		int sum = text [i];
-		printf("Sum: %i", sum);
-	}
-	return sum;
+
 
 }
