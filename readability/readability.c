@@ -28,5 +28,6 @@ int count_letters(string text)
 		int length = strlen(text[i]);
 		i++;
 	}
+	return length;
 
 }
