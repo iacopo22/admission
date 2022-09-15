@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 
 	//I recall the function count_letters
 	int count_letters(string text);
-	printf("Number of letters: %i\n", count_letters);
+	printf("Number of letters: %i\n", i);
 
 }
 
@@ -26,6 +26,7 @@ int count_letters(string text)
 		for (int j = 0, n = strlen(arg [i]); j < n; j++)
 		{
 			printf("Characters: %c", string argv[i][j])
+			return i;
 		}
 		prinf("\n");
 	}
