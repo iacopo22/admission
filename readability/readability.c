@@ -4,7 +4,6 @@
 
 //I declare the function
 int count_letters(string text);
-int n;
 
 int main(void)
 {
@@ -24,7 +23,7 @@ int count_letters(string text)
 {
 	for (int i = 0, n = strlen(text); i < n; i++)
 	{
-
+		return n;
 	}
-	printf("Number of characters: %i", n);
+
 }
