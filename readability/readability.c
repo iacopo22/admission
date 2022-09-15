@@ -25,6 +25,5 @@ int count_letters(string text)
 	{
 		printf("Number of characters: %i", n);
 		printf("%c", text(i));
-		return n;
 	}
 }
