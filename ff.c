@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, string argv[])
+int main(void)
 {
-    for (int i = 0; i < argc; i++)
+    string s = get_string("String: ");
+    for (int i = 0; i < strlen(s); i++)
     {
-        for (int j = 0, n = strlen(argv[i]); j < n; j++)
-        {
-            printf("%c\n", argv[i]);
-        }
-        printf("\n");
+        printf("%c %i\n", s[i], s[i]);
     }
 }
+
