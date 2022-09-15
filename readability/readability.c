@@ -42,7 +42,7 @@ int main(void)
 	}
 	else if (1 <= index && index < 16)
 	{
-		printf("Grade: %d\n", (int) round(index));
+		printf("Grade %d\n", (int) round(index));
 	}
 
 
