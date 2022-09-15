@@ -48,7 +48,7 @@ int count_words(string text)
 	int words = 1;
 	for (int j = 0, n = strlen(text); j < n; j++)
 	{
-		if (isalpha(text[i]) == 32)
+		if (isalpha(text[j]) == 32)
 		{
 			words++;
 		}
