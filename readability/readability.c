@@ -25,6 +25,9 @@ int count_letters(string text)
 	text[i] = string words
 	for (int i = 0; i < text; i++)
 	{
-
+		while (text[i] != "\0")
+		{
+			
+		}
 	}
 }
