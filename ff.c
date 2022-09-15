@@ -4,7 +4,6 @@
 
 int main(void)
 {
-    char c = '#';
-
-    printf("%c\n", c);
+    string s = "HI!";
+    printf("%s\n", s);
 }
