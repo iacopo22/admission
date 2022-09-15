@@ -7,6 +7,6 @@ Probably I should use the conditions with ASCII code?
 String is like an array of character.
 
 Test:
-Io sono Marco --> 3 arguments
+Io 
 
 Loop: i = 1

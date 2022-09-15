@@ -25,4 +25,5 @@ int count_letters(string text)
 	{
 		printf("Number of characters: ", n)
 	}
+	printf("Number of characters: ", n)
 }
