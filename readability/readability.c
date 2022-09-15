@@ -45,7 +45,7 @@ int count_letters(string text)
 int count_words(string text)
 {
 
-	int words = 0;
+	int words = 1;
 	for (int j = 0, n = strlen(text); j < n; j++)
 	{
 		if (isalpha(text[0]))
