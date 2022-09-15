@@ -27,7 +27,14 @@ int count_letters(string text)
 	int length = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        length++;
+		if (text[] != 32)
+		{
+			length++;
+		}
+        else
+		{
+			return 1;
+		}
     }
 	return length;
 
