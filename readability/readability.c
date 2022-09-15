@@ -31,9 +31,11 @@ int main(void)
 	float L = (length/words) * 100.0;
 	float S = (sentences/words) * 100.0;
 
+	printf("%f\n", L);
+
 
 	float index = L * 0.0588 - 0.296 * S - 15.8;
-	printf("Grade: %f\n", round (index));
+	printf("Grade: %f\n", index);
 
 
 
