@@ -31,7 +31,7 @@ int count_letters(string text)
 		//Conditions to avod numbers, symbols and spaces
 		if (((int)text[i] > 123) || (0 < (int)text[i] && (int)text[i] < 64))
 		{
-			break;
+			length++; length--;
 		}
         else
 		{
