@@ -6,6 +6,7 @@
 //I declare the functions
 int count_letters(string text);
 int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
@@ -21,6 +22,10 @@ int main(void)
 
 	int words = count_words(text);
 	printf("Number of words: %i\n", words);
+
+	int sentences = count_sentences(text);
+	printf("Number of sentences: %i\n", sentences);
+
 
 
 }
@@ -53,8 +58,23 @@ int count_words(string text)
 		}
 	}
 	return words;
-
 }
+
+int count_sentences(string text)
+{
+	int sentences = 0;
+	for (int k = 0, n = strlen(text); k < n; k++)
+	{
+		if (text[i] == )
+		{
+			sentences++;
+		}
+	}
+	return sentences;
+}
+
+
+
 
 
 
