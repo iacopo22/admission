@@ -27,8 +27,11 @@ int main(void)
 	int sentences = count_sentences(text);
 	printf("Number of sentences: %i\n", sentences);
 
+	float L = (length/words) * 100.0;
+	float S = (sentences/words) * 100.0;
 
-	float index = (((length/words) * 100.0)*0.0588 - 0.296 * ((sentences/words) * 100.0) - 15.8);
+
+	float index = L*0.0588 - 0.296 * S - 15.8;
 	printf("Grade: %f\n", round (index));
 
 
