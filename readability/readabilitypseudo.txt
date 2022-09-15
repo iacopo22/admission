@@ -8,3 +8,5 @@ else I count. (view if statement in the for loop in the code)
 
 To count the number of words I have to check if there are spaces. If I have "Mario", after Mario there will be a space,
 so 1 word. If I have Mario play, I have 2 spaces, one after Mario and one after play, so 2 words.
+
+O la prima lettera è uno spazio, o la prima lettera non è uno spazio
