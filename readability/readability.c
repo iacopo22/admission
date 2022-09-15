@@ -29,11 +29,11 @@ int count_letters(string text)
     {
 		if (text[i] == 32)
 		{
-			length++;
+			return 1;
 		}
         else
 		{
-			return 1;
+			length ++;
 		}
     }
 	return length;
