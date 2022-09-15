@@ -27,20 +27,25 @@ int main(void)
 	int sentences = count_sentences(text);
 	printf("Number of sentences: %i\n", sentences);
 
-	float X = ((float) length/(float) words) * 100;
-	printf("X: %f\n", X);
 
-
-	float L = (length/words) * 100.0;
-	float S = (sentences/words) * 100.0;
+	float L = ((float) length / (float) words) * 100;
+	float S = ((float) sentences / (float) words) * 100;
 
 	printf("L: %f\n", L);
 	printf("S: %f\n", S);
 
 
 	float index = L * 0.0588 - 0.296 * S - 15.8;
-	printf("Grade: %f\n", index);
+	printf("Grade: %f\n", round (index));
 
+	if (index >= 16)
+	{
+		printf("Grade 16+\n");
+	}
+	else if (index < 1)
+	{
+		printf("Before Grade 1\n");
+	}
 
 
 }
