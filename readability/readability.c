@@ -14,29 +14,23 @@ int main(void)
 	//I want the user to prompt a string
 	string text = get_string("Text: ");
 
-	//Here the program prints the text
-	printf("Text: %s\n", text);
-
 	//I recall the function count_letters
     int length = count_letters(text);
-	printf("Number of letters: %i\n", length);
 
+	//I recall the function count_words
 	int words = count_words(text);
-	printf("Number of words: %i\n", words);
 
+	//I recall the function count_sentences
 	int sentences = count_sentences(text);
-	printf("Number of sentences: %i\n", sentences);
 
-
+	//Elements of Coleman-Liau index
 	float L = ((float) length / (float) words) * 100;
 	float S = ((float) sentences / (float) words) * 100;
 
-	printf("L: %f\n", L);
-	printf("S: %f\n", S);
-
+	//Coleman-Liau index
 	float index = L * 0.0588 - 0.296 * S - 15.8;
 
-
+	//Conditions of grade greater or equal than 16 or smaller than 1
 	if (index >= 16)
 	{
 		printf("Grade 16+\n");
@@ -46,11 +40,8 @@ int main(void)
 		printf("Before Grade 1\n");
 	}
 
-
-
-	printf("Grade: %f\n", (round) (index));
-
-
+	//Print grade when it's not greater or equal to 16 or smaller than 1
+	printf("Grade: %f\n", (float) round(index));
 
 }
 
