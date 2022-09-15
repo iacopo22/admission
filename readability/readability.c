@@ -39,24 +39,25 @@ int count_letters(string text)
 		}
     }
 	return length;
+}
 
 
 int count_words(string text)
 {
 
 	int words = 0;
-	for (int j = 0, n = strlen(text); i < n; i++)
+	for (int j = 0, n = strlen(text); j < n; j++)
 	{
 		if (isalpha(text[0]))
 		{
-			if (text[i] == 32)
+			if (text[j] == 32)
 			{
 				words++;
 			}
 		}
-		else (text[0] == 32)
+		else ((int) text[0] == 32)
 		{
-
+			return 1;
 		}
 	}
 
