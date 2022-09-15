@@ -11,7 +11,7 @@ int main(void)
 	{
 		string text = get_string("Text: ");
 	}
-	while(text == %i);
+	while(text != %i);
 
 	//Here the program prints the text
 	printf("Text: %s\n", text);
