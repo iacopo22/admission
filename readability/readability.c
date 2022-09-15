@@ -23,12 +23,12 @@ int main(void)
 //I define the function
 int count_letters(string text)
 {
+	int n;
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        printf("%c", text[i]);
-		n - (i / 2) = int z;
+		n++;
     }
-	return z;
+	return n;
 	printf("\n");
 
 
