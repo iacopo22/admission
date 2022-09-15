@@ -21,5 +21,11 @@ int main(int argc, string argv[])
 //I define the function
 int count_letters(string text)
 {
-	strlen
+	for (int i = 0; i < argc; i++)
+	{
+		for (int j = 0, n = strlen(arg [i]); j < n; j++)
+		{
+			printf("Characters: %c", string argv[i])
+		}
+	}
 }
