@@ -4,7 +4,7 @@
 //I declare the function
 int count_letters(string text);
 
-int main(int argc, string argv[])
+int main(void)
 {
 	//I want the user to prompt a string, not numbers or symbols
 	string text = get_string("Text: ");
@@ -13,7 +13,7 @@ int main(int argc, string argv[])
 	printf("Text: %s\n", text);
 
 	//I recall the function count_letters
-	int count_letters(string text);
+	count_letters(text);
 	printf("Number of letters: %i\n", i);
 
 }
@@ -21,13 +21,8 @@ int main(int argc, string argv[])
 //I define the function
 int count_letters(string text)
 {
-	for (int i = 0; i < argc; i++)
+	for (i = 0, n = strlen(text); i < n; i++)
 	{
-		for (int j = 0, n = strlen(arg [i]); j < n; j++)
-		{
-			printf("%c", string argv[i][j])
-			return i;
-		}
-		prinf("\n");
+		printf("Number of characters: ", n)
 	}
 }
