@@ -4,7 +4,7 @@
 int main(int argc, string argv[])
 {
 	//If there aren't input or it there are more than one, the program prints an error
-	if (argv[1] == '32' || argv[2] != "\0")
+	if (int strcmp(string s1, string s2) ; || argv[2] != "\0")
 	{
 		Printf("Usage: ./caesar key\n");
 	}
