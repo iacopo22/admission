@@ -27,6 +27,7 @@ int main(int argc, string argv[])
 	//The plaintext prompted from the user
 	string plaintext = get_string("Plaintext: ");
 
+	printf("Cyphertext: ");
 
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
@@ -67,6 +68,7 @@ bool only_digits (string s)
 
 char rotate (char c, int n)
 {
+
 	if (isupper(c))
 	{
 		//Position in the alphabetical order if the char is upper case
