@@ -11,14 +11,11 @@ int main(int argc, string argv[])
 {
 
 	//If there aren't input or if there are more then one, the program prints an error
-	if (argc != 2)
+	if (argc != 2 )
 	{
 		printf("Usage: ./caesar key\n");
-		return 1;
 	}
-
-
-
+	return 0;
 
 
 	//The input has to be a number or a digit, so it checks all of the chars of the string
