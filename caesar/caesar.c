@@ -28,7 +28,8 @@ int main(int argc, string argv[])
 	string plaintext = get_string("Plaintext: ");
 
 
-	
+	char = rotate (plaintext[3], k);
+	printf("Boh: %c\n", char)
 
 
 
@@ -62,10 +63,11 @@ bool only_digits (string s)
 
 char rotate (char c, int n)
 {
-	if (isupper(char c))
+	if (isupper(c))
 	{
-		char c = char c - 65;
+		c = c - 65;
 		printf("Position of the char: %i\n", (int) c);
 	}
+	return c;
 
 }
