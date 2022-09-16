@@ -31,6 +31,7 @@ int main(int argc, string argv[])
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
 	int letter = rotate (plaintext[z], k);
+	printf("Letter: %c\n", letter);
 	}
 
 
@@ -65,7 +66,6 @@ bool only_digits (string s)
 
 char rotate (char c, int n)
 {
-	for (j = 0, n = strlen())
 	if (isupper(c))
 	{
 		c = c - 65;
