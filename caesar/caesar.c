@@ -28,8 +28,8 @@ int main(int argc, string argv[])
 	string plaintext = get_string("Plaintext: ");
 
 
-	char = rotate (plaintext[3], k);
-	printf("Boh: %c\n", char)
+	char letter = rotate (plaintext[3], k);
+	printf("Boh: %c\n", letter);
 
 
 
