@@ -19,16 +19,6 @@ int main(int argc, string argv[])
 	only_digits(argv[1]);
 
 
-
-
-
-
-	//If it's not a decimal point the program prints an error
-
-
-	//If the k is greater than 26, the program should convert the letter in another letter following alphabetical order (check ASCII)
-
-
 }
 
 
