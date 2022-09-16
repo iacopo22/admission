@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool only_digits(string input);
+bool only_digits(string s);
 
 int main(int argc, string argv[])
 {
@@ -26,9 +26,9 @@ int main(int argc, string argv[])
 }
 
 
-bool only_digits(string input)
+bool only_digits(string s)
 {
-	if (*input <= '9' && *input >= '0')
+	if (*s <= '9' && *s >= '0')
 	{
 		printf("Valid value");
 	}
