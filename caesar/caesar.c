@@ -30,7 +30,8 @@ int main(int argc, string argv[])
 
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
-	char letter = rotate (plaintext[z], k);
+	char letter_cyphered = rotate (plaintext[z], k);
+	printf("Letter cyphered: %c\n", letter_cyphered);
 	}
 
 
