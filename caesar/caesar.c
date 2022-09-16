@@ -15,14 +15,17 @@ int main(int argc, string argv[])
 		printf("Usage: ./caesar key\n");
 		return 0;
 	}
-	return 0;
+
 
 	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
 
 
-	int number(string argv[]);
-
+	for (int j = 0, n = strlen(argv[1]); j < n; j++)
+	{
+	int number(string argv[j]);
+	printf("Number: %i\n", number)
+	}
 
 
 
