@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
-	int letter = rotate (plaintext[z], k);
+	char letter = rotate (plaintext[z], k);
 	printf("Letter: %c\n", letter);
 	}
 
