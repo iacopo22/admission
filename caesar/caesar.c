@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 {
 
 	//If there aren't input or if there are more then one, the program prints an error
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Usage: ./caesar key\n");
 		return 0;
@@ -21,7 +21,7 @@ int main(int argc, string argv[])
 	only_digits(argv[1]);
 
 
-	printf("This is CS%i\n", atoi(argv[1]));
+	printf("Convert in integer: %i\n", atoi(argv[1]));
 
 
 
