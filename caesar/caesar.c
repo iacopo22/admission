@@ -88,10 +88,7 @@ char rotate (char c, int n)
 	//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
 	else if (!isalpha(c) && !islower(c) && !isupper(c))
 	{
-		//Apply the formula
-		int ascii_cypher = ((c + n) % 26);
 		printf("Position of the char: %i\n", (int) c);
-		printf("Position of the char cyphered: %i\n", ascii_cypher);
 	}
 	return c;
 
