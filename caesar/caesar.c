@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 	//The input has to be greater and equal to 0 and smaller than 10
 	bool x = only_digits(argv[1]);
 
-	if (!isdigit(argv[1]))
+	if (x == false)
 	{
 		printf("Usage: ./caesar key\n");
 	}
@@ -35,11 +35,7 @@ bool only_digits(string s)
 {
 	for (int i = 0, n = strlen(s); i < n; i++)
 	{
-		if (isdigit(s[i]))
-		{
-
-		}
-		else
+		if (!isdigit(s[i]))
 		{
 			return false;
 		}
