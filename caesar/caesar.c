@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 bool only_digits(string s)
 {
 
-	for (int i = 0, n = strlen(string(s)); i < n; i++)
+	for (int i = 0, n = strlen(s); i < n; i++)
 	{
 		if (s[i] <= '9' && s[i] >= '0')
 		{
