@@ -21,6 +21,7 @@ int main(int argc, string argv[])
 	if (x == false)
 	{
 		printf("Usage: ./caesar key\n");
+		return 0;
 	}
 	else
 	{
