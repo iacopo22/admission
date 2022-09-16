@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
-	rotate (plaintext[], k);
+	rotate (plaintext[z], k);
 	}
 
 
