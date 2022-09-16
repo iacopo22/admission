@@ -4,9 +4,10 @@
 int main(int argc, string argv[])
 {
 	//The program receive a command line from the user to declare the Key (positive integer)
-	if (string arv[1] == " " && string arv[2] != "\0")
+	if (argv[1] == "0" || argv[2] != "\0")
 	{
-
+		Printf("Usage: ./caesar key\n");
+		return 1;
 	}
 
 	//If there aren't input or it there are more then one, the program prints an error
