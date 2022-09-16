@@ -93,7 +93,7 @@ char rotate (char c, int n)
 		printf("Position of the char: %i\n", (int) c);
 		printf("Position of the char cyphered: %i\n", ascii_cypher);
 	}
-	return ascii_cypher;
+	return c;
 
 
 }
