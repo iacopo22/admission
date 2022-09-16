@@ -68,16 +68,18 @@ char rotate (char c, int n)
 	if (isupper(c))
 	{
 		c = c - 65;
-		printf("Position of the char: %i\n", (int) c);
+		int ascii_cypher = (c + n) % 26;
+		printf("Position of the char cyphered: %i\n", (int) ascii_cypher);
+
 	}
 	else if (islower(c))
 	{
 		c = c - 97;
-		printf("Position of the char: %i\n", (int) c);
+		printf("Position of the char cyphered: %i\n", (int) c);
 	}
 	else if (!isalpha(c) && !islower(c) && !isupper(c))
 	{
-		printf("Position of the char: %i\n", (int) c);
+		printf("Position of the char cyphered: %i\n", (int) c);
 	}
 	return c;
 
