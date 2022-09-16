@@ -23,10 +23,13 @@ int main(void)
 
 int compute_score(string word)
 {
+	// TODO: Compute and return score for string
+
 	int score = 0;
-    // TODO: Compute and return score for string
+
 	for (int i = 0, n = strlen(word); i < n; i++)
 	{
+		POINTERS[i];
 		printf("%c\n", word[i]);
 	}
 	return 0;
