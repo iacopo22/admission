@@ -17,7 +17,6 @@ int main(int argc, string argv[])
 
 	//The input has to be greater and equal to 0 and smaller than 10
 	bool x = only_digits(argv[1]);
-	printf("%bool", x);
 
 
 	//If it's not a decimal point the program prints an error
