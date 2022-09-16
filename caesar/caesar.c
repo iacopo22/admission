@@ -10,78 +10,78 @@ char rotate(char plaintext, int k);
 int main(int argc, string argv[])
 {
 
-	//If there aren't input or if there are more then one, the program prints an error
-	if (argc != 2 )
-	{
-		printf("Error\n");
-		return 1;
-	}
+//If there aren't input or if there are more then one, the program prints an error
+ if (argc != 2)
+ {
+ printf("Error\n");
+ return 1;
+ }
 
 
-	//The input has to be a number or a digit, so it checks all of the chars of the string
-	bool is_digits = only_digits(argv[1]);
+//The input has to be a number or a digit, so it checks all of the chars of the string
+ bool is_digits = only_digits(argv[1]);
 
-	if (is_digits != true)
-	{
-		return 1;
-	}
+ if (is_digits != true)
+ {
+ return 1;
+ }
 
-	//The key to encrypt the plaintext
-    int k = atoi(argv[1]);
+//The key to encrypt the plaintext
+ int k = atoi(argv[1]);
 
-	//The plaintext prompted from the user
-	string plaintext = get_string("Plaintext: ");
+//The plaintext prompted from the user
+ string plaintext = get_string("Plaintext: ");
 
-	printf("ciphertext: ");
+ printf("ciphertext: ");
 
-	for (int z = 0, n = strlen(plaintext); z < n; z++)
-	{
-	char letter_cyphered = rotate (plaintext[z], k);
-	printf("%c", letter_cyphered);
-	}
-	printf("\n");
+ for (int z = 0, n = strlen(plaintext); z < n; z++)
+ {
+ char letter_cyphered = rotate(plaintext[z], k);
+ printf("%c", letter_cyphered);
+ }
+ printf("\n");
 
 }
 
 
-bool only_digits (string s)
+bool only_digits(string s)
 {
-	for (int i = 0, n = strlen(s); i < n; i++)
-	{
-		if (!isdigit(s[i]))
-		{
-			printf("Usage: ./caesar key\n");
-			return false;
-		}
-	}
-	return true;
+for (int i = 0, n = strlen(s); i < n; i++)
+{
+ if (!isdigit(s[i]))
+ {
+ printf("Usage: ./caesar key\n");
+            return false;
+ }
+ }
+return true;
 }
 
 
-char rotate (char c, int n)
+char rotate(char c, int n)
 {
 
-	if (isupper(c))
-	{
-		//Position in the alphabetical order if the char is upper case
-		c = c - 65;
-		//Apply the formula
-		int pos_cyphered = ((c + n) % 26) + 65;
-		return pos_cyphered;
-	}
-	else if (islower(c))
-	{
-		//Position in the alphabetical order if the char is lowercase
-		c = c - 97;
-		//Apply the formula
-		int pos_cyphered = ((c + n) % 26) + 97;
-		return pos_cyphered;
-	}
-	//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
-	else if (!isalpha(c) && !islower(c) && !isupper(c))
-	{
-		return c;
-	}
-	return 0;
+    if(isupper(c))
+ {
+//Position in the alphabetical order if the char is upper case
+ c = c - 65;
+//Apply the formula
+ int pos_cyphered = ((c + n) % 26) + 65;
+ return pos_cyphered;
+ }
+ else if (islower(c))
+ {
+//Position in the alphabetical order if the char is lowercase
+ c = c - 97;
+//Apply the formula
+ int pos_cyphered = ((c + n) % 26) + 97;
+ return pos_cyphered;
+ }
+//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
+ else if (!isalpha(c) && !islower(c) && !isupper(c))
+ {
+        return c;
+ }
+ return 0;
 
 }
