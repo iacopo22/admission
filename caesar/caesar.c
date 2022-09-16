@@ -20,11 +20,9 @@ int main(int argc, string argv[])
 	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
 
-
-	printf("Convert in integer: %i\n", atoi(argv[1]));
+    int conversion(string argv[1]);
 
 	string plaintext = get_string("Plaintext: ");
-	printf("Plaintext: %s\n", plaintext);
 
 
 
