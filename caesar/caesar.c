@@ -4,7 +4,7 @@
 int main(int argc, string argv[])
 {
 	//The program receive a command line from the user to declare the Key (positive integer)
-	if (argv[1] == 32 || argv[2] != "\0")
+	if (argv[1] == "32" || argv[2] != "\0")
 	{
 		Printf("Usage: ./caesar key\n");
 	}
