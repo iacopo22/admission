@@ -3,14 +3,14 @@
 
 int main(int argc, string argv[])
 {
-	//The program receive a command line from the user to declare the Key (positive integer)
+	//If there aren't input or it there are more than one, the program prints an error
 	if (argv[1] == '32' || argv[2] != "\0")
 	{
 		Printf("Usage: ./caesar key\n");
 	}
 	return 1;
 
-	//If there aren't input or it there are more then one, the program prints an error
+
 
 
 	//If it's not a decimal point the program prints an error
