@@ -1,1 +1,4 @@
 I have to count the points of the words based on the value of the single letters.
+
+
+I should match the points with the letters of the alphabet.
