@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 	//The input has to be greater and equal to 0 and smaller than 10
 	bool x = only_digits(argv[1]);
 
-	if (x == false)
+	if (x == !isdigit(argv[1]))
 	{
 		printf("Usage: ./caesar key\n");
 	}
