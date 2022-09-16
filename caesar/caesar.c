@@ -18,6 +18,9 @@ int main(int argc, string argv[])
 	}
 
 
+
+
+
 	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
 
