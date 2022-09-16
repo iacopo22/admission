@@ -13,7 +13,8 @@ int main(int argc, string argv[])
 	return 1;
 
 	//The input has to be greater and equal to 0 and smaller than 10
-	only_digits(input);
+	string f;
+	bool x = only_digits(f);
 
 
 	//If it's not a decimal point the program prints an error
@@ -27,5 +28,9 @@ int main(int argc, string argv[])
 
 bool only_digits(string input)
 {
-
+	if (input < 10 && input >= 0)
+	{
+		return 0;
+	}
+	return true;
 }
