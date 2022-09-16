@@ -41,6 +41,7 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
+	bool x;
 	for (int i = 0, n = strlen(s); i < n; i++)
 	{
 		if (s[i] <= '9' && s[i] >= '0' && isdigit(s[i]))
@@ -52,4 +53,5 @@ bool only_digits(string s)
 			return false;
 		}
 	}
+	return x;
 }
