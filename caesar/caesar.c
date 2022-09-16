@@ -20,6 +20,9 @@ int main(int argc, string argv[])
 	only_digits(argv[1]);
 
 
+	int atoi(string argv[]);
+
+
 
 
 	//If the k is greater than 26, the program should convert the letter in another letter following alphabetical order (check ASCII)
