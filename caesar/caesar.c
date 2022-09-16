@@ -49,3 +49,6 @@ bool only_digits(string s)
 	}
 	return true;
 }
+
+
+void rotate (char x, int y)
