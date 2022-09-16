@@ -53,7 +53,7 @@ bool only_digits (string s)
 }
 
 
-char rotate (char c, int n)
+char rotate (char c, int n)r
 {
 
 	if (isupper(c))
