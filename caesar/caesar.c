@@ -12,9 +12,8 @@ int main(int argc, string argv[])
 	if (argc != 1)
 	{
 		printf("Usage: ./caesar key\n");
-		return 0;
 	}
-
+	return 0;
 
 	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
