@@ -23,6 +23,9 @@ int main(int argc, string argv[])
 
 	printf("Convert in integer: %i\n", atoi(argv[1]));
 
+	string plaintext = get_string("Plaintext: ");
+	printf("Plaintext: %s\n", plaintext);
+
 
 
 
