@@ -1,30 +1,10 @@
-if I have r
+Verifico il numero degli input, deve essere uguale a 2 infatti un input è il nome del programma
+e l'altro è la chiave data dall'user. In caso contrario il programma "Usage: ./caesar key\n"
 
+Creo una funzione only_digits(argv[1]); che verifica l'input dell' user ([0] è il nome del programma)
+se è composto solo da cifre (uso il loop per verificare ogni char perché l'array rappresenta una stringa)
+controllando ogni char, in caso contrario il programma "Usage: ./caesar key\n".
 
-	bool x = only_digits(argv[1]);
+Ora devo creare una funzione (void rotate (char text, int key)) che come input ha la chiave e il testo non
+criptato e io devo criptarlo spostando le lettere del testo non criptato di una posizione k (indicata dall'utente)
 
-	if (x == false)
-	{
-		printf("Usage: ./caesar key\n");
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
-
-
-}
-
-
-bool only_digits(string s)
-{
-	for (int i = 0, n = strlen(s); i < n; i++)
-	{
-		if (!isdigit(s[i]))
-		{
-			return false;
-		}
-	}
-	return true;
-}
