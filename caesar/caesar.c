@@ -4,7 +4,7 @@
 int main(int argc, string argv[])
 {
 	//If there aren't input or it there are more then one, the program prints an error
-	if (argv[1] == ' ' || argv[2] != ' ')
+	if (argv[1] == '\0' || argv[2] != '\0')
 	{
 		Printf("Usage: ./caesar key\n");
 	}
