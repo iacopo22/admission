@@ -7,6 +7,7 @@ bool only_digits(string s);
 
 int main(int argc, string argv[])
 {
+
 	//If there aren't input or if there are more then one, the program prints an error
 	if (argv[1] == NULL || argv[2] != NULL)
 	{
@@ -29,8 +30,6 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-	bool y = 0;
-
 	for (int i = 0, n = strlen(s); i < n; i++)
 	{
 		if (s[i] <= '9' && s[i] >= '0' && isdigit(s[i]))
@@ -40,8 +39,8 @@ bool only_digits(string s)
 		else
 		{
 			printf("Usage: ./caesar key\n");
-			y = 0;
+			return 0;
 		}
 	}
-	return y;
+	return true;
 }
