@@ -77,7 +77,7 @@ char rotate (char c, int n)
 	}
 	else if (!isalpha(c))
 	{
-
+		printf("Position of the char: %i\n", (int) c);
 	}
 	return c;
 
