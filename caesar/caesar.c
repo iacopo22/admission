@@ -20,8 +20,10 @@ int main(int argc, string argv[])
 	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
 
-    int conversion(string argv[1]);
+	//The key to encrypt the plaintext
+    int k = atoi(argv[1]);
 
+	//The plaintext prompted from the user
 	string plaintext = get_string("Plaintext: ");
 
 
@@ -50,8 +52,3 @@ bool only_digits(string s)
 	return true;
 }
 
-
-void rotate (char text, int key)
-{
-	
-}
