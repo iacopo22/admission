@@ -16,7 +16,16 @@ int main(int argc, string argv[])
 	return 1;
 
 	//The input has to be greater and equal to 0 and smaller than 10
-	only_digits(argv[1]);
+	bool x = only_digits(argv[1]);
+
+	if (x == false)
+	{
+		printf("Usage: ./caesar key\n");
+	}
+	else
+	{
+		return 1;
+	}
 
 
 }
@@ -33,7 +42,7 @@ bool only_digits(string s)
 		else
 		{
 			printf("Usage: ./caesar key\n");
-			return 0;
+			return false;
 		}
 	}
 	return true;
