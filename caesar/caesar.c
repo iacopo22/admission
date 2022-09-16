@@ -13,17 +13,12 @@ int main(int argc, string argv[])
 	{
 		printf("Usage: ./caesar key\n");
 	}
-	return 1;
+	return 0;
 
-	//The input has to be greater and equal to 0 and smaller than 10
+	//The input has to be a number or a digit, so it checks all of the chars of the string
 	only_digits(argv[1]);
 
 
-
-
-
-
-	//If it's not a decimal point the program prints an error
 
 
 	//If the k is greater than 26, the program should convert the letter in another letter following alphabetical order (check ASCII)
