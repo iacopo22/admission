@@ -11,21 +11,3 @@ so 1 word. If I have Mario play, I have 2 spaces, one after Mario and one after 
 
 
 
-
-test con condizioni non richieste, lo tengo buono per una successiva verifica:
-	int words = 1;
-	for (int j = 0, n = strlen(text); j < n; j++)
-	{
-		if (isalpha(text[0]))
-		{
-			if (text[j] == 32 && isalpha(text[j++]))
-			{
-				words++;
-			}
-		}
-		else (text[0] == 32)
-		{
-			break;
-		}
-	}
-	return words;
