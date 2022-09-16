@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-	bool y;
+	bool y = 0;
 
 	for (int i = 0, n = strlen(s); i < n; i++)
 	{
@@ -41,7 +41,6 @@ bool only_digits(string s)
 		else
 		{
 			printf("Usage: ./caesar key\n");
-			y = false;
 		}
 	}
 	return y;
