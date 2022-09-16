@@ -70,6 +70,7 @@ char rotate (char c, int n)
 		c = c - 65;
 		int ascii_cypher = (c + n) % 26;
 		printf("Position of the char cyphered: %i\n", (int) ascii_cypher);
+		printf("Position of the char cyphered: %i\n", (int) ascii_cypher);
 
 	}
 	else if (islower(c))
