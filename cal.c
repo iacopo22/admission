@@ -4,6 +4,9 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+int main(void)
+{
+	int x = 18 % 26;
+	printf("Resto: %i\n", x);
 
-int x = 18 % 26;
-printf("Resto: %i\n", x);
+}
