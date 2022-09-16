@@ -1,0 +1,1 @@
+I have to count the points of the words based on the value of the single letters.
