@@ -13,7 +13,7 @@ int main(int argc, string argv[])
 	//If there aren't input or if there are more then one, the program prints an error
 	if (argc != 2 )
 	{
-		printf("Usage: ./caesar key\n");
+		printf("Error\n");
 		return 1;
 	}
 
