@@ -46,11 +46,11 @@ bool only_digits(string s)
 	{
 		if (isdigit(s[i]))
 		{
-			return true;
+			return 1;
 		}
 		else
 		{
-			return false;
+			return 0;
 		}
 	}
 	return true;
