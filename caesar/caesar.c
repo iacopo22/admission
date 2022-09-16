@@ -63,6 +63,7 @@ bool only_digits (string s)
 
 char rotate (char c, int n)
 {
+	for (j = 0, n = strlen())
 	if (isupper(c))
 	{
 		c = c - 65;
