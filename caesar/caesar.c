@@ -19,7 +19,12 @@ int main(int argc, string argv[])
 
 
 	//The input has to be a number or a digit, so it checks all of the chars of the string
-	only_digits(argv[1]);
+	bool is_digits = only_digits(argv[1]);
+
+	if (is_digits != true)
+	{
+		return 1;
+	}
 
 	//The key to encrypt the plaintext
     int k = atoi(argv[1]);
@@ -46,11 +51,10 @@ bool only_digits (string s)
 		if (!isdigit(s[i]))
 		{
 			printf("Usage: ./caesar key\n");
-			return 1;
+			return false;
 		}
 	}
-	return 0;
-	printf("Cavallo");
+	return true;
 }
 
 
