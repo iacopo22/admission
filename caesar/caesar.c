@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
 bool only_digits(string input)
 {
-	if (input < 10 && input >= 0)
+	if (input <= '57' && input >= 48)
 	{
 		return 0;
 	}
