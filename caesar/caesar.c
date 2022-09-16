@@ -31,7 +31,6 @@ int main(int argc, string argv[])
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
 	char letter = rotate (plaintext[z], k);
-	printf("Letter: %c\n", letter);
 	}
 
 
@@ -71,6 +70,7 @@ char rotate (char c, int n)
 		c = c - 65;
 		printf("Position of the char: %i\n", (int) c);
 	}
-	return c;
+	else if ()
+
 
 }
