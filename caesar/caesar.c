@@ -51,4 +51,7 @@ bool only_digits(string s)
 }
 
 
-void rotate (char x, int y)
+void rotate (char text, int key)
+{
+	
+}
