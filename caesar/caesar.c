@@ -36,11 +36,6 @@ int main(int argc, string argv[])
 	}
 	printf("\n");
 
-
-
-	//If the k is greater than 26, the program should convert the letter in another letter following alphabetical order (check ASCII)
-
-
 }
 
 
@@ -56,10 +51,6 @@ bool only_digits (string s)
 	}
 	return true;
 }
-
-
-
-
 
 
 char rotate (char c, int n)
@@ -87,6 +78,5 @@ char rotate (char c, int n)
 		return c;
 	}
 	return 0;
-
 
 }
