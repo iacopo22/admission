@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-	if (*s <= '9' && *s >= '0')
+	if (s <= '9' && *s >= '0')
 	{
 		printf("Valid value");
 	}
