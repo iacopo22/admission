@@ -70,10 +70,8 @@ char rotate (char c, int n)
 		//Position in the alphabetical order if the char is upper case
 		c = c - 65;
 		//Apply the formula
-		int ascii_cypher = ((c + n) % 26);
-		printf("n: %i\n", n);
-		printf("Position of the char: %i\n", (int) c);
-		printf("Position of the char cyphered: %i\n", ascii_cypher);
+		int pos_cyphered = ((c + n) % 26);
+		printf("Position of the char cyphered: %i\n", pos_cyphered);
 
 	}
 	else if (islower(c))
@@ -81,16 +79,15 @@ char rotate (char c, int n)
 		//Position in the alphabetical order if the char is lowercase
 		c = c - 97;
 		//Apply the formula
-		int ascii_cypher = ((c + n) % 26);
-		printf("Position of the char: %i\n", (int) c);
-		printf("Position of the char cyphered: %i\n", ascii_cypher);
+		int pos_cyphered = ((c + n) % 26);
+		printf("Position of the char cyphered: %i\n", pos_cyphered);
 	}
 	//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
 	else if (!isalpha(c) && !islower(c) && !isupper(c))
 	{
 		printf("Position of the char: %i\n", (int) c);
 	}
-	return c;
+	return pos_cyphered;
 
 
 }
