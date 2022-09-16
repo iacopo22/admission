@@ -35,12 +35,12 @@ bool only_digits(string s)
 	{
 		if (s[i] <= '9' && s[i] >= '0' && isdigit(s[i]))
 		{
-			return true;
+			bool x = true;
 		}
 		else
 		{
 			printf("Usage: ./caesar key\n");
-			return false;
+			bool y = false;
 		}
 	}
 }
