@@ -13,6 +13,7 @@ int main(int argc, string argv[])
 	if (argc != 1)
 	{
 		printf("Usage: ./caesar key\n");
+		return 0;
 	}
 	return 0;
 
@@ -20,7 +21,7 @@ int main(int argc, string argv[])
 	only_digits(argv[1]);
 
 
-	int atoi(string argv[]);
+	int number(string argv[]);
 
 
 
