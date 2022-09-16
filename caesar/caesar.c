@@ -31,8 +31,9 @@ int main(int argc, string argv[])
 	for (int z = 0, n = strlen(plaintext); z < n; z++)
 	{
 	char letter_cyphered = rotate (plaintext[z], k);
-	printf("Letter cyphered: %c\n", letter_cyphered);
+	printf("%c", letter_cyphered);
 	}
+	printf("\n");
 
 
 
@@ -72,7 +73,6 @@ char rotate (char c, int n)
 		c = c - 65;
 		//Apply the formula
 		int pos_cyphered = ((c + n) % 26) + 65;
-		printf("Position of the char cyphered: %i\n", pos_cyphered);
 		return pos_cyphered;
 	}
 	else if (islower(c))
@@ -81,13 +81,11 @@ char rotate (char c, int n)
 		c = c - 97;
 		//Apply the formula
 		int pos_cyphered = ((c + n) % 26) + 97;
-		printf("Position of the char cyphered: %i\n", pos_cyphered);
 		return pos_cyphered;
 	}
 	//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
 	else if (!isalpha(c) && !islower(c) && !isupper(c))
 	{
-		printf("Position of the char: %i\n", (int) c);
 		return c;
 	}
 	return 0;
