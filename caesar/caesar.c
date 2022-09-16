@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 bool only_digits(string input);
 
