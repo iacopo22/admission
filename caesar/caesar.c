@@ -32,10 +32,12 @@ bool only_digits(string s)
 
 	for (int i = 0, n = strlen(string(s)); i < n; i++)
 	{
-		if (s <= '9' && *s >= '0')
+		if (s[i] <= '9' && s[i] >= '0')
 		{
-		printf("Valid value");
+			return true;
 		}
+		else
+		
 	}
 	return true;
 }
