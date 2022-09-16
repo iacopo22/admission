@@ -16,7 +16,18 @@ int main(int argc, string argv[])
 	return 1;
 
 	//The input has to be greater and equal to 0 and smaller than 10
-	only_digits(argv[1]);
+	bool x = only_digits(argv[1]);
+	
+	if (x == 1)
+	{
+		return 1;
+	}
+	else if (x == 0)
+	{
+		printf("Usage: ./caesar key\n");
+	}
+
+
 
 
 	//If it's not a decimal point the program prints an error
@@ -38,7 +49,6 @@ bool only_digits(string s)
 		}
 		else
 		{
-			printf("Usage: ./caesar key\n");
 			return 0;
 		}
 	}
