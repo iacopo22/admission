@@ -34,12 +34,12 @@ bool only_digits(string s)
 	{
 		if (isdigit(s[i]))
 		{
-
+			continue;
 		}
 		else
 		{
 			printf("Usage: ./caesar key\n");
-			return 0;
+			return false;
 		}
 	}
 	return true;
