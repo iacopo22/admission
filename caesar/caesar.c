@@ -49,7 +49,8 @@ bool only_digits (string s)
 			return 1;
 		}
 	}
-	return true;
+	return 0;
+	printf("Cavallo");
 }
 
 
