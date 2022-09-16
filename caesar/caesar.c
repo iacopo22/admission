@@ -6,7 +6,7 @@ bool only_digits(string input);
 int main(int argc, string argv[])
 {
 	//If there aren't input or if there are more then one, the program prints an error
-	if (argv[1] == "\0" || argv[2] != NULL)
+	if (argv[1] == NULL || argv[2] != NULL)
 	{
 		printf("Usage: ./caesar key\n");
 	}
