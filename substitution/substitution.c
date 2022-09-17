@@ -5,7 +5,7 @@ int main(int argc, string argv[])
 {
 	if (argc != 2)
 	{
-		printf("Error");
+		printf("Error\n");
 		return 1;
 	}
 }
