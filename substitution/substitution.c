@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 	//Two argument lines
 	if (argc != 2)
 	{
-		printf("Error\n");
+		printf("Error: the program requires two argument lines\n");
 		return 1;
 	}
 	//Key must contain 26 characters
