@@ -31,6 +31,10 @@ int compute_score(string word)
 		{
 			(word[i] += 32);
 		}
+		else if (islower(word[i]) || )
+		{
+			
+		}
 		printf("%c", word[i]);
 
 	}
