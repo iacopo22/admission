@@ -15,4 +15,8 @@ int main(int argc, string argv[])
 		j++;
 	}
 	printf("Lenght: %i\n", j);
+	if (j != 26)
+	{
+		printf("")
+	}
 }
