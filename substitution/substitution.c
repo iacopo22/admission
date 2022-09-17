@@ -72,7 +72,7 @@ bool same_chars (string key)
 	for (int i = 0, n = strlen(key); i < n; i++)
 	{
 		toupper((key[i]));
-		if ((key[i]) == 'A'|| )
+		if ((key[i]) == 'A')
 		{
 			q++;
 			if (q >= 2)
