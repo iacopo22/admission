@@ -21,7 +21,7 @@ int main(int argc, string argv[])
 	{
 		j++;
 	}
-	if (j != 2)
+	if (j != 26)
 	{
 		printf("Key must contain 26 characters\n");
 		return 1;
@@ -68,14 +68,19 @@ bool alphabetical_chars (string text)
 
 bool same_chars (string key)
 {
+	int q = 0;
 	for (int h = 0, n = strlen(key); h < n; h++)
 	{
 		if ((key[h]) == 'A' && (key[h+1]) == 'A')
 		{
-			printf("%c\n", key[h]);
-			printf("Key can't contain two equal characters\n");
-			return false;
+			q++;
+			if (q >= 2)
+			{
+				printf("Key cannot have to equal characters\n");
+				return false;
+			}
 		}
+
 	}
 	return true;
 }
