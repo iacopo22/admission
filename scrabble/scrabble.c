@@ -30,7 +30,7 @@ int compute_score(string word)
 		printf("%i", word[i]);
 		if (isupper(word[i]))
 		{
-			word[i]
+			(word[i] += 32);
 		}
 
 	}
