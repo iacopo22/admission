@@ -8,7 +8,7 @@ I start creating a loop of the string to check each character but Idk how to
 compare each of them. There are two equal chars when one of them is repeated two or
 more times.
 Each of the letters in the alphabet could be repeated each time in upper and lower.
-
+There has to be different values.
 
 
 
