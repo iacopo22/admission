@@ -67,7 +67,7 @@ bool same_chars (string key)
 	{
 		if ((text[h]))
 		{
-
+			printf("Key can't contain two equal characters\n");
 		}
 	}
 }
