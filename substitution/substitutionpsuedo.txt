@@ -14,6 +14,6 @@ cyph: v z l
 
 cypher = posizione in ordine alfabetico del plain
 
-char cypher = 
+char cypher = quarta posizione (d) nell'ordine alfabetico è v nel codice
 
 

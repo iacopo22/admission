@@ -31,6 +31,13 @@ int main(int argc, string argv[])
 	string plaintext = get_string("Plaintext: ");
 
 
+	for (int y = 0, m = strlen(plaintext); y < m; y++)
+	{
+		char plaintext[y];
+		printf("Char of the plaintext: %c\n", plaintext);
+	}
+
+
 
 }
 
