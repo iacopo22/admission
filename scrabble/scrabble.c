@@ -22,7 +22,7 @@ int main(void)
 
     // TODO: Print the winner
 
-	
+
 }
 
 int compute_score(string word)
@@ -43,7 +43,6 @@ int compute_score(string word)
 		}
 	}
 	printf("Score: %i\n", score);
-	printf("\n");
 	return score;
 
 }
