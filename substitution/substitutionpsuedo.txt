@@ -16,9 +16,9 @@ To check this I check if two subsequent values are equals
 
 code: m n b v c x z l k j h g f d s a p o i u y t r e w q
 
-plai: d g
+plai: b d
 
-cyph: v z
+cyph: n v
 
 
 1. The difference (ASCII code) between the plain and the code is a number
@@ -28,14 +28,3 @@ cyph: v z
 cypher = posizione in ordine alfabetico del plain
 
 char cypher = quarta posizione (d) nell'ordine alfabetico è v nel codice
-
-
-	for (int y = 0, m = strlen(plaintext); y < m; y++)
-	{
-		printf("Char of the plaintext: %c\n", plaintext[y]);
-	}
-
-	bool (same == false)
-	{
-		return 1;
-	}
