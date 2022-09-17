@@ -12,12 +12,17 @@ int main(void)
 {
     // Get input words from both players
     string word1 = get_string("Player 1: ");
+	string word2 = get_string("Player 2: ");
+
 
     // Score both words
     int score1 = compute_score(word1);
+	int score2 = compute_score(word2);
 
 
     // TODO: Print the winner
+
+	
 }
 
 int compute_score(string word)
@@ -29,18 +34,16 @@ int compute_score(string word)
 		if (isupper(word[i]))
 		{
 			int points_upper = POINTS[word[i] - 65];
-			printf("Points of that char: %i\n", points_upper);
 			score += points_upper;
 		}
 		else if (islower(word[i]))
 		{
 			int points_lower = POINTS[word[i] - 97];
-			printf("Points of that char: %i\n", points_lower);
 			score += points_lower;
 		}
 	}
 	printf("Score: %i\n", score);
 	printf("\n");
-	return 0;
+	return score;
 
 }

@@ -15,4 +15,3 @@ C = 67 e point [2] = 3
 
 remember to paste it at the end:
  int score2 = compute_score(word2);
-     string word2 = get_string("Player 2: ");
