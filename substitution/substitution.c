@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -8,9 +9,10 @@ int main(int argc, string argv[])
 		printf("Error\n");
 		return 1;
 	}
-
+	int j = 0;
 	for (int i = 0, n = strlen(argv[1]); i < n; i++)
 	{
-		printf("Length: %i\n", i);
+		j++;
 	}
+	printf("Lenght: %i\n", j);
 }
