@@ -9,6 +9,7 @@ compare each of them. There are two equal chars when one of them is repeated two
 more times.
 Each of the letters in the alphabet could be repeated each time in upper and lower.
 There has to be different values.
+To check this I check if two subsequent values are equals
 
 
 
