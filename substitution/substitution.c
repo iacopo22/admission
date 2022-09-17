@@ -71,7 +71,7 @@ bool same_chars (string key)
 	int q = 0;
 	for (int h = 0, n = strlen(key); h < n; h++)
 	{
-		if ((key[h]) == 'A')
+		if ((key[h]) == 'A'|| )
 		{
 			q++;
 			if (q >= 2)
