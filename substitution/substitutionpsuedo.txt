@@ -12,6 +12,8 @@ cyph: v z l
 2. if I add this number to the plain I obtain the cyph
 
 
+cypher = posizione in ordine alfabetico del plain
 
+char cypher = 
 
 
