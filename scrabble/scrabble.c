@@ -27,11 +27,11 @@ int compute_score(string word)
 	int score = 0;
 	for (int i = 0, n = strlen(word); i < n; i++)
 	{
-		printf("%i", word[i]);
 		if (isupper(word[i]))
 		{
 			(word[i] += 32);
 		}
+		printf("%i", word[i]);
 
 	}
 	printf("\n");
