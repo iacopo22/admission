@@ -3,7 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
-bool chars_argv (string text);
+bool alphabetical_chars (string text);
+bool same_chars (string key)
 
 int main(int argc, string argv[])
 {
@@ -25,7 +26,11 @@ int main(int argc, string argv[])
 	}
 
 	//Key must only contain alphabetical characters
-	chars_argv (argv[1]);
+	alphabetical_chars (argv[1]);
+
+
+	//Key can't contain two equal characters
+
 
 
 	string plaintext = get_string("Plaintext: ");
@@ -42,7 +47,7 @@ int main(int argc, string argv[])
 
 
 
-bool chars_argv (string text)
+bool alphabetical_chars (string text)
 {
 	for (int z = 0, n = strlen(text); z < n; z++)
 	{
