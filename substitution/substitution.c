@@ -39,6 +39,11 @@ int main(int argc, string argv[])
 	//Key can't contain two equal characters
 	bool same = same_chars (argv[1]);
 
+	if (same == false)
+	{
+		return 1;
+	}
+
 
 
 	string plaintext = get_string("Plaintext: ");
