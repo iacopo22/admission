@@ -44,10 +44,12 @@ int main(int argc, string argv[])
 		return 1;
 	}
 
-
-
+	//Prompt the user for the plaintext
 	string plaintext = get_string("Plaintext: ");
+
+	//Encipher the plaintext to obtain the ciphertext
 	
+	for ()
 
 
 }
