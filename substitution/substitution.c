@@ -33,8 +33,7 @@ int main(int argc, string argv[])
 
 	for (int y = 0, m = strlen(plaintext); y < m; y++)
 	{
-		char plaintext[y];
-		printf("Char of the plaintext: %c\n", plaintext);
+		printf("Char of the plaintext: %c\n", plaintext[y]);
 	}
 
 
