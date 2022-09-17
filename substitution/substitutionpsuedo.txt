@@ -16,9 +16,9 @@ To check this I check if two subsequent values are equals
 
 code: m n b v c x z l k j h g f d s a p o i u y t r e w q
 
-plai: d g h
+plai: d g
 
-cyph: v z l
+cyph: v z
 
 
 1. The difference (ASCII code) between the plain and the code is a number
