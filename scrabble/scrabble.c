@@ -32,15 +32,13 @@ int compute_score(string word)
 	{
 		if (isupper(word[i]))
 		{
-			(word[i] += 32);
+			POINTS[]
 		}
-		else if (islower(word[i]) || !isalpha(word[i]))
+		else if (islower(word[i]))
 		{
 
 		}
 		printf("%i", word[i]);
-		score += word[i];
-
 	}
 	printf("\n");
 	return 0;
