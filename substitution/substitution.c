@@ -61,9 +61,10 @@ bool alphabetical_chars (string text)
 		if (!isalpha(text[z]))
 		{
 			printf("Key must only contain alphabetical characters\n");
+			return false;
 		}
 	}
-	return 1;
+	return true;
 }
 
 bool same_chars (string key)
