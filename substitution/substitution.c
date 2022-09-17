@@ -66,9 +66,10 @@ bool alphabetical_chars (string text)
 	return true;
 }
 
+
+
 bool same_chars (string key)
 {
-	int q = 0;
 	for (int i = 0, n = strlen(key); i < n; i++)
 	{
 		if ((key[i+1]) == (key[i]))
@@ -76,7 +77,6 @@ bool same_chars (string key)
 			printf("Key cannot have two equal characters\n");
 			return false;
 		}
-
 	}
 	return true;
 }
