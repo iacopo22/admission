@@ -56,12 +56,12 @@ int length = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
     {
   //Conditions to avod numbers, symbols and spaces
-  if (isalpha(text[i]))
-  {
-  length ++;
-  }
- }
-return length;
+ 	    if (isalpha(text[i]))
+    	{
+  		  length ++;
+  	    }
+ 	}
+	return length;
 }
 
 

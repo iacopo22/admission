@@ -46,15 +46,15 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-for (int i = 0, n = strlen(s); i < n; i++)
-{
- if (!isdigit(s[i]))
- {
- printf("Usage: ./caesar key\n");
+	for (int i = 0, n = strlen(s); i < n; i++)
+	{
+ 		if (!isdigit(s[i]))
+		 {
+ 			printf("Usage: ./caesar key\n");
             return false;
- }
- }
-return true;
+		 }
+ 	}
+	return true;
 }
 
 
@@ -62,26 +62,26 @@ char rotate(char c, int n)
 {
 
     if(isupper(c))
- {
-//Position in the alphabetical order if the char is upper case
- c = c - 65;
-//Apply the formula
- int pos_cyphered = ((c + n) % 26) + 65;
- return pos_cyphered;
- }
- else if (islower(c))
- {
-//Position in the alphabetical order if the char is lowercase
- c = c - 97;
-//Apply the formula
- int pos_cyphered = ((c + n) % 26) + 97;
- return pos_cyphered;
- }
-//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
- else if (!isalpha(c) && !islower(c) && !isupper(c))
- {
+ 	{
+	//Position in the alphabetical order if the char is upper case
+		 c = c - 65;
+	//Apply the formula
+		 int pos_cyphered = ((c + n) % 26) + 65;
+		 return pos_cyphered;
+	}
+	 else if (islower(c))
+ 	{
+		//Position in the alphabetical order if the char is lowercase
+ 		c = c - 97;
+		//Apply the formula
+		 int pos_cyphered = ((c + n) % 26) + 97;
+		 return pos_cyphered;
+	}
+	//Position in the alphabetical order if the char is punctuation or a number (in this case remain the same according to the request)
+	else if (!isalpha(c) && !islower(c) && !isupper(c))
+ 	{
         return c;
- }
- return 0;
+	}
+	return 0;
 
 }
