@@ -1,10 +1,16 @@
 the conditions are easy to specify. they are a mix of the previous problems.
 
+
+
 There is one condition that is difficult to check: the key can't have two
 equal characters.
 I start creating a loop of the string to check each character but Idk how to
-compare each of them. The are two equal chars when one of them is repeated two times.
-Each of the letters in the alphabet could be repeated each time in upper and lower
+compare each of them. There are two equal chars when one of them is repeated two or
+more times.
+Each of the letters in the alphabet could be repeated each time in upper and lower.
+
+
+
 
 
 code: m n b v c x z l k j h g f d s a p o i u y t r e w q
