@@ -35,7 +35,7 @@ int compute_score(string word)
 		{
 
 		}
-		printf("%c", word[i]);
+		printf("%i", word[i]);
 
 	}
 	printf("\n");
