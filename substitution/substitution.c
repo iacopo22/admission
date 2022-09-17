@@ -37,17 +37,11 @@ int main(int argc, string argv[])
 
 
 	//Key can't contain two equal characters
-	same_chars (argv[1]);
+	bool same = same_chars (argv[1]);
+
 
 
 	string plaintext = get_string("Plaintext: ");
-
-
-	for (int y = 0, m = strlen(plaintext); y < m; y++)
-	{
-		printf("Char of the plaintext: %c\n", plaintext[y]);
-	}
-
 
 
 }
@@ -75,7 +69,8 @@ bool same_chars (string key)
 		{
 			printf("%c\n", key[h]);
 			printf("Key can't contain two equal characters\n");
+			return false;
 		}
 	}
-	return 1;
+	return true;
 }

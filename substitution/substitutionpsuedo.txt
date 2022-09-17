@@ -22,3 +22,12 @@ cypher = posizione in ordine alfabetico del plain
 char cypher = quarta posizione (d) nell'ordine alfabetico è v nel codice
 
 
+	for (int y = 0, m = strlen(plaintext); y < m; y++)
+	{
+		printf("Char of the plaintext: %c\n", plaintext[y]);
+	}
+
+	bool (same == false)
+	{
+		return 1;
+	}
