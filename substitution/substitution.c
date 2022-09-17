@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 bool alphabetical_chars (string text);
-bool same_chars (string key)
+bool same_chars (string key);
 
 int main(int argc, string argv[])
 {
@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 
 	//Key can't contain two equal characters
-
+	same_chars (argv[1]);
 
 
 	string plaintext = get_string("Plaintext: ");
@@ -57,4 +57,15 @@ bool alphabetical_chars (string text)
 		}
 	}
 	return 1;
+}
+
+bool same_chars (string key)
+{
+	for (int h = 0, n = strlen(key); h < n; h++)
+	{
+		if ((text[h]))
+		{
+
+		}
+	}
 }
