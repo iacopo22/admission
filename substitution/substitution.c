@@ -12,6 +12,7 @@ int main(int argc, string argv[])
 	int j = 0;
 	for (int i = 0, n = strlen(argv[1]); i < n; i++)
 	{
+		char caso[i] = argv[1];
 		j++;
 	}
 	if (j != 26)
