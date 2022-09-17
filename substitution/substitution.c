@@ -26,7 +26,15 @@ int main(int argc, string argv[])
 
 	//Key must only contain alphabetical characters
 	chars_argv (argv[1]);
+
+
+	string plaintext = get_string("Plaintext: ");
+
+
+
 }
+
+
 
 bool chars_argv (string text)
 {
