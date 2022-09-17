@@ -27,7 +27,7 @@ int compute_score(string word)
 	int score = 0;
 	for (int i = 0, n = strlen(word); i < n; i++)
 	{
-		printf("%c\n", word[i]);
+		printf("%i\n", word[i]);
 	}
 	return 0;
 
