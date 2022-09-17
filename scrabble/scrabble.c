@@ -36,8 +36,10 @@ int compute_score(string word)
 
 		}
 		printf("%i", word[i]);
+		score += word[i];
 
 	}
+	printf("%i", score);
 	printf("\n");
 	return 0;
 
