@@ -32,7 +32,7 @@ int compute_score(string word)
 	{
 		if (isupper(word[i]))
 		{
-			int r = POINTS[i - 65];
+			int r = POINTS[word[i] - 65];
 			printf("Points in that position: %i\n", r);
 		}
 		else if (islower(word[i]))
