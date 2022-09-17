@@ -31,9 +31,9 @@ int compute_score(string word)
 		{
 			(word[i] += 32);
 		}
-		else if (islower(word[i]) || )
+		else if (islower(word[i]) || !isalpha(word[i]))
 		{
-			
+
 		}
 		printf("%c", word[i]);
 
