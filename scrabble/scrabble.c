@@ -18,6 +18,9 @@ int main(void)
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
 
+	printf("%i\n", score1);
+	printf("%i\n", score2);
+
     // TODO: Print the winner
 }
 
@@ -39,7 +42,6 @@ int compute_score(string word)
 		score += word[i];
 
 	}
-	printf("%i", score);
 	printf("\n");
 	return 0;
 
