@@ -32,7 +32,7 @@ int compute_score(string word)
 	{
 		if (isupper(word[i]))
 		{
-			words[i] = POINTS[]
+			words[i] = POINTS[i]
 		}
 		else if (islower(word[i]))
 		{
