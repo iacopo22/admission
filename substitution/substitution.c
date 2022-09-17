@@ -14,6 +14,7 @@ int main(int argc, string argv[])
 		printf("Error: the program requires two argument lines\n");
 		return 1;
 	}
+
 	//Key must contain 26 characters
 	int j = 0;
 	for (int i = 0, n = strlen(argv[1]); i < n; i++)
@@ -23,6 +24,7 @@ int main(int argc, string argv[])
 	if (j != 26)
 	{
 		printf("Key must contain 26 characters\n");
+		return 1;
 	}
 
 	//Key must only contain alphabetical characters
