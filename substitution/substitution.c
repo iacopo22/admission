@@ -28,7 +28,12 @@ int main(int argc, string argv[])
 	}
 
 	//Key must only contain alphabetical characters
-	alphabetical_chars (argv[1]);
+	bool number = alphabetical_chars (argv[1]);
+
+	if (number == true)
+	{
+		return 1;
+	}
 
 
 	//Key can't contain two equal characters
