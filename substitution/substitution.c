@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 	//Key must only contain alphabetical characters
 	bool number = alphabetical_chars (argv[1]);
 
-	if (number == true)
+	if (number == false)
 	{
 		return 1;
 	}
