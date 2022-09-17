@@ -1,1 +1,8 @@
-abc
+the conditions are easy to specify. they are a mix of the previous problems.
+
+
+code: bcd
+
+plai: abc
+
+cyph: bcd
