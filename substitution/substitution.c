@@ -76,7 +76,7 @@ bool same_chars (string key)
 			q++;
 			if (q >= 2)
 			{
-				printf("Key cannot have to equal characters\n");
+				printf("Key cannot have two equal characters\n");
 				return false;
 			}
 		}
