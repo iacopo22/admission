@@ -38,8 +38,8 @@ int compute_score(string word)
 			printf("Points of that char: %i\n", points_lower);
 			score += points_lower;
 		}
-		printf("Score: %i\n", score);
 	}
+	printf("Score: %i\n", score);
 	printf("\n");
 	return 0;
 
