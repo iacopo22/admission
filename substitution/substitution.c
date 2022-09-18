@@ -122,7 +122,7 @@ char cyphertext (string k, char plain)
 		}
 		return lower_cipher;
 	}
-	//If the char of the plaintext is not a char I return it as it is
+	//If the char of the plaintext is not a letter I return it as it is
 	else if (!isalpha(plain))
 	{
 		return plain;
