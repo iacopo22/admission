@@ -109,5 +109,5 @@ char cyphertext (string k, char plain)
 	{
  		return plain;
 	}
-	return 0;
+    return 0;
 }
