@@ -49,13 +49,9 @@ int main(int argc, string argv[])
 
 	//Encipher the plaintext to obtain the ciphertext
 
-	for (int x = 0, n = strlen(plaintext); x < n; x++)
+	for (int x = 0, n = strlen(argv[1]); x < n; x++)
 	{
 		printf("Each character of the plaintext: %c\n", plaintext[x]);
-		if (isupper(plaintext[x]))
-		{
-			
-		}
 
 	}
 
