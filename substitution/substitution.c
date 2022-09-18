@@ -101,13 +101,13 @@ char cyphertext (string k, char plain)
 	//The same here, but the opposite
 	else if (islower(plain))
 	{
-		char lower_cipher = k[plain - 97];
-	    return tolower(lower_cipher);
-	}
-	//If the char of the plaintext is not a letter I return it as it is
-	else if (!isalpha(plain))
-	{
- 		return plain;
+        char lower_cipher = k[plain - 97];
+        return tolower(lower_cipher);
+    }
+    //If the char of the plaintext is not a letter I return it as it is
+    else if (!isalpha(plain))
+    {
+        return plain;
     }
     return 0;
 }
