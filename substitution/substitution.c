@@ -50,12 +50,13 @@ int main(int argc, string argv[])
 	//Encipher the plaintext to obtain the ciphertext
 	string key = argv[1];
 
+	printf("Ciphertext: ");
 	for (int x = 0, n = strlen(key); x < n; x++)
 	{
 		if (isupper(plaintext[x]))
 		{
 			char cipher = key[plaintext[x] - 65];
-			printf("Ciphertext: %c", cipher);
+			printf("%c", cipher);
 		}
 	}
 
