@@ -51,23 +51,9 @@ int main(int argc, string argv[])
 	string key = argv[1];
 
 	printf("Ciphertext: ");
-	for (int x = 0, n = strlen(key); x < n; x++)
-	{
-		if (isupper(plaintext[x]))
-		{
-			char upper_cipher = key[plaintext[x] - 65];
-			printf("%c", upper_cipher);
-		}
-		else if (islower(plaintext[x]))
-		{
-			char lower_cipher = key[plaintext[x] - 97];
-			printf("%c", lower_cipher);
-		}
-		else if (!isalpha(plaintext[x]))
-		{
-			printf("%c", plaintext[x]);
-		}
-	}
+
+	cyphertext (key, plaintext[]);
+
 	printf("\n");
 
 }
@@ -100,4 +86,29 @@ bool same_chars (string key)
 		}
 	}
 	return true;
+}
+
+
+char cyphertext (string key, string plain)
+{
+
+
+	for (int x = 0, n = strlen(key); x < n; x++)
+	{
+		if (isupper(plaintext[x]))
+		{
+			char upper_cipher = key[plaintext[x] - 65];
+			printf("%c", upper_cipher);
+		}
+		else if (islower(plaintext[x]))
+		{
+			char lower_cipher = key[plaintext[x] - 97];
+			printf("%c", lower_cipher);
+		}
+		else if (!isalpha(plaintext[x]))
+		{
+			printf("%c", plaintext[x]);
+		}
+	}
+
 }

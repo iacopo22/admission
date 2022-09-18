@@ -32,10 +32,7 @@ char cipher d = key[3]
 
 
 
-		else if (!isalpha(plaintext[x]) && !islower(plaintext[x]) && !isupper(plaintext[x]))
-		{
-			return plaintext[x];
-		}
+		
 
 
 
