@@ -18,13 +18,14 @@ code: m n b v c x z l k j h g f d s a p o i u y t r e w q
 
 plai: b d
 
-cyph: n v
+ciph: n v
 
 
 1. The difference (ASCII code) between the plain and the code is a number
-2. if I add this number to the plain I obtain the cyph
+2. if I add this number to the plain I obtain the ciph
 
 
-cypher = posizione in ordine alfabetico del plain
+cipher = posizione in ordine alfabetico del plain
 
-char cypher = quarta posizione (d) nell'ordine alfabetico è v nel codice
+char cipher b = code[1]
+char cipher d = code[3]
