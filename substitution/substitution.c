@@ -85,7 +85,7 @@ bool same_chars (string key)
 			return false;
 		}
 	}
-	return true;
+    return true;
 }
 
 //Function used to encipher the plaintext (k stands for key)
