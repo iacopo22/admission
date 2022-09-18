@@ -65,8 +65,7 @@ int main(int argc, string argv[])
 		}
 		else if (!isalpha(plaintext[x]))
 		{
-			char not_alpha_cipher = key[plaintext[x]];
-			printf("%c", not_alpha_cipher);
+			printf("%c", plaintext[x]);
 		}
 	}
 	printf("\n");
