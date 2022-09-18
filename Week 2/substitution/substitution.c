@@ -15,7 +15,7 @@ int main(int argc, string argv[])
 		printf("Error: the program requires two argument lines\n");
 		return 1;
 	}
-	
+
 	//Key must contain 26 characters
 	int j = 0;
 	for (int i = 0, n = strlen(argv[1]); i < n; i++)
@@ -54,8 +54,8 @@ int main(int argc, string argv[])
 
 	for (int x = 0, n = strlen(plaintext); x < n; x++)
 	{
-	char letter_ciphered = cyphertext (key, plaintext[x]);
-	printf("%c", letter_ciphered);
+		char letter_ciphered = cyphertext (key, plaintext[x]);
+		printf("%c", letter_ciphered);
 	}
 	printf("\n");
 
