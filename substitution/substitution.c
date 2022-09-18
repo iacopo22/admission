@@ -110,6 +110,11 @@ char cyphertext (string k, char plain)
 	else if (islower(plain))
 	{
 		char lower_cipher = k[plain - 97];
+		if (islower(lower_cipher))
+		{
+			char lower_key = tolower(lower_cipher);
+			return lower_key;
+		}
 		return lower_cipher;
 	}
 	else if (!isalpha(plain))
