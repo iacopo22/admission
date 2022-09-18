@@ -32,6 +32,13 @@ char cipher d = key[3]
 
 
 
+		else if (!isalpha(plaintext[x]) && !islower(plaintext[x]) && !isupper(plaintext[x]))
+		{
+			return plaintext[x];
+		}
+
+
+
 
 	printf("Ciphertext: ");
 	for (int x = 0, n = strlen(key); x < n; x++)
