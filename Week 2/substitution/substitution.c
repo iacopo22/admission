@@ -36,7 +36,6 @@ int main(int argc, string argv[])
 		return 1;
 	}
 
-
 	//Key can't contain two equal characters
 	bool same = same_chars (argv[1]);
 
@@ -59,7 +58,7 @@ int main(int argc, string argv[])
 	printf("%c", letter_ciphered);
 	}
 	printf("\n");
-	
+
 	return 0;
 }
 
