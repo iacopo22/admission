@@ -108,8 +108,10 @@ char cyphertext (string k, char plain)
 			char upper_key = toupper(upper_cipher);
 			return upper_key;
 		}
+		//If the key is upper I return the value as assigned to the char
 		return upper_cipher;
 	}
+	//The same here, but the opposite
 	else if (islower(plain))
 	{
 		char lower_cipher = k[plain - 97];
@@ -120,6 +122,7 @@ char cyphertext (string k, char plain)
 		}
 		return lower_cipher;
 	}
+	//If the char of the plaintext is not a char I return it as it is
 	else if (!isalpha(plain))
 	{
 		return plain;
