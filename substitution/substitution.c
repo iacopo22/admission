@@ -55,10 +55,22 @@ int main(int argc, string argv[])
 	{
 		if (isupper(plaintext[x]))
 		{
-			char cipher = key[plaintext[x] - 65];
-			printf("%c", cipher);
+			char upper_cipher = key[plaintext[x] - 65];
+			printf("%c", upper_cipher);
 		}
+		else if (islower(plaintext[x]))
+		{
+			char lower_cipher = key[plaintext[x] - 97];
+			printf("%c", lower_cipher);
+		}
+		else if (!isalpha(plaintext[x]))
+		{
+			char not_alpha_cipher = key[plaintext[x]];
+			printf("%c", not_alpha_cipher);
+		}
+
 	}
+	printf("\n");
 
 
 }
