@@ -52,7 +52,10 @@ int main(int argc, string argv[])
 
 	for (int x = 0, n = strlen(key); x < n; x++)
 	{
-		printf("Each character of the key: %c\n", key[x]);
+		if (isupper(plaintext[x]))
+		{
+			char cipher = key[ - 97]
+		}
 	}
 
 
