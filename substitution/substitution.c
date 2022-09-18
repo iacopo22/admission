@@ -53,7 +53,7 @@ int main(int argc, string argv[])
 
 	printf("ciphertext: ");
 
-	for (int x = 0, n = strlen(key); x < n; x++)
+	for (int x = 0, n = strlen(plaintext); x < n; x++)
 	{
 	char letter_ciphered = cyphertext (key, plaintext[x]);
 	printf("%c", letter_ciphered);
