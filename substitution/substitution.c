@@ -51,8 +51,7 @@ int main(int argc, string argv[])
 
 	for (int x = 0, n = strlen(argv[1]); x < n; x++)
 	{
-		printf("Each character of the plaintext: %c\n", plaintext[x]);
-
+		printf("Each character of the key: %c\n", argv[1]);
 	}
 
 
