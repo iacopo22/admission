@@ -31,7 +31,7 @@ int main(int argc, string argv[])
 	//Key must only contain alphabetical characters
 	bool number = alphabetical_chars (argv[1]);
 
-	if (number == false)
+	if (!alphabetical_chars (argv[1]))
 	{
 		return 1;
 	}
@@ -39,7 +39,7 @@ int main(int argc, string argv[])
 	//Key can't contain two equal characters
 	bool same = same_chars (argv[1]);
 
-	if (same == false)
+	if (!same_chars (argv[1]))
 	{
 		return 1;
 	}
@@ -57,7 +57,7 @@ int main(int argc, string argv[])
 		char letter_ciphered = cyphertext (key, plaintext[x]);
 		printf("%c", letter_ciphered);
 	}
-	
+
 	printf("\n");
     return 0;
 }
