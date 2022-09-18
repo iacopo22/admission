@@ -46,12 +46,12 @@ int main(int argc, string argv[])
 	}
 
 	//Prompt the user for the plaintext
-	string plaintext = get_string("Plaintext: ");
+	string plaintext = get_string("plaintext: ");
 
 	//Encipher the plaintext to obtain the ciphertext
 	string key = argv[1];
 
-	printf("Ciphertext: ");
+	printf("ciphertext: ");
 
 	for (int x = 0, n = strlen(key); x < n; x++)
 	{
@@ -60,6 +60,8 @@ int main(int argc, string argv[])
 	}
 
 	printf("\n");
+	return 0;
+
 
 }
 
