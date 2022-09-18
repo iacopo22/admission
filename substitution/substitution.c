@@ -58,6 +58,7 @@ int main(int argc, string argv[])
 	char letter_ciphered = cyphertext (key, plaintext[x]);
 	printf("%c", letter_ciphered);
 	}
+	
 	printf("\n");
 
 }
