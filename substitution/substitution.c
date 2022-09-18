@@ -52,6 +52,11 @@ int main(int argc, string argv[])
 	for (int x = 0, n = strlen(plaintext); x < n; x++)
 	{
 		printf("Each character of the plaintext: %c\n", plaintext[x]);
+		if (isupper(plaintext[x]))
+		{
+			
+		}
+
 	}
 
 
