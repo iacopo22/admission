@@ -64,7 +64,7 @@ int main(int argc, string argv[])
 
 bool alphabetical_chars (string text)
 {
-	for (int z = 0, n = strlen(text); z < n; z++)
+	for (int z = 0; z < strlen(text); z++)
 	{
 		if (!isalpha(text[z]))
 		{
