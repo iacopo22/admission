@@ -96,26 +96,13 @@ char cyphertext (string k, char plain)
 	{
 		//I assign to the char the (plain-65)th position of the key, e.g A - 65 = 0, so the first position of the key (in the array)
 		char upper_cipher = k[plain - 65];
-		//If the char in this position of the key is lower
-		if (islower(upper_cipher))
-		{
-			//I use to upper, because the ciphertext has to have the same "dimension" (upper or lower), in this case upper because the plain is upper
-			char upper_key = toupper(upper_cipher);
-			return upper_key;
-		}
-		//If the key is upper I return the value as assigned to the char
-		return upper_cipher;
+		return toupper(upper_cipher);
 	}
 	//The same here, but the opposite
 	else if (islower(plain))
 	{
 		char lower_cipher = k[plain - 97];
-		if (isupper(lower_cipher))
-		{
-			char lower_key = tolower(lower_cipher);
-			return lower_key;
-		}
-		return lower_cipher;
+	    return tolower(lower_cipher);
 	}
 	//If the char of the plaintext is not a letter I return it as it is
 	else if (!isalpha(plain))
