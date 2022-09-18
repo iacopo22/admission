@@ -68,7 +68,6 @@ int main(int argc, string argv[])
 			char not_alpha_cipher = key[plaintext[x]];
 			printf("%c", not_alpha_cipher);
 		}
-
 	}
 	printf("\n");
 

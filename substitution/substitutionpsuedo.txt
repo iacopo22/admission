@@ -29,3 +29,11 @@ cipher = posizione in ordine alfabetico del plain
 
 char cipher b = key[1]
 char cipher d = key[3]
+
+
+
+		else if (!isalpha(plaintext[x]))
+		{
+			char not_alpha_cipher = key[plaintext[x]];
+			printf("%c", not_alpha_cipher);
+		}
