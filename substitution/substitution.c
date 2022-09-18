@@ -98,7 +98,7 @@ char cyphertext (string k, char plain)
 		char upper_cipher = k[plain - 65];
 		return toupper(upper_cipher);
 	}
-	//The same here, but the opposite
+    //The same here, but the opposite
     else if (islower(plain))
     {
         char lower_cipher = k[plain - 97];
