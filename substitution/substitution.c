@@ -59,9 +59,8 @@ int main(int argc, string argv[])
 	printf("%c", letter_ciphered);
 	}
 	printf("\n");
+	
 	return 0;
-
-
 }
 
 
