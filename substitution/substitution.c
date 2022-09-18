@@ -63,6 +63,10 @@ int main(int argc, string argv[])
 			char lower_cipher = key[plaintext[x] - 97];
 			printf("%c", lower_cipher);
 		}
+		else if (!isalpha(plaintext[x]) && !islower(plaintext[x]) && !isupper(plaintext[x]))
+		{
+			return plaintext[x];
+		}
 	}
 	printf("\n");
 
