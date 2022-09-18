@@ -102,7 +102,8 @@ char cyphertext (string k, char plain)
 		char upper_cipher = k[plain - 65];
 		if (islower(upper_cipher))
 		{
-			toupper(upper_cipher);
+			char upper_key = toupper(upper_cipher);
+			return upper_key;
 		}
 		return upper_cipher;
 	}
