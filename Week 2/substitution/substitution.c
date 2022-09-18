@@ -15,7 +15,7 @@ int main(int argc, string argv[])
 		printf("Error: the program requires two argument lines\n");
 		return 1;
 	}
-
+	
 	//Key must contain 26 characters
 	int j = 0;
 	for (int i = 0, n = strlen(argv[1]); i < n; i++)
@@ -62,8 +62,6 @@ int main(int argc, string argv[])
 	return 0;
 }
 
-
-
 bool alphabetical_chars (string text)
 {
 	for (int z = 0, n = strlen(text); z < n; z++)
@@ -76,8 +74,6 @@ bool alphabetical_chars (string text)
 	}
 	return true;
 }
-
-
 
 bool same_chars (string key)
 {
@@ -127,5 +123,4 @@ char cyphertext (string k, char plain)
  		return plain;
 	}
 	return 0;
-
 }
