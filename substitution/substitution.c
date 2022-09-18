@@ -54,7 +54,8 @@ int main(int argc, string argv[])
 	{
 		if (isupper(plaintext[x]))
 		{
-			char cipher = key[ - 97]
+			char cipher = key[plaintext[x] - 97];
+			printf("Char ciphered: %c\n", cipher);
 		}
 	}
 
