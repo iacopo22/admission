@@ -58,7 +58,7 @@ int main(int argc, string argv[])
 	char letter_ciphered = cyphertext (key, plaintext[x]);
 	printf("%c", letter_ciphered);
 	}
-	
+
 	printf("\n");
 
 }
@@ -100,6 +100,7 @@ char cyphertext (string k, char plain)
 	if (isupper(plain))
 	{
 		char upper_cipher = k[plain - 65];
+		upper_cipher += 65;
 		return upper_cipher;
 	}
 	else if (islower(plain))
