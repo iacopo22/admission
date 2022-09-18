@@ -99,12 +99,12 @@ char cyphertext (string k, char plain)
 	if (isupper(plain))
 	{
 		char upper_cipher = k[plain - 65];
-		printf("%c", upper_cipher);
+		return upper_cipher;
 	}
 	else if (islower(plain))
 	{
 		char lower_cipher = k[plain - 97];
-		printf("%c", lower_cipher);
+		return lower_cipher;
 	}
 	else if (!isalpha(plain))
 	{
