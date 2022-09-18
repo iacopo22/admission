@@ -48,10 +48,11 @@ int main(int argc, string argv[])
 	string plaintext = get_string("Plaintext: ");
 
 	//Encipher the plaintext to obtain the ciphertext
+	string key = argv[1];
 
-	for (int x = 0, n = strlen(argv[1]); x < n; x++)
+	for (int x = 0, n = strlen(key); x < n; x++)
 	{
-		printf("Each character of the key: %c\n", argv[1]);
+		printf("Each character of the key: %c\n", key[]);
 	}
 
 
