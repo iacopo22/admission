@@ -107,8 +107,8 @@ char cyphertext (string k, char plain)
 	}
 	else if (!isalpha(plain))
 	{
-		
+		return plain;
 	}
-	return plain;
+	return 0;
 
 }
