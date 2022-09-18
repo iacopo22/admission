@@ -3,9 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 
-bool alphabetical_chars (string text);
-bool same_chars (string key);
-char cyphertext (string k, char plain);
+bool alphabetical_chars(string text);
+bool same_chars(string key);
+char cyphertext(string k, char plain);
 
 int main(int argc, string argv[])
 {
