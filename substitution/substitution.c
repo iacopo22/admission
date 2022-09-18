@@ -126,7 +126,7 @@ char cyphertext (string k, char plain)
 	//If the char of the plaintext is not a letter I return it as it is
 	else if (!isalpha(plain))
 	{
-		return plain;
+ 		return plain;
 	}
 	return 0;
 

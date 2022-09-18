@@ -29,30 +29,3 @@ cipher = posizione in ordine alfabetico del plain
 
 char cipher b = key[1]
 char cipher d = key[3]
-
-
-
-		
-
-
-
-
-	printf("Ciphertext: ");
-	for (int x = 0, n = strlen(key); x < n; x++)
-	{
-		if (isupper(plaintext[x]))
-		{
-			char upper_cipher = key[plaintext[x] - 65];
-			printf("%c", upper_cipher);
-		}
-		else if (islower(plaintext[x]))
-		{
-			char lower_cipher = key[plaintext[x] - 97];
-			printf("%c", lower_cipher);
-		}
-		else if (!isalpha(plaintext[x]) && !islower(plaintext[x]) && !isupper(plaintext[x]))
-		{
-			printf("%c", plaintext[x]);
-		}
-	}
-	printf("\n");
