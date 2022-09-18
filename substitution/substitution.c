@@ -100,7 +100,10 @@ char cyphertext (string k, char plain)
 	if (isupper(plain))
 	{
 		char upper_cipher = k[plain - 65];
-		upper_cipher += 65;
+		if (islower(k[plain - 65]))
+		{
+			toupper(k[plain - 65]);
+		}
 		return upper_cipher;
 	}
 	else if (islower(plain))
