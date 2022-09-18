@@ -84,20 +84,20 @@ bool same_chars (string key)
 			printf("Key cannot have two equal characters\n");
 			return false;
 		}
-	}
+    }
     return true;
 }
 
 //Function used to encipher the plaintext (k stands for key)
-char cyphertext (string k, char plain)
+char cyphertext(string k, char plain)
 {
-	//If the input is uppercase
-	if (isupper(plain))
-	{
-		//I assign to the char the (plain-65)th position of the key, e.g A - 65 = 0, so the first position of the key (in the array)
-		char upper_cipher = k[plain - 65];
-		return toupper(upper_cipher);
-	}
+    //If the input is uppercase
+    if (isupper(plain))
+    {
+        //I assign to the char the (plain-65)th position of the key, e.g A - 65 = 0, so the first position of the key (in the array)
+        char upper_cipher = k[plain - 65];
+        return toupper(upper_cipher);
+    }
     //The same here, but the opposite
     else if (islower(plain))
     {
