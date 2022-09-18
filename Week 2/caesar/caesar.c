@@ -10,36 +10,36 @@ char rotate(char plaintext, int k);
 int main(int argc, string argv[])
 {
 
-//If there aren't input or if there are more then one, the program prints an error
- if (argc != 2)
- {
- printf("Error\n");
- return 1;
- }
+	//If there aren't input or if there are more then one, the program prints an error
+ 	if (argc != 2)
+ 	{
+ 	printf("Error\n");
+ 	return 1;
+ 	}
 
 
-//The input has to be a number or a digit, so it checks all of the chars of the string
- bool is_digits = only_digits(argv[1]);
+	//The input has to be a number or a digit, so it checks all of the chars of the string
+ 	bool is_digits = only_digits(argv[1]);
 
- if (is_digits != true)
- {
- return 1;
- }
+ 	if (is_digits != true)
+ 	{
+ 	return 1;
+ 	}
 
-//The key to encrypt the plaintext
- int k = atoi(argv[1]);
+	//The key to encrypt the plaintext
+ 	int k = atoi(argv[1]);
 
-//The plaintext prompted from the user
- string plaintext = get_string("Plaintext: ");
+	//The plaintext prompted from the user
+ 	string plaintext = get_string("Plaintext: ");
 
- printf("ciphertext: ");
+ 	printf("ciphertext: ");
 
- for (int z = 0, n = strlen(plaintext); z < n; z++)
- {
- char letter_cyphered = rotate(plaintext[z], k);
- printf("%c", letter_cyphered);
- }
- printf("\n");
+ 	for (int z = 0, n = strlen(plaintext); z < n; z++)
+ 	{
+ 	char letter_cyphered = rotate(plaintext[z], k);
+ 	printf("%c", letter_cyphered);
+ 	}
+ 	printf("\n");
 
 }
 
