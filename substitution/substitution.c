@@ -72,7 +72,7 @@ bool alphabetical_chars (string text)
 			return false;
 		}
 	}
-	return true;
+    return true;
 }
 
 bool same_chars (string key)
