@@ -65,11 +65,10 @@ int main(int argc, string argv[])
 		}
 		else if (!isalpha(plaintext[x]) && !islower(plaintext[x]) && !isupper(plaintext[x]))
 		{
-			printf("%c", plaintext[x]);
+			return plaintext[x];
 		}
 	}
 	printf("\n");
-
 
 }
 
