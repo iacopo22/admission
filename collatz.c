@@ -31,10 +31,8 @@ int main(void)
 
     int n = 12;
 
-    while (n != 1)
-    {
-        counter++;
-    }
+    counter++;
+
 
     printf("Number of times: %i", counter);
 
