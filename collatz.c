@@ -21,6 +21,7 @@
         {
             return (3 * n) + 1;
         }
+        return 1;
     }
 
 
@@ -29,6 +30,14 @@ int main(void)
 {
     int counter = 0;
 
-    int number = get_int("Give me an int: \n");
+    int number = get_int("Give me an int: ");
 
+    while (number != 1)
+    {
+        counter++;
+    }
+
+    printf("Number of times: %i", counter);
+
+    return 0;
 }
