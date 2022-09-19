@@ -4,9 +4,9 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-int main(void)
-{
-    int counter = 0;
+
+
+
     int collatz(int n)
     {
         if (n == 1)
@@ -15,14 +15,18 @@ int main(void)
         }
         else if (n % 2 == 0)
         {
-            counter++;
             return n/2;
         }
         else if (n % 2 != 0)
         {
-            counter++;
             return (3 * n) + 1;
         }
     }
+
+
+
+int main(void)
+{
+    int counter = 0;
 
 }
