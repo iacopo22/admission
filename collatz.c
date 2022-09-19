@@ -1,24 +1,42 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
-int string_length(string s);
+
+
+    int collatz(int n)
+    {
+        if (n == 1)
+        {
+            return 1;
+        }
+        else if (n % 2 == 0)
+        {
+            return n/2;
+        }
+        else if (n % 2 != 0)
+        {
+            return (3 * n) + 1;
+        }
+        return n;
+    }
+
+
 
 int main(void)
 {
-    // Prompt for user's name
-    string name = get_string("Name: ");
-    int length = string_length(name);
-    printf("%i\n", length);
-}
+    int counter = 0;
 
-int string_length(string s)
-{
-    // Count number of characters up until '\0' (aka NUL)
-    int n = 0;
-    while (s[n] != '\0')
+    int n = 12;
+
+    while (n != 1)
     {
-        n++;
+        counter++;
     }
-    return n;
+
+    printf("Number of times: %i", counter);
+
+    return 0;
 }
