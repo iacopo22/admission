@@ -34,6 +34,7 @@ int main(void)
 
     while (number != 1)
     {
+        collatz(number);
         counter++;
     }
 
