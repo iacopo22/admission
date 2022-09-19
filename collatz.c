@@ -15,6 +15,8 @@ int main(void)
 
     int n = 12;
 
+    collatz(n);
+
     counter++;
 
 
