@@ -1,22 +1,34 @@
+// Draws a pyramid using recursion
+
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>
+
+void draw(int n);
 
 int main(void)
 {
-    // Prompt for user's name
-    string name = get_string("Name: ");
-    int length = string_length(name);
-    printf("%i\n", length);
+    // Get height of pyramid
+    int height = get_int("Height: ");
+
+    // Draw pyramid
+    draw(height);
 }
 
-int string_length(string s)
+void draw(int n)
 {
-    // Count number of characters up until '\0' (aka NUL)
-    int n = 0;
-    while (s[n] != '\0')
+    // If nothing to draw
+    if (n <= 0)
     {
-        n++;
+        return;
     }
-    return n;
+
+    // Draw pyramid of height n - 1
+    draw(n - 1);
+
+    // Draw one more row of width n
+    for (int i = 0; i < n; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
