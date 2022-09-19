@@ -30,11 +30,10 @@ int main(void)
 {
     int counter = 0;
 
-    int number = get_int("Give me an int: ");
+    int n = 12;
 
-    while (number != 1)
+    while (n != 1)
     {
-        collatz(number);
         counter++;
     }
 
