@@ -29,4 +29,6 @@ int main(void)
 {
     int counter = 0;
 
+    int number = get_int("Give me an int: \n");
+
 }
