@@ -20,7 +20,7 @@ int main(void)
     counter++;
 
 
-    printf("Number of times: %i", counter);
+    printf("Number of times: %i\n", counter);
 
     return 0;
 }
