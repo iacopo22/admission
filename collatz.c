@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+int string_length(string s);
+
 int main(void)
 {
     // Prompt for user's name
