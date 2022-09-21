@@ -11,8 +11,8 @@ int main(void)
 {
     int n = get_int("Integer: ");
     collatz(n);
-}
 
+}
 int collatz(int n)
 {
     //base case
