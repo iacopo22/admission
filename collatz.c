@@ -37,6 +37,4 @@ int collatz(int n)
         collatz((3 * n) + 1);
     }
     return counter;
-
-
 }
