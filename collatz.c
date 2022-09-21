@@ -13,13 +13,12 @@ int main(void)
 {
     int counter = 0;
 
-    int n = 12;
+    int n = 4;
 
     collatz(n);
 
     counter++;
-
-
+    
     printf("Number of times: %i\n", counter);
 
     return 0;
