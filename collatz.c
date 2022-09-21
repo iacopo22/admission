@@ -37,7 +37,7 @@ int collatz(int n)
     }
 
     int counter = 0;
-    while(n < )
+    while (n < )
     {
         counter++;
     }
