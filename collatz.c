@@ -22,7 +22,6 @@ int main(void)
 int counter = 0;
 int collatz(int n)
 {
-    int counter = 0;
     //base case
     if (n == 1)
     {
