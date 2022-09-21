@@ -19,6 +19,7 @@ int main(void)
 
 }
 
+int counter = 0;
 int collatz(int n)
 {
     int counter = 0;
