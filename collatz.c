@@ -19,7 +19,6 @@ int main(void)
 
 }
 
-int counter = 0;
 int collatz(int n)
 {
     //base case
@@ -29,13 +28,11 @@ int collatz(int n)
     }
     else if (n % 2 == 0)
     {
-        counter++;
-        return collatz(n / 2);
+        collatz(n / 2);
     }
     else if (n % 2 != 0)
     {
-        counter++;
-        return collatz((3 * n) + 1);
+        collatz((3 * n) + 1);
     }
     return counter;
 
