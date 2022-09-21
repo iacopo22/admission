@@ -26,13 +26,12 @@ int collatz(int n)
      }
      else if (n % 2 == 0)
      {
-          return n/2;
+          return collatz(n/2);
      }
      else if (n % 2 != 0)
      {
-          return (3 * n) + 1;
+          return collatz((3 * n) + 1);
      }
 
 
-    collatz(n/2);
 }
