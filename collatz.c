@@ -21,7 +21,7 @@ int main(void)
 
 int collatz(int n)
 {
-
+    int counter = 0;
     //base case
     if (n == 1)
     {
@@ -29,17 +29,15 @@ int collatz(int n)
     }
     else if (n % 2 == 0)
     {
-        collatz(n / 2);
+        counter++;
+        return collatz(n / 2);
     }
     else if (n % 2 != 0)
     {
-        collatz((3 * n) + 1);
-    }
-
-    int counter = 0;
-    while (n > 1)
-    {
         counter++;
+        return collatz((3 * n) + 1);
     }
     return counter;
+
+
 }
