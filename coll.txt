@@ -1,42 +1,25 @@
-#include <cs50.h>
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>
+Proviamo con  n = 5
 
+collatz in 17 chiama 22
 
+5 non è divisibile per 2
 
-    int collatz(int n)
-    {
-        if (n == 1)
-        {
-            return 1;
-        }
-        else if (n % 2 == 0)
-        {
-            return n/2;
-        }
-        else if (n % 2 != 0)
-        {
-            return (3 * n) + 1;
-        }
-        return n;
-    }
+ritorna dalla funzione iniziale la funzione collatz con n = 16
 
+16 è divisibile per due
 
+ritrona dalla funzione iniziale la funzione collatz con n = 8
 
-int main(void)
-{
-    int counter = 0;
+8 è divisibile per due
 
-    int n = 12;
+ritorna dalla funzione iniziale la funzione collatz con n = 4
 
-    while (n != 1)
-    {
-        counter++;
-    }
+4 è divisibile per due
 
-    printf("Number of times: %i", counter);
+ritorna dalla funzione iniziale la funzione collatz con n = 2
 
-    return 0;
-}
+2 è divisibile per due
+
+ritorna dalla funzione iniziale la funzione collatz con n = 1
+
+n = 1 quindi la funzione ritorna 1 e si interrompe

@@ -21,19 +21,16 @@ int main(void)
 
 int collatz(int n)
 {
-    int counter = 0;
     if (n == 1)
     {
         return 1;
     }
     else if (n % 2 == 0)
     {
-        counter++;
         return collatz(n/2);
     }
     else if (n % 2 != 0)
     {
-        counter++;
         return collatz((3 * n) + 1);
     }
     return counter;
