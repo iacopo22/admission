@@ -9,12 +9,8 @@ int collatz(int n);
 
 int main(void)
 {
-
     int n = get_int("Integer: ");
-
     collatz(n);
-
-
 }
 
 int collatz(int n)
@@ -28,5 +24,4 @@ int collatz(int n)
 
     else if (n % 2 != 0)
         return 1 + collatz((3 * n) + 1);
-
 }
