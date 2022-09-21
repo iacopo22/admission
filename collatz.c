@@ -11,17 +11,11 @@ int collatz(int n);
 
 int main(void)
 {
-    int counter = 0;
 
     int n = 4;
 
     collatz(n);
 
-    counter++;
-    
-    printf("Number of times: %i\n", counter);
-
-    return 0;
 }
 
 int collatz(int n)
@@ -38,5 +32,7 @@ int collatz(int n)
      {
           return (3 * n) + 1;
      }
-     return n;
+
+
+    collatz(n/2);
 }
