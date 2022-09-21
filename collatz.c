@@ -27,11 +27,11 @@ int collatz(int n)
     }
     else if (n % 2 == 0)
     {
-        return collatz(n / 2);
+        collatz(n / 2);
     }
     else if (n % 2 != 0)
     {
-        return collatz((3 * n) + 1);
+        collatz((3 * n) + 1);
     }
 
     int counter = 0;
