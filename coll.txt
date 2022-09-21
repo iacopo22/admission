@@ -23,3 +23,9 @@ ritorna dalla funzione iniziale la funzione collatz con n = 2
 ritorna dalla funzione iniziale la funzione collatz con n = 1
 
 n = 1 quindi la funzione ritorna 1 e si interrompe
+
+
+Le n che entrano nel loop in ordine sono:
+
+
+2 4 8 16 5
