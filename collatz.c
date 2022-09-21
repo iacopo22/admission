@@ -12,7 +12,7 @@ int collatz(int n);
 int main(void)
 {
 
-    int n = get_int("Integer: ");
+    int n = 12;
 
     int counter = collatz(n);
     printf("Number of times: %i\n", counter);
@@ -37,7 +37,7 @@ int collatz(int n)
     }
 
     int counter = 0;
-    while(n < n + 1)
+    while(n < 12)
     {
         counter++;
     }
