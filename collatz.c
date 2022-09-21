@@ -33,5 +33,9 @@ int collatz(int n)
     {
         return collatz((3 * n) + 1);
     }
-    return counter;
+
+    while(n != 0)
+    {
+        
+    }
 }
