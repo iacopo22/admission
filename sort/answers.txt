@@ -1,5 +1,8 @@
 sort1 uses: TODO
 
+reversed5000   -->   0.082s
+
+
 How do you know?: TODO
 
 sort2 uses: TODO
