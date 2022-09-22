@@ -4,13 +4,15 @@ reversed5000   -->   0.082s
 random5000     -->   0.080s
 sorted5000     -->   0.042s
 
-reversed10000  -->   0.082s
-random10000    -->   0.080s
-sorted10000    -->   0.042s
+reversed10000  -->   0.283s
+random10000    -->   0.475s
+sorted10000    -->   0.092s
 
 How do you know?: TODO
 
 sort2 uses: TODO
+
+
 
 How do you know?: TODO
 
