@@ -73,7 +73,7 @@ bool vote(string name)
         }
         else
         {
-
+            return false;
         }
     }
     return true;
