@@ -21,7 +21,7 @@ random10000    -->   0.198s
 sorted10000    -->   0.106s
 
 
-How do you know?: Because it has the lower time and the random and sorted are pretty similar 
+How do you know?: Because it has the lower time and the random and sorted are pretty similar (n * log(n))
 
 sort3 uses: TODO
 
