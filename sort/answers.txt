@@ -1,7 +1,7 @@
 sort1 uses: TODO
 
-reversed5000   -->   0.082s
-random5000     -->   0.080s
+reversed5000   -->   0.075s
+random5000     -->   0.239s
 sorted5000     -->   0.042s
 
 reversed10000  -->   0.283s
@@ -36,3 +36,6 @@ sorted10000    -->   0.246s
 
 
 How do you know?: TODO
+
+
+time ./sort1 reversed5000.txt
