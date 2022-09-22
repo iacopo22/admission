@@ -68,9 +68,13 @@ bool vote(string name)
     for (int x = 0; x < candidate_count; x++)
     {
         if (name == candidates[x].name)
-            break;
+        {
+            candidates[x].votes++;
+        }
         else
-            return false;
+        {
+
+        }
     }
     return true;
 }
