@@ -70,7 +70,7 @@ bool vote(string name)
     {
         if (name == argv[x])
         {
-            
+
         }
     }
 
