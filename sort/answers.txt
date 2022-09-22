@@ -1,7 +1,12 @@
 sort1 uses: TODO
 
 reversed5000   -->   0.082s
+random5000     -->   0.080s
+sorted5000     -->   0.042s
 
+reversed10000  -->   0.082s
+random10000    -->   0.080s
+sorted10000    -->   0.042s
 
 How do you know?: TODO
 
