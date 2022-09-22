@@ -26,16 +26,16 @@ How do you know?: TODO
 sort3 uses: TODO
 
 reversed5000   -->   0.059s
-random5000     -->   0.051s
-sorted5000     -->   0.059s
+random5000     -->   0.074s
+sorted5000     -->   0.073s
 
-reversed10000  -->   0.220s
-random10000    -->   0.234s
-sorted10000    -->   0.246s
+reversed10000  -->   0.198s
+random10000    -->   0.519s
+sorted10000    -->   0.179s
 
 
 
 How do you know?: TODO
 
 
-time ./sort2 reversed5000.txt
+time ./sort3 reversed5000.txt
