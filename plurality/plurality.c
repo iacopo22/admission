@@ -68,8 +68,9 @@ bool vote(string name)
     for (int x = 1; x < argc; x++)
     {
         if (name == argv[x])
-        {
-
-        }
+            return true;
+        else
+            return false;
     }
+
 }
