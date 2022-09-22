@@ -10,7 +10,7 @@ sorted10000    -->   0.093s
 
 How do you know?: TODO
 
-sort2 uses: TODO
+sort2 uses: Merge sort
 
 reversed5000   -->   0.052s
 random5000     -->   0.067s
@@ -21,7 +21,7 @@ random10000    -->   0.198s
 sorted10000    -->   0.106s
 
 
-How do you know?: TODO
+How do you know?: Because it has the lower time and the random and sorted are pretty similar 
 
 sort3 uses: TODO
 
