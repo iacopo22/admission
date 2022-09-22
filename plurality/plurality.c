@@ -71,7 +71,7 @@ bool vote(string name)
         {
             return false;
         }
-        else
+        else if
         {
             candidates[x].votes++;
             return true;
