@@ -66,8 +66,14 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
-    return false;
+    for (int x = 1; x < argc; x++)
+    {
+        if (name == argv[x])
+        {
+            
+        }
+    }
+
 }
 
 // Print the winner (or winners) of the election
