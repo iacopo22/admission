@@ -29,7 +29,7 @@ reversed5000   -->   0.059s
 random5000     -->   0.051s
 sorted5000     -->   0.059s
 
-reversed10000  -->   0.214s
+reversed10000  -->   0.220s
 random10000    -->   0.234s
 sorted10000    -->   0.246s
 
