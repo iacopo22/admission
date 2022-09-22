@@ -2,21 +2,21 @@ sort1 uses: TODO
 
 reversed5000   -->   0.075s
 random5000     -->   0.239s
-sorted5000     -->   0.042s
+sorted5000     -->   0.027s
 
-reversed10000  -->   0.283s
-random10000    -->   0.475s
-sorted10000    -->   0.092s
+reversed10000  -->   0.279s
+random10000    -->   0.341s
+sorted10000    -->   0.093s
 
 How do you know?: TODO
 
 sort2 uses: TODO
 
-reversed5000   -->   0.06s
-random5000     -->   0.07s
-sorted5000     -->   0.056s
+reversed5000   -->   0.052s
+random5000     -->   0.067s
+sorted5000     -->   0.044s
 
-reversed10000  -->   0.082s
+reversed10000  -->   0.153s
 random10000    -->   0.198s
 sorted10000    -->   0.106s
 
@@ -38,4 +38,4 @@ sorted10000    -->   0.246s
 How do you know?: TODO
 
 
-time ./sort1 reversed5000.txt
+time ./sort2 reversed5000.txt
