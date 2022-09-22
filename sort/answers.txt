@@ -27,11 +27,11 @@ sort3 uses: TODO
 
 reversed5000   -->   0.059s
 random5000     -->   0.051s
-sorted5000     -->   0.056s
+sorted5000     -->   0.059s
 
-reversed10000  -->   0.082s
-random10000    -->   0.198s
-sorted10000    -->   0.106s
+reversed10000  -->   0.214s
+random10000    -->   0.234s
+sorted10000    -->   0.246s
 
 
 
