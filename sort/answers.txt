@@ -1,4 +1,4 @@
-sort1 uses: TODO
+sort1 uses: Bubble sort
 
 reversed5000   -->   0.075s
 random5000     -->   0.239s
@@ -8,7 +8,7 @@ reversed10000  -->   0.279s
 random10000    -->   0.341s
 sorted10000    -->   0.093s
 
-How do you know?: TODO
+How do you know?: Here sorted time are significantly lower cause the omega is n and the O is n^2. So there has to be a big difference between the two.
 
 sort2 uses: Merge sort
 
@@ -21,9 +21,9 @@ random10000    -->   0.198s
 sorted10000    -->   0.106s
 
 
-How do you know?: Because it has the lower time and the random and sorted are pretty similar (n * log(n))
+How do you know?: Because it has lower time than sort3 and the three measurements for each size are pretty similar (n * log(n))
 
-sort3 uses: TODO
+sort3 uses: Selection
 
 reversed5000   -->   0.059s
 random5000     -->   0.074s
@@ -35,7 +35,5 @@ sorted10000    -->   0.179s
 
 
 
-How do you know?: TODO
+How do you know?: Because the time of reversed and sorted are pretty similar but they are bigger than sort2 because the O is n^2 and omega is n^2.
 
-
-time ./sort3 reversed5000.txt
