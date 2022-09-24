@@ -1,4 +1,6 @@
-Il problema è che la funzione deve verificare ogni voto e quando il nome 
+Il problema è che la funzione deve verificare ogni voto e quando il nome in input coincide con uno dei nomi dei candidati
+bisogna aggiornare il numero dei voti di quel candidato, mentre se il nome in input non coincide col nome di alcun candidato
+allora il voto viene considerato invalido ma la funzione non deve bloccarsi ma continuare a verificare gli altri voti
 
 
 
