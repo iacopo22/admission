@@ -36,7 +36,35 @@ the loop ends and the program returns false and prints invalid vote.
 You may assume that no two candidates will have the same name.
 How to do this?
 
+bool alphabetical_chars(string text)
+{
+    for (int z = 0; z < strlen(text); z++)
+    {
+        if (!isalpha(text[z]))
+        {
+            printf("Key must only contain alphabetical characters\n");
+            return false;
+        }
+    }
+    return true;
+}
+    bool number = alphabetical_chars(argv[1]);
 
+    if (!alphabetical_chars(argv[1]))
+    {
+        return 1;
+    }
+
+        int j = 0;
+    for (int i = 0, n = strlen(argv[1]); i < n; i++)
+    {
+        j++;
+    }
+    if (j != 26)
+    {
+        printf("Key must contain 26 characters\n");
+        return 1;
+    }
 
 
 
