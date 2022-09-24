@@ -101,6 +101,7 @@ void print_winner(void)
             {
                 printf("%s\n", candidates[x].name);
                 printf("%s\n", candidates[y].name);
+                return;
             }
         }
     }
