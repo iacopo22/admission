@@ -70,3 +70,33 @@ char cyphertext (string k, char plain)
  		return plain;
 	}
 	return 0;
+
+
+
+
+
+
+
+
+
+
+
+    bool same_chars(string key)
+{
+    int counter = 0;
+    for (int j = 0, n = strlen(key); j < n; j++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if ((toupper(key[j]) == toupper(key[i])))
+            {
+                counter++;
+                if (counter >= 27)
+                {
+                return false;
+                }
+            }
+        }
+    }
+    return true;
+}

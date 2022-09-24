@@ -34,7 +34,6 @@ int main(int argc, string argv[])
 
     if (!alphabetical_chars(argv[1]))
     {
-        printf("Key must only contain alphabetical characters\n");
         return 1;
     }
 
@@ -43,7 +42,6 @@ int main(int argc, string argv[])
 
     if (!same_chars(argv[1]))
     {
-        printf("Key cannot have two equal characters\n");
         return 1;
     }
 
@@ -89,7 +87,8 @@ bool same_chars(string key)
                 counter++;
                 if (counter >= 27)
                 {
-                return false;
+                    printf("Key must only contain alphabetical characters\n");
+                    return false;
                 }
             }
         }
