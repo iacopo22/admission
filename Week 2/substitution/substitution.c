@@ -6,7 +6,7 @@
 bool alphabetical_chars(string text);
 bool same_chars(string key);
 char cyphertext(string k, char plain);
-int counter = 0;
+
 
 int main(int argc, string argv[])
 {
@@ -78,6 +78,7 @@ bool alphabetical_chars(string text)
 
 bool same_chars(string key)
 {
+    int counter = 0;
     for (int j = 0, n = strlen(key); j < n; j++)
     {
         for (int i = 0; i < n; i++)
