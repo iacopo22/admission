@@ -83,7 +83,7 @@ bool same_chars(string key)
     {
         for (int i = 0; i < n; i++)
         {
-            if ((key[j]) == (key[i]))
+            if ((toupper(key[j]) == toupper(key[i])))
             {
                 counter++;
                 if (counter >= 27)
