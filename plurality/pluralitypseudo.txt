@@ -1,4 +1,4 @@
-
+Il problema è che la funzione deve verificare ogni voto 
 
 
 
