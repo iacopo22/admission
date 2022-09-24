@@ -9,7 +9,22 @@ Anna Mario
 vote: Mario
 vote: Anna
 
-
+bool vote(string name)
+{
+    for (int x = 0; x < candidate_count; x++)
+    {
+        if ((strcmp(name, candidates[x].name) == 0))
+        {
+            candidates[x].votes++;
+            return true;
+        }
+        else if (!(strcmp(name, candidates[x].name) == 0))
+        {
+            return false;
+        }
+    }
+    return true;
+}
 
 
 
