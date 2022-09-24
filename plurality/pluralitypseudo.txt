@@ -4,6 +4,10 @@ allora il voto viene considerato invalido ma la funzione non deve bloccarsi ma c
 E non ci possono essere due candidati con lo stesso nome
 
 
+Anna Mario
+
+vote: Mario
+vote: Anna
 
 
 
