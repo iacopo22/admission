@@ -30,16 +30,12 @@ int main(int argc, string argv[])
     }
 
     //Key must only contain alphabetical characters
-    bool number = alphabetical_chars(argv[1]);
-
     if (!alphabetical_chars(argv[1]))
     {
         return 1;
     }
 
     //Key can't contain two equal characters
-    bool same = same_chars(argv[1]);
-
     if (!same_chars(argv[1]))
     {
         return 1;
