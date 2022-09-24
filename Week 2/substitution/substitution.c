@@ -85,7 +85,7 @@ bool same_chars(string key)
             if ((key[j]) == (key[i]))
             {
                 counter++;
-                if (counter >= 28)
+                if (counter >= 27)
                 {
                 printf("Key cannot have two equal characters\n");
                 return false;
