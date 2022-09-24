@@ -78,9 +78,9 @@ bool alphabetical_chars(string text)
 
 bool same_chars(string key)
 {
-    for (int i = 0, n = strlen(key); i < n; i++)
+    for (int j = 0, n = strlen(key); j < n; j += (1 / 26))
     {
-        for (int j = 0; j < n; j += (1 / 26))
+        for (int i = 0; i < n; i++)
         {
             if ((key[j]) == (key[i]))
             {
