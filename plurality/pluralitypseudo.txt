@@ -36,6 +36,8 @@ the loop ends and the program returns false and prints invalid vote.
 You may assume that no two candidates will have the same name.
 How to do this?
 
+Anna Mario Franco
+
 
 
 
