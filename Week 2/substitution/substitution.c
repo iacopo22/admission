@@ -40,10 +40,7 @@ int main(int argc, string argv[])
     //Key can't contain two equal characters
     bool same = same_chars(argv[1]);
 
-    if (!same_chars(argv[1]))
-    {
-        return 1;
-    }
+
 
     //Prompt the user for the plaintext
     string plaintext = get_string("plaintext: ");
