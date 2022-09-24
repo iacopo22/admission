@@ -33,22 +33,11 @@ the loop ends and the program returns false and prints invalid vote.
 
 
 
-You may assume that no two candidates will have the same name.
-How to do this?
 
-Anna Mario Franco
+Anna Mario
 
 
 
 
 
-    // Display winner of election
-    print_winner();
 
-
-// Print the winner (or winners) of the election
-void print_winner(void)
-{
-    // TODO
-    return;
-}
