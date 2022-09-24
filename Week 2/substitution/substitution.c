@@ -34,13 +34,18 @@ int main(int argc, string argv[])
 
     if (!alphabetical_chars(argv[1]))
     {
+        printf("Key must only contain alphabetical characters\n");
         return 1;
     }
 
     //Key can't contain two equal characters
     bool same = same_chars(argv[1]);
 
-
+    if (!same_chars(argv[1]))
+    {
+        printf("Key cannot have two equal characters\n");
+        return 1;
+    }
 
     //Prompt the user for the plaintext
     string plaintext = get_string("plaintext: ");
@@ -66,7 +71,6 @@ bool alphabetical_chars(string text)
     {
         if (!isalpha(text[z]))
         {
-            printf("Key must only contain alphabetical characters\n");
             return false;
         }
     }
@@ -85,7 +89,6 @@ bool same_chars(string key)
                 counter++;
                 if (counter >= 27)
                 {
-                printf("Key cannot have two equal characters\n");
                 return false;
                 }
             }
