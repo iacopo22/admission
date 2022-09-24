@@ -79,7 +79,7 @@ bool same_chars(string key)
 {
     for (int i = 0, n = strlen(key); i < n; i++)
     {
-        if ((key[i + 1]) == (key[i]))
+        if ((key[i]) == (key[i]))
         {
             printf("Key cannot have two equal characters\n");
             return false;
