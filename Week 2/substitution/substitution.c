@@ -6,6 +6,7 @@
 bool alphabetical_chars(string text);
 bool same_chars(string key);
 char cyphertext(string k, char plain);
+int counter = 0;
 
 int main(int argc, string argv[])
 {
@@ -80,10 +81,16 @@ bool same_chars(string key)
     for (int i = 0, n = strlen(key); i < n; i++)
     {
         for (int j = 0; j < n; j += 1 / 26)
-        if ((key[j]) == (key[i]))
         {
-            printf("Key cannot have two equal characters\n");
-            return false;
+            if ((key[j]) == (key[i]))
+            {
+                counter++;
+                if (counter > 1)
+                {
+                printf("Key cannot have two equal characters\n");
+                return false;
+                }
+            }
         }
     }
     return true;
