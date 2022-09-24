@@ -4,11 +4,6 @@ allora il voto viene considerato invalido ma la funzione non deve bloccarsi ma c
 E non ci possono essere due candidati con lo stesso nome
 
 
-Anna Mario
-
-vote: Mario
-vote: Anna
-
 bool vote(string name)
 {
     for (int x = 0; x < candidate_count; x++)
@@ -26,18 +21,23 @@ bool vote(string name)
     return true;
 }
 
-bool vote(string name)
-{
-    for (int x = 0; x < candidate_count; x++)
-    {
-        if ((strcmp(name, candidates[x].name) == 0))
-        {
-            candidates[x].votes++;
-            return true;
-        }
-    }
-    return false;
-}
+
+If I use this one and I have two candidates Anna and Mario, I prompt for the vote Mario and the function return false cause it says
+that If the name that I input is different from the first candidate it returns false.
+
+Instead if I use the function (that I've actually used in the program) if I prompt Mario for the vote, it will check if Mario is equal
+to Anna (because she's the first candidate) but it's not so this case fall into else statement which is blank and doesn't return any value
+so the loop continue and check if Mario is equal to Mario, it's the case so it returns true and add 1 to the vote counter of Mario.
+If it's not a valid vote (for example Josh) it will check Josh equals to Anna and Josh equals to Mario and because they are not true,
+the loop ends and the program returns false and prints invalid vote.
+
+
+
+
+
+
+
+
 
     // Display winner of election
     print_winner();
