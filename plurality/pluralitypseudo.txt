@@ -34,7 +34,7 @@ the loop ends and the program returns false and prints invalid vote.
 
 
 
-Anna Mario Franco
+5 3 6 4
 
 
 
