@@ -5,10 +5,6 @@
 // Max number of candidates
 #define MAX 9
 
-    int counter = 1;
-    int number = 1;
-    int count = 1;
-
 // Candidates have name and vote count
 typedef struct
 {
@@ -95,28 +91,7 @@ void print_winner(void)
         {
             if (candidates[x].votes > candidates[y].votes)
             {
-                counter++;
-                if (counter >= candidate_count)
-                {
-                printf("%s\n", candidates[x].name);
-                }
-            }
-            else if (candidates[x].votes < candidates[y].votes)
-            {
-                number++;
-                if (number > candidate_count)
-                {
-                printf("%s\n", candidates[y].name);
-                }
-            }
-            else if (candidates[x].votes == candidates[y].votes)
-            {
-                count++;
-                if (number > candidate_count)
-                {
-                    printf("%s\n", candidates[x].name);
-                    printf("%s\n", candidates[y].name);
-                }
+                d
             }
         }
     }
