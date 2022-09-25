@@ -92,4 +92,4 @@ void print_winner(void)
         }
     }
     return;
-}                    3 1 4
+}                    4 1 3
