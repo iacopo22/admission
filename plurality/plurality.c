@@ -99,7 +99,7 @@ void print_winner(void)
                 }
             }
             //print everyone with the same number of votes (of the one with the max)
-            if (candidates[x].votes == )
+            if (candidates[y].votes == candidates[x].votes)
             {
                 printf("%s\n", candidates[x].name);
             }
