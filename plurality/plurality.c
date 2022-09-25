@@ -91,6 +91,7 @@ void print_winner(void)
         if (candidates[x].votes >= candidates[z - 1].votes)
         {
             z--;
+            x--;
             j = candidates[x].votes;
         }
     }
