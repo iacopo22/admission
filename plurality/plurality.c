@@ -87,6 +87,7 @@ void print_winner(void)
 
     for (int x = 0; x < candidate_count; x++)
     {
+        counter = 1;
         for (int y = 0; y < candidate_count; y++)
         {
             if (candidates[x].votes > candidates[y].votes)
@@ -95,7 +96,6 @@ void print_winner(void)
                 if (counter == candidate_count)
                 {
                     printf("%s\n", candidates[x].name);
-                    counter -= candidate_count;
                 }
             }
         }
