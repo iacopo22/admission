@@ -39,7 +39,23 @@ cand: 3
 
 
 
+    int counter = 1;
 
+    for (int x = 0; x < candidate_count; x++)
+    {
+        counter = 1;
+        for (int y = 0; y < candidate_count; y++)
+        {
+            if (candidates[x].votes > candidates[y].votes)
+            {
+                counter++;
+                if (counter == candidate_count)
+                {
+                    printf("%s\n", candidates[x].name);
+                }
+            }
+        }
+    }
 
 
 
