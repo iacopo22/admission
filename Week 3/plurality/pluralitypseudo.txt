@@ -36,27 +36,14 @@ the loop ends and the program returns false and prints invalid vote.
 Coome capire qual è il numero più grande in una serie di numeri?
 
 
+int max_votes = 0;
 
+for (int x = 0; x < candidate_count; x++)
+{
+    max_votes = candidates[x].votes;
+}
 
-    int counter = 1;
-
-    for (int x = 0; x < candidate_count; x++)
-    {
-        counter = 1;
-        for (int y = 0; y < candidate_count; y++)
-        {
-            if (candidates[x].votes > candidates[y].votes)
-            {
-                counter++;
-                if (counter == candidate_count)
-                {
-                    printf("%s\n", candidates[x].name);
-                }
-            }
-        }
-    }
-
-
+Alternativa alla prima parte del print winner. Più intelligente e lineare.
 
 
 
