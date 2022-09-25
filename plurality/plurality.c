@@ -84,6 +84,7 @@ bool vote(string name)
 void print_winner(void)
 {
     int counter = 1;
+    int number = 0;
 
     for (int x = 0; x < candidate_count; x++)
     {
@@ -99,8 +100,8 @@ void print_winner(void)
             }
             else if (candidates[x].votes == candidates[y].votes)
             {
-                counter++;
-                if (counter == ((candidate_count)^2))
+                number++;
+                if (number % 2  == 0)
                 {
                     {
                         printf("%s\n", candidates[x].name);
