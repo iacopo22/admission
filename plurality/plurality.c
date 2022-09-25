@@ -96,7 +96,7 @@ void print_winner(void)
                 {
                 printf("%s\n", candidates[x].name);
                 }
-                return;
+
             }
             else if (candidates[x].votes <= candidates[y].votes)
             {
@@ -105,7 +105,7 @@ void print_winner(void)
                 {
                 printf("%s\n", candidates[y].name);
                 }
-                return;
+
             }
         }
     }
