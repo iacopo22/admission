@@ -73,6 +73,7 @@ bool vote(string name)
         if ((strcmp(name, candidates[x].name) == 0))
         {
             candidates[x].votes++;
+            printf("%i\n", candidates[x].votes);
             return true;
         }
     }
