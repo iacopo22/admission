@@ -96,12 +96,16 @@ void print_winner(void)
                 {
                 printf("%s\n", candidates[x].name);
                 }
+                return;
             }
             else if (candidates[x].votes <= candidates[y].votes)
             {
                 number++;
                 if (number > candidate_count)
+                {
                 printf("%s\n", candidates[y].name);
+                }
+                return;
             }
         }
     }
