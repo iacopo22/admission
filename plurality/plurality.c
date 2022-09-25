@@ -99,7 +99,7 @@ void print_winner(void)
                 }
             }
             //print everyone with the same number of votes (of the one with the max)
-
+            if (candidates[x].votes)
         }
     }
     return;
