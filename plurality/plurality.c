@@ -96,7 +96,7 @@ void print_winner(void)
     }
     for (int y = 0; y < z; y++)
     {
-        if (candidates[y].votes == z)
+        if (candidates[y].votes == j)
         {
             printf("%s\n", candidates[y].name);
         }
