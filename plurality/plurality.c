@@ -95,6 +95,7 @@ void print_winner(void)
                 if (counter == candidate_count)
                 {
                     printf("%s\n", candidates[x].name);
+                    counter -= candidate_count;
                 }
             }
         }
