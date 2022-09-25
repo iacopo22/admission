@@ -73,12 +73,20 @@ bool alphabetical_chars(string text)
 
 bool same_chars(string key)
 {
-    for (int i = 0, n = strlen(key); i < n; i++)
+    int counter = 0;
+    for (int j = 0, n = strlen(key); j < n; j++)
     {
-        if ((key[i]) == (key [i + 1]))
+        for (int i = 0; i < n; i++)
         {
-            printf("Key cannot have two equal characters\n");
-            return false;
+            if ((toupper(key[j]) == toupper(key[i])))
+            {
+                counter++;
+                if (counter >= 27)
+                {
+                    printf("Key must only contain alphabetical characters\n");
+                    return false;
+                }
+            }
         }
     }
     return true;
