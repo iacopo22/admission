@@ -33,7 +33,7 @@ the loop ends and the program returns false and prints invalid vote.
 
 
 
-2 2
+2 2 2
 
 cand: 2
 
