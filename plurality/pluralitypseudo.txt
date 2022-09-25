@@ -34,7 +34,7 @@ the loop ends and the program returns false and prints invalid vote.
 
 
 Coome capire qual è il numero più grande in una serie di numeri?
-2 2 1
+
 
 
 
