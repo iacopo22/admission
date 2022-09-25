@@ -84,12 +84,13 @@ bool vote(string name)
 void print_winner(void)
 {
     int j;
+    int z = candidate_count;
 
     for (int x = 0; x < candidate_count; x++)
     {
-        if (candidates[x].votes >= candidates[candidate_count - 1].votes)
+        if (candidates[x].votes >= candidates[z - 1].votes)
         {
-            candidate_count--;
+            z--;
             printf("%s\n", candidates[x].name);
             j = candidates[x].votes;
         }
