@@ -5,6 +5,10 @@
 // Max number of candidates
 #define MAX 9
 
+    int counter = 1;
+    int number = 1;
+    int count = 1;
+
 // Candidates have name and vote count
 typedef struct
 {
@@ -83,10 +87,8 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    int counter = 1;
-    int number = 1;
-    int count = 1;
-    
+
+
     for (int x = 0; x < candidate_count; x++)
     {
         for (int y = 0; y < candidate_count; y++)
