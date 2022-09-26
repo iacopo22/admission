@@ -133,6 +133,7 @@ bool vote(int voter, int rank, string name)
     //Check if the name in input matches one of the candidate names passing through each of them
     for (int i = 0; i < candidate_count; i++)
     {
+        rank++;
         //If they match I add 1 to
         if (strcmp(name, candidates[i].name) == 0)
         {
