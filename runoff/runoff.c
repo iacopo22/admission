@@ -128,10 +128,13 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
+    //Check each voter
     for (voter = 0; voter < voter_count; voter++)
     {
+        //Check each rank of each voter
         for (rank = 0; rank < candidate_count; rank++)
         {
+            //Check if the name in input match one of the candidate names passing through each of them
             for (int i = 0; i < candidate_count; i++)
             {
                 if (strcmp(name, candidates[i].name) == 0)
