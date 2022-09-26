@@ -138,6 +138,8 @@ bool vote(int voter, int rank, string name)
             rank++;
             printf("%i\n", rank);
 
+            printf("%i\n", voter);
+
             preferences[voter][rank]++;
             printf("%i\n", preferences[voter][rank]);
 
