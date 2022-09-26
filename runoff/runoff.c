@@ -130,7 +130,7 @@ bool vote(int voter, int rank, string name)
 {
     for (rank = 1; rank < candidate_count; rank++)
     {
-        for
+        for (int i = 0; i < voter; i++)
         {
             if (strcmp(name, candidates[x].name) == 0)
             {
