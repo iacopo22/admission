@@ -128,21 +128,31 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    int rank = 0;
-    int voter = 0;
-    //Check if the name in input matches one of the candidate names passing through each of them
-    for (int i = 0; i < candidate_count; i++)
+    //Check each voter
+    for (voter = 0; voter < voter_count; voter++)
     {
-        //If they match I add 1 to
-        if (strcmp(name, candidates[i].name) == 0)
+        //Check each rank of each voter
+        for (rank = 0; rank < candidate_count; rank++)
         {
-            preferences[voter][rank]++;
-            candidates[i].votes++;
+            //Check if the name in input matches one of the candidate names passing through each of them
+            for (int i = 0; i < candidate_count; i++)
+            {
+                //If they match I add 1 to
+                if (strcmp(name, candidates[i].name) == 0)
+                {
+                    printf("Voter: %i\n", voter);
+                    printf("Rank: %i\n", rank);
+                    preferences[voter][rank]++;
+                    printf("%i\n", preferences[voter][rank]);
+
+                    candidates[i].votes++;
+                    return true;
+                }
+            }
         }
     }
     return false;
 }
-
 
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
