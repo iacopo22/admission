@@ -137,15 +137,14 @@ bool vote(int voter, int rank, string name)
             //Check if the name in input matches one of the candidate names passing through each of them
             for (int i = 0; i < candidate_count; i++)
             {
-                //If they match I add 1 to 
+                //If they match I add 1 to
                 if (strcmp(name, candidates[i].name) == 0)
                 {
                     printf("%i\n", preferences[voter][rank]);
                     preferences[voter][rank]++;
                     printf("%i\n", preferences[voter][rank]);
-                    printf("%i\n", candidates[i].votes);
+
                     candidates[i].votes++;
-                    printf("%i\n", candidates[i].votes);
                     return true;
                 }
             }
