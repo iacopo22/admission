@@ -135,7 +135,6 @@ bool vote(int voter, int rank, string name)
         //If they match I add 1 to
         if (strcmp(name, candidates[i].name) == 0)
         {
-            rank++;
             printf("%i\n", rank);
 
             printf("%i\n", voter);
