@@ -159,7 +159,7 @@ void tabulate(void)
             }
             else
             {
-                break;
+                continue;
             }
         }
     }
