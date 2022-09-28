@@ -152,8 +152,6 @@ void tabulate(void)
             if (candidates[preferences[voter][rank]].eliminated == false)
             {
                 candidates[preferences[voter][rank]].votes++;
-
-                printf("%i\n", candidates[preferences[voter][rank]].votes++);
                 break;
             }
         }
