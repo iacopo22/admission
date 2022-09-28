@@ -156,10 +156,6 @@ void tabulate(void)
                 printf("%i\n", candidates[preferences[voter][rank]].votes++);
                 break;
             }
-            else
-            {
-                continue;
-            }
         }
     }
     return;
