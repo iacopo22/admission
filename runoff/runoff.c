@@ -153,7 +153,7 @@ void tabulate(void)
         }
         else
         {
-            rank++;
+            
         }
     }
     return;
