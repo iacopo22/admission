@@ -147,10 +147,10 @@ bool vote(int voter, int rank, string name)
                     printf("%i\n", preferences[voter][rank]);
 
                     candidates[i].votes++;
-                    return true;
                 }
             }
         }
+        return true;
     }
     return false;
 }
