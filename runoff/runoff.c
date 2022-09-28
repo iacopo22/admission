@@ -146,6 +146,7 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     int i = 0;
+    int rank = 0;
 
     for (int voter = 0; voter < voter_count; voter++)
     {
@@ -155,7 +156,8 @@ void tabulate(void)
         }
         else
         {
-            
+            rank++;
+            preferences[voter][rank] = i;
         }
     }
     return;
