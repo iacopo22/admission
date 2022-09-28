@@ -152,11 +152,13 @@ void tabulate(void)
             if (candidates[preferences[voter][rank]].eliminated == false)
             {
                 candidates[preferences[voter][rank]].votes++;
+                printf("%i\n", candidates[preferences[voter][rank]].votes);
+                voter++;
                 break;
             }
-            else (candidates[preferences[voter][rank]].eliminated == false)
+            else if (candidates[preferences[voter][rank]].eliminated == true)
             {
-                
+                continue;
             }
 
         }
