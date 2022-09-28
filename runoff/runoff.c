@@ -145,18 +145,16 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    int i;
+
 
     for (int voter = 0; voter < voter_count; voter++)
     {
         for (int rank = 0; rank < candidate_count; rank++)
         {
-            preferences[voter][rank] = i;
-
-            if (candidates[i].eliminated == false)
+            if (candidates[preferences[voter][rank]].eliminated == false)
             {
-                candidates[i].votes++;
-                printf("%i\n", candidates[i].votes++);
+                candidates[preferences[voter][rank]].votes++;
+                printf("%i\n", candidates[preferences[voter][rank]].votes++);
             }
             else
             {
