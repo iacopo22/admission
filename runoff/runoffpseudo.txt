@@ -1,0 +1,17 @@
+2 voters
+2 candidates: B A
+
+0 < 2
+
+0 < 2
+
+
+0 < 2
+B != A
+
+1 < 2
+B = B
+preferences[voter][rank] = 1;
+B has 1 vote
+
+
