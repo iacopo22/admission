@@ -152,7 +152,7 @@ void tabulate(void)
         {
             if (candidates[preferences[voter][rank]].eliminated == true)
             {
-            
+
             }
             else if (candidates[preferences[voter][rank]].eliminated == false)
             {
