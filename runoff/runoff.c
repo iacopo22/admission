@@ -149,7 +149,17 @@ void tabulate(void)
     {
         for (int rank = 0; rank < candidate_count; rank++)
         {
-            printf("%i\n", preferences[voter][rank]);
+            if (candidates[preferences[voter][rank]].eliminated == false)
+            {
+                candidates[preferences[voter][rank]].votes++;
+
+                printf("%i\n", candidates[preferences[voter][rank]].votes++);
+                break;
+            }
+            else
+            {
+                continue;
+            }
         }
     }
     return;
