@@ -173,6 +173,7 @@ bool print_winner(void)
         if (candidates[z].votes == ((voter_count / 2) + 1))
         {
             printf("Winner: %s", candidates[z].names);
+            return true;
         }
     }
     return false;
