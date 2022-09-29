@@ -188,7 +188,6 @@ int find_min(void)
     {
         if (candidates[x].eliminated == false)
         {
-            candidates[x].votes = k;
             candidates[x].votes < k;
         }
         printf("Number of votes: %i\n", candidates[x].votes);
