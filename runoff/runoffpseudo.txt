@@ -17,3 +17,7 @@ B has 1 vote
 
 
 print_winner is easy af
+
+
+
+5 2 6 2
