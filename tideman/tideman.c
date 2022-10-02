@@ -101,11 +101,12 @@ int main(int argc, string argv[])
 bool vote(int rank, string name, int ranks[])
 {
     int x = 0;
-    for (int j = 0; j < rank; j++)
+
+    for (int i = 0; i < rank; i++)
     {
-        if(strcmp(name, candidates[j]) == 0)
+        if(strcmp(name, candidates[i]) == 0)
         {
-            ranks[x] = j;
+            ranks[x] = i;
             x++;
             return true;
         }
