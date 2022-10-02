@@ -15,6 +15,9 @@ preferences[voter][rank] = 1;
 B has 1 vote
 
 
+In vote to register the candidate in preferences you have to assign to preferences array the position of the candidate (first one, second one, etc.)
+
+
 
 print_winner is easy af
 eliminate was easy
