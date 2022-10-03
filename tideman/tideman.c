@@ -136,7 +136,8 @@ void add_pairs(void)
         {
             if (z < j)
             {
-                preferences[ranks[z]][ranks[j]]++;
+                pairs[]
+                pair_count
             }
         }
     }
