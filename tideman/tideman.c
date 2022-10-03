@@ -130,7 +130,7 @@ void record_preferences(int ranks[])
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
-    // TODO
+    if (preferences)
     return;
 }
 
