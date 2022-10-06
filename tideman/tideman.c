@@ -153,7 +153,8 @@ void sort_pairs(void)
 {
     for (int j = 0; j < pair_count; j++)
     {
-        if (pairs[x].winner )
+        if (preferences[z][j] )
+        
     }
     return;
 }
