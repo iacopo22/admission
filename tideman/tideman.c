@@ -153,9 +153,9 @@ void sort_pairs(void)
 {
     for (int j = 0; j < pair_count; j++)
     {
-        for (int y = 0: y < pair_count; y++)
+        for (int y = 0; y < pair_count; y++)
         {
-            if (preferences[j][y] > preferences)
+            if ()
             {
                 f
             }
