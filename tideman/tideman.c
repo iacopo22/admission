@@ -5,6 +5,8 @@
 // Max number of candidates
 #define MAX 9
 
+void sort(int candidate_count);
+
 // preferences[i][j] is number of voters who prefer i over j
 int preferences[MAX][MAX];
 
@@ -151,17 +153,21 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    int counter = 1;
-    while (counter != 0)
+    sort (int z)
     {
-        counter = 0;
-        for (int x = 0; x < pairs_count; x++)
+
+        int counter = 1;
+        while (counter != 0)
         {
-            for (int y = 0; y < pairs_count; y++)
+            counter = 0;
+            for (int x = 0; x < pairs_count; x++)
             {
-                if (preferences[x][y] > preferences[y][x])
+                for (int y = 0; y < pairs_count; y++)
                 {
-                    printf("%i\n", preferences[x][y]);
+                    if (preferences[x][y] > preferences[y][x])
+                    {
+                        printf("%i\n", preferences[x][y]);
+                    }
                 }
             }
         }
