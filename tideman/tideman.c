@@ -151,27 +151,8 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    void sort(int candidate_count);
-    sort (z)
-    {
 
-        int counter = 1;
-        while (counter != 0)
-        {
-            counter = 0;
-            for (int x = 0; x < pairs_count; x++)
-            {
-                for (int y = 0; y < pairs_count; y++)
-                {
-                    if (preferences[x][y] > preferences[y][x])
-                    {
-                        printf("%i\n", preferences[x][y]);
-                        sort(z - 1);
-                    }
-                }
-            }
-        }
-    }
+    
     return;
 }
 
