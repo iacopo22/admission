@@ -167,6 +167,7 @@ void sort_pairs(void)
                     if (preferences[x][y] > preferences[y][x])
                     {
                         printf("%i\n", preferences[x][y]);
+                        sort(z - 1);
                     }
                 }
             }
