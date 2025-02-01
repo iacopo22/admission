@@ -1,0 +1,9 @@
+L'obbiettivo è riuscire ad isolare le singole cifre in modo tale da poterle sommare.
+
+Il modo per riferirsi a una cifra è tramite l'utilizzo dell'operatore modulo (%). Il problema è che quando il modulo è superiore a
+10, tipo 100, le cifre isolate sono due e vengono considerate come un numero di due cifra. Quindi bisogna dividere il numero per 10
+e si otterrà la cifra desiderata (dato che int tronca il decimale).
+
+Questo processo va ripetuto per tutte le cifre del numero incrementando il modulo e la divisione per 10.
+
+Quante volte va ripetuto?
