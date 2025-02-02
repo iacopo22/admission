@@ -37,7 +37,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, i < length, i++)
     {
-        cyphertext[i] = rotate(plaintext[i]);
+        cyphertext[i] = rotate(plaintext[i], key);
     }
 
 
