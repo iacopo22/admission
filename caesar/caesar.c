@@ -56,3 +56,8 @@ bool is_int(string s)
     }
     return x;
 }
+
+char rotate(char c, int k)
+{
+    if (c >= 65 && c <= 97)
+}
