@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-bool is_int(string s);
+int is_int(string s);
 
 int main(int argc, string argv[])
 {
@@ -14,19 +14,15 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    bool integer = is_int(argv[1]);
+    is_int(argv[1]);
 
-    if (integer == false)
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
+
 
 
 }
 
 
-bool is_int(string s)
+int is_int(string s)
 {
     int length = strlen(s);
     bool x;
@@ -39,8 +35,10 @@ bool is_int(string s)
         }
         else
         {
-            x = false;
+            printf("Usage: ./caesar key\n");
+            return 1;
         }
     }
+    printf("%i\n", x);
     return x;
 }
