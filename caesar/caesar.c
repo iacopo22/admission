@@ -67,9 +67,18 @@ bool is_int(string s)
 
 char rotate(char c, int k)
 {
+    char cyph_low;
+    char cyph_up;
+
     if (islower(c) == true)
     {
-        
-
+        cyph_low = (c - 97 + k) % 26 + 97;
+        return cyph_low;
     }
+    else if (isupper(c) == true)
+    {
+        cyph_up = (c - 65 + k) % 26 + 65;
+        return cyph_up;
+    }
+
 }
