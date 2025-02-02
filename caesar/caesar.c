@@ -67,7 +67,8 @@ bool is_int(string s)
 
 char rotate(char c, int k)
 {
-    char cyph = (c + k) % 26;
+    char up = toupper(c);
+    char cyph = (up + k) % 26;
 
     printf("%i\n", cyph);
     printf("%i\n", k);
