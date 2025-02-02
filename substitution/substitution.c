@@ -59,7 +59,7 @@ bool repetition(string s)
 
     for (int i = 0; i < length - 1; i++)
     {
-        for (int j = 1; j < length - 1; j++)
+        for (int j = 1; j < length; j++)
         {
             if (i != j)
             {
