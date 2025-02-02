@@ -6,6 +6,7 @@
 #include <stdlib.h>
 
 bool is_int(string s);
+char rotate(char c, int k);
 
 int main(int argc, string argv[])
 {
@@ -32,13 +33,12 @@ int main(int argc, string argv[])
     // Prompt the user for plaintext
     string plaintext = get_string("Plaintext: ");
 
-    int length = strlen(plaintext);
-    cyphertext[length];
-
-    for (int i = 0, i < length, i++)
+    for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
-        cyphertext[i] = rotate(plaintext[i], key);
+        char char_cyphered = rotate(plaintext[i], key);
+        printf("%c", char_cyphered);
     }
+    printf("\n");
 
 
 
@@ -67,8 +67,10 @@ bool is_int(string s)
 
 char rotate(char c, int k)
 {
+    char cyph;
     if (c >= 65 && c <= 97)
     {
         cyph = (c + k) % 26;
     }
+    return cyph;
 }
