@@ -16,6 +16,8 @@ int main(int argc, string argv[])
 
     is_int(argv[1]);
 
+    printf("ciao");
+
 
 
 
