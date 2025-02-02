@@ -80,6 +80,15 @@ char cypher(string p, string k)
 {
     for(int i = 0, length = strlen(p); i < length; i++)
     {
-        char cypher = 
+        if (isupper(p[i])
+        {
+            char cypher_up = k[p[i] - 65];
+            return cypher_up;
+        }
+        else if (islower(p[i]))
+        {
+            char cypher_low = k[p[i] - 65];
+            return cypher_low;
+        }
     }
 }
