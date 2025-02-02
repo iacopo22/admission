@@ -95,7 +95,7 @@ char cypher(char p, string k)
     }
     else if (islower(p))
     {
-        char cypher_low = tolower(k[p - 65]);
+        char cypher_low = tolower(k[p - 97]);
         return cypher_low;
     }
     else if (!isalpha(p))
