@@ -77,7 +77,7 @@ bool repetition(string s)
         for (int j = i + 1; j < length; j++)
         {
             printf("j: %i\n", j);
-            if (s[i] == s[j])
+            if (toupper(s[i]) == toupper(s[j]))
             {
                 return false;
             }
