@@ -32,6 +32,14 @@ int main(int argc, string argv[])
     // Prompt the user for plaintext
     string plaintext = get_string("Plaintext: ");
 
+    int length = strlen(plaintext);
+    array cyphertext[];
+
+    for (int i = 0, i < length, i++)
+    {
+        cyphertext[i] = rotate(plaintext[i]);
+    }
+
 
 
 }
@@ -60,4 +68,7 @@ bool is_int(string s)
 char rotate(char c, int k)
 {
     if (c >= 65 && c <= 97)
+    {
+        cyph = (c + k) % 26;
+    }
 }
