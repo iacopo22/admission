@@ -1,0 +1,2 @@
+devo paragonare ogni lettera a tutte le altre tranne a se stessa per verificare
+se ci sono delle lettere uguali

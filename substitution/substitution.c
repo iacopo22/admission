@@ -42,3 +42,20 @@ bool is_char(string s)
     }
     return true;
 }
+
+bool repetition(string s)
+{
+    int length = strlen(s)
+
+    for (int i = 0; i < length; i++)
+    {
+        for (int j = 1; j < length - 1; j++)
+        {
+            if (s[i] == s[j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
