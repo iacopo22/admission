@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     // Prompt the user for the plaintext
     string plaintext = get_string("Plaintext: ");
 
-    
+
 
 
 
@@ -73,4 +73,13 @@ bool repetition(string s)
         }
     }
     return true;
+}
+
+
+char cypher(string p, string k)
+{
+    for(int i = 0, length = strlen(p); i < length; i++)
+    {
+        char cypher = 
+    }
 }
