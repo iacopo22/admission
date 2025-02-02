@@ -93,7 +93,7 @@ char cypher(char p, string k)
         char cypher_up = toupper(k[p - 65]);
         return cypher_up;
     }
-    else if (islower(p[i]))
+    else if (islower(p))
     {
         char cypher_low = tolower(k[p - 65]);
         return cypher_low;
