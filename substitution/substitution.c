@@ -51,7 +51,7 @@ bool repetition(string s)
     {
         for (int j = 1; j < length - 1; j++)
         {
-            if (s[i] == s[j])
+            if (s[i] == s[j - i])
             {
                 return false;
             }
