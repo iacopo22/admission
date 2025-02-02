@@ -1,0 +1,4 @@
+Devo riuscire a contare il numero di parole all'interno del testo.
+
+Creo un loop che viene eseguito finché il programma non trova due spazi di fila, che conta
+il numero di spazi? 

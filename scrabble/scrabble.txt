@@ -1,0 +1,2 @@
+Devo assegnare a ogni lettera il punteggio relativo.
+Come fare? 
