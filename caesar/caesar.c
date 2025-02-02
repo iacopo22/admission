@@ -16,23 +16,33 @@ int main(int argc, string argv[])
 
     bool integer = is_int(argv[1]);
 
-    return 1;
+    if (integer == false)
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
+    }
+
+
 }
 
 
 bool is_int(string s)
 {
     int length = strlen(s);
+    bool x;
 
     for (int i = 0; i < length; i++)
     {
         if (s[i] >= 0 && s[i] <= 9)
         {
-            return true;
+            printf("%i\n", s[i]);
+            x = true;
         }
         else
         {
-            return false;
+            printf("%i\n", s[i]);
+            x = false;
         }
     }
+    return x;
 }
