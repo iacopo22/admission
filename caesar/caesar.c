@@ -64,12 +64,12 @@ char rotate(char c, int k)
 {
     if (islower(c))
     {
-        int cyph_low = (c - 97 + k) % 26 + 97;
+        char cyph_low = (c - 97 + k) % 26 + 97;
         return cyph_low;
     }
     else if (isupper(c))
     {
-        int cyph_up = (c - 65 + k) % 26 + 65;
+        char cyph_up = (c - 65 + k) % 26 + 65;
         return cyph_up;
     }
     else if (!isalpha(c))
