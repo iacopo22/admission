@@ -78,5 +78,9 @@ char rotate(char c, int k)
         cyph_up = (c - 65 + k) % 26 + 65;
         return cyph_up;
     }
+    else if (!isalpha(c))
+    {
+        return c;
+    }
     return 0;
 }
