@@ -35,9 +35,13 @@ int main(int argc, string argv[])
 
     printf("ciphertext: ");
 
+    // Loop every char to cypher the text
     for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
+        // Recall the function rotate to cypher the text, assigning the cyphered char
+        // to the variable
         char char_cyphered = rotate(plaintext[i], key);
+        // Print the cyphered text
         printf("%c", char_cyphered);
     }
     printf("\n");
@@ -49,6 +53,7 @@ bool is_int(string s)
 
     for (int i = 0; i < length; i++)
     {
+        // Check if it's a digit otherwise return an error
         if (!isdigit(s[i]))
         {
             printf("Usage: ./caesar key\n");
@@ -62,6 +67,8 @@ char rotate(char c, int k)
 {
     if (islower(c))
     {
+        // Remove the ASCII number from the plaintext and then use the formula
+        // After that, add the ASCII to find the ASCII of the cyphered char
         char cyph_low = (c - 97 + k) % 26 + 97;
         return cyph_low;
     }
