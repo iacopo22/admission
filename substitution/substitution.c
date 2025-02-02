@@ -18,4 +18,27 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    bool alpha = is_char(argv[1]);
+
+    if (alpha == false)
+    {
+        printf("Only letters!\n");
+        return 1;
+    }
+
+
+
+}
+
+bool is_char(string s)
+{
+    for(int i = 0, length = strlen(s); i < length; i++)
+    {
+        if (!isalpha(s[i]))
+        {
+            return false;
+        }
+        i++;
+    }
+    return true;
 }
