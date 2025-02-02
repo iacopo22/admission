@@ -7,6 +7,7 @@
 
 bool repetition(string s);
 bool is_char(string s);
+char cypher(string p, string k);
 
 int main(int argc, string argv[])
 {
@@ -40,7 +41,14 @@ int main(int argc, string argv[])
     // Prompt the user for the plaintext
     string plaintext = get_string("Plaintext: ");
 
+    printf("Cyphertext: ");
 
+    for (int i = 0, length = strlen(plaintext); i < length; i++)
+    {
+        char cyphered = cypher(plaintext, argv[1]);
+        printf("%c", cyphered);
+    }
+    printf("\n");
 
 
 
@@ -82,13 +90,18 @@ char cypher(string p, string k)
     {
         if (isupper(p[i])
         {
-            char cypher_up = k[p[i] - 65];
+            char cypher_up = toupper(k[p[i] - 65]);
             return cypher_up;
         }
         else if (islower(p[i]))
         {
-            char cypher_low = k[p[i] - 65];
+            char cypher_low = tolower(k[p[i] - 65]);
             return cypher_low;
         }
+        else if (!isalpha(p[i]))
+        {
+            return p[i];
+        }
     }
+    return 0;
 }
