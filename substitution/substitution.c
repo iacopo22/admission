@@ -77,7 +77,7 @@ bool repetition(string s)
         for (int j = i + 1; j < length; j++)
         {
             printf("j: %i\n", j);
-            if (i != j && s[i] == s[j])
+            if (s[i] == s[j])
             {
                 return false;
             }
