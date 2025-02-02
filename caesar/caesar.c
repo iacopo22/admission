@@ -33,6 +33,8 @@ int main(int argc, string argv[])
     // Prompt the user for plaintext
     string plaintext = get_string("Plaintext: ");
 
+    printf("Cyphertext: ");
+    
     for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
         char char_cyphered = rotate(plaintext[i], key);
