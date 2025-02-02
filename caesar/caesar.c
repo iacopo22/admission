@@ -3,25 +3,34 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 bool is_int(string s);
 
 int main(int argc, string argv[])
 {
+    // If the number of arguments is not 2 then return 1
     if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
+    // Store the boolean value in the variable is_integer
     bool is_integer = is_int(argv[1]);
 
+    // If is not an integer then return 1
     if (is_integer == false)
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
+    // Convert the string key in number
+    int key = atoi(argv[1]);
+
+    // Prompt the user for plaintext
+    string plaintext = get_string("Plaintext: ");
 
 
 
