@@ -34,7 +34,7 @@ int main(int argc, string argv[])
     string plaintext = get_string("Plaintext: ");
 
     printf("Cyphertext: ");
-    
+
     for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
         char char_cyphered = rotate(plaintext[i], key);
@@ -48,36 +48,28 @@ int main(int argc, string argv[])
 bool is_int(string s)
 {
     int length = strlen(s);
-    bool x;
 
     for (int i = 0; i < length; i++)
     {
-        if (s[i] >= 48 && s[i] <= 57)
-        {
-            x = true;
-        }
-        else
+        if (!isdigit(s[i]))
         {
             printf("Usage: ./caesar key\n");
-            return 1;
+            return false;
         }
     }
-    return x;
+    return true;
 }
 
 char rotate(char c, int k)
 {
-    char cyph_low;
-    char cyph_up;
-
     if (islower(c))
     {
-        cyph_low = (c - 97 + k) % 26 + 97;
+        int cyph_low = (c - 97 + k) % 26 + 97;
         return cyph_low;
     }
     else if (isupper(c))
     {
-        cyph_up = (c - 65 + k) % 26 + 65;
+        int cyph_up = (c - 65 + k) % 26 + 65;
         return cyph_up;
     }
     else if (!isalpha(c))
