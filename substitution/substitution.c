@@ -86,22 +86,21 @@ bool repetition(string s)
 
 char cypher(string p, string k)
 {
-    for(int i = 0, length = strlen(p); i < length; i++)
+    int i = 0;
+    
+    if (isupper(p[i]))
     {
-        if (isupper(p[i]))
-        {
-            char cypher_up = toupper(k[p[i] - 65]);
-            return cypher_up;
-        }
-        else if (islower(p[i]))
-        {
-            char cypher_low = tolower(k[p[i] - 65]);
-            return cypher_low;
-        }
-        else if (!isalpha(p[i]))
-        {
-            return p[i];
-        }
+        char cypher_up = toupper(k[p[i] - 65]);
+        return cypher_up;
+    }
+    else if (islower(p[i]))
+    {
+        char cypher_low = tolower(k[p[i] - 65]);
+        return cypher_low;
+    }
+    else if (!isalpha(p[i]))
+    {
+        return p[i];
     }
     return 0;
 }
