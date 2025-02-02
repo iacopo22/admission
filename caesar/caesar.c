@@ -69,7 +69,7 @@ char rotate(char c, int k)
 {
     if (islower(c) == true)
     {
-        up = toupper(c);
         
+
     }
 }
