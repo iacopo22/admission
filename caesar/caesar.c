@@ -33,7 +33,7 @@ int main(int argc, string argv[])
     string plaintext = get_string("Plaintext: ");
 
     int length = strlen(plaintext);
-    array cyphertext[];
+    cyphertext[length];
 
     for (int i = 0, i < length, i++)
     {
