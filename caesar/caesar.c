@@ -72,6 +72,7 @@ char rotate(char c, int k)
 
     if (islower(c) == true)
     {
+        
         cyph_low = (c - 97 + k) % 26 + 97;
         return cyph_low;
     }
@@ -80,5 +81,5 @@ char rotate(char c, int k)
         cyph_up = (c - 65 + k) % 26 + 65;
         return cyph_up;
     }
-
+    return 0;
 }
