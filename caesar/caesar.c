@@ -40,8 +40,6 @@ int main(int argc, string argv[])
     }
     printf("\n");
 
-
-
 }
 
 
@@ -72,7 +70,6 @@ char rotate(char c, int k)
 
     if (islower(c) == true)
     {
-        
         cyph_low = (c - 97 + k) % 26 + 97;
         return cyph_low;
     }
