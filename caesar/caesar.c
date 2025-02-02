@@ -67,10 +67,7 @@ bool is_int(string s)
 
 char rotate(char c, int k)
 {
-    char cyph;
-    if (c >= 65 && c <= 97)
-    {
-        cyph = (c + k) % 26;
-    }
+    char cyph = (c + k) % 26;
+    
     return cyph;
 }
