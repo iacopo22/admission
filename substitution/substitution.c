@@ -86,8 +86,6 @@ bool repetition(string s)
 
 char cypher(char p, string k)
 {
-    int i = 0;
-
     if (isupper(p))
     {
         char cypher_up = toupper(k[p - 65]);
