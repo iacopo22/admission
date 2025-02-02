@@ -70,6 +70,8 @@ char rotate(char c, int k)
     char cyph = (c + k) % 26;
 
     printf("%i\n", cyph);
+    printf("%i\n", k);
+    printf("%c\n", c);
 
     return cyph;
 
