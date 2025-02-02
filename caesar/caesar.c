@@ -2,8 +2,8 @@
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 bool is_int(string s);
 char rotate(char c, int k);
@@ -41,9 +41,7 @@ int main(int argc, string argv[])
         printf("%c", char_cyphered);
     }
     printf("\n");
-
 }
-
 
 bool is_int(string s)
 {
