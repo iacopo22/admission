@@ -7,7 +7,7 @@
 
 bool repetition(string s);
 bool is_char(string s);
-char cypher(string p, string k);
+char cypher(char p, string k);
 
 int main(int argc, string argv[])
 {
@@ -45,7 +45,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
-        char cyphered = cypher(plaintext, argv[1]);
+        char cyphered = cypher(plaintext[i], argv[1]);
         printf("%c", cyphered);
     }
     printf("\n");
