@@ -53,7 +53,7 @@ bool repetition(string s)
         {
             if (i != j)
             {
-                if (s[i] == s[j - i])
+                if (s[i] == s[j])
                 {
                     return false;
                 }
