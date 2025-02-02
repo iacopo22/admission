@@ -88,7 +88,7 @@ char cypher(string p, string k)
 {
     for(int i = 0, length = strlen(p); i < length; i++)
     {
-        if (isupper(p[i])
+        if (isupper(p[i]))
         {
             char cypher_up = toupper(k[p[i] - 65]);
             return cypher_up;
