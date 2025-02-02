@@ -41,7 +41,7 @@ int main(int argc, string argv[])
     // Prompt the user for the plaintext
     string plaintext = get_string("Plaintext: ");
 
-    printf("Cyphertext: ");
+    printf("ciphertext: ");
 
     for (int i = 0, length = strlen(plaintext); i < length; i++)
     {
