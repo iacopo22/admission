@@ -163,7 +163,7 @@ bool print_winner(void)
     {
         if (candidates[i].votes > (voter_count/2))
         {
-            priintf("Winner is %s\n", candidates[i].names);
+            printf("Winner is %s\n", candidates[i].name);
             return true;
         }
     }
@@ -175,9 +175,25 @@ int find_min(void)
 {
     for (int i = 0; i < candidate_count; i++)
     {
+        int counter = 0;
+
         if (candidates[i].eliminated == false)
         {
-            
+            for (int j = 0; j < candidate_count; j++)
+            {
+                if (candidates[j].eliminated == false)
+                {
+                    if (candidates[i].votes <= candidates[j].votes)
+                    {
+                        counter++;
+                    }
+                }
+
+            }
+        }
+        if (counter == candidate_count)
+        {
+            return candidates[i].votes;
         }
     }
     return 0;
