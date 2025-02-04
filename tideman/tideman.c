@@ -149,6 +149,8 @@ void sort_pairs(void)
 {
     int position = 0;
     int order = 0;
+    int x = 0;
+    
     for (int i = 0; i < pair_count - 1; i++)
     {
         int counter = 0;
@@ -167,15 +169,13 @@ void sort_pairs(void)
             }
         }
     }
-    for (int z = 0; z < pair_count - 1; z++)
+    for (int z = 1; z < pair_count; z++)
     {
-        for (int y = 1; y < pair_count; y++)
+        if (preferences[pairs[x].winner][pairs[x].loser] <= preferences[pairs[z].winner][pairs[z].loser])
         {
-            if (preferences[pairs[z].winner][pairs[z].loser] <= preferences[pairs[y].winner][pairs[y].loser])
-            {
-                order++;
-            }
+            order++;
         }
+    }
     }
 
 
