@@ -149,7 +149,26 @@ void sort_pairs(void)
 {
     int position = 0;
 
-    for (int i = 0; i < pair_count - 1; i++)
+
+    return;
+}
+
+// Lock pairs into the candidate graph in order, without creating cycles
+void lock_pairs(void)
+{
+    // TODO
+    return;
+}
+
+// Print the winner of the election
+void print_winner(void)
+{
+    // TODO
+    return;
+}
+
+
+for (int i = 0; i < pair_count - 1; i++)
     {
         int counter = 0;
 
@@ -167,19 +186,3 @@ void sort_pairs(void)
             }
         }
     }
-    return;
-}
-
-// Lock pairs into the candidate graph in order, without creating cycles
-void lock_pairs(void)
-{
-    // TODO
-    return;
-}
-
-// Print the winner of the election
-void print_winner(void)
-{
-    // TODO
-    return;
-}
