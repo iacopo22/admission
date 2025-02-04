@@ -194,6 +194,8 @@ void sorting(int x)
 
                     pairs[0].winner = store_last_winner;
                     pairs[0].loser = store_last_loser;
+
+                    return;
                 }
             }
             if (preferences[pairs[i].winner][pairs[i].loser] < preferences[pairs[j].winner][pairs[j].loser])
