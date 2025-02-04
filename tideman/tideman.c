@@ -188,8 +188,8 @@ void sorting(int x)
                     store_last_winner = pairs[pair_count - 1 - x].winner;
                     store_last_loser = pairs[pair_count - 1 - x].loser;
 
-                    pairs[pair_count - x].winner = pairs[i].winner;
-                    pairs[pair_count - x].loser = pairs[i].loser;
+                    pairs[pair_count - x - 1].winner = pairs[i].winner;
+                    pairs[pair_count - x - 1].loser = pairs[i].loser;
 
 
                     pairs[0].winner = store_last_winner;
