@@ -161,7 +161,7 @@ bool print_winner(void)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes > (voter_count/2))
+        if (candidates[i].votes > (voter_count / 2))
         {
             printf("Winner is %s\n", candidates[i].name);
             return true;
@@ -173,6 +173,8 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
+    int counter_el = 0;
+
     for (int i = 0; i < candidate_count; i++)
     {
         int counter = 0;
@@ -188,10 +190,13 @@ int find_min(void)
                         counter++;
                     }
                 }
-
+                else
+                {
+                    counter_el++;
+                }
             }
         }
-        if (counter == candidate_count)
+        if (counter >= candidate_count - counter_el)
         {
             return candidates[i].votes;
         }
@@ -215,10 +220,10 @@ bool is_tie(int min)
         {
             counter_min++;
         }
-        if (counter_valid == counter_min)
-        {
-            return true;
-        }
+    }
+    if (counter_valid == counter_min)
+    {
+        return true;
     }
     return false;
 }
