@@ -149,11 +149,12 @@ void sort_pairs(void)
 {
     int position = 0;
     int x = 0;
+    int order;
 
     while (order != pair_count - 1)
     {
-        int order = 0;
-        
+        order = 0;
+
         for (int i = 0; i < pair_count - 1; i++)
         {
             int counter = 0;
