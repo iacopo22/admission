@@ -167,22 +167,23 @@ void print_winner(void)
     return;
 }
 
-
-for (int i = 0; i < pair_count - 1; i++)
+void sorting(int x)
+{
+    for (int i = 0; i < pair_count - 1; i++)
     {
         int counter = 0;
 
         for (int j = 0; j < pair_count; j++)
         {
-            if (i != j && preferences[pairs[i].winner][pairs[i].loser] <= preferences[pairs[j].winner][pairs[j].loser])
+            if (i != j && preferences[pairs[i].winner][pairs[i].loser] >= preferences[pairs[j].winner][pairs[j].loser])
             {
                 counter++;
                 if (counter == pair_count - 1)
                 {
-                    pairs[position].winner = pairs[i].winner;
-                    pairs[position].loser = pairs[i].loser;
-                    position++;
+                    pairs[pair_count - x].winner = pairs[i].winner;
+                    pairs[pair_count - x].loser = pairs[i].loser;
                 }
             }
         }
     }
+}
