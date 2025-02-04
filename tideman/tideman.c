@@ -152,8 +152,6 @@ void sort_pairs(void)
     {
         sorting(i);
     }
-
-
     return;
 }
 
