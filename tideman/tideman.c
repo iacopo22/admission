@@ -186,6 +186,10 @@ void sorting(int x)
                     pairs[pair_count - x].loser = pairs[i].loser;
                 }
             }
+            else
+            {
+                break;
+            }
         }
     }
 }
