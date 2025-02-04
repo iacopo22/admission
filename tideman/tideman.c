@@ -148,7 +148,7 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     int position = 0;
-    
+
     for (int i = 0; i < pair_count - 1; i++)
     {
         int counter = 0;
@@ -160,8 +160,8 @@ void sort_pairs(void)
                 counter++;
                 if (counter == pair_count - 1)
                 {
-                    pairs[position].winner = i;
-                    pairs[position].loser = i;
+                    pairs[position].winner = pairs[i].winner;
+                    pairs[position].loser = pairs[i].loser;
                     position++;
                 }
             }
