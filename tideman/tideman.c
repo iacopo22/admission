@@ -171,6 +171,9 @@ void print_winner(void)
 
 void sorting(int x)
 {
+    int store_last_winner;
+    int store_last_loser;
+
     for (int i = 0; i < pair_count - 1 - x; i++)
     {
         int counter = 0;
@@ -182,10 +185,15 @@ void sorting(int x)
                 counter++;
                 if (counter == pair_count - 1 - x)
                 {
+                    store_last_winner = pairs[pair_count - 1 - x].winner;
+                    store_last_loser = pairs[pair_count - 1 - x].loser;
+
                     pairs[pair_count - x].winner = pairs[i].winner;
                     pairs[pair_count - x].loser = pairs[i].loser;
 
-                    pairs[0].winner = 
+
+                    pairs[0].winner = store_last_winner;
+                    pairs[0].loser = store_last_loser;
                 }
             }
             else
