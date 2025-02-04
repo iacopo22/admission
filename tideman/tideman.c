@@ -138,8 +138,6 @@ void add_pairs(void)
                 pairs[counter].loser = j;
                 pair_count++;
                 counter++;
-                printf("%i\n", i);
-                printf("%i\n", j);
             }
         }
     }
