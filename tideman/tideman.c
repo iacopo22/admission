@@ -148,6 +148,7 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     int position = 0;
+    int order = 0;
     for (int i = 0; i < pair_count - 1; i++)
     {
         int counter = 0;
@@ -164,6 +165,13 @@ void sort_pairs(void)
                     position++;
                 }
             }
+        }
+    }
+    for (int z = 0; z < pair_count - 1; z++)
+    {
+        if (preferences[pairs[z].winner][pairs[z].loser] <= preferences[pairs[z + 1].winner][pairs[z + 1].loser])
+        {
+            order++;
         }
     }
     return;
