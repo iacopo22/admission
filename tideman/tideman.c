@@ -169,11 +169,16 @@ void sort_pairs(void)
     }
     for (int z = 0; z < pair_count - 1; z++)
     {
-        if (preferences[pairs[z].winner][pairs[z].loser] <= preferences[pairs[z + 1].winner][pairs[z + 1].loser])
+        for (int y = 1; y < pair_count; y++)
         {
-            order++;
+            if (preferences[pairs[z].winner][pairs[z].loser] <= preferences[pairs[y].winner][pairs[y].loser])
+            {
+                order++;
+            }
         }
     }
+
+
     return;
 }
 
