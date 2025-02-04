@@ -183,19 +183,27 @@ void sorting(int x)
             if (i != j && preferences[pairs[i].winner][pairs[i].loser] >= preferences[pairs[j].winner][pairs[j].loser])
             {
                 counter++;
+                
                 if (counter == pair_count - 1 - x)
                 {
-                    store_last_winner = pairs[pair_count - 1 - x].winner;
-                    store_last_loser = pairs[pair_count - 1 - x].loser;
+                    if (i != pair_count - 1 - x)
+                    {
+                        store_last_winner = pairs[pair_count - 1 - x].winner;
+                        store_last_loser = pairs[pair_count - 1 - x].loser;
 
-                    pairs[pair_count - x - 1].winner = pairs[i].winner;
-                    pairs[pair_count - x - 1].loser = pairs[i].loser;
+                        pairs[pair_count - x - 1].winner = pairs[i].winner;
+                        pairs[pair_count - x - 1].loser = pairs[i].loser;
 
+                        pairs[0].winner = store_last_winner;
+                        pairs[0].loser = store_last_loser;
 
-                    pairs[0].winner = store_last_winner;
-                    pairs[0].loser = store_last_loser;
+                        return;
+                    }
+                    else
+                    {
+                        return;
+                    }
 
-                    return;
                 }
             }
             if (preferences[pairs[i].winner][pairs[i].loser] < preferences[pairs[j].winner][pairs[j].loser])
