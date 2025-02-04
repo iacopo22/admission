@@ -159,9 +159,9 @@ void sort_pairs(void)
                 counter++;
                 if (counter == pair_count - 1)
                 {
-                    pairs[i].winner = i;
-                    pairs[i].loser = i;
-                    position ++;
+                    pairs[position].winner = i;
+                    pairs[position].loser = i;
+                    position++;
                 }
             }
         }
