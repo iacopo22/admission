@@ -184,6 +184,8 @@ void sorting(int x)
                 {
                     pairs[pair_count - x].winner = pairs[i].winner;
                     pairs[pair_count - x].loser = pairs[i].loser;
+
+                    pairs[0].winner = 
                 }
             }
             else
