@@ -1,0 +1,9 @@
+The object is to avoid cycles. I have to create a function in which I dig into the
+relations of the candidates. Starting from the winner of the first pair and discovering
+every relations till the end. If I find a candidate another time then I have a cycle and
+I have to eliminate an arrow.
+
+
+To do this:
+
+

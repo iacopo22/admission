@@ -148,6 +148,7 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
+    // Repeat the sorting process till the program sorts every pair
     for(int i = 0; i < pair_count; i++)
     {
         sorting(i);
@@ -158,9 +159,41 @@ void sort_pairs(void)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    // TODO
+    int candidates[pair_count];
+    int j = 1;
+
+    // bool locked[MAX][MAX]; locked[pairs[i].winner][pairs[i].loser] = true;
+    for (int i = 0; i < pair_count; i++)
+    {
+        candidates[0] = pairs[0].winner;
+        candidates[1] = pairs[0].loser;
+
+        for (int j = 0; j < pair_count; j++)
+        {
+            if (pairs[j + 1].winner == pairs[j].loser)
+            {
+                candidates[j + 2] = pairs[j + 1].loser;
+            }
+            else
+            {
+                continue;
+            }
+        }
+    }
     return;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Print the winner of the election
 void print_winner(void)
@@ -169,23 +202,32 @@ void print_winner(void)
     return;
 }
 
+
+
+
+
 void sorting(int x)
 {
     int store_last_winner;
     int store_last_loser;
 
+    // For every recall of this function I remove x, after the program increments
+    // it by one because one of the pairs has been sorted in the last call
     for (int i = 0; i < pair_count - 1 - x; i++)
     {
         int counter = 0;
 
         for (int j = 0; j < pair_count - x; j++)
         {
-            if (i != j && preferences[pairs[i].winner][pairs[i].loser] >= preferences[pairs[j].winner][pairs[j].loser])
+            if (i != j && preferences[pairs[i].winner][pairs[i].loser] <= preferences[pairs[j].winner][pairs[j].loser])
             {
                 counter++;
-                
+
+                // This means that the pair is smaller than every other pair
                 if (counter == pair_count - 1 - x)
                 {
+                    // If the sorted pair is not already in the last position of the pairs array
+                    // then the program register the candidates of the pair in the last position
                     if (i != pair_count - 1 - x)
                     {
                         store_last_winner = pairs[pair_count - 1 - x].winner;
@@ -194,8 +236,8 @@ void sorting(int x)
                         pairs[pair_count - x - 1].winner = pairs[i].winner;
                         pairs[pair_count - x - 1].loser = pairs[i].loser;
 
-                        pairs[0].winner = store_last_winner;
-                        pairs[0].loser = store_last_loser;
+                        pairs[i].winner = store_last_winner;
+                        pairs[i].loser = store_last_loser;
 
                         return;
                     }
@@ -203,12 +245,12 @@ void sorting(int x)
                     {
                         return;
                     }
-
                 }
             }
-            if (preferences[pairs[i].winner][pairs[i].loser] < preferences[pairs[j].winner][pairs[j].loser])
+            if (preferences[pairs[i].winner][pairs[i].loser] > preferences[pairs[j].winner][pairs[j].loser])
             {
-                break;
+                i = j;
+                counter++;
             }
         }
     }
