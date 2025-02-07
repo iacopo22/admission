@@ -211,46 +211,35 @@ void sorting(int x)
     int store_last_winner;
     int store_last_loser;
 
+    int min = 0;
+
     // For every recall of this function I remove x, after the program increments
     // it by one because one of the pairs has been sorted in the last call
     for (int i = 0; i < pair_count - 1 - x; i++)
     {
-        int counter = 0;
-
-        for (int j = 0; j < pair_count - x; j++)
+        if (preferences[pairs[min].winner][pairs[min].loser] > preferences[pairs[i].winner][pairs[i].loser])
         {
-            if (i != j && preferences[pairs[i].winner][pairs[i].loser] <= preferences[pairs[j].winner][pairs[j].loser])
+            min = i;
+        }
+
+        if (i = pair_count - 1 - x)
+        {
+            if (min = pair_count - 1 -x)
             {
-                counter++;
-
-                // This means that the pair is smaller than every other pair
-                if (counter == pair_count - 1 - x)
-                {
-                    // If the sorted pair is not already in the last position of the pairs array
-                    // then the program register the candidates of the pair in the last position
-                    if (i != pair_count - 1 - x)
-                    {
-                        store_last_winner = pairs[pair_count - 1 - x].winner;
-                        store_last_loser = pairs[pair_count - 1 - x].loser;
-
-                        pairs[pair_count - x - 1].winner = pairs[i].winner;
-                        pairs[pair_count - x - 1].loser = pairs[i].loser;
-
-                        pairs[i].winner = store_last_winner;
-                        pairs[i].loser = store_last_loser;
-
-                        return;
-                    }
-                    else
-                    {
-                        return;
-                    }
-                }
+                return;
             }
-            if (preferences[pairs[i].winner][pairs[i].loser] > preferences[pairs[j].winner][pairs[j].loser])
+            else
             {
-                i = j;
-                counter++;
+                store_last_winner = pairs[pair_count - 1 - x].winner;
+                store_last_loser = pairs[pair_count - 1 - x].loser;
+
+                pairs[pair_count - x - 1].winner = pairs[min].winner;
+                pairs[pair_count - x - 1].loser = pairs[min].loser;
+
+                pairs[min].winner = store_last_winner;
+                pairs[min].loser = store_last_loser;
+
+                return;
             }
         }
     }
