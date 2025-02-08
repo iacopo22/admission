@@ -177,28 +177,23 @@ void lock_pairs(void)
 
 void octopus(int counter, int i)
 {
-    for (int i = 0; i < candidate_count; i++)
+    while (visited[i] == 0 && counter != 0)
     {
-        while (visited[i] == 0 && counter != 0)
+        for (int j = 0; j < candidate_count; j++)
         {
-            for (int j = 0; j < candidate_count; j++)
+            if (pairs[j].winner == i)
             {
-                if (pairs[j].winner == i)
-                {
-                    visited[pairs[j].loser] = 1;
-                    i == pairs[j].loser;
-                    counter++;
-                    j = 0;
-                }
-
-                if (pairs[j].loser < 0 || pairs[j].loser > 8)
-                {
-                    return;
-                }
+                visited[pairs[j].loser] = 1;
+                i == pairs[j].loser;
+                counter++;
+                j = 0;
+            }
+            if (pairs[j].loser < 0 || pairs[j].loser > 8)
+            {
+                return;
             }
         }
     }
-
 }
 
 
