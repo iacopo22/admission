@@ -183,7 +183,17 @@ void octopus(int counter, int i)
         {
             for (int j = 0; j < candidate_count; j++)
             {
-                
+                if (pairs[j].winner == i)
+                {
+                    visited[pairs[j].loser] = 1;
+                    i == pairs[j].loser;
+                    counter++;
+                }
+
+                if (pairs[j].loser < 0 || pairs[j].loser > 8)
+                {
+                    return;
+                }
             }
         }
     }
