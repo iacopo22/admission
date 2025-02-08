@@ -179,7 +179,13 @@ void octopus(int counter, int i)
 {
     while (visited[z] == 0 && counter != 0)
     {
-        
+        for (int i = 0; i < candidate_count; i++)
+        {
+            for (int j = 0; j < candidate_count; j++)
+            {
+                
+            }
+        }
     }
 
 }
