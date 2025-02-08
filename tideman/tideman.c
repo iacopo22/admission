@@ -176,7 +176,7 @@ void lock_pairs(void)
         {
             if (visited[j] != 0 && locked[i][j] == false)
             {
-                
+                visited[j] == 1;
             }
         }
     }
