@@ -170,11 +170,14 @@ void lock_pairs(void)
         visited[i] = 0;
     }
 
-    for (int j = 0; j < pair_count; i++)
+    for (int i = 0; j < candidate_count; i++)
     {
-        while (visited[j] == 0)
+        for (int j = 0; j < candidate_count; j++)
         {
-
+            if (visited[j] != 0 && locked[i][j] == false)
+            {
+                
+            }
         }
     }
 
