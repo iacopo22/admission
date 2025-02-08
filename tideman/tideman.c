@@ -177,7 +177,10 @@ void lock_pairs(void)
 
 void octopus(int counter, int i)
 {
-    
+    while (visited[z] == 0 && counter != 0)
+    {
+        
+    }
 
 }
 
