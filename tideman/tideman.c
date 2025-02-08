@@ -170,53 +170,15 @@ void lock_pairs(void)
         visited[i] = 0;
     }
 
-    for (int i = 0; i < pair_count; i++)
-    {
-        int counter = 0;
-        visited[i] = 0;
 
-        for (int j = 0; j < pair_count; j++)
-        {
-            if (pairs[j].winner == i)
-            {
-                visited[pairs[j].loser] = 1;
-                counter++;
-            }
-        }
-        octopus(counter; i);
-    }
     return;
 }
 
 
 void octopus(int counter, int i)
 {
-    int counter_ = 1;
+    
 
-    while (counter_ != 0)
-    {
-        counter--;
-        for (int z = 0; z < counter; z++)
-        {
-            if (visited[z] == 1)
-            {
-                for(int x = 0; x < pair_count; x++)
-                {
-                    if (pairs[x].winner == z)
-                    {
-                        counter_++;
-
-                        visited[pairs[x].loser] = 1;
-
-                        if (pairs[x].loser == i)
-                        {
-                            printf("cycle");
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 
