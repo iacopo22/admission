@@ -177,9 +177,9 @@ void lock_pairs(void)
 
 void octopus(int counter, int i)
 {
-    while (visited[z] == 0 && counter != 0)
+    for (int i = 0; i < candidate_count; i++)
     {
-        for (int i = 0; i < candidate_count; i++)
+        while (visited[i] == 0 && counter != 0)
         {
             for (int j = 0; j < candidate_count; j++)
             {
