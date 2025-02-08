@@ -174,7 +174,7 @@ void lock_pairs(void)
     {
         while (visited[j] == 0)
         {
-            
+
         }
     }
 
