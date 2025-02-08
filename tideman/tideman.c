@@ -188,6 +188,7 @@ void octopus(int counter, int i)
                     visited[pairs[j].loser] = 1;
                     i == pairs[j].loser;
                     counter++;
+                    j = 0;
                 }
 
                 if (pairs[j].loser < 0 || pairs[j].loser > 8)
