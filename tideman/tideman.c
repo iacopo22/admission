@@ -8,6 +8,9 @@
 // preferences[i][j] is number of voters who prefer i over j
 int preferences[MAX][MAX];
 
+int visited[MAX];
+void octopus(int counter, int i);
+
 // locked[i][j] means i is locked in over j
 bool locked[MAX][MAX];
 
@@ -156,36 +159,28 @@ void sort_pairs(void)
     return;
 }
 
+
+
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    int candidates[pair_count];
-    int j = 1;
-
     // bool locked[MAX][MAX]; locked[pairs[i].winner][pairs[i].loser] = true;
-    for (int i = 0; i < pair_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
-        candidates[0] = pairs[0].winner;
-        candidates[1] = pairs[0].loser;
-
-        for (int j = 0; j < pair_count; j++)
-        {
-            if (pairs[j + 1].winner == pairs[j].loser)
-            {
-                candidates[j + 2] = pairs[j + 1].loser;
-            }
-            else
-            {
-                continue;
-            }
-        }
+        visited[i] = 0;
     }
+
+
+    
     return;
 }
 
 
+void octopus(int counter, int i)
+{
 
 
+}
 
 
 
@@ -213,34 +208,31 @@ void sorting(int x)
 
     int min = 0;
 
-    // For every recall of this function I remove x, after the program increments
-    // it by one because one of the pairs has been sorted in the last call
-    for (int i = 0; i < pair_count - 1 - x; i++)
+    // Store the minimum
+    for (int i = 0; i < pair_count - x; i++)
     {
         if (preferences[pairs[min].winner][pairs[min].loser] > preferences[pairs[i].winner][pairs[i].loser])
         {
             min = i;
         }
+    }
 
-        if (i = pair_count - 1 - x)
-        {
-            if (min = pair_count - 1 -x)
-            {
-                return;
-            }
-            else
-            {
-                store_last_winner = pairs[pair_count - 1 - x].winner;
-                store_last_loser = pairs[pair_count - 1 - x].loser;
+    // If it's in the last position I leave it there
+    if (min == pair_count - 1 - x)
+    {
+        return;
+    }
+    else
+    {
+        store_last_winner = pairs[pair_count - 1 - x].winner;
+        store_last_loser = pairs[pair_count - 1 - x].loser;
 
-                pairs[pair_count - x - 1].winner = pairs[min].winner;
-                pairs[pair_count - x - 1].loser = pairs[min].loser;
+        pairs[pair_count - x - 1].winner = pairs[min].winner;
+        pairs[pair_count - x - 1].loser = pairs[min].loser;
 
-                pairs[min].winner = store_last_winner;
-                pairs[min].loser = store_last_loser;
+        pairs[min].winner = store_last_winner;
+        pairs[min].loser = store_last_loser;
 
-                return;
-            }
-        }
+        return;
     }
 }
