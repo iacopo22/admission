@@ -170,8 +170,14 @@ void lock_pairs(void)
         visited[i] = 0;
     }
 
+    for (int j = 0; j < pair_count; i++)
+    {
+        while (visited[j] == 0)
+        {
+            
+        }
+    }
 
-    
     return;
 }
 
