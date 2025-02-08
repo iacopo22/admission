@@ -180,7 +180,6 @@ void lock_pairs(void)
             if (pairs[j].winner == i)
             {
                 visited[pairs[j].loser] = 1;
-                locked[pairs[j].winner][pairs[j].loser] = true;
                 counter++;
             }
         }
