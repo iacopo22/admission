@@ -45,13 +45,15 @@ int main(int argc, char *argv[])
     fwrite(header, sizeof(b), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
-    int counter = 0;
+    int counter = 1;
     BYTE_2 sample[1];
+    BYTE_2 samples;
 
 
-    while (fscanf(input, "%i") != EOF)
+    while (fscanf(input, "%i", &fseek(input, counter, ftell(input))) != EOF)
     {
-
+        fread(sample, sizeof(samples), 1, input);
+        fwrite(sample, sizeof(samples), 1, output);
     }
 
 
