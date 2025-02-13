@@ -50,13 +50,13 @@ int main(int argc, char *argv[])
     BYTE_2 samples;
 
     int position = fseek(input, 0, ftell(input));
-    int end = fseek(input, 0, SEEK_END);
+    fseek(input, 0, SEEK_END);
 
-    printf("End: %i\n", end);
+    printf("%ld", ftell(input));
     printf("Position: %i\n", position);
 
 
-    for (int i = 0; i < (end - 44); i++)
+    for (int i = 0; i < (i - 44); i++)
     {
         fseek(input, counter, ftell(input));
         fread(sample, sizeof(samples), 1, input);
