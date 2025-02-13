@@ -45,7 +45,6 @@ int main(int argc, char *argv[])
     fwrite(header, sizeof(b), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
-    int counter = 1;
     BYTE_2 sample[1];
     BYTE_2 samples;
 
@@ -53,25 +52,18 @@ int main(int argc, char *argv[])
     fseek(input, 0, SEEK_END);
     int end = ftell(input);
 
-
-    int position = fseek(input, 0, 44);
-    printf("Position?: %ld", ftell(input));
-    printf("Dove: %i\n", position);
-
+    fseek(input, 44, SEEK_SET);
+    int start = ftell(input);
 
     for (int i = 0; i < (end - 44); i++)
     {
-        fseek(input, counter, ftell(input));
+        fseek(input, 1, start);
         fread(sample, sizeof(samples), 1, input);
         fwrite(sample, sizeof(samples), 1, output);
     }
 
-
     printf("%ld\n", ftell(input));
     printf("%ld\n", ftell(output));
-
-
-    // fseek(FILE *pointer, long int offset, int position);
 
     // Close files
     fclose(input);
