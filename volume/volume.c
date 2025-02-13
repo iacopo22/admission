@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     BYTE b;
     uint16_t sample[];
 
-    while (samples)
+    ftell()
 
     scanf to read
     // fseek(FILE *pointer, long int offset, int position);
