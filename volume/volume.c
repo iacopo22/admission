@@ -10,6 +10,7 @@ const int HEADER_SIZE = 44;
 typedef uint8_t BYTE;
 typedef int16_t BYTE_2;
 
+
 int main(int argc, char *argv[])
 {
     // Check command-line arguments
@@ -46,16 +47,12 @@ int main(int argc, char *argv[])
     // TODO: Read samples from input file and write updated data to output file
     BYTE_2 samples;
 
-    fseek(input, 0, SEEK_END);
-    int end = ftell(input);
-    fseek(input, 44, SEEK_SET);
-
-    for (int i = 0; i < ((end - 44) / 2); i++)
+    while (fread(&samples, sizeof(samples), 1, input) != feof(input))
     {
-        fread(&samples, sizeof(samples), 1, input);
         samples *= factor;
         fwrite(&samples, sizeof(samples), 1, output);
     }
+
 
     // Close files
     fclose(input);
