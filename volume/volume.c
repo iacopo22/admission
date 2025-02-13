@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     BYTE_2 samples;
 
 
-    while (fscanf(input, "%i", ) != EOF)
+    for (int i = 0; i < (fseek(input, 0, SEEK_END)-44); i++)
     {
         fseek(input, counter, ftell(input));
         fread(sample, sizeof(samples), 1, input);
