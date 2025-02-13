@@ -49,14 +49,15 @@ int main(int argc, char *argv[])
     BYTE_2 sample[1];
     BYTE_2 samples;
 
-    int position = fseek(input, 0, ftell(input));
+    int starting = ftell(input);
     fseek(input, 0, SEEK_END);
-
-    printf("%ld", ftell(input));
-    printf("Position: %i\n", position);
+    int end = ftell(input);
 
 
-    for (int i = 0; i < (i - 44); i++)
+    printf("Position: %i\n", starting);
+
+
+    for (int i = 0; i < (end - 44); i++)
     {
         fseek(input, counter, ftell(input));
         fread(sample, sizeof(samples), 1, input);
