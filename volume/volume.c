@@ -8,7 +8,7 @@
 const int HEADER_SIZE = 44;
 
 typedef uint8_t BYTE;
-typedef uint16_t BYTE_2;
+typedef int16_t BYTE_2;
 
 
 int main(int argc, char *argv[])
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     // TODO: Read samples from input file and write updated data to output file
     BYTE_2 samples;
 
-    while (fread(&samples, sizeof(samples), 1, input) != 0)
+    while (fread(&samples, sizeof(samples), 1, input) != EOF)
     {
         samples *= factor;
         fwrite(&samples, sizeof(samples), 1, output);
