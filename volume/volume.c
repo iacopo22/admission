@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
-    uint8_t header[HEADER_SIZE];
+    BYTE header[HEADER_SIZE];
     BYTE b;
 
     fread(header, sizeof(b), HEADER_SIZE, input);
@@ -46,10 +46,12 @@ int main(int argc, char *argv[])
 
     // TODO: Read samples from input file and write updated data to output file
     int counter = 0;
+    BYTE_2 sample[1];
+
 
     while (fscanf(input, "%i") != EOF)
     {
-        
+
     }
 
 
