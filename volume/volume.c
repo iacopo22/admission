@@ -10,7 +10,6 @@ const int HEADER_SIZE = 44;
 typedef uint8_t BYTE;
 typedef int16_t BYTE_2;
 
-
 int main(int argc, char *argv[])
 {
     // Check command-line arguments
@@ -57,7 +56,6 @@ int main(int argc, char *argv[])
         samples *= factor;
         fwrite(&samples, sizeof(samples), 1, output);
     }
-
 
     // Close files
     fclose(input);
