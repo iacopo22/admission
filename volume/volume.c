@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     fwrite(header, sizeof(b), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
-    while (fscanf)
+    while (fscanf(input, "%i"))
 
 
     printf("%ld\n", ftell(input));
