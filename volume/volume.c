@@ -44,11 +44,10 @@ int main(int argc, char *argv[])
 
     // TODO: Read samples from input file and write updated data to output file
     BYTE b;
-    uint16_t sample[];
 
-    ftell()
+    printf("%ld\n", ftell(input));
 
-    scanf to read
+
     // fseek(FILE *pointer, long int offset, int position);
 
     // Close files
