@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < (end - 44); i++)
     {
         fread(sample, sizeof(samples), 1, input);
+        sample[0] *= factor;
         fwrite(sample, sizeof(samples), 1, output);
     }
 
