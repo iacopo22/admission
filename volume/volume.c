@@ -51,13 +51,11 @@ int main(int argc, char *argv[])
     fseek(input, 0, SEEK_END);
     int end = ftell(input);
 
-    fseek(input, 43, SEEK_SET);
+    fseek(input, 44, SEEK_SET);
     int start = ftell(input);
 
-    for (int i = 0; i < ((end - 44)/2); i++)
+    for (int i = 0; i < ((end - 44)); i++)
     {
-        fseek(input, 2, start);
-        start = start + 2;
         fread(sample, sizeof(samples), 1, input);
         fwrite(sample, sizeof(samples), 1, output);
     }
