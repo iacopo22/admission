@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
     BYTE b;
 
     printf("%ld\n", ftell(input));
+    printf("%ld\n", ftell(output));
 
 
     // fseek(FILE *pointer, long int offset, int position);
