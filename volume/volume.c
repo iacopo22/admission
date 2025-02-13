@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
     BYTE_2 sample[1];
     BYTE_2 samples;
 
-    int starting = ftell(input);
     fseek(input, 0, SEEK_END);
     int end = ftell(input);
 
