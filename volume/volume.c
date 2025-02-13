@@ -45,7 +45,6 @@ int main(int argc, char *argv[])
     fwrite(header, sizeof(b), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
-    BYTE_2 sample[1];
     BYTE_2 samples;
 
     fseek(input, 0, SEEK_END);
@@ -54,11 +53,11 @@ int main(int argc, char *argv[])
     fseek(input, 44, SEEK_SET);
     int start = ftell(input);
 
-    for (int i = 0; i < (end - 44); i++)
+    for (int i = 0; i < ((end - 44)/2); i++)
     {
-        fread(sample, sizeof(samples), 1, input);
-        sample[0] *= factor;
-        fwrite(sample, sizeof(samples), 1, output);
+        fread(&samples, sizeof(samples), 1, input);
+        samples *= factor;
+        fwrite(&samples, sizeof(samples), 1, output);
     }
 
     printf("%ld\n", ftell(output));
