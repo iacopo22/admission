@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     int end = ftell(input);
 
 
-    int position = fseek(input, 1, starting);
+    int position = fseek(input, 0, 44);
     printf("Dove: %i\n", position);
 
 
