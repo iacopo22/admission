@@ -62,9 +62,6 @@ int main(int argc, char *argv[])
         fwrite(sample, sizeof(samples), 1, output);
     }
 
-    printf("%ld\n", ftell(input));
-    printf("%ld\n", ftell(output));
-
     // Close files
     fclose(input);
     fclose(output);
