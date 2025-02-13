@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     // TODO: Read samples from input file and write updated data to output file
     BYTE_2 samples;
 
-    while (feof(input) != 0)
+    while (feof(input) == 0)
     {
         fread(&samples, sizeof(samples), 1, input);
         samples *= factor;
