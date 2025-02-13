@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < (end - 44); i++)
     {
-        fseek(input, 1, start);
+        fseek(input, 1, start - 1 + i);
         fread(sample, sizeof(samples), 1, input);
         fwrite(sample, sizeof(samples), 1, output);
     }
