@@ -47,20 +47,13 @@ int main(int argc, char *argv[])
     // TODO: Read samples from input file and write updated data to output file
     BYTE_2 samples;
 
-    fseek(input, 0, SEEK_END);
-    int end = ftell(input);
-
-    fseek(input, 44, SEEK_SET);
-    int start = ftell(input);
-
-    for (int i = 0; i < ((end - 44)); i++)
+    while (fread(&samples, sizeof(BYTE_2), 1, input) != EOF)
     {
-        fread(&samples, sizeof(samples), 1, input);
+        fread(&samples, sizeof(BYTE_2), 1, input);
         samples *= factor;
-        fwrite(&samples, sizeof(samples), 1, output);
+        fwrite(&samples, sizeof(BYTE_2), 1, output);
     }
 
-    printf("%ld\n", ftell(output));
 
     // Close files
     fclose(input);
