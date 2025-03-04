@@ -137,3 +137,15 @@ int less(int colour)
     }
     return colour;
 }
+
+void copy_image(copy, image)
+{
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            image[i][j] = copy[i][j];
+        }
+    }
+    return;
+}
