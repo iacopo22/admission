@@ -2,6 +2,9 @@
 #include <math.h>
 #include <stdio.h>
 
+RGBTRIPLE copy[height][width];
+
+
 int less(int colour);
 
 // Convert image to grayscale
