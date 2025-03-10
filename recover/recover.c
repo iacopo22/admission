@@ -49,6 +49,7 @@ int main(int argc, char *argv[])
                 fclose(jpg);
 
                 sprintf(filename, "%03i.jpg", counter);
+                jpg = fopen(filename, "w");
                 fwrite(block, sizeof(block), 512, jpg);
 
                 counter++;
