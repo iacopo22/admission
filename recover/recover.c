@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < ceil(end / 512); i++)
     {
-        fread(block, 1, 1, memory);
+        fread(block, 1, 512, memory);
 
         int counter = 0;
 
@@ -40,7 +40,6 @@ int main(int argc, char *argv[])
         {
             if (counter == 0)
             {
-                fread(block, 1, 512, memory);
                 fwrite(block, 1, 512, jpg);
 
                 counter++;
