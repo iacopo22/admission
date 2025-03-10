@@ -41,9 +41,14 @@ int main(int argc, char *argv[])
             break;
         }
     }
+    printf("%x\n", block[0]);
+    printf("%x\n", block[1]);
+    printf("%x\n", block[2]);
+    printf("%x\n", block[3]);
 
-    fseek(memory, -4, ftell(memory));
-
+    printf("%li\n", ftell(memory));
+    fseek(memory, (-4), ftell(memory));
+    printf("%li\n", ftell(memory));
 
 
     for (int i = 0; i < ceil(end / 512); i++)
@@ -74,11 +79,6 @@ int main(int argc, char *argv[])
             fwrite(block, 1, 512, jpg);
         }
     }
-    printf("%x\n", block[0]);
-    printf("%x\n", block[1]);
-    printf("%x\n", block[2]);
-    printf("%x\n", block[3]);
-    printf("%x\n", block[4]);
     fclose(jpg);
 
 }
