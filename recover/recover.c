@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
         int counter = 0;
 
-        char *filename;
+        char *filename = NULL;
         sprintf(filename, "%03i.jpg", 0);
         FILE *jpg = fopen(filename, "w");
 
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            if (counter == 0)
+            if (counter == 1)
             {
                 fwrite(block, sizeof(block), 512, jpg);
             }
