@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         {
             if (counter = 0)
             {
-                FILE *jpg = malloc()
+                FILE *jpg = fopen()
                 sprintf(jpg, "%03i.jpg", counter + 1);
                 fopen()
             }
