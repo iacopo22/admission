@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
     printf("%i\n", end);
 
     BYTE block[512];
-    sprintf("jpg", "%03i.jpg", 1);
 
     for (int i = 0; i < (end / 512); i++)
     {
@@ -36,6 +35,7 @@ int main(int argc, char *argv[])
         {
             if (counter == 0)
             {
+                sprintf("jpg", "%03i.jpg", 1);
                 FILE *jpg = fopen("jpg", "w");
                 fwrite(block, sizeof(block), 512, jpg);
 
