@@ -36,6 +36,9 @@ int main(int argc, char *argv[])
         sprintf(filename, "%03i.jpg", 1);
         FILE *jpg = fopen(filename, "w");
 
+        char *filename1 = NULL;
+        FILE *jpg1 = fopen(filename1, "w");
+
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             if (counter == 0)
@@ -48,9 +51,7 @@ int main(int argc, char *argv[])
             {
                 fclose(jpg);
 
-                char *filename1;
                 sprintf(filename1, "%03i.jpg", counter + 1);
-                FILE *jpg1 = fopen(filename1, "w");
                 fwrite(block, sizeof(block), 512, jpg1);
             }
         }
