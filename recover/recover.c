@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                fwrite(block, sizeof(block), 512, jpg1);
+                fwrite(block, sizeof(block), 512, jpg);
             }
         }
     }
