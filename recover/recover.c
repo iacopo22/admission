@@ -34,15 +34,14 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < ceil(end / 512); i++)
     {
-        if (counter == 0)
-        {
-            fread(block, 1, 4, memory);
-        }
-        else
-        {
-            fread(block, 1, 512, memory);
-        }
+        
+    }
 
+
+
+    for (int i = 0; i < ceil(end / 512); i++)
+    {
+        fread(block, 1, 512, memory);
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
@@ -65,19 +64,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            if (counter == 0)
-            {
-                break;
-            }
-
-            if (counter == 1)
-            {
-                fwrite(block, 1, 512, jpg);
-            }
-            else
-            {
-                fwrite(block, 1, 512, jpg);
-            }
+            fwrite(block, 1, 512, jpg);
         }
     }
     printf("%x\n", block[0]);
