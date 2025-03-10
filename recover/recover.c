@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef int8_t BYTE;
+
 int main(int argc, char *argv[])
 {
     if (argc != 2)
@@ -20,7 +22,7 @@ int main(int argc, char *argv[])
     int end = ftell(memory) / 512;
     printf("%i\n", end);
 
-    BYTE 
+    BYTE
 
     for (int i = 0; i < end; i++)
     {
