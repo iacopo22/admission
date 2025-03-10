@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
             {
                 fclose(jpg);
 
-                sprintf(filename1, "%03i.jpg", counter + 1);
-                fwrite(block, sizeof(block), 512, jpg1);
+                sprintf(filename, "%03i.jpg", counter);
+                fwrite(block, sizeof(block), 512, jpg);
             }
         }
         else
