@@ -33,10 +33,10 @@ int main(int argc, char *argv[])
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
+            sprintf("jpg", "%03i.jpg", 1);
+            FILE *jpg = fopen("jpg", "w");
             if (counter == 0)
             {
-                sprintf("jpg", "%03i.jpg", 1);
-                FILE *jpg = fopen("jpg", "w");
                 fwrite(block, sizeof(block), 512, jpg);
 
                 counter++;
