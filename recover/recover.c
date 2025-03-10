@@ -16,4 +16,8 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    fseek(memory, 0, SEEK_END);
+    int end = ftell(memory) / 512;
+    printf("%i\n", end);
+
 }
