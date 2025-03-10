@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
-typedef int8_t BYTE;
+typedef __int8_t BYTE;
 
 int main(int argc, char *argv[])
 {
@@ -22,15 +23,15 @@ int main(int argc, char *argv[])
     int end = ftell(memory);
     printf("%i\n", end);
 
-    BYTE block[];
+    BYTE block[512];
 
     for (int i = 0; i < (end / 512); i++)
     {
-        fread(block[], BYTE, 512, memory);
+        fread(block[0], size(block), 512, memory);
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] && 0xf0) == 0xe0)
         {
-            
+
         }
     }
 
