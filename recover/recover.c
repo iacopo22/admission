@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < ceil(end / 512); i++)
     {
-        fread(block, 1, 512, memory);
+        fread(block, sizeof(block), 512, memory);
 
         int counter = 0;
 
