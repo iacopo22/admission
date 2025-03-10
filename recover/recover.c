@@ -40,8 +40,9 @@ int main(int argc, char *argv[])
         {
             break;
         }
-
     }
+
+    fseek(memory, -4, ftell(memory));
 
 
 
