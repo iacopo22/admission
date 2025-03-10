@@ -30,11 +30,19 @@ int main(int argc, char *argv[])
     sprintf(filename, "%03i.jpg", 0);
     FILE *jpg = fopen(filename, "w");
 
+    int counter = 0;
+
     for (int i = 0; i < ceil(end / 512); i++)
     {
-        fread(block, 1, 512, memory);
+        if (counter == 0)
+        {
+            fread(block, 1, 4, memory);
+        }
+        else
+        {
+            fread(block, 1, 512, memory);
+        }
 
-        int counter = 0;
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
@@ -57,6 +65,11 @@ int main(int argc, char *argv[])
         }
         else
         {
+            if (counter == 0)
+            {
+                break;
+            }
+
             if (counter == 1)
             {
                 fwrite(block, 1, 512, jpg);
