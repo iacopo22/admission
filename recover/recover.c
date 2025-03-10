@@ -23,11 +23,11 @@ int main(int argc, char *argv[])
     int end = ftell(memory);
     printf("%i\n", end);
 
-    BYTE block[512];
+    BYTE block;
 
     for (int i = 0; i < (end / 512); i++)
     {
-        fread(block[0], size(block), 512, memory);
+        fread(&block, sizeof(block), 512, memory);
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] && 0xf0) == 0xe0)
         {
