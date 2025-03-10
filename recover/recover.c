@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     int end = ftell(memory) / 512;
     printf("%i\n", end);
 
-    BYTE
+    BYTE block[];
 
     for (int i = 0; i < end; i++)
     {
