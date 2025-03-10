@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
     fseek(memory, pos - 4, SEEK_SET);
 
 
-
     while (fread(block, 1, 512, memory) == 512)
     {
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
