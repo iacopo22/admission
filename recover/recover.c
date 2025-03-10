@@ -19,14 +19,19 @@ int main(int argc, char *argv[])
     }
 
     fseek(memory, 0, SEEK_END);
-    int end = ftell(memory) / 512;
+    int end = ftell(memory);
     printf("%i\n", end);
 
     BYTE block[];
 
-    for (int i = 0; i < end; i++)
+    for (int i = 0; i < (end / 512); i++)
     {
         fread(block[], BYTE, 512, memory);
+
+        if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] && 0xf0) == 0xe0)
+        {
+            
+        }
     }
 
 }
