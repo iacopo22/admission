@@ -50,6 +50,8 @@ int main(int argc, char *argv[])
 
                 sprintf(filename, "%03i.jpg", counter);
                 fwrite(block, sizeof(block), 512, jpg);
+
+                counter++;
             }
         }
         else
