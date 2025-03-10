@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    fseek(memory, 0, SEEK_END);
+    int end = ftell(memory);
+    fseek(memory, 0, SEEK_SET);
+
     BYTE block[512];
 
     char filename[8];
@@ -28,8 +32,10 @@ int main(int argc, char *argv[])
 
     int counter = 0;
 
-    while (fread(block, 1, 4, memory) == 4)
+    for (int i = 0; i < ceil(end / 512); i++)
     {
+        fread(block, 1, 4, memory);
+
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             break;
@@ -43,13 +49,16 @@ int main(int argc, char *argv[])
     int pos = ftell(memory);
     printf("%i\n", pos);
     rewind(memory);
-    fseek(memory, pos - 3, SEEK_SET);
+    fseek(memory, pos - 4, SEEK_SET);
     int pos1 = ftell(memory);
     printf("%i\n", pos1);
 
-    
-    while (fread(block, 1, 512, memory) == 512)
+
+
+    for (int i = 0; i < ceil(end / 512); i++)
     {
+        fread(block, 1, 512, memory);
+
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             if (counter == 0)
