@@ -35,14 +35,24 @@ int main(int argc, char *argv[])
         {
             if (counter == 0)
             {
-                FILE *jpg = fopen("jpg", "w");
                 sprintf("jpg", "%03i.jpg", counter + 1);
-                fwrite()
+                FILE *jpg = fopen("jpg", "w");
+                fwrite(block, sizeof(block), 512, jpg);
+
+                counter++;
+            }
+            else
+            {
+                fclose(jpg);
+
+                sprintf("jpg", "%03i.jpg", counter + 1);
+                FILE *jpg = fopen("jpg", "w");
+                fwrite(block, sizeof(block), 512, jpg);
             }
         }
         else
         {
-
+            fwrite(block, sizeof(block), 512, jpg);
         }
     }
 
