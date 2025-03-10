@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < end; i++)
     {
-        fread()
+        fread(block[], BYTE, 512, memory);
     }
 
 }
