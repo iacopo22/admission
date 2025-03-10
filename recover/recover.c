@@ -46,9 +46,13 @@ int main(int argc, char *argv[])
     printf("%x\n", block[2]);
     printf("%x\n", block[3]);
 
-    printf("%li\n", ftell(memory));
-    fseek(memory, (-4), ftell(memory));
-    printf("%li\n", ftell(memory));
+    int pos = ftell(memory);
+    printf("%i\n", pos);
+    rewind(memory);
+    fseek(memory, pos - 3, SEEK_SET);
+    int pos1 = ftell(memory);
+    printf("%i\n", pos1);
+
 
 
     for (int i = 0; i < ceil(end / 512); i++)
