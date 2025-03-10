@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <math.h>
 
 typedef uint8_t BYTE;
 
@@ -25,12 +26,12 @@ int main(int argc, char *argv[])
 
     BYTE block[512];
 
-    for (int i = 0; i < (end / 512); i++)
+    for (int i = 0; i < ceil(end / 512); i++)
     {
         fread(&block, sizeof(block), 512, memory);
 
         int counter = 0;
-        
+
         sprintf("jpg", "%03i.jpg", 1);
         FILE *jpg = fopen("jpg", "w");
 
