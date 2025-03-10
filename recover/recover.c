@@ -32,10 +32,8 @@ int main(int argc, char *argv[])
 
     int counter = 0;
 
-    for (int i = 0; i < ceil(end / 512); i++)
+    while (fread(block, 1, 4, memory) == 4)
     {
-        fread(block, 1, 4, memory);
-
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             break;
@@ -55,10 +53,8 @@ int main(int argc, char *argv[])
 
 
 
-    for (int i = 0; i < ceil(end / 512); i++)
+    while (fread(block, 1, 512, memory) == 512)
     {
-        fread(block, 1, 512, memory);
-
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             if (counter == 0)
