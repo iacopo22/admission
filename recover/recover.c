@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
         int counter = 0;
 
-        char *filename = NULL;
+        char filename[200];
         sprintf(filename, "%03i.jpg", 0);
         FILE *jpg = fopen(filename, "w");
 
