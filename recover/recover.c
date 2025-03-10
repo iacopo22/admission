@@ -73,6 +73,8 @@ int main(int argc, char *argv[])
                 sprintf(filename, "%03i.jpg", counter);
                 jpg = fopen(filename, "w");
                 fwrite(block, 1, 512, jpg);
+
+                counter++;
             }
         }
         // If the image is bigger than one block of 512 bytes
