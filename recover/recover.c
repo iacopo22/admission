@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     BYTE block[512];
 
-    char filename[200];
+    char filename[10];
     sprintf(filename, "%03i.jpg", 0);
     FILE *jpg = fopen(filename, "w");
 
