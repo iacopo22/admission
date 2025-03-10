@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < ceil(end / 512); i++)
     {
-        fread(block, 1, 512, memory);
+        fread(block, 1, 1, memory);
 
         int counter = 0;
 
@@ -40,7 +40,8 @@ int main(int argc, char *argv[])
         {
             if (counter == 0)
             {
-                fwrite(block, sizeof(block), 512, jpg);
+                fread(block, 1, 512, memory);
+                fwrite(block, 1, 512, jpg);
 
                 counter++;
             }
@@ -50,7 +51,7 @@ int main(int argc, char *argv[])
 
                 sprintf(filename, "%03i.jpg", counter);
                 jpg = fopen(filename, "w");
-                fwrite(block, sizeof(block), 512, jpg);
+                fwrite(block, 1, 512, jpg);
 
                 counter++;
             }
@@ -59,11 +60,11 @@ int main(int argc, char *argv[])
         {
             if (counter == 1)
             {
-                fwrite(block, sizeof(block), 512, jpg);
+                fwrite(block, 1, 512, jpg);
             }
             else
             {
-                fwrite(block, sizeof(block), 512, jpg);
+                fwrite(block, 1, 512, jpg);
             }
         }
     }
