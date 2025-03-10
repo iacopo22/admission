@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
         fread(block, sizeof(block), 512, memory);
 
         int counter = 0;
-        int counter_ = 0;
 
         char *filename = NULL;
         sprintf(filename, "%03i.jpg", 0);
