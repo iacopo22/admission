@@ -20,10 +20,6 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    fseek(memory, 0, SEEK_END);
-    int end = ftell(memory);
-    fseek(memory, 0, SEEK_SET);
-
     BYTE block[512];
 
     char filename[8];
@@ -40,8 +36,11 @@ int main(int argc, char *argv[])
         }
     }
 
+    int pos = ftell(memory);
     rewind(memory);
     fseek(memory, pos - 4, SEEK_SET);
+
+
 
     while (fread(block, 1, 512, memory) == 512)
     {
