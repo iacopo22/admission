@@ -26,15 +26,15 @@ int main(int argc, char *argv[])
 
     BYTE block[512];
 
+    char filename[200];
+    sprintf(filename, "%03i.jpg", 0);
+    FILE *jpg = fopen(filename, "w");
+
     for (int i = 0; i < ceil(end / 512); i++)
     {
         fread(block, sizeof(block), 512, memory);
 
         int counter = 0;
-
-        char filename[200];
-        sprintf(filename, "%03i.jpg", 0);
-        FILE *jpg = fopen(filename, "w");
 
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
@@ -66,5 +66,6 @@ int main(int argc, char *argv[])
             }
         }
     }
+    fclose(jpg);
 
 }
