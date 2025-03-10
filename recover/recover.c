@@ -1,27 +1,34 @@
+#include <math.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
-#include <math.h>
 
 typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
+    // If the user doesn't insert a file name the program returns an error
     if (argc != 2)
     {
-        printf("The program accepts exactly one command line argument, i.e. the name of a forensic image.\n");
+        printf("The program accepts exactly one command line argument, i.e. the name of a forensic "
+               "image.\n");
         return 1;
     }
 
+    // The program open the file
     FILE *memory = fopen(argv[1], "r");
+
+    // If the file is empty the program returns an error
     if (memory == NULL)
     {
         printf("Could not open the forensic image.\n");
         return 1;
     }
 
+    // According to FAT file system each block is 512 bytes
     BYTE block[512];
 
+    // Pointer to the memory batch for the JPEG title
     char filename[8];
     sprintf(filename, "%03i.jpg", 0);
     FILE *jpg = fopen(filename, "w");
@@ -39,7 +46,6 @@ int main(int argc, char *argv[])
     int pos = ftell(memory);
     rewind(memory);
     fseek(memory, pos - 4, SEEK_SET);
-
 
     while (fread(block, 1, 512, memory) == 512)
     {
