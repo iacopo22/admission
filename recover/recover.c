@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 
     fseek(memory, 0, SEEK_END);
     int end = ftell(memory);
-    printf("%i\n", end);
 
     BYTE block[512];
 
