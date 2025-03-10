@@ -24,11 +24,9 @@ int main(int argc, char *argv[])
     int end = ftell(memory);
     fseek(memory, 0, SEEK_SET);
 
-    int pos = ftell(memory);
-
     BYTE block[512];
 
-    char filename[10];
+    char filename[8];
     sprintf(filename, "%03i.jpg", 0);
     FILE *jpg = fopen(filename, "w");
 
