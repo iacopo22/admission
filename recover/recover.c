@@ -43,7 +43,6 @@ int main(int argc, char *argv[])
                 fwrite(block, sizeof(block), 512, jpg);
 
                 counter++;
-                counter_ = counter_ + 512;
             }
             else
             {
