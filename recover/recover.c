@@ -24,6 +24,8 @@ int main(int argc, char *argv[])
     int end = ftell(memory);
     fseek(memory, 0, SEEK_SET);
 
+    int pos = ftell(memory);
+
     BYTE block[512];
 
     char filename[10];
