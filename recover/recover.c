@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-typedef __int8_t BYTE;
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
