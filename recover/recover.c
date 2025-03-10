@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
         fread(&block, sizeof(block), 512, memory);
 
         int counter = 0;
+        
         sprintf("jpg", "%03i.jpg", 1);
         FILE *jpg = fopen("jpg", "w");
 
