@@ -39,19 +39,9 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    printf("%x\n", block[0]);
-    printf("%x\n", block[1]);
-    printf("%x\n", block[2]);
-    printf("%x\n", block[3]);
 
-    int pos = ftell(memory);
-    printf("%i\n", pos);
     rewind(memory);
     fseek(memory, pos - 4, SEEK_SET);
-    int pos1 = ftell(memory);
-    printf("%i\n", pos1);
-
-
 
     while (fread(block, 1, 512, memory) == 512)
     {
