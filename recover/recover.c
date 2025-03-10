@@ -67,13 +67,5 @@ int main(int argc, char *argv[])
             fwrite(block, 1, 512, jpg);
         }
     }
-    int pos2 = ftell(memory);
-    fseek(memory, 0, SEEK_END);
-    int pos3 = ftell(memory);
-
-    printf("%i\n", pos2);
-    printf("%i\n", pos3);
-
     fclose(jpg);
-
 }
