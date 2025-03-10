@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         {
             if (counter == 0)
             {
-                FILE *jpg;
+                FILE *jpg = fopen("jpg", "w");
                 sprintf("jpg", "%03i.jpg", counter + 1);
 
             }
