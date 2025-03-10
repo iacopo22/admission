@@ -71,6 +71,7 @@ int main(int argc, char *argv[])
     printf("%x\n", block[1]);
     printf("%x\n", block[2]);
     printf("%x\n", block[3]);
+    printf("%x\n", block[10]);
     fclose(jpg);
 
 }
