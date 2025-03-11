@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 typedef uint8_t BYTE;
-#define block_size 512;
+#define block_size 512
 
 int main(int argc, char *argv[])
 {
@@ -38,14 +38,14 @@ int main(int argc, char *argv[])
     int counter = 0;
 
     // Now the program can read each block
-    while (fread(block, 1, 512, memory) == 512)
+    while (fread(block, 1, block_size, memory) == block_size)
     {
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
         {
             // If it's the first JPEG file
             if (counter == 0)
             {
-                fwrite(block, 1, 512, jpg);
+                fwrite(block, 1, block_size, jpg);
 
                 counter++;
             }
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
                 sprintf(filename, "%03i.jpg", counter);
                 jpg = fopen(filename, "w");
-                fwrite(block, 1, 512, jpg);
+                fwrite(block, 1, block_size, jpg);
 
                 counter++;
             }
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
         {
             if (counter != 0)
             {
-                fwrite(block, 1, 512, jpg);
+                fwrite(block, 1, block_size, jpg);
             }
         }
     }
