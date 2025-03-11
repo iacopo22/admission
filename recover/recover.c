@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 typedef uint8_t BYTE;
+#define block_size 512;
 
 int main(int argc, char *argv[])
 {
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
     }
 
     // According to FAT file system each block is 512 bytes
-    BYTE block[512];
+    BYTE block[block_size];
 
     // Pointer to the memory batch for the JPEG title
     char filename[8];
