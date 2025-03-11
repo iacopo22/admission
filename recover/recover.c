@@ -32,8 +32,9 @@ int main(int argc, char *argv[])
 
     // Pointer to the memory batch for the JPEG title
     char filename[length_name_file];
+    // The string 000.jpg is stored in the filename batch of memory
     sprintf(filename, "%03i.jpg", 0);
-    // Pointer to store the JPEG file
+    // Pointer to store the JPEG file (the JPEG file is store in the DISK not in the memory)
     FILE *jpg = fopen(filename, "w");
 
     int counter = 0;
