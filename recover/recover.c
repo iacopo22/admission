@@ -5,6 +5,7 @@
 
 typedef uint8_t BYTE;
 #define block_size 512
+#define length_name_file 8
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
     BYTE block[block_size];
 
     // Pointer to the memory batch for the JPEG title
-    char filename[8];
+    char filename[length_name_file];
     sprintf(filename, "%03i.jpg", 0);
     // Pointer to store the JPEG file
     FILE *jpg = fopen(filename, "w");
