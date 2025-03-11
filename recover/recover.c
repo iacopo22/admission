@@ -36,21 +36,6 @@ int main(int argc, char *argv[])
 
     int counter = 0;
 
-    // Check for the first four typical bytes of the JPEG file
-    while (fread(block, 1, 4, memory) == 4)
-    {
-        if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] & 0xf0) == 0xe0)
-        {
-            break;
-        }
-    }
-
-    // Since in the next loop I'll read 512 bytes I have to return back and include also the first
-    // four bytes that the program already read
-    int pos = ftell(memory);
-    rewind(memory);
-    fseek(memory, pos - 4, SEEK_SET);
-
     // Now the program can read each block
     while (fread(block, 1, 512, memory) == 512)
     {
@@ -80,7 +65,10 @@ int main(int argc, char *argv[])
         // If the image is bigger than one block of 512 bytes
         else
         {
-            fwrite(block, 1, 512, jpg);
+            if (counter != 0)
+            {
+                fwrite(block, 1, 512, jpg);
+            }
         }
     }
     fclose(jpg);
