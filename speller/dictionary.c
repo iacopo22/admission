@@ -119,14 +119,6 @@ unsigned int hash(const char *word)
         {
             return toupper(word[0]) - 'A' + toupper(word[1]) - 'A' + toupper(word[2]) - 'A';
         }
-        else if (word[1] == '\'')
-        {
-            return toupper(word[0]) - 'A' + toupper(word[2]) - 'A';
-        }
-        else if (word[2] == '\'')
-        {
-            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
-        }
         else
         {
             return toupper(word[0]) - 'A';
