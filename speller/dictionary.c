@@ -106,30 +106,14 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
+    int sum = 0;
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    if(strlen(word) == 2 && word[0] != '\'' && word[1] != '\'')
+    for (int i = 0; i < strlen(word); i++)
     {
-        printf("w: %s\n", word);
-        return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+        sum = sum + word[i];
     }
-    else if (strlen(word) <= 2)
-    {
-        printf("w2: %s\n", word);
-        return toupper(word[0]) - 'A';
-    }
-    else
-    {
-        // Le stesse lettere in ordine diverso danno lo stesso risultato
-        if (word[0] != '\'' && word[1] != '\'' && word[2] != '\'')
-        {
-            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A' + toupper(word[2]) - 'A';
-        }
-        else
-        {
-            return toupper(word[0]) - 'A';
-        }
-    }
+    return sum;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
