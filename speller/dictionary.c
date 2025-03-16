@@ -111,9 +111,6 @@ unsigned int hash(const char *word)
     if(strlen(word) <= 2)
     {
         int val = toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25 + 25 * (toupper(word[0]) - 'A');
-        printf("val: %i\n", val);
-        printf("to: %i\n", toupper(word[0]));
-        printf("word: %s\n", word);
         return val;
     }
     else
@@ -122,13 +119,11 @@ unsigned int hash(const char *word)
         if (word[0] != '\'' && word[1] != '\'')
         {
             int val2 = toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
-            printf("val2: %i\n", val2);
-            printf("word: %s\n", word);
             return val2;
         }
         else
         {
-            return toupper(word[0]) - 'A';
+            return toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25 + 25 * (toupper(word[0]) - 'A');
         }
     }
 }
@@ -169,7 +164,7 @@ bool load(const char *dictionary)
     }
 
     fclose(dict);
-    print_buckets();
+    // print_buckets();
     return true;
 }
 
