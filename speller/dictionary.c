@@ -112,7 +112,7 @@ unsigned int hash(const char *word)
     // Sort based on the first two letters
     if(strlen(word) < 2)
     {
-
+        return word[0] - 'A';
     }
     else
     {
