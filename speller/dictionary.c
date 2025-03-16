@@ -114,6 +114,7 @@ unsigned int hash(const char *word)
     {
         int val = toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25;
         printf("val: %i\n", val);
+        printf("to: %i\n", toupper(word[0]));
         return val;
     }
     else
