@@ -110,7 +110,7 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    if(strlen(word) < 2)
+    if(strlen(word) <= 2)
     {
         return toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 26;
     }
