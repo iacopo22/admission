@@ -112,12 +112,12 @@ unsigned int hash(const char *word)
     // Sort based on the first two letters
     if(strlen(word) < 2)
     {
-        return word[0] - 'A';
+        return toupper(word[0]) - 'A';
     }
     else
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
-        return word[0] - 'A' + word[1] - 'A';
+        return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
     }
 }
 
