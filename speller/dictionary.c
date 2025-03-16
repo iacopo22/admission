@@ -112,7 +112,7 @@ unsigned int hash(const char *word)
     {
         return toupper(word[0]) - 'A';
     }
-    else
+    else if (strlen(word) >= 3)
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
         if (word[0] != '\'' && word[1] != '\'')
