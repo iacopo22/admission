@@ -109,7 +109,7 @@ unsigned int hash(const char *word)
     int sum = 0;
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    for (int i = 0; i < strlen(word); i++)
+    for(int i = 0; i < strlen(word); i++)
     {
         sum = sum + word[i];
     }
