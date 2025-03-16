@@ -113,14 +113,17 @@ unsigned int hash(const char *word)
         int val = toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25 + 25 * (toupper(word[0]) - 'A');
         printf("val: %i\n", val);
         printf("to: %i\n", toupper(word[0]));
+        printf("word: %s\n", word);
         return val;
     }
     else
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
-        int val2 = toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
-        printf("val2: %i\n", val2);
-        return val2;
+        if (word[0] != ''' )
+            int val2 = toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+            printf("val2: %i\n", val2);
+            printf("word: %s\n", word);
+            return val2;
     }
 }
 
