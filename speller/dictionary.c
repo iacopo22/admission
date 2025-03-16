@@ -106,24 +106,10 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
+    int sum = 0;
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    if(strlen(word) <= 2)
-    {
-        return toupper(word[0]) - 'A';
-    }
-    else
-    {
-        // Le stesse lettere in ordine diverso danno lo stesso risultato
-        if (word[0] != '\'' && word[1] != '\'')
-        {
-            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
-        }
-        else
-        {
-            return toupper(word[0]) - 'A';
-        }
-    }
+    return toupper(word[0]) - 'A';
 }
 
 // Loads dictionary into memory, returning true if successful, else false
