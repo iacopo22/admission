@@ -113,7 +113,7 @@ unsigned int hash(const char *word)
     {
         sum = sum + word[i];
     }
-    return sum + toupper(word[0]) - 'A';
+    return sum;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
