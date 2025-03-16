@@ -146,7 +146,7 @@ bool load(const char *dictionary)
     }
 
     fclose(dict);
-    // print_buckets();
+    print_buckets();
     return true;
 }
 
