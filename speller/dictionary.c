@@ -119,11 +119,17 @@ unsigned int hash(const char *word)
     else
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
-        if (word[0] != ''' )
+        if (word[0] != '\'' && word[1] != '\'')
+        {
             int val2 = toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
             printf("val2: %i\n", val2);
             printf("word: %s\n", word);
             return val2;
+        }
+        else
+        {
+            return toupper(word[0]) - 'A';
+        }
     }
 }
 
