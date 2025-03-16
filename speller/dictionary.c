@@ -110,7 +110,7 @@ unsigned int hash(const char *word)
     // Sort based on the first two letters
     if(strlen(word) <= 2)
     {
-        return toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25 + 25 * (toupper(word[0]) - 'A');
+        return toupper(word[0]) - 'A' + 25 * (toupper(word[0]) - 'A');
     }
     else
     {
@@ -121,7 +121,7 @@ unsigned int hash(const char *word)
         }
         else
         {
-            return toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25 + 25 * (toupper(word[0]) - 'A');
+            return toupper(word[0]) - 'A' + 25 * (toupper(word[0]) - 'A');
         }
     }
 }
