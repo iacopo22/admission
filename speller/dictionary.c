@@ -112,7 +112,7 @@ unsigned int hash(const char *word)
     // Sort based on the first two letters
     if(strlen(word) < 2)
     {
-        return toupper(word[0]) - 'A' + rndm;
+        return toupper(word[0]) - 'A' + (random() / ((double) RAND_MAX + 1)) * 26;
     }
     else
     {
