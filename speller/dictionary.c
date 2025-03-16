@@ -9,9 +9,7 @@
 
 #include "dictionary.h"
 
-
 int counter = 0;
-bool loaded;
 
 // Represents a node in a hash table
 typedef struct node
@@ -162,7 +160,6 @@ bool load(const char *dictionary)
     }
 
     fclose(dict);
-    loaded = true;
     print_buckets();
     return true;
 }
@@ -171,10 +168,9 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    if (loaded == true)
+    if (counter > 0)
         return counter;
-    else
-        return 0;
+    return 0;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
