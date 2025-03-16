@@ -108,7 +108,11 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    if(strlen(word) <= 2)
+    if(strlen(word) <= 2 && word[0] != '\'' && word[1] != '\'')
+    {
+        return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+    }
+    else if (strlen(word) <= 2)
     {
         return toupper(word[0]) - 'A';
     }
