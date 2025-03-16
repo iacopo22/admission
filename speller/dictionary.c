@@ -24,15 +24,16 @@ const unsigned int N = 80000;
 // Hash table
 node *table[N];
 
+// To check the efficiency
 void print_buckets(void)
 {
     unsigned long sum_sq = 0;
-    int num_words = (int)size();
+    int num_words = (int) size();
 
     // use dynamic memory allocation instead of the stack for these arrays,
     // in order to prevent a possible stack overflow
     int *collisionCount = calloc(num_words, sizeof *collisionCount);
-    int *bucketCounter  = calloc(N, sizeof *bucketCounter);
+    int *bucketCounter = calloc(N, sizeof *bucketCounter);
     if (bucketCounter == NULL || collisionCount == NULL)
     {
         printf("Memory allocation error!\n");
@@ -66,21 +67,14 @@ void print_buckets(void)
 
     // print final information
     printf("\n");
-    printf("Sum  of squares: %lu\n",  sum_sq);
-    printf("Mean of squares: %.3f\n", (double)sum_sq / num_words);
+    printf("Sum  of squares: %lu\n", sum_sq);
+    printf("Mean of squares: %.3f\n", (double) sum_sq / num_words);
 
     // Exit the program prematurely, so that you can see the diagnostic output
     // instead of the misspelled words. Exiting prematurely will cause memory leaks,
     // so don't run this function with valgrind.
     exit(EXIT_SUCCESS);
 }
-
-
-
-
-
-
-
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -90,7 +84,7 @@ bool check(const char *word)
     int check = 0;
     node *cursor = table[index];
 
-    while(cursor != NULL)
+    while (cursor != NULL)
     {
         if (strcasecmp(cursor->word, word) == 0)
         {
@@ -109,7 +103,7 @@ unsigned int hash(const char *word)
     int sum = 0;
     // TODO: Improve this hash function
     // Sort based on the first two letters
-    for(int i = 0; i < strlen(word); i++)
+    for (int i = 0; i < strlen(word); i++)
     {
         sum = sum + toupper(word[i]);
     }
@@ -131,7 +125,7 @@ bool load(const char *dictionary)
     char word[LENGTH + 1];
     unsigned int index = 0;
 
-    while(fscanf(dict, "%s", word) != EOF)
+    while (fscanf(dict, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
 
