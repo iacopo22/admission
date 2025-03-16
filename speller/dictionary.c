@@ -112,12 +112,16 @@ unsigned int hash(const char *word)
     // Sort based on the first two letters
     if(strlen(word) <= 2)
     {
-        return toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25;
+        int val = toupper(word[0]) - 'A' + (rand() / ((double) RAND_MAX + 1)) * 25;
+        printf("%i\n", val);
+        return val;
     }
     else
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
-        return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+        int val2 = toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+        printf("%i\n", val2);
+        return val2;
     }
 }
 
