@@ -115,7 +115,15 @@ unsigned int hash(const char *word)
     else
     {
         // Le stesse lettere in ordine diverso danno lo stesso risultato
-        if (word[0] != '\'' && word[1] != '\'')
+        if (word[0] != '\'' && word[1] != '\'' && word[2] != '\'')
+        {
+            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A' + toupper(word[2]) - 'A';
+        }
+        else if (word[1] == '\'')
+        {
+            return toupper(word[0]) - 'A' + toupper(word[2]) - 'A';
+        }
+        else if (word[2] == '\'')
         {
             return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
         }
