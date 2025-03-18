@@ -11,7 +11,9 @@ int main(void)
     }
     while (height < 1);
 
+    // Number of #
     int x = 1;
+    // Number of " " before #
     int y = height - 1;
 
     // Loop for the rows
