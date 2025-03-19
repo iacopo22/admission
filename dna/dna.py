@@ -39,7 +39,7 @@ def main():
         for i in range(1, len(reader.fieldnames)):
             match = longest_match(DNA, reader.fieldnames[i])
 
-            if (rows[_][reader.fieldnames[i]] == match):
+            if (int(rows[_][reader.fieldnames[i]]) == match):
                 counter += 1
                 if (counter == len(reader.fieldnames) - 1):
                     print(f"{rows[_]["name"]} is the matching individual")
