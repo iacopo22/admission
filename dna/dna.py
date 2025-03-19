@@ -35,10 +35,11 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     counter = 0
 
-    for i in range(1, len(reader.fieldnames)):
-        match = longest_match(DNA, reader.fieldnames[i])
+    for _ in range(n_rows):
 
-        for _ in range(n_rows):
+        for i in range(1, len(reader.fieldnames)):
+            match = longest_match(DNA, reader.fieldnames[i])
+
             if (rows[_][reader.fieldnames[i]] == match):
                 counter += 1
                 if (counter == len(reader.fieldnames) - 1):
