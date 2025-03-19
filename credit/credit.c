@@ -11,7 +11,7 @@ int main(void)
     long number = get_long("Card number: ");
 
     // Length of the number
-    // If I divide by 15 and the number is not equal to zero than length is 16, otherwhise
+    // If I divide by 15 and the number is not equal to zero then length is 16, otherwhise
     // I try with smaller numbers
     if ((number / exponential(15)) != 0)
     {
