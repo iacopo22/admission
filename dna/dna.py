@@ -45,12 +45,7 @@ def main():
                     print(f"{rows[_]["name"]} is the matching individual")
                     break;
 
-
-
-
-
-
-
+    print("No match")
 
 
 
