@@ -17,19 +17,19 @@ def main():
 
         for row in reader:
             rows.append(row)
-        print(f"{rows[0]}")
+        print(f"{len(reader.fieldnames)}")
 
     # TODO: Read DNA sequence file into a variable
     DNA = []
 
     with open(sys.argv[2]) as file:
-        reader = csv.reader(file)
+        reader_ = csv.reader(file)
 
-        for row in reader:
+        for row in reader_:
             DNA.append(row)
 
     # TODO: Find longest match of each STR in DNA sequence
-    longest_match(DNA, rows[1])
+
 
     # TODO: Check database for matching profiles
 
