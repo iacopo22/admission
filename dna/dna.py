@@ -37,19 +37,15 @@ def main():
         for i in range(1, len(reader.fieldnames)):
             match = longest_match(str(DNA[0]), reader.fieldnames[i])
 
+            # Check database for matching profiles
             if (int(rows[_][reader.fieldnames[i]]) == match):
                 counter += 1
                 if (counter == len(reader.fieldnames) - 1):
                     print(f"{rows[_]["name"]} is the matching individual")
                     return 0;
 
+    # If no match is found
     print("No match")
-
-
-
-
-    # TODO: Check database for matching profiles
-
     return
 
 
