@@ -33,12 +33,20 @@ def main():
     print(f"{rows[0]["AGATC"]}")
     print(f"{n_rows}")
     # TODO: Find longest match of each STR in DNA sequence
+    counter = 0
+
     for i in range(1, len(reader.fieldnames)):
         match = longest_match(DNA, reader.fieldnames[i])
 
         for _ in range(n_rows):
             if (rows[_][reader.fieldnames[i]] == match):
-                
+                counter++
+                if (counter == len(reader.fieldnames))
+                {
+                    print(f"{rows[_]}")
+                    break;
+                }
+
 
 
 
