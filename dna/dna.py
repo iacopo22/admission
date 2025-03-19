@@ -18,10 +18,10 @@ def main():
 
     # TODO: Read DNA sequence file into a variable
     DNA = []
-    with open(sys.argv[2]) as file_DNA:
-        reader_ = csv.DictReader(file_DNA)
+    with open(sys.argv[2]) as file:
+        reader = csv.DictReader(file)
 
-        for _ in reader_:
+        for _ in reader:
             print(f"{_}")
             DNA.append(_)
 
