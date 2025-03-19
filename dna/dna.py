@@ -7,7 +7,7 @@ def main():
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
         print("The name of the csv file and the name of the text file containing "
-        "the DNA sequence to identify are required.")
+              "the DNA sequence to identify are required.")
 
     # TODO: Read database file into a variable
     rows = []
@@ -19,7 +19,6 @@ def main():
         for row in reader:
             rows.append(row)
             n_rows += 1
-
 
     # TODO: Read DNA sequence file into a variable
     DNA = []
@@ -38,11 +37,11 @@ def main():
             match = longest_match(str(DNA[0]), reader.fieldnames[i])
 
             # Check database for matching profiles
-            if (int(rows[_][reader.fieldnames[i]]) == match):
+            if int(rows[_][reader.fieldnames[i]]) == match:
                 counter += 1
                 if (counter == len(reader.fieldnames) - 1):
                     print(f"{rows[_]["name"]} is the matching individual")
-                    return 0;
+                    return 0
 
     # If no match is found
     print("No match")
