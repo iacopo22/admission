@@ -32,7 +32,9 @@ def main():
     for i in range(1, len(reader.fieldnames)):
         match = longest_match(DNA, reader.fieldnames[i])
 
-    
+        if (match = )
+
+
 
 
     # TODO: Check database for matching profiles
