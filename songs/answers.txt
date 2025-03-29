@@ -1,0 +1,9 @@
+1. I would take the averages using these commands:
+
+SELECT AVG(energy) FROM songs;
+SELECT AVG(danceability) FROM songs;
+SELECT AVG(valence) FROM songs;
+
+
+2. Because there are other important factors like key, loudness, speechiness, the
+duration and also the artist.

@@ -1,0 +1,75 @@
+body {
+    background-color: lightblue
+    !important;
+}
+
+.header {
+    text-align: center;
+    padding: 80px 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: green;
+  }
+
+
+.alert {
+    text-align: center;
+}
+
+.stop {
+    color: red;
+}
+
+.m1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.m2 {
+    position: absolute;
+    top: 90%;
+    left: 70%;
+}
+
+.m3 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.m4 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+
+
+.quote {
+    text-align: center;
+    vertical-align: top;
+}
+
+.eyes {
+    color: red;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            //Multiple choice
+            document.addEventListener('DOMContentLoaded', function() {
+                let wrong_answers = document.querySelectorAll('.incorrect')
+                wrong_answers.forEach((wrong) => {
+                    wrong.addEventListener('click', function() {
+                        wrong.style.backgroundColor = 'red';
+                        wrong.parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+
+                })});
+
+                right_answer = document.querySelector('#correct');
+                document.querySelector('#correct').addEventListener('click', function() {
+                    right_answer.style.backgroundColor = 'green';
+                    right_answer.parentElement.querySelector('.feedback').innerHTML = 'Correct';
+                })
+
+
+                //Free response
+                let answer = document.querySelector('#answer');
+                document.querySelector('#confirm').addEventListener('click', function() {
+                    if (answer.value == 'Cardiff')
+                    {
+                        answer.style.backgroundColor = 'green';
+                        answer.parentElement.querySelector('.feedback').innerHTML = 'Correct';
+                    }
+                    else
+                    {
+                        answer.style.backgroundColor = 'red';
+                        answer.parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+                    }
+                });
+            });
+
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3> In a website browser address bar, what does "www" stand for? </h3>
+                 <button id="first_answer"class="incorrect">Web Wise Web</button>
+                 <button id="correct">World Wide Web</button>
+                 <button id="third_answer"class="incorrect">World Web Worker</button>
+                 <button id="fourth_answer"class="incorrect">Website Wide Web</button>
+                 <p class="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3> What's the capital of Wales? </h3>
+                 <input type="text" id="answer">
+                 <button id="confirm">Check Answer</button>
+                 <p class="feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>

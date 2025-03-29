@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <title>My Kubrick</title>
+
+        <script>
+
+         document.addEventListener('DOMContentLoaded', function() {
+            let alert = document.querySelector('.alert');
+            let stop = document.querySelector('.stop')
+            let button = document.querySelector('.button')
+            let movies = document.querySelector('.movies')
+
+            let fullWidth = window.innerWidth;
+            let fullHeight = window.innerHeight;
+
+            function random() {
+                    stop.style.position = "absolute";
+                    stop.style.left = Math.round(Math.random() * fullWidth) + "px";
+                    stop.style.top = Math.round(Math.random() * fullHeight) + "px";
+                }
+
+            alert.style.visibility = 'hidden';
+            stop.style.visibility = 'hidden';
+            movies.style.visibility = 'hidden';
+
+            document.querySelector('.button').addEventListener('click', function() {
+                if (alert.style.visibility = 'hidden') {
+                    alert.style.visibility = 'visible'
+                }
+
+                stop.style.visibility = 'visible'
+                myInterval = window.setInterval(random, 1500);
+
+                document.querySelector('.stop').addEventListener('click', function() {
+                    clearInterval(myInterval);
+                    this.remove(stop);
+                    alert.style.visibility = 'hidden';
+                    button.style.visibility = 'hidden';
+                    movies.style.visibility = 'visible';
+                });
+
+            });
+         });
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+        <h1>Stanley Kubrick</h1>
+        </div>
+
+        <div class="container">
+            <img src="stanleykubrick.jpg">
+            <button> <div class="button">Click me</div></button>
+          </div>
+
+        <div class="alert">
+            Are you sure? Then, click
+        </div>
+
+        <button> <div class="stop"> Here </div></button>
+
+        <div class="movies">
+            <div class="m1"> <h3><a href="eyeswideshut.html"> Eyes wide shut </h3></a> </div>
+            <div class="m2"> <h3><a href="clockworkorange.html"> Clockwork Orange </h3></a> </div>
+            <div class="m3"> <h3><a href="shining.html"> Shining </h3></a> </div>
+            <div class="m4"> <h3><a href="drstrangelove.html"> Dr. Strangelove </h3> <p>Or How I learned to Stop Worryng And Love The Bomb<p></a> </div>
+
+            </div>
+
+    </body>
+</html>
