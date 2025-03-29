@@ -65,14 +65,7 @@ img {
 }
 
 
-.quote {
-    text-align: center;
-    vertical-align: top;
-    color: black;
-    text-shadow: 2px 2px 5px red;
-    font-size: 30px;
 
-}
 
 .eyes {
     color: red;
@@ -82,9 +75,11 @@ img {
 /* Base CSS for all methods */
 /* Set box dimensions and positioning */
 .box {
-    width: 200;
-    height: 200;
-    margin: 10px;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
 
   }
   /* Fit our square image to its parent */
@@ -99,8 +94,10 @@ img {
     transform: translate(-50%,-50%);
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 12%;
     left: 50%;
+    text-shadow: 2px 2px 5px red;
+    }
   }
 
   /* Our shade div - translucent, sized and positioned to sit exactly on top of our image */
