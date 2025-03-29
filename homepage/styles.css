@@ -78,33 +78,14 @@ img {
     color: red;
 }
 
-.open {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.closed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
-
-
-
-
 
 /* Base CSS for all methods */
 /* Set box dimensions and positioning */
 .box {
-    width: 200px;
-    height: 200px;
+    width: 200;
+    height: 200;
     margin: 10px;
-    position: relative;
+
   }
   /* Fit our square image to its parent */
   img {
