@@ -6,7 +6,7 @@ def twoSum(nums, target):
       for i, n in enumerate(nums):
             dictionary[n] = i
 
-      for n in dictionary:
+      for n in enumerate(nums):
             print(f"{n}")
             diff = target - n
             if diff in dictionary and dictionary[diff] != i:
