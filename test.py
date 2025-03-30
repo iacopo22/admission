@@ -1,12 +1,13 @@
 
 def twoSum(nums, target):
 
-    dictionary = {}
+      dictionary = {}
 
-        for i, n in enumerate(nums):
+      for i, n in enumerate(nums):
             dictionary[n] = i
 
-        for n in dictionary:
+      for n in dictionary:
+            print(f"{n}")
             diff = target - n
             if diff in dictionary and dictionary[diff] != i:
                 return [i, dictionary[diff]]
@@ -14,5 +15,5 @@ def twoSum(nums, target):
 
 
 
-twoSum([3,3], 6)
+twoSum([2,7,11,15], 9)
 
