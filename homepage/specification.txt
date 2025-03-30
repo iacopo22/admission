@@ -1,0 +1,24 @@
+HTML tags
+1. h2
+2. h3
+3. h4
+4. a
+5. p
+6. img
+7. div
+8. footer
+9. mark
+10. q
+
+
+CSS properties
+1. tag
+2. class
+3. ID
+4. element (p for example)
+5. group selector
+
+
+I've used Javascript and Bootstrap to create an interactive and dynamic home
+where the user has to click at first where it's pointed to and then has to click
+the moving text "here". Overall I've used the functions "hover, click" and the Intervals.

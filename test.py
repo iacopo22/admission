@@ -1,21 +1,18 @@
-# Searches database popularity of a problem
 
-import csv
+def twoSum(nums, target):
 
-from cs50 import SQL
+    dictionary = {}
 
-# Open database
-db = SQL("sqlite:///favorites.db")
+        for i, n in enumerate(nums):
+            dictionary[n] = i
 
-# Prompt user for favorite
-favorite = input("Favorite: ")
+        for n in dictionary:
+            diff = target - n
+            if diff in dictionary and dictionary[diff] != i:
+                return [i, dictionary[diff]]
 
-# Search for title
-rows = db.execute("SELECT COUNT(*) AS n FROM favorites WHERE problem = ?", favorite)
 
-# Get first (and only) row
-row = rows[0]
 
-# Print popularity
-print(rows)
+
+twoSum([3,3], 6)
 
