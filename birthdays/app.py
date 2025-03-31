@@ -53,7 +53,7 @@ def index():
 
         db.execute("INSERT INTO birthdays (name, month, day) VALUES (?, ?, ?)", name, month, day)
 
-        return redirect("/")
+        return redirect("index.html")
 
     else:
 
