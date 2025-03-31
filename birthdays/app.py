@@ -33,7 +33,9 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        
+        name = request.form.get("name")
+        month = request.form.get("month")
+        day = request.form.get("day")
 
         return render_template("index.html")
 
