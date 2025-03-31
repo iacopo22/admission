@@ -27,6 +27,10 @@ def index():
     if request.method == "POST":
 
         # TODO: Add the user's entry into the database
+        name = request.form.get("name")
+        month = request.form.get("month")
+        day = request.form.get("day")
+
         db.execute("INSERT INTO registrants (name, month, day) VALUES (?, ?, ?)", name, month, day)
 
         return redirect("/")
@@ -34,10 +38,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        name = request.form.get("name")
-        month = request.form.get("month")
-        day = request.form.get("day")
-        registrants = db.execute("SELECT name, month, day FROM registrants")
+        registrants = db.execute("SELECT name, month, day FROM section")
 
         return render_template("index.html")
 
