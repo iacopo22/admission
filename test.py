@@ -2,7 +2,7 @@ from collections import defaultdict
 
 def groupAnagrams(strs):
 
-        res = defaultdict(list)
+        res = defaultdict()
         for s in strs:
             sortedS = ''.join(sorted(s))
             res[sortedS].append(s)
