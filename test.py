@@ -2,12 +2,12 @@ from collections import defaultdict
 
 def groupAnagrams(strs):
 
-        res = defaultdict()
+        res = defaultdict(list)
         for s in strs:
             sortedS = ''.join(sorted(s))
             res[sortedS].append(s)
 
-        print(f"{list(res.values())}")
+        print(f"{list(res())}")
         return list(res.values())
 
 
