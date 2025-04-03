@@ -2,11 +2,11 @@ from collections import defaultdict
 
 def groupAnagrams(nums, k):
 
-        res = defaultdict()
+        res = {}
         output = []
 
         for num in nums:
-            res[num] += 1 + 
+            res[num] = 1 + res.get(res[num], 0)
 
         tuple(sort(res.values()))
 
