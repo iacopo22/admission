@@ -1,16 +1,20 @@
 from collections import defaultdict
 
-def groupAnagrams(strs):
+def groupAnagrams(nums, k):
 
-        res = defaultdict(list)
-        for s in strs:
-            sortedS = ''.join(sorted(s))
-            res[sortedS].append(s)
+        res = defaultdict()
+        output = []
 
-        print(f"{list(res())}")
-        return list(res.values())
+        for num in nums:
+            res[num] += 1
+
+        tuple(sort(res.values()))
+
+        for i in range(k):
+            output.append(res.keys())
 
 
 
-strs = ["eat","tea","tan","ate","nat","bat"]
-groupAnagrams(strs)
+nums = [1,1,1,2,2,3]
+k = 2
+groupAnagrams(nums, k)
