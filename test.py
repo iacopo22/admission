@@ -9,7 +9,7 @@ def groupAnagrams(nums, k):
             res[num] += 1
 
         print(f"{res}")
-        res = sorted(res, value=res.values)
+        res = sorted(res, key=res.get)
         print(f"{res}")
 
 
