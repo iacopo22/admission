@@ -21,8 +21,9 @@ def groupAnagrams(nums, k):
         res = []
         for i in range(k):
             res.append(heapq.heappop(heap)[1])
+            print(f"res: {res}")
 
-        print(f"res: {res}")
+
         return res
 
 
