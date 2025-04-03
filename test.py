@@ -2,13 +2,13 @@ from collections import defaultdict
 
 def groupAnagrams(nums, k):
 
-        res = {}
+        res = defaultdict()
         output = []
 
         for num in nums:
-            res[num] = 1 + res.get(res[num], 0)
+            res[num] += 1
 
-        tuple(sort(res.values()))
+        sorted(res, key=res.get)
 
         for i in range(k):
             output.append(res.keys())
