@@ -12,10 +12,10 @@ def groupAnagrams(nums, k):
         heap = []
         for num in count.keys():
             heapq.heappush(heap, (count[num], num))
-            print(f"Heap1: {heapq}")
+            print(f"Heap1: {heap}")
             if len(heap) > k:
                 heapq.heappop(heap)
-                print(f"Heap2: {count}")
+                print(f"Heap2: {heap}")
 
 
         res = []
