@@ -8,9 +8,9 @@ def groupAnagrams(nums, k):
         for num in nums:
             res[num] += 1
 
-        print(f"{output}")
-
+        print(f"{res}")
         sorted(res, key=res.get)
+        print(f"{res}")
 
         for i in range(k):
             output.append(res.keys())
