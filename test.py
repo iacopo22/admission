@@ -6,7 +6,7 @@ def groupAnagrams(nums, k):
         output = []
 
         for num in nums:
-            res[num] += 1
+            res[num] += 1 + 
 
         tuple(sort(res.values()))
 
