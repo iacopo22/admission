@@ -1,19 +1,29 @@
 from collections import defaultdict
+import heapq
 
 def groupAnagrams(nums, k):
 
-        res = defaultdict(int)
-        output = []
-
+        count = {}
         for num in nums:
-            res[num] += 1
+            count[num] = 1 + count.get(num, 0)
 
-        res = sorted(res, key=res.get, reverse = True)
+        print(f"{count}")
 
+        heap = []
+        for num in count.keys():
+            heapq.heappush(heap, (count[num], num))
+            print(f"Heap1: {heapq}")
+            if len(heap) > k:
+                heapq.heappop(heap)
+                print(f"Heap2: {count}")
+
+
+        res = []
         for i in range(k):
-              output.append(res[i])
+            res.append(heapq.heappop(heap)[1])
 
-        print(f"{output}")
+        print(f"res: {res}")
+        return res
 
 
 
