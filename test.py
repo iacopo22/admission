@@ -25,11 +25,11 @@ p = p0  # initial belief
 
 def update_belief(p, order, alpha):
     if order == 'buy':
-        num = p * (alpha + 0.5 * (1 - alpha))
-        denom = p * (alpha + 0.5 * (1 - alpha)) + (1 - p) * (0.5 * (1 - alpha))
+        num = p * 0.5 * (1 + alpha)
+        denom = p * alpha + (1 - alpha) * 0.5
     else:  # 'sell'
-        num = p * (0.5 * (1 - alpha))
-        denom = p * (0.5 * (1 - alpha)) + (1 - p) * (alpha + 0.5 * (1 - alpha))
+        num = p * 0.5 * (1 - alpha)
+        denom = alpha * (1 - p) + 0.5 * (1 - alpha)
     return num / denom
 
 for t in range(N):
