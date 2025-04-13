@@ -37,7 +37,7 @@ for t in range(N):
 
     # Generate order
     if is_informed:
-        order = 'buy' if true_value == v_H else 'sell'
+        order = 'buy
     else:
         order = np.random.choice(['buy', 'sell'])
 
