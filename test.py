@@ -1,11 +1,7 @@
-from collections import defaultdict
-import heapq
-
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-np.random.seed(42)
 N = 100  # number of trades
 v_H = 1.0   # high asset value
 v_L = 0.0   # low asset value
