@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 
 # Parameters
 np.random.seed(42)
-N = 100  # number of trades
+N = 10  # number of trades
 v_H = 1.0   # high asset value
 v_L = 0.0   # low asset value
 p0 = 0.5    # initial belief that value is high
 alpha = 0.3  # probability a trader is informed
-shock_trade = 50  # simulate a shock at this trade
+shock_trade = 5  # simulate a shock at this trade
 
 # true value equal to v_L since it's a bad news
 true_value = v_L
