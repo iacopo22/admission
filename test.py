@@ -13,8 +13,8 @@ p0 = 0.5    # initial belief that value is high
 alpha = 0.3  # probability a trader is informed
 shock_trade = 50  # simulate a shock at this trade
 
-# Generate true value after shock
-true_value = v_H if np.random.rand() < p0 else v_L
+# true value equal to v_L since it's a bad news
+true_value = v_L
 
 # Initialize storage
 beliefs = []
