@@ -31,7 +31,7 @@ def update_belief(p, order, alpha):
 for t in range(N):
     if t == shock_trade:
         # Sudden info shock: change probability market thinks asset is H
-        p = 0.8 if true_value == v_H else 0.2  # strong signal arrives
+        p = 0.8  # strong signal arrives
     # Decide trader type
     is_informed = np.random.rand() < alpha
 
