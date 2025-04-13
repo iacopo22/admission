@@ -25,7 +25,7 @@ p = p0  # initial belief
 def update_belief(p, order, alpha):
     numerator = p * (alpha + 0.5 * (1 - alpha)) if order == 'buy' else (1 - p) * (alpha + 0.5 * (1 - alpha))
     denominator = (p * (alpha + 0.5 * (1 - alpha)) +
-                   (1 - p) * (0.5 * (1 - alpha) if order == 'buy' else alpha + 0.5 * (1 - alpha)))
+                   (1 - p) * (0.5 * (1 - alpha) if order == 'buy' else (1 - p)*(alpha + 0.5 * (1 - alpha)) + p * (0.5 * (1 - alpha))))
     return numerator / denominator
 
 for t in range(N):
