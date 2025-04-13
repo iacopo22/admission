@@ -24,6 +24,8 @@ orders = []
 p = p0  # initial belief
 
 def update_belief(p, order, alpha):
+    if denominator == 0:
+        return p  # fallback in case of numerical issue
     if order == 'buy':
         num = p * 0.5 * (1 + alpha)
         denom = p * alpha + (1 - alpha) * 0.5
