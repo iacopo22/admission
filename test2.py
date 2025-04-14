@@ -15,8 +15,8 @@ def est_time_formatter(x, pos):
     return dt.strftime('%H:%M')
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-02"
-end_date = "2025-04-03"
+start_date = "2025-04-03"
+end_date = "2025-04-04"
 interval = "5m"
 
 # Download 10-minute interval data
@@ -31,7 +31,6 @@ df.index = df.index.tz_convert('America/New_York')
 trading_start = datetime.time(9, 30)
 trading_end = datetime.time(16, 0)
 df = df.between_time(trading_start, trading_end)
-
 
 # Drop rows with missing data
 df.dropna(inplace=True)
@@ -50,7 +49,7 @@ df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
 # Drop NaNs
 df.dropna(subset=['Amihud'], inplace=True)
-print(df['Amihud'])
+
 
 # %%
 # Plot
@@ -58,7 +57,7 @@ plt.figure(figsize=(12, 6))
 plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
 plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
 plt.gcf().autofmt_xdate()
-plt.title(f'Volume - {ticker} (5-min Interval)\n02-04-2025')
+plt.title(f'Volume - {ticker} (5-min Interval)\n03-04-2025')
 plt.xlabel('Time (EST)')
 plt.ylabel('Volume')
 plt.grid(True)
