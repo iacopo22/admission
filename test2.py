@@ -54,11 +54,11 @@ print(df['Amihud'])
 
 # %%
 # Plot
-plt.figure(figsize=(18, 9))
+plt.figure(figsize=(12, 6))
 plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
 plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
 plt.gcf().autofmt_xdate()
-plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
+plt.title(f'Volume - {ticker} (5-min Interval)\n02-04-2025')
 plt.xlabel('Time EST')
 plt.ylabel('Volume')
 plt.grid(True)
