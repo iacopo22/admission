@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 # Parameters
 ticker = "AAPL"
 start_date = "2025-04-02"
-end_date = "2025-04-03"
-interval = "1m"
+end_date = "2025-04-04"
+interval = "5m"
 
 # Download 10-minute interval data
 df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
@@ -30,9 +30,6 @@ df['Return'] = df['Close'].pct_change()
 # Calculate dollar volume
 df['DollarVolume'] = (df['Close'] * df['Volume']) / 100000000
 
-# Avoid division by zero
-df = df[df['DollarVolume'] > 0]
-
 print("Columns:", df.columns)
 print(df.head())
 # Now calculate Amihud
@@ -43,7 +40,7 @@ df.dropna(subset=['Amihud'], inplace=True)
 
 # %%
 # Plot
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(18, 9))
 plt.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color='darkblue')
 plt.title(f'Amihud Illiquidity Ratio - {ticker} (10-min Interval)\n{start_date} to {end_date}')
 plt.xlabel('Time')
