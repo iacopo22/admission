@@ -21,10 +21,9 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
 
-print(df)
 # Convert the DataFrame index to Eastern Time ("America/New_York")
 df.index = df.index.tz_convert('America/New_York')
-print(df)
+
 trading_start = datetime.time(9, 30)
 trading_end = datetime.time(16, 0)
 df = df.between_time(trading_start, trading_end)
