@@ -54,3 +54,5 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+# %%
