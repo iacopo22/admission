@@ -56,9 +56,9 @@ df.dropna(subset=['Amihud'], inplace=True)
 # Plot
 plt.figure(figsize=(18, 9))
 plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/ %H:%M'))  # European format
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))  # European format
 plt.gcf().autofmt_xdate()
-plt.title(f'Volume - {ticker} (5-min Interval)\n{start_date} to {end_date}')
+plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
 plt.xlabel('Time')
 plt.ylabel('Volume')
 plt.grid(True)
