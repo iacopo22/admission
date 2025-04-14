@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+from zoneinfo import ZoneInfo
 
 # Parameters
 ticker = "AAPL"
@@ -19,8 +20,15 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
 
+# Convert the DataFrame index to Eastern Time ("America/New_York")
+if df.index.tz is None:
+    # If the index is naive (no timezone info), first localize to UTC then convert
+    df.index = df.index.tz_localize("UTC").tz_convert("America/New_York")
+else:
+    df.index = df.index.tz_convert("America/New_York")
+
 trading_start = datetime.time(9, 30)
-trading_end = datetime.time(23, 0)
+trading_end = datetime.time(16, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
