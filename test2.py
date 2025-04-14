@@ -55,26 +55,16 @@ print(df['Amihud'])
 # %%
 # Plot
 plt.figure(figsize=(18, 9))
-color1 = 'tab:blue'
-ax1.set_xlabel('Time')
-ax1.set_ylabel('Amihud Illiquidity', color=color1)
-ax1.plot(df.index, df['Amihud'], color=color1, label='Amihud Illiquidity')
-ax1.tick_params(axis='y', labelcolor=color1)
-
-# Second axis for Volume
-ax2 = ax1.twinx()
-color2 = 'tab:red'
-ax2.set_ylabel('Volume', color=color2)
-ax2.plot(df.index, df['Volume'], color=color2, label='Volume')
-ax2.tick_params(axis='y', labelcolor=color2)
-
-# Optional: format x-axis
-fig.autofmt_xdate()
-
-# Title and layout
-plt.title('Amihud Illiquidity vs Volume')
-fig.tight_layout()
+plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
+plt.plot(df.index, df['Amihud'], label='Amihud', color='red')
+plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
+plt.gcf().autofmt_xdate()
+plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
+plt.xlabel('Time EST')
+plt.ylabel('Volume')
 plt.grid(True)
+plt.legend()
+plt.tight_layout()
 plt.show()
 
 # %%
