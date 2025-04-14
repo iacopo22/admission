@@ -53,16 +53,27 @@ df.dropna(subset=['Amihud'], inplace=True)
 
 # %%
 # Plot
-plt.figure(figsize=(12, 6))
-plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
-plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
-plt.gcf().autofmt_xdate()
-plt.title(f'Volume - {ticker} (5-min Interval)\n03-04-2025')
-plt.xlabel('Time (EST)')
-plt.ylabel('Volume')
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
+fig, ax1 = plt.subplots(figsize=(12, 6))
 
-# %%
+# Amihud on left y-axis
+color1 = 'tab:blue'
+ax1.set_xlabel('Time (EST)')
+ax1.set_ylabel('Amihud Illiquidity', color=color1)
+ax1.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color=color1)
+ax1.tick_params(axis='y', labelcolor=color1)
+
+# Volume on right y-axis
+ax2 = ax1.twinx()
+color2 = 'tab:red'
+ax2.set_ylabel('Volume', color=color2)
+ax2.plot(df.index, df['Volume'], label='Volume', color=color2)
+ax2.tick_params(axis='y', labelcolor=color2)
+
+# Custom x-axis formatting
+ax1.xaxis.set_major_formatter(FuncFormatter(est_time_formatter))
+fig.autofmt_xdate()
+
+plt.title(f'Amihud Illiquidity vs Volume ({ticker})\n03-04-2025')
+fig.tight_layout()
+plt.grid(True)
+plt.show()
