@@ -15,24 +15,36 @@ interval = "5m"
 # Download 10-minute interval data
 df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 
+# Flatten MultiIndex (handle multi-level columns)
+df.columns = df.columns.get_level_values(0)
+
+# DEBUG: See available columns and data
+print("Columns:", df.columns)
+print(df.head())
+
 # Drop rows with missing data
 df.dropna(inplace=True)
 
-# Calculate return (percentage change in adjusted close)
+# Make sure volume isn't zero to avoid division errors
+df = df[df['Volume'] > 0]
+
+# Calculate returns
 df['Return'] = df['Adj Close'].pct_change()
 
 # Calculate dollar volume
 df['DollarVolume'] = df['Adj Close'] * df['Volume']
 
-# Calculate Amihud Illiquidity
+# Avoid division by zero
+df = df[df['DollarVolume'] > 0]
+
+# Now calculate Amihud
 df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
-print(df.columns)
-print(df.head())
-# Drop NaNs created by pct_change
+
+# Drop NaNs
 df.dropna(subset=['Amihud'], inplace=True)
 
 # %%
-# Plot Amihud ratio
+# Plot
 plt.figure(figsize=(12, 6))
 plt.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color='darkblue')
 plt.title(f'Amihud Illiquidity Ratio - {ticker} (10-min Interval)\n{start_date} to {end_date}')
