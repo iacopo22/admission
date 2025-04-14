@@ -40,8 +40,6 @@ df['Return'] = df['Close'].pct_change()
 # Calculate dollar volume
 df['DollarVolume'] = (df['Close'] * df['Volume']) / 100000000
 
-print("Columns:", df.columns)
-print(df.head())
 # Now calculate Amihud
 df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
