@@ -53,7 +53,7 @@ plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))  # European format
 plt.gcf().autofmt_xdate()
 plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
-plt.xlabel('Time')
+plt.xlabel('EST')
 plt.ylabel('Volume')
 plt.grid(True)
 plt.legend()
