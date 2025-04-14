@@ -18,6 +18,10 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
 
+# DEBUG: See available columns and data
+print("Columns:", df.columns)
+print(df.head())
+
 # Drop rows with missing data
 df.dropna(inplace=True)
 
