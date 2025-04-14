@@ -19,6 +19,7 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 df.columns = df.columns.get_level_values(0)
 
 # DEBUG: See available columns and data
+df['Return'] = df['Close'].pct_change()
 print("Columns:", df.columns)
 print(df.head())
 
