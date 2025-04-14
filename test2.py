@@ -28,12 +28,14 @@ df = df[df['Volume'] > 0]
 df['Return'] = df['Close'].pct_change()
 
 # Calculate dollar volume
-df['DollarVolume'] = df['Close'] * df['Volume']
+df['DollarVolume'] = (df['Close'] * df['Volume']) / 10^9
 
 print(df['DollarVolume'], df['Return'])
 # Avoid division by zero
 df = df[df['DollarVolume'] > 0]
 
+print("Columns:", df.columns)
+print(df.head())
 # Now calculate Amihud
 df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
