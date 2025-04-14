@@ -37,18 +37,9 @@ df.dropna(inplace=True)
 # Make sure volume isn't zero to avoid division errors
 df = df[df['Volume'] > 0]
 
-# Calculate returns
-df['Return'] = df['Close'].pct_change()
-
-# Calculate dollar volume
-df['DollarVolume'] = (df['Close'] * df['Volume']) / 100000000
-
-# Now calculate Amihud
-df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
 # Drop NaNs
 df.dropna(subset=['Amihud'], inplace=True)
-
 
 
 # 2. Define final hour window
@@ -65,5 +56,5 @@ daily_final_hour_avg = final_hour_df['Volume'].groupby(final_hour_df.index.date)
 overall_avg = daily_final_hour_avg.mean()
 
 print("Daily final hour average volumes:")
-print(daily_final_hour_avg)
+print(final_hour_df['Volume'])
 print(f"\nOverall average volume in final hour: {overall_avg:,.0f}")
