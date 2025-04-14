@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-01"
-end_date = "2025-04-04"
-interval = "5m"
+start_date = "2025-04-02"
+end_date = "2025-04-03"
+interval = "1m"
 
 # Download 10-minute interval data
 df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
