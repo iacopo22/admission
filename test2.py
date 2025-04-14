@@ -14,7 +14,7 @@ def est_time_formatter(x, pos):
     return dt.strftime('%H:%M')
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-03"
+start_date = "2025-03-03"
 end_date = "2025-04-04"
 interval = "5m"
 
@@ -37,9 +37,6 @@ df.dropna(inplace=True)
 # Make sure volume isn't zero to avoid division errors
 df = df[df['Volume'] > 0]
 
-
-# Drop NaNs
-df.dropna(subset=['Amihud'], inplace=True)
 
 
 # 2. Define final hour window
