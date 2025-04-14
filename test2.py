@@ -41,8 +41,8 @@ df = df[df['Volume'] > 0]
 
 
 # Define your new date range (March 3 to April 3, 2025)
-start = datetime.date(2025, 3, 3)
-end = datetime.date(2025, 4, 3)
+start = datetime.date(2025, 2, 3)
+end = datetime.date(2025, 4, 1)
 
 # Filter for the date range
 df_range = df[(df.index.date >= start) & (df.index.date <= end)]
