@@ -45,6 +45,7 @@ df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
 # Drop NaNs
 df.dropna(subset=['Amihud'], inplace=True)
+print(df.index)
 
 # %%
 # Plot
