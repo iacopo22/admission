@@ -29,10 +29,10 @@ df.dropna(inplace=True)
 df = df[df['Volume'] > 0]
 
 # Calculate returns
-df['Return'] = df['Adj Close'].pct_change()
+df['Return'] = df['Close'].pct_change()
 
 # Calculate dollar volume
-df['DollarVolume'] = df['Adj Close'] * df['Volume']
+df['DollarVolume'] = df['Close'] * df['Volume']
 
 # Avoid division by zero
 df = df[df['DollarVolume'] > 0]
