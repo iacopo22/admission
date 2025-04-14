@@ -20,7 +20,7 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 df.columns = df.columns.get_level_values(0)
 
 trading_start = datetime.time(15, 30)
-trading_end = datetime.time(18, 0)
+trading_end = datetime.time(22, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
@@ -46,10 +46,10 @@ df.dropna(subset=['Amihud'], inplace=True)
 # %%
 # Plot
 plt.figure(figsize=(18, 9))
-plt.plot(df.index, df['DollarVolume'], label='Volume', color='darkblue')
-plt.title(f'Volume - {ticker} (10-min Interval)\n{start_date} to {end_date}')
+plt.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color='darkblue')
+plt.title(f'Amihud Illiquidity Ratio - {ticker} (10-min Interval)\n{start_date} to {end_date}')
 plt.xlabel('Time')
-plt.ylabel('Volume')
+plt.ylabel('Amihud Ratio')
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
