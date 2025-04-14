@@ -8,7 +8,11 @@ import matplotlib.pyplot as plt
 import datetime
 from zoneinfo import ZoneInfo
 import matplotlib.dates as mdates
+from matplotlib.ticker import FuncFormatter
 
+def est_time_formatter(x, pos):
+    dt = mdates.num2date(x).astimezone(ZoneInfo("America/New_York"))
+    return dt.strftime('%H:%M')
 # Parameters
 ticker = "AAPL"
 start_date = "2025-03-25"
@@ -27,6 +31,7 @@ df.index = df.index.tz_convert('America/New_York')
 trading_start = datetime.time(9, 30)
 trading_end = datetime.time(16, 0)
 df = df.between_time(trading_start, trading_end)
+
 
 # Drop rows with missing data
 df.dropna(inplace=True)
@@ -51,10 +56,10 @@ print(df.index)
 # Plot
 plt.figure(figsize=(18, 9))
 plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))  # European format
+plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
 plt.gcf().autofmt_xdate()
 plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
-plt.xlabel('EST')
+plt.xlabel('Time EST')
 plt.ylabel('Volume')
 plt.grid(True)
 plt.legend()
