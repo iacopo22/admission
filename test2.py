@@ -10,8 +10,8 @@ from zoneinfo import ZoneInfo
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-02"
-end_date = "2025-04-03"
+start_date = "2025-04-03"
+end_date = "2025-04-04"
 interval = "5m"
 
 # Download 10-minute interval data
@@ -28,7 +28,7 @@ else:
     df.index = df.index.tz_convert("America/New_York")
 
 trading_start = datetime.time(9, 30)
-trading_end = datetime.time(16, 0)
+trading_end = datetime.time(12, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
