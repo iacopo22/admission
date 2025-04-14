@@ -10,18 +10,13 @@ import matplotlib.pyplot as plt
 ticker = "AAPL"
 start_date = "2025-04-01"
 end_date = "2025-04-04"
-interval = "5m"
+interval = "1m"
 
 # Download 10-minute interval data
 df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
-
-# DEBUG: See available columns and data
-df['Return'] = df['Close'].pct_change()
-print("Columns:", df.columns)
-print(df.head())
 
 # Drop rows with missing data
 df.dropna(inplace=True)
