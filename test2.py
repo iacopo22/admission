@@ -46,10 +46,10 @@ df.dropna(subset=['Amihud'], inplace=True)
 # %%
 # Plot
 plt.figure(figsize=(18, 9))
-plt.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color='darkblue')
-plt.title(f'Amihud Illiquidity Ratio - {ticker} (10-min Interval)\n{start_date} to {end_date}')
+plt.plot(df.index, df['DollarVolume'], label='Volume', color='darkblue')
+plt.title(f'Volume - {ticker} (10-min Interval)\n{start_date} to {end_date}')
 plt.xlabel('Time')
-plt.ylabel('Amihud Ratio')
+plt.ylabel('Volume')
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
