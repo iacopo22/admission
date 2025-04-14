@@ -26,7 +26,8 @@ df['DollarVolume'] = df['Adj Close'] * df['Volume']
 
 # Calculate Amihud Illiquidity
 df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
-
+print(df.columns)
+print(df.head())
 # Drop NaNs created by pct_change
 df.dropna(subset=['Amihud'], inplace=True)
 
