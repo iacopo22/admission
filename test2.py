@@ -39,19 +39,27 @@ df = df[df['Volume'] > 0]
 
 
 
-# 2. Define final hour window
-final_hour_start = datetime.time(15, 0)
-final_hour_end = datetime.time(16, 0)
 
-# 3. Filter for the last hour of trading
-final_hour_df = df.between_time(final_hour_start, final_hour_end)
+# Define your new date range (March 3 to April 3, 2025)
+start = datetime.date(2025, 3, 3)
+end = datetime.date(2025, 4, 3)
 
-# 4. Group by date and calculate average volume in the final hour
-daily_final_hour_avg = final_hour_df['Volume'].groupby(final_hour_df.index.date).mean()
+# Filter for the date range
+df_range = df[(df.index.date >= start) & (df.index.date <= end)]
 
-# 5. Optional: calculate overall average volume across all days
-overall_avg = daily_final_hour_avg.mean()
+# Filter for the final hour (15:00 - 16:00)
+final_hour_df = df_range.between_time("15:00", "16:00")
 
-print("Daily final hour average volumes:")
-print(final_hour_df['Volume'])
-print(f"\nOverall average volume in final hour: {overall_avg:,.0f}")
+# Sum volume during the final hour for each trading day
+daily_final_hour_volume = final_hour_df['Volume'].groupby(final_hour_df.index.date).sum()
+
+# Count the number of trading days in the specified range (excluding days with no trading data)
+num_days = len(daily_final_hour_volume)
+
+# Calculate the average final hour volume
+avg_final_hour_volume = daily_final_hour_volume.sum() / num_days if num_days > 0 else 0
+
+# Print the results
+print("Total final-hour volume for each day:")
+print(daily_final_hour_volume)
+print(f"\nAverage final-hour volume across {num_days} trading days: {avg_final_hour_volume:,.0f}")
