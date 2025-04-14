@@ -50,12 +50,13 @@ df['Amihud'] = np.abs(df['Return']) / df['DollarVolume']
 
 # Drop NaNs
 df.dropna(subset=['Amihud'], inplace=True)
-print(df.index)
+print(df['Amihud'])
 
 # %%
 # Plot
 plt.figure(figsize=(18, 9))
 plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
+plt.plot(df.index, df['Amihud'], label='Amihud', color='red')
 plt.gca().xaxis.set_major_formatter(FuncFormatter(est_time_formatter))  # European format
 plt.gcf().autofmt_xdate()
 plt.title(f'Volume - {ticker} (5-min Interval)\n25-03-2025')
