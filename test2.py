@@ -9,8 +9,8 @@ import datetime
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-02"
-end_date = "2025-04-03"
+start_date = "2025-04-03"
+end_date = "2025-04-04"
 interval = "5m"
 
 # Download 10-minute interval data
@@ -19,8 +19,8 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
 
-trading_start = datetime.time(18, 30)
-trading_end = datetime.time(22, 0)
+trading_start = datetime.time(15, 00)
+trading_end = datetime.time(18, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
