@@ -10,8 +10,8 @@ from zoneinfo import ZoneInfo
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-03"
-end_date = "2025-04-04"
+start_date = "2025-03-25"
+end_date = "2025-03-26"
 interval = "5m"
 
 # Download 10-minute interval data
@@ -28,7 +28,7 @@ else:
     df.index = df.index.tz_convert("America/New_York")
 
 trading_start = datetime.time(9, 30)
-trading_end = datetime.time(12, 0)
+trading_end = datetime.time(16, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
@@ -54,10 +54,10 @@ df.dropna(subset=['Amihud'], inplace=True)
 # %%
 # Plot
 plt.figure(figsize=(18, 9))
-plt.plot(df.index, df['Amihud'], label='Amihud Illiquidity', color='darkblue')
-plt.title(f'Amihud Illiquidity Ratio - {ticker} (10-min Interval)\n{start_date} to {end_date}')
+plt.plot(df.index, df['Volume'], label='Volume', color='darkblue')
+plt.title(f'Volume - {ticker} (10-min Interval)\n{start_date} to {end_date}')
 plt.xlabel('Time')
-plt.ylabel('Amihud Ratio')
+plt.ylabel('Volume')
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
