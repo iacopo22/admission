@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 ticker = "AAPL"
 start_date = "2025-04-01"
 end_date = "2025-04-04"
-interval = "1m"
+interval = "5m"
 
 # Download 10-minute interval data
 df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
@@ -28,9 +28,8 @@ df = df[df['Volume'] > 0]
 df['Return'] = df['Close'].pct_change()
 
 # Calculate dollar volume
-df['DollarVolume'] = (df['Close'] * df['Volume']) / 10^9
+df['DollarVolume'] = (df['Close'] * df['Volume']) / 1000000000
 
-print(df['DollarVolume'], df['Return'])
 # Avoid division by zero
 df = df[df['DollarVolume'] > 0]
 
