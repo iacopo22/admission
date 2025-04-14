@@ -13,8 +13,8 @@ def est_time_formatter(x, pos):
 # Parameters
 ticker = "AAPL"
 # Define your new date range (March 3 to April 3, 2025)
-start = datetime.date(2025, 4, 2)
-end = datetime.date(2025, 4, 3)
+start = datetime.date(2025, 1, 15)
+end = datetime.date(2025, 3, 1)
 interval = "1h"
 
 # Download 10-minute interval data
@@ -37,7 +37,7 @@ df = df[df['Volume'] > 0]
 df_range = df[(df.index.date >= start) & (df.index.date <= end)]
 
 # Filter for the final hour (15:00 - 16:00)
-final_hour_df = df_range.between_time("15:00", "16:00")
+final_hour_df = df_range.between_time("09:30", "10:30")
 
 # Sum volume during the final hour for each trading day
 daily_final_hour_volume = final_hour_df['Volume'].groupby(final_hour_df.index.date).sum()
