@@ -74,7 +74,7 @@ ax2.tick_params(axis='y', labelcolor=color2)
 ax1.xaxis.set_major_formatter(FuncFormatter(est_time_formatter))
 fig.autofmt_xdate()
 
-plt.title(f'Amihud Illiquidity vs Volume ({ticker})\n{start_date} to {end_date}')
+plt.title(f'Amihud Illiquidity vs Volume ({ticker})\n03-04-2025')
 fig.tight_layout()
 plt.grid(True)
 plt.show()
