@@ -6,11 +6,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+from zoneinfo import ZoneInfo
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-03"
-end_date = "2025-04-04"
+start_date = "2025-04-02"
+end_date = "2025-04-03"
 interval = "5m"
 
 # Download 10-minute interval data
@@ -19,8 +20,13 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
 
-trading_start = datetime.time(15, 30)
-trading_end = datetime.time(22, 0)
+if df.index.tz is None:
+    df.index = df.index.tz_localize("UTC").tz_convert("Europe/Rome")
+else:
+    df.index = df.index.tz_convert("Europe/Rome")
+
+trading_start = datetime.time(9, 30)
+trading_end = datetime.time(23, 0)
 df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
