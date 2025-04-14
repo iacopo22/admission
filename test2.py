@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # Parameters
 ticker = "AAPL"
-start_date = "2025-04-02 18:00:00"
+start_date = "2025-04-02"
 end_date = "2025-04-03"
 interval = "5m"
 
@@ -17,6 +17,10 @@ df = yf.download(ticker, start=start_date, end=end_date, interval=interval)
 
 # Flatten MultiIndex (handle multi-level columns)
 df.columns = df.columns.get_level_values(0)
+
+trading_start = datetime.time(18, 30)
+trading_end = datetime.time(22, 0)
+df = df.between_time(trading_start, trading_end)
 
 # Drop rows with missing data
 df.dropna(inplace=True)
