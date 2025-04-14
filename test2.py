@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # Parameters
 ticker = "AAPL"
 start_date = "2025-04-02"
-end_date = "2025-04-04"
+end_date = "2025-04-03 16:00:00"
 interval = "1m"
 
 # Download 10-minute interval data
