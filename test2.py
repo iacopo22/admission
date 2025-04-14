@@ -37,12 +37,9 @@ df.dropna(inplace=True)
 # Make sure volume isn't zero to avoid division errors
 df = df[df['Volume'] > 0]
 
-
-
-
 # Define your new date range (March 3 to April 3, 2025)
-start = datetime.date(2025, 2, 3)
-end = datetime.date(2025, 4, 1)
+start = datetime.date(2025, 2, 15)
+end = datetime.date(2025, 3, 15)
 
 # Filter for the date range
 df_range = df[(df.index.date >= start) & (df.index.date <= end)]
