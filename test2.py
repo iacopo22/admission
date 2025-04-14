@@ -32,7 +32,7 @@ df = df[df['Volume'] > 0]
 df['Return'] = df['Close'].pct_change()
 
 # Calculate dollar volume
-df['DollarVolume'] = (df['Close'] - df['Open']) * df['Volume']
+df['DollarVolume'] = df['Close'] * df['Volume']
 
 # Avoid division by zero
 df = df[df['DollarVolume'] > 0]
