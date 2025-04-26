@@ -61,8 +61,8 @@ for t in range(N):
     else:
         p = 0.3
         alpha = 0.3
-        v_H = 210
-        v_L = 180
+        v_H = 190
+        v_L = 170
         if is_informed:
             order = 'sell'
         else:
