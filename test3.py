@@ -1,6 +1,9 @@
 from pdf2image import convert_from_path
 from PIL import Image
 
+pdf_path = r"C:\Users\iacop\Download\your_file.pdf"
+poppler_path = r"C:\Program Files\poppler-24.08.0\Library\bin"
+
 # Convert PDF pages to images
 images = convert_from_path("your_file.pdf")
 
