@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 # Parameters
 np.random.seed(42)
 N = 100  # number of trades
-v_H = 225   # high asset value
-v_L = 210   # low asset value
+v_H = 230   # high asset value
+v_L = 200   # low asset value
 p0 = 0.5    # initial belief that value is high
-alpha = 0.4  # probability a trader is informed
+alpha = 0.6  # probability a trader is informed
 shock_trade = 50  # simulate a shock at this trade
 
 # true value equal to v_L since it's a bad news
@@ -37,6 +37,7 @@ def update_belief(p, order, alpha):
     elif order == 'sell':
         num = float(p * 0.5 * (1 - alpha))
         denom = float(alpha * (1 - p) + 0.5 * (1 - alpha))
+    print(f"p:{float(num / denom)}")
     return float(num / denom)
 
 # %%
@@ -44,25 +45,25 @@ for t in range(N):
 
     # Decide trader type
     is_informed = np.random.rand() < alpha
+    print(f"inf:{is_informed}")
 
     # Generate order before shock
     if t < shock_trade:  # before shock
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
+        print(f"order:{order}")
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
-        p = 0.3
-        alpha = 0.8
-        v_H = 220   # high asset value
-        v_L = 190
+        p = 0.1
+        alpha = 0.1
         if is_informed:
             order = 'sell'  # Informed trader knows that asset value is low
         else:
             order = np.random.choice(['buy', 'sell'])
     else:
         p = 0.3
-        alpha = 0.6
-        v_H = 190
-        v_L = 170
+        alpha = 0.3
+        v_H = 210
+        v_L = 180
         if is_informed:
             order = 'sell'
         else:
