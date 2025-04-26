@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 # Parameters
 np.random.seed(42)
 N = 100  # number of trades
-v_H = 230   # high asset value
+v_H = 225   # high asset value
 v_L = 210   # low asset value
 p0 = 0.5    # initial belief that value is high
-alpha = 0.6  # probability a trader is informed
+alpha = 0.4  # probability a trader is informed
 shock_trade = 50  # simulate a shock at this trade
 
 # true value equal to v_L since it's a bad news
@@ -60,7 +60,7 @@ for t in range(N):
             order = np.random.choice(['buy', 'sell'])
     else:
         p = 0.3
-        alpha = 0.7
+        alpha = 0.6
         v_H = 190
         v_L = 170
         if is_informed:
