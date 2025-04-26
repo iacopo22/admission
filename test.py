@@ -37,7 +37,6 @@ def update_belief(p, order, alpha):
     elif order == 'sell':
         num = float(p * 0.5 * (1 - alpha))
         denom = float(alpha * (1 - p) + 0.5 * (1 - alpha))
-    print(f"p:{float(num / denom)}")
     return float(num / denom)
 
 # %%
@@ -45,12 +44,10 @@ for t in range(N):
 
     # Decide trader type
     is_informed = np.random.rand() < alpha
-    print(f"inf:{is_informed}")
 
     # Generate order before shock
     if t < shock_trade:  # before shock
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
-        print(f"order:{order}")
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
         p = 0.1
@@ -79,7 +76,6 @@ for t in range(N):
     ask = ((1 - p) * v_L + p * v_H) + (alpha*p*(1 - p))/(alpha*p+(1-alpha)*0.5) * (v_H - v_L) # ask premium
     mid = (bid + ask) / 2
     spread = ask - bid
-    print(f"spread:{spread}")
 
     # Store
     if order == 'buy':

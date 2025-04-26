@@ -9,7 +9,7 @@ N = 100  # number of trades
 v_H = 225   # high asset value
 v_L = 210   # low asset value
 p0 = 0.5    # initial belief that value is high
-alpha = 0.6  # probability a trader is informed
+alpha = 0.3  # probability a trader is informed
 shock_trade = 50  # simulate a shock at this trade
 
 # true value equal to v_L since it's a bad news
@@ -37,7 +37,6 @@ def update_belief(p, order, alpha):
     elif order == 'sell':
         num = float(p * 0.5 * (1 - alpha))
         denom = float(alpha * (1 - p) + 0.5 * (1 - alpha))
-    print(f"p:{float(num / denom)}")
     return float(num / denom)
 
 # %%
@@ -45,23 +44,24 @@ for t in range(N):
 
     # Decide trader type
     is_informed = np.random.rand() < alpha
-    print(f"inf:{is_informed}")
 
     # Generate order before shock
     if t < shock_trade:  # before shock
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
-        print(f"order:{order}")
+
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
-        p = 0.1
-        alpha = 0.1
+        p = 0.3
+        alpha = 0.7
+        v_H = 215
+        v_L = 190
         if is_informed:
             order = 'sell'  # Informed trader knows that asset value is low
         else:
             order = np.random.choice(['buy', 'sell'])
     else:
         p = 0.3
-        alpha = 0.4
+        alpha = 0.3
         v_H = 200
         v_L = 180
         if is_informed:
@@ -79,7 +79,6 @@ for t in range(N):
     ask = ((1 - p) * v_L + p * v_H) + (alpha*p*(1 - p))/(alpha*p+(1-alpha)*0.5) * (v_H - v_L) # ask premium
     mid = (bid + ask) / 2
     spread = ask - bid
-    print(f"spread:{spread}")
 
     # Store
     if order == 'buy':
