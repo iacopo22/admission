@@ -52,15 +52,15 @@ for t in range(N):
         # Sudden info shock: change probability market thinks asset is L
         p = 0.3
         alpha = 0.8
-        v_H = 200   # high asset value
-        v_L = 150
+        v_H = 220   # high asset value
+        v_L = 190
         if is_informed:
             order = 'sell'  # Informed trader knows that asset value is low
         else:
             order = np.random.choice(['buy', 'sell'])
     else:
         p = 0.3
-        alpha = 0.3
+        alpha = 0.7
         v_H = 190
         v_L = 170
         if is_informed:
