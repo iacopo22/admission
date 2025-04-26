@@ -37,7 +37,6 @@ def update_belief(p, order, alpha):
     elif order == 'sell':
         num = float(p * 0.5 * (1 - alpha))
         denom = float(alpha * (1 - p) + 0.5 * (1 - alpha))
-    print(f"p:{float(num / denom)}")
     return float(num / denom)
 
 # %%
@@ -51,7 +50,7 @@ for t in range(N):
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
-        p = 0.1
+        p = 0.4
         alpha = 0.1
         v_H = 200   # high asset value
         v_L = 150
