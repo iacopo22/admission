@@ -61,8 +61,8 @@ for t in range(N):
             order = np.random.choice(['buy', 'sell'])
     else:
         p = 0.3
-        alpha = 0.3
-        v_H = 210
+        alpha = 0.4
+        v_H = 200
         v_L = 180
         if is_informed:
             order = 'sell'
