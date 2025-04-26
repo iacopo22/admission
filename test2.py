@@ -34,7 +34,7 @@ df = df[df['Volume'] > 0]
 # Filter for the date range
 df_range = df[(df.index.date >= start) & (df.index.date <= end)]
 
-# Filter for the first hour (15:00 - 16:00)
+# Filter for the first hour (9:30 - 10:30)
 first_hour_df = df_range.between_time("09:30", "10:30")
 
 # Sum volume during the first hour for each trading day

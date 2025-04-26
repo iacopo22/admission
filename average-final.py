@@ -35,7 +35,7 @@ df = df[df['Volume'] > 0]
 df_range = df[(df.index.date >= start) & (df.index.date <= end)]
 
 # Filter for the first hour (15:00 - 16:00)
-first_hour_df = df_range.between_time("15:30", "16:00")
+first_hour_df = df_range.between_time("15:00", "16:00")
 
 # Sum volume during the first hour for each trading day
 daily_final_hour_volume = final_hour_df['Volume'].groupby(final_hour_df.index.date).sum()
