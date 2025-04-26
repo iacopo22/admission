@@ -45,12 +45,10 @@ for t in range(N):
 
     # Decide trader type
     is_informed = np.random.rand() < alpha
-    print(f"inf:{is_informed}")
 
     # Generate order before shock
     if t < shock_trade:  # before shock
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
-        print(f"order:{order}")
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
         p = 0.1
