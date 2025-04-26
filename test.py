@@ -50,8 +50,8 @@ for t in range(N):
         order = np.random.choice(['buy', 'sell'], p=[0.52, 0.48])
     elif t >= shock_trade and t <=52:  # after shock
         # Sudden info shock: change probability market thinks asset is L
-        p = 0.4
-        alpha = 0.1
+        p = 0.8
+        alpha = 0.8
         v_H = 200   # high asset value
         v_L = 150
         if is_informed:
